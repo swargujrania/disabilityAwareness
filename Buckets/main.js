@@ -12,7 +12,7 @@ const colorMapping = {
     "$75000 or more": "black",
 }
 
-d3.csv('./earnings.csv').then(data => {
+d3.csv('../earnings.csv').then(data => {
     nestedData = d3.nest()
         .key(d => d.dis_stat)
         .key(d => d.income_bracket)
@@ -24,73 +24,48 @@ d3.csv('./earnings.csv').then(data => {
 
     var svg = d3.select('#main').select('svg');
 
-    //cx, cy to be fixed
-    var circles = svg.selectAll('circle')
-    .data(dataForCircles)
-    .enter()
-    .append('circle')
-    .attr('r', 5)
-    .attr('cx', function(d,i){ return i + 15})
-    .attr('cy', function(d,i){ return i%2 + 25})
-    .style('fill', function(d, i){ return getColorByIncomeBracket(d['bracket'])})
-    .style('opacity', function(d){ return 0.5 } )
-    .attr('stroke', function(d, i){ return getColorByIncomeBracket(d['bracket'])})
-    .attr('stroke-width', 2)
-    .exit();
-
-    function getLocationByIncomeBracket(dataPoint)
-    {
-        return{
-            'cx': dataPoint['id'] * 10 + 20,
-            'cy': dataPoint['id'] * 10 + 20
-        }
-    }
-
-    function computeSumForIncomeBracket(incomeBracketData) {
-        return d3.sum(incomeBracketData, function (d) {
-            return +d['value']
-        });
-    }
-
-    function getColorByIncomeBracket(incomeBracket)
-    {
-        return colorMapping[incomeBracket];
-    }
-
-    function dataForVisualMapping(nestedData)
-    {
-        for (var status in nestedData) {
-            delete nestedData[status]["Median Earnings"];
-            delete nestedData[status][""];
-        }
-    
-        NumberByStatusIncomeBracket = []
-        
-        for (let status in nestedData) {
-            if (status == "Total Civilian Noninstitutionalized Population") {
-                continue;
-            }
-    
-            for (let bracket in nestedData[status]) {
-                var incomeBracketSum = computeSumForIncomeBracket(nestedData[status][bracket]);
-                var circleCount = incomeBracketSum / peopleUnit;
-    
-                for (let i = 0; i < circleCount; i++) {
-                    NumberByStatusIncomeBracket.push({
-                        id: i,
-                        status: status,
-                        bracket: bracket,
-                    });
-                }
-            }
-        }
-    
-        console.log(NumberByStatusIncomeBracket);
-
-        return NumberByStatusIncomeBracket;
-    }
-
 });
+
+
+function dataForVisualMapping(nestedData) {
+
+    BracketData = [];
+
+    for (let status in nestedData) {
+        if (status == "Total Civilian Noninstitutionalized Population") {
+            continue;
+        }
+
+        for (let bracket in nestedData[status]) {
+            var incomeBracketSum = computeSumForIncomeBracket(nestedData[status][bracket]);
+            BracketData.push({
+                'status': status,
+                'income_bracket': bracket,
+                'cumulative_number': incomeBracketSum
+
+            })
+        }
+    }
+
+    var BracketData = BracketData.filter(e => e['income_bracket'] != '' && e['income_bracket'] != 'Median Earnings');
+
+    var BracketData_2 = [];
+
+    BracketData.forEach(e =>{
+
+    });
+    
+    console.log(BracketData);
+    console.log(nestedData);
+
+}
+
+function computeSumForIncomeBracket(incomeBracketData) {
+    return d3.sum(incomeBracketData, function (d) {
+        return +d['value']
+    });
+}
+
 
 
 
