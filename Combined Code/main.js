@@ -108,14 +108,13 @@ d3.csv('../earnings.csv').then(data => {
             })
             .attr('cy', (d, i) => {
                 let bucket = (dataForBuckets.WithDisability.find(item => item.income_bracket == d.bracket));
-                console.log(d.change);
                 if (d.change) {
                     bucket.currentPos.y -= 10;
                 }
                 let yPos = lineCoordinates[d.bracket].y1 + bucket.currentPos.y;
                 return yPos;
             });
-    }, 2500);
+    }, 100);
 });
 
 function getLineCoordinates(dataBucket) {
