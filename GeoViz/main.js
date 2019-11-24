@@ -1,4 +1,9 @@
-//project work
+const PEOPLE_UNIT = 50000;
+
+let disabilityStatus = {
+    "WITH": "with_a_disability",
+    "NO": "no_disability"
+}
 
 var svg = d3.select('#main').select("svg");
 
@@ -69,7 +74,7 @@ function ready(geoData, userData) {
         .hexRadius(5);
 
     // Instantiate the generator.
-    const hex = hexgrid(userData);
+    hex = hexgrid(userData);
 
     // Create exponential colorScale.
     const colourScale = d3
@@ -89,8 +94,7 @@ function ready(geoData, userData) {
         .attr('d', hex.hexagon())
         .attr('transform', d => `translate(${d.x} ${d.y})`)
         .style(
-            'fill', '#fff'
-            // d => (!d.pointDensity ? '#fff' : colourScale(d.pointDensity))
+            'fill', d => (!d.pointDensity ? '#fff' : colourScale(d.pointDensity))
         )
         .style('stroke', '#F4EB9F');
 }
