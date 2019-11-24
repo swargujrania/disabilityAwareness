@@ -42,36 +42,48 @@ d3.json("censusDataWithLatLong.json").then(data => {
     cData = data;
     censusUnitData = []
     cData.forEach(d => {
-        var count = Math.ceil(+d["total_population"] / PEOPLE_UNIT) + 1;
-        var latUnit = (d["max_lat"] - d["min_lat"]) / count;
-        var lngUnit = (d["max_lng"] - d["min_lng"]) / count;
-        for (var i = 0; i < count; i++)
-            censusUnitData.push({
-                "year": d["year"],
-                "state": d["state"],
-                "id": i,
-                "unit": PEOPLE_UNIT,
-                "status": "",
-                "lat": d["min_lat"] + (latUnit * i),
-                "lng": d["min_lng"] + (lngUnit * i),
-            });
-    })
-
-    //add disbility status
-    cData.forEach(d => {
-        //with disability
+        //var count = Math.ceil(+d["total_population"] / PEOPLE_UNIT);
+        
         var withDisabilityCount = Math.ceil(+d["with_a_disability"] / PEOPLE_UNIT);
+        var noDisabilityCount = Math.ceil(+d["no_disability"] / PEOPLE_UNIT);
+        var count = withDisabilityCount + noDisabilityCount;
+
+        var rectLen = (d["max_lng"] - d["min_lng"]);
+        var rectWid = (d["max_lat"] - d["min_lat"]);
+
+        var side = Math.sqrt((rectLen * rectWid) / count);
+        
+        var countLen = Math.ceil(rectLen / side);
+        var countWid = Math.ceil(rectWid / side);
+
+        for (var i = 0; i < countWid; i++) {
+            for(var j=0; j< countLen; j++){
+                censusUnitData.push({
+                    "year": d["year"],
+                    "state": d["state"],
+                    "id": (countLen * i) + j,
+                    "unit": PEOPLE_UNIT,
+                    "status": "",
+                    "lat": d["min_lat"] + ((i + 0.5) * side),
+                    "lng": d["min_lng"] + ((j+0.5) * side),
+                });
+            }
+        }
+
+        //with disability
         for (var i = 0; i < withDisabilityCount; i++) {
             censusUnitData.find(u => u["year"] == d["year"] && u["state"] == d["state"] && u["id"] == i).status = disabilityStatus.WITH;
         }
         //no disability
-        var noDisabilityCount = Math.ceil(+d["no_disability"] / PEOPLE_UNIT);
         for (var j = i; j < i + noDisabilityCount; j++) {
             censusUnitData.find(u => u["year"] == d["year"] && u["state"] == d["state"] && u["id"] == j).status = disabilityStatus.NO;
         }
+
     });
+
     censusUnitData = censusUnitData.filter(c => c["status"] != "");
     console.log(censusUnitData);
+    
     downloadObjectAsJson(censusUnitData.filter(c => c["year"] == "2018"), "unitDataWithLatLong2018");
     downloadObjectAsJson(censusUnitData.filter(c => c["year"] == "2016"), "unitDataWithLatLong2016");
     downloadObjectAsJson(censusUnitData.filter(c => c["year"] == "2014"), "unitDataWithLatLong2014");

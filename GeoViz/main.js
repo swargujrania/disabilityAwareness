@@ -9,6 +9,7 @@ var svg = d3.select('#main').select("svg");
 
 var path = d3.geoPath();
 
+
 d3.json("https://d3js.org/us-10m.v1.json").then(data => {
 
     us = data;
@@ -26,23 +27,23 @@ d3.json("https://d3js.org/us-10m.v1.json").then(data => {
         'https://raw.githubusercontent.com/larsvers/map-store/master/us_mainland_geo.json'
     );
 
-    points = d3.json(
-        'https://raw.githubusercontent.com/larsvers/data-store/master/farmers_markets_us.json'
-    );
+    // points = d3.json(
+    //     'https://raw.githubusercontent.com/larsvers/data-store/master/farmers_markets_us.json'
+    // );
 
-    console.log(geoData);
-    console.log(us);
+    points = d3.json("finalData.json");
+
 
     Promise.all([geoData, points]).then(res => {
         let [geoData, userData] = res;
         ready(geoData, userData);
     });
 
-
-
 });
 
 function ready(geoData, userData) {
+
+    userData = userData.filter(p => p["year"] == "2018");
 
     const margin = { top: 30, right: 30, bottom: 30, left: 30 },
         width = 960 - margin.left - margin.right,
@@ -65,39 +66,59 @@ function ready(geoData, userData) {
         site.y = coords[1];
     });
 
-    // Create a hexgrid generator.
-    const hexgrid = d3.hexgrid()
-        .extent([width, height])
-        .geography(geoData)
-        .pathGenerator(geoPath)
-        .projection(projection)
-        .hexRadius(5);
+    svg.selectAll("circle")
+    .data(userData)
+    .enter()
+    .append('circle')
+ 
+    .attr('cx', function(d){ return d['x']; })
+    .attr('cy', function(d){ return d['y']; })
+    .attr('r', 5)
+    .style('fill', '#fff')
+    .style('stroke', '#000');
 
-    // Instantiate the generator.
-    hex = hexgrid(userData);
 
-    // Create exponential colorScale.
-    const colourScale = d3
-        .scaleSequential(function (t) {
-            var tNew = Math.pow(t, 10);
-            return d3.interpolateViridis(tNew);
-        })
-        .domain([...hex.grid.extentPointDensity].reverse());
 
-    // Draw the hexes.
-    svg
-        .append('g')
-        .selectAll('path')
-        .data(hex.grid.layout)
-        .enter()
-        .append('path')
-        .attr('d', hex.hexagon())
-        .attr('transform', d => `translate(${d.x} ${d.y})`)
-        .style(
-            'fill', d => (!d.pointDensity ? '#fff' : colourScale(d.pointDensity))
-        )
-        .style('stroke', '#F4EB9F');
+    // // Create a hexgrid generator.
+    // const hexgrid = d3.hexgrid()
+    //     .extent([width, height])
+    //     .geography(geoData)
+    //     .pathGenerator(geoPath)
+    //     .projection(projection)
+    //     .hexRadius(5)
+    //     .gridExtend(20);
+
+    // // Instantiate the generator.
+    // hex = hexgrid(userData);
+
+    // // Create exponential colorScale.
+    // const colourScale = d3
+    //     .scaleSequential(function (t) {
+    //         var tNew = Math.pow(t, 10);
+    //         return d3.interpolateViridis(tNew);
+    //     })
+    //     .domain([...hex.grid.extentPointDensity].reverse());
+
+    // // Draw the hexes.
+    // svg
+    //     .append('g')
+    //     .selectAll('path')
+    //     .data(hex.grid.layout)
+    //     .enter()
+    //     .append('path')
+    //     .attr('d', hex.hexagon())
+    //     .attr('transform', d => `translate(${d.x} ${d.y})`)
+    //     .style(
+    //         'fill', function(d){return getColorByState(d["state"])} //'#fff' //d => (!d.pointDensity ? '#fff' : colourScale(d.pointDensity))
+    //     )
+    //     .style('stroke', '#000');
 }
 
+function getColorByState(state) {
+    switch (state) {
+        case "Alaska": return "blue";
+        default: return "white";
+    }
+}
 
 
