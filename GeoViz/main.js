@@ -43,7 +43,8 @@ d3.json("https://d3js.org/us-10m.v1.json").then(data => {
 
 function ready(geoData, userData) {
 
-    userData = userData.filter(p => p["year"] == "2018");
+    //for 2018
+    userData = userData.filter(p => p["year"] == "2010");
 
     const margin = { top: 30, right: 30, bottom: 30, left: 30 },
         width = 960 - margin.left - margin.right,
@@ -66,6 +67,8 @@ function ready(geoData, userData) {
         site.y = coords[1];
     });
 
+
+
     svg.selectAll("circle")
     .data(userData)
     .enter()
@@ -74,8 +77,9 @@ function ready(geoData, userData) {
     .attr('cx', function(d){ return d['x']; })
     .attr('cy', function(d){ return d['y']; })
     .attr('r', 5)
-    .style('fill', '#fff')
-    .style('stroke', '#000');
+    .attr('fill', function(d){ return d.status == disabilityStatus.WITH ? "#f1856f" : '#fff'})
+    .attr('opacity', function(d){ return d.status == disabilityStatus.WITH ? 0.5 : 1 })
+    .style('stroke', '#f1856f');
 
 
 
