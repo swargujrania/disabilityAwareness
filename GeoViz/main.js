@@ -47,8 +47,8 @@ function ready(geoData, userData) {
     userData = userData.filter(p => p["year"] == "2010");
 
     const margin = { top: 30, right: 30, bottom: 30, left: 30 },
-        width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+        width = 1920 - margin.left - margin.right,
+        height = 1000 - margin.top - margin.bottom;
 
     const svg = d3.select('#main')
         .append('svg')
@@ -77,9 +77,9 @@ function ready(geoData, userData) {
     .attr('cx', function(d){ return d['x']; })
     .attr('cy', function(d){ return d['y']; })
     .attr('r', 5)
-    .attr('fill', function(d){ return d.status == disabilityStatus.WITH ? "#f1856f" : '#fff'})
+    .attr('fill', function(d){ return d.status == disabilityStatus.WITH ? getColorByState(d) : '#fff'})
     .attr('opacity', function(d){ return d.status == disabilityStatus.WITH ? 0.5 : 1 })
-    .style('stroke', '#f1856f');
+    .style('stroke', function(d){ return getColorByState(d)});
 
 
 
@@ -118,10 +118,10 @@ function ready(geoData, userData) {
     //     .style('stroke', '#000');
 }
 
-function getColorByState(state) {
-    switch (state) {
-        case "Alaska": return "blue";
-        default: return "white";
+function getColorByState(obj) {
+    switch (obj["state"]) {
+        case "Georgia": return "blue";
+        default: return "#f1856f";
     }
 }
 
