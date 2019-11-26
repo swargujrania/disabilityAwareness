@@ -1,14 +1,10 @@
 
-//var svg = d3.select('#main').select("svg");
-
-
-
 var WIDTH = 2500
 var HEIGHT = 2000
 
 
 
-d3.json("tiles.topo2018.json").then(tilegram => {
+d3.json("topo2018.json").then(tilegram => {
     console.log(tilegram);
 
     tiles = topojson.feature(tilegram, tilegram.objects.tiles)
@@ -81,40 +77,5 @@ d3.json("tiles.topo2018.json").then(tilegram => {
 
 })
 
-
-// d3.json("https://d3js.org/us-10m.v1.json").then(data => {
-
-
-//     // console.log(us);
-
-//     //var path1 = path(topojson.mesh(us, us.objects.counties, (a, b) => a !== b && (a.id / 1000 | 0) === (b.id / 1000 | 0)));
-//     //     var path2 = path(topojson.mesh(us, us.objects.states, (a, b) => a !== b));
-//     //     var path3 = path(topojson.feature(us, us.objects.nation));
-
-//     //    // $('#path1').attr('d', path1);
-//     //     $('#path2').attr('d', path2);
-//     //     $('#path3').attr('d', path3);
-
-
-
-// });
-
-
-
-// d3.json("usStatesGeojson.json", function (error, us) {
-//     if (error) throw error;
-//     console.log(us);
-
-//     svg.append("g")
-//         .attr("class", "states")
-//         .selectAll("path")
-//         .data(topojson.feature(us, us.objects.states).features)
-//         .enter().append("path")
-//         .attr("d", path);
-
-//     svg.append("path")
-//         .attr("class", "state-borders")
-//         .attr("d", path(topojson.mesh(us, us.objects.states, function (a, b) { return a !== b; })));
-// });
 
 
