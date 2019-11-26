@@ -34,10 +34,10 @@ d3.json("https://d3js.org/us-10m.v1.json").then(data => {
     points = d3.json("finalData.json");
 
 
-    Promise.all([geoData, points]).then(res => {
-        let [geoData, userData] = res;
-        ready(geoData, userData);
-    });
+    // Promise.all([geoData, points]).then(res => {
+    //     let [geoData, userData] = res;
+    //     ready(geoData, userData);
+    // });
 
 });
 
@@ -89,8 +89,8 @@ function ready(geoData, userData) {
     //     .geography(geoData)
     //     .pathGenerator(geoPath)
     //     .projection(projection)
-    //     .hexRadius(5)
-    //     .gridExtend(20);
+    //     .hexRadius(10)
+    //     //.gridExtend(20);
 
     // // Instantiate the generator.
     // hex = hexgrid(userData);
@@ -113,7 +113,7 @@ function ready(geoData, userData) {
     //     .attr('d', hex.hexagon())
     //     .attr('transform', d => `translate(${d.x} ${d.y})`)
     //     .style(
-    //         'fill', function(d){return getColorByState(d["state"])} //'#fff' //d => (!d.pointDensity ? '#fff' : colourScale(d.pointDensity))
+    //         'fill', function(d){ return "#fff"} //'#fff' //d => (!d.pointDensity ? '#fff' : colourScale(d.pointDensity))
     //     )
     //     .style('stroke', '#000');
 }
