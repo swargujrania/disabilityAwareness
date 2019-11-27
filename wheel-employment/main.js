@@ -28,7 +28,7 @@ var spokesData = [1,2,3,4,5,6,7,8,9,10,11,12,13];	// number of industry types
 // var spoke_x2 = hub_cx + (hub_r + spoke_length)*Math.cos(d*2*Math.PI/spokesData.length);
 // var spoke_y2 = hub_cy - (hub_r + spoke_length)*Math.sin(d*2*Math.PI/spokesData.length);
 
-var temp1= wheel.selectAll('.spokes')
+var spokes = wheel.selectAll('.spokes')
 				.data(spokesData)
 				.enter()
 				.append("line")
