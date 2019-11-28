@@ -5,19 +5,20 @@ var HEIGHT = 2000
 colorPalette = ['#ffd600', '#c9e402', '#b6ff64', '#63c964', '#6fffbf', '#67b1a0', '#00caba', '#06efff', '#008eaa', '#2284dd'];
 $('#stateName').css('left', WIDTH/2);
 
-d3.json("data/topo2018.json").then(tilegram => {
+d3.json("topo2018.json").then(tilegram => {
     console.log(tilegram);
-    // old code 
+
     tiles = topojson.feature(tilegram, tilegram.objects.tiles)
     transform = d3.geoTransform({
         point: function (x, y) {
             this.stream.point(x, -y)
         }
     });
+
+
+    // old code
     Dpath = d3.geoPath().projection(transform);
 
-     //new code
-    //get coordinates individually
     const svg = d3.select('#main').append("svg")
         .attr('width', WIDTH)
         .attr('height', HEIGHT)
@@ -25,81 +26,58 @@ d3.json("data/topo2018.json").then(tilegram => {
     var g = svg.append('g')
         .attr('transform', 'translate(-400,' + 1300 + ')')
 
-    Coordinates = tiles.features.map(t => t.geometry).map(u => u.coordinates).flat();
+    // g.selectAll('path')
+    //     .data(tiles.features)
+    //     .enter()
+    //     .append('path')
+    //     .attr('class', 'tiles')
+    //     .attr('d', Dpath)
+    //     .attr('fill', '#fff')
+    //     .attr('stroke', '#f1856f')
+    //     .attr('id', function (d) { return d.properties.name + '_path' });
+    // d3.selectAll('.tiles')
+    //     .on('mouseover', function (d) {
+    //         $(this).attr('fill', 'yellow');
+    //     })
+    //     .on('mouseout', function (d) {
+    //         $(this).attr('fill', '#fff');
+    //     })
+    //     .on('mousemove', function (d) {
 
-    hexUnitArray = [];
+    //     });
 
-    tiles.features.forEach(element => {
-        var hexCoordinateArray = element.geometry.coordinates;
+    // // Build list of state codes
+    // var stateCodes = []
+    // tilegram.objects.tiles.geometries.forEach(function (geometry) {
+    //     if (stateCodes.indexOf(geometry.properties.name) === -1) {
+    //         stateCodes.push(geometry.properties.name)
+    //     }
+    // })
 
-        hexCoordinateArray.forEach((hexCoordinate, index) => {
+    // // Build merged geometry for each state
+    // var stateBorders = stateCodes.map(function (code) {
+    //     return topojson.merge(
+    //         tilegram,
+    //         tilegram.objects.tiles.geometries.filter(function (geometry) {
+    //             return geometry.properties.name === code
+    //         })
+    //     )
+    // })
 
-            var hexUnit = {
-                'stateId': element.id,
-                'elementId': '',
-                'state': element.properties.name,
-                'points': ''
-            }
-            var point = '';
+    // // Draw path
+    // g.selectAll('path.border')
+    //     .data(stateBorders)
+    //     .enter().append('path')
+    //     .attr('d', path)
+    //     .attr('class', 'border')
+    //     .attr('fill', 'none')
+    //     .attr('stroke', 'black')
+    //     .attr('stroke-width', 4)
 
-            for (i = 0; i < hexCoordinate[0].length; i++) {
-                point += hexCoordinate[0][i][0] + ',' + (hexCoordinate[0][i][1] * (-1)) + ','
-            }
 
-            hexUnit.points = point.substring(0, point.length - 1);
-            hexUnit.elementId = index;
-
-            hexUnitArray.push(hexUnit);
-
-        })
-
-    });
-
-    g.selectAll('polyline')
-        .data(hexUnitArray)
-        .enter()
-        .append('polyline')
-        .attr('fill', '#fff')
-        .attr('stroke', d => { return getColorByState(d.state) })
-        .attr('data-state', d => { return d.state; })
-        .attr('points', d => {
-            return d.points;
-        })
-        .on('mouseover', function (d) {
-            $(this).attr('fill', getColorByState(d.state));
-            $('#stateName').text("STATE: " + d.state);
-        })
-        .on('mouseout', function (d) {
-            $(this).attr('fill', '#fff');
-            $('#stateName').text("STATE");
-
-        })
-        .on('mousemove', function (d) {
-
-        });
-
-})
-
-d3.json("data/topo2016.json").then(tilegram => {
-    console.log(tilegram);
-    // old code 
-    tiles = topojson.feature(tilegram, tilegram.objects.tiles)
-    transform = d3.geoTransform({
-        point: function (x, y) {
-            this.stream.point(x, -y)
-        }
-    });
-    Dpath = d3.geoPath().projection(transform);
-
-     //new code
+    //new code
     //get coordinates individually
-    const svg = d3.select('#main').append("svg")
-        .attr('width', WIDTH)
-        .attr('height', HEIGHT)
-
-    var g = svg.append('g')
-        .attr('transform', 'translate(-400,' + 1300*2 + ')')
-
+    
     Coordinates = tiles.features.map(t => t.geometry).map(u => u.coordinates).flat();
 
     hexUnitArray = [];
