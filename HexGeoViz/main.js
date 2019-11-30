@@ -18,87 +18,12 @@ d3.json("data/topo2018.json").then(tilegram => {
 
      //new code
     //get coordinates individually
-    const svg = d3.select('#main').append("svg")
+    const svg = d3.select('#vis1').append("svg")
         .attr('width', WIDTH)
         .attr('height', HEIGHT)
 
     var g = svg.append('g')
         .attr('transform', 'translate(-400,' + 1300 + ')')
-
-    Coordinates = tiles.features.map(t => t.geometry).map(u => u.coordinates).flat();
-
-    hexUnitArray = [];
-
-    tiles.features.forEach(element => {
-        var hexCoordinateArray = element.geometry.coordinates;
-
-        hexCoordinateArray.forEach((hexCoordinate, index) => {
-
-            var hexUnit = {
-                'stateId': element.id,
-                'elementId': '',
-                'state': element.properties.name,
-                'points': ''
-            }
-            var point = '';
-
-            for (i = 0; i < hexCoordinate[0].length; i++) {
-                point += hexCoordinate[0][i][0] + ',' + (hexCoordinate[0][i][1] * (-1)) + ','
-            }
-
-            hexUnit.points = point.substring(0, point.length - 1);
-            hexUnit.elementId = index;
-
-            hexUnitArray.push(hexUnit);
-
-        })
-
-    });
-
-    g.selectAll('polyline')
-        .data(hexUnitArray)
-        .enter()
-        .append('polyline')
-        .attr('fill', '#fff')
-        .attr('stroke', d => { return getColorByState(d.state) })
-        .attr('data-state', d => { return d.state; })
-        .attr('points', d => {
-            return d.points;
-        })
-        .on('mouseover', function (d) {
-            $(this).attr('fill', getColorByState(d.state));
-            $('#stateName').text("STATE: " + d.state);
-        })
-        .on('mouseout', function (d) {
-            $(this).attr('fill', '#fff');
-            $('#stateName').text("STATE");
-
-        })
-        .on('mousemove', function (d) {
-
-        });
-
-})
-
-d3.json("data/topo2016.json").then(tilegram => {
-    console.log(tilegram);
-    // old code 
-    tiles = topojson.feature(tilegram, tilegram.objects.tiles)
-    transform = d3.geoTransform({
-        point: function (x, y) {
-            this.stream.point(x, -y)
-        }
-    });
-    Dpath = d3.geoPath().projection(transform);
-
-     //new code
-    //get coordinates individually
-    const svg = d3.select('#main').append("svg")
-        .attr('width', WIDTH)
-        .attr('height', HEIGHT)
-
-    var g = svg.append('g')
-        .attr('transform', 'translate(-400,' + 1300*2 + ')')
 
     Coordinates = tiles.features.map(t => t.geometry).map(u => u.coordinates).flat();
 
