@@ -12,9 +12,14 @@ $(function () {
 
         // old code 
         tiles = topojson.feature(tilegram, tilegram.objects.tiles)
-        
+        transform = d3.geoTransform({
+            point: function (x, y) {
+                this.stream.point(x, -y)
+            }
+        });
+        Dpath = d3.geoPath().projection(transform);
 
-        //new code
+        //draw svg area
         const svg = d3.select('#vis1').append("svg")
             .attr('width', WIDTH)
             .attr('height', HEIGHT)
@@ -22,10 +27,10 @@ $(function () {
         var g = svg.append('g')
             .attr('transform', 'translate(-400,' + 1300 + ')')
 
+
+        //draw hex-grid
         Coordinates = tiles.features.map(t => t.geometry).map(u => u.coordinates).flat();
-
         hexUnitArray = [];
-
         tiles.features.forEach(element => {
             var hexCoordinateArray = element.geometry.coordinates;
 
@@ -51,8 +56,7 @@ $(function () {
             })
 
         });
-
-        g.selectAll('polyline')
+        var hexPolyline = g.selectAll('polyline')
             .data(hexUnitArray)
             .enter()
             .append('polyline')
@@ -61,39 +65,16 @@ $(function () {
             .attr('data-state', d => { return d.state; })
             .attr('points', d => {
                 return d.points;
-            })
-            .on('mouseover', function (d) {
-                $(this).attr('fill', getColorByState(d.state));
-                $('#stateName').text("STATE: " + d.state);
-            })
-            .on('mouseout', function (d) {
-                $(this).attr('fill', '#fff');
-                $('#stateName').text("STATE");
-
-            })
-            .on('mousemove', function (d) {
-
             });
 
 
-        //old code
-        transform = d3.geoTransform({
-            point: function (x, y) {
-                this.stream.point(x, -y)
-            }
-        });
-
-        Dpath = d3.geoPath().projection(transform);
-
-        // Build list of state codes
+        // Build merged geometry for each state
         var stateCodes = []
         tilegram.objects.tiles.geometries.forEach(function (geometry) {
             if (stateCodes.indexOf(geometry.properties.name) === -1) {
                 stateCodes.push(geometry.properties.name)
             }
         })
-
-        // Build merged geometry for each state
         var stateBorders = stateCodes.map(function (code) {
             return topojson.merge(
                 tilegram,
@@ -104,25 +85,28 @@ $(function () {
         })
 
         // Draw path
-        g.selectAll('path.border')
+        var stateBoundaries = g.selectAll('path.border')
             .data(stateBorders)
-            .enter().append('path')
+            .enter()
+            .append('path')
             .attr('d', Dpath)
+            .attr('data-state', (d, i) => { return stateCodes[i]; })
             .attr('class', 'border')
-            .attr('fill', 'rgba(255, 255, 255, 0.01)')
+            .attr('fill', 'none')
             .attr('stroke', 'grey')
-            .attr('stroke-width', 1)
-            .on('mouseover', function (d) {
-                $(this).attr('stroke', 'black');
-                $(this).attr('stroke-width', 2);
-            })
-            .on('mouseout', function (d) {
-                $(this).attr('stroke', 'grey');
-                $(this).attr('stroke-width', 1);
-            })
-            .on('mousemove', function (d) {
+            .attr('stroke-width', 1);
 
-            });
+        // on hover code combining hexes with boundaries
+        hexPolyline.on('mouseover', function (d) {
+            $(this).attr('fill', getColorByState(d.state));
+            $('#stateName').text("STATE: " + d.state);
+            highlightStateBoundaries(true, d);
+        })
+            .on('mouseout', function (d) {
+                $(this).attr('fill', '#fff');
+                $('#stateName').text("STATE");
+                highlightStateBoundaries(false, d);
+            })
 
     })
 
@@ -300,6 +284,19 @@ function getColorByState(stateName) {
 
     }
 
+}
+
+function highlightStateBoundaries(toBeHighlighted, d) {
+    var selectorString = 'path[data-state=' + d.state + ']';
+
+    if (toBeHighlighted) {
+        $(selectorString).attr('stroke', 'black');
+        $(selectorString).attr('stroke-width', 2);
+    }
+    else {
+        $(selectorString).attr('stroke', 'grey');
+        $(selectorString).attr('stroke-width', 1);
+    }
 }
 
 
