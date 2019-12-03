@@ -3,82 +3,132 @@ var WIDTH = 2500
 var HEIGHT = 2000
 
 colorPalette = ['#ffd600', '#c9e402', '#b6ff64', '#63c964', '#6fffbf', '#67b1a0', '#00caba', '#06efff', '#008eaa', '#2284dd'];
-$('#stateName').css('left', WIDTH/2);
+$('#stateName').css('left', WIDTH / 2);
 
-d3.json("data/topo2018.json").then(tilegram => {
-    console.log(tilegram);
-    // old code 
-    tiles = topojson.feature(tilegram, tilegram.objects.tiles)
-    transform = d3.geoTransform({
-        point: function (x, y) {
-            this.stream.point(x, -y)
-        }
-    });
-    Dpath = d3.geoPath().projection(transform);
+$(function () {
 
-     //new code
-    //get coordinates individually
-    const svg = d3.select('#vis1').append("svg")
-        .attr('width', WIDTH)
-        .attr('height', HEIGHT)
+    d3.json("data/topo2018.json").then(tilegram => {
+        console.log(tilegram);
 
-    var g = svg.append('g')
-        .attr('transform', 'translate(-400,' + 1300 + ')')
+        // old code 
+        tiles = topojson.feature(tilegram, tilegram.objects.tiles)
+        
 
-    Coordinates = tiles.features.map(t => t.geometry).map(u => u.coordinates).flat();
+        //new code
+        const svg = d3.select('#vis1').append("svg")
+            .attr('width', WIDTH)
+            .attr('height', HEIGHT)
 
-    hexUnitArray = [];
+        var g = svg.append('g')
+            .attr('transform', 'translate(-400,' + 1300 + ')')
 
-    tiles.features.forEach(element => {
-        var hexCoordinateArray = element.geometry.coordinates;
+        Coordinates = tiles.features.map(t => t.geometry).map(u => u.coordinates).flat();
 
-        hexCoordinateArray.forEach((hexCoordinate, index) => {
+        hexUnitArray = [];
 
-            var hexUnit = {
-                'stateId': element.id,
-                'elementId': '',
-                'state': element.properties.name,
-                'points': ''
-            }
-            var point = '';
+        tiles.features.forEach(element => {
+            var hexCoordinateArray = element.geometry.coordinates;
 
-            for (i = 0; i < hexCoordinate[0].length; i++) {
-                point += hexCoordinate[0][i][0] + ',' + (hexCoordinate[0][i][1] * (-1)) + ','
-            }
+            hexCoordinateArray.forEach((hexCoordinate, index) => {
 
-            hexUnit.points = point.substring(0, point.length - 1);
-            hexUnit.elementId = index;
+                var hexUnit = {
+                    'stateId': element.id,
+                    'elementId': '',
+                    'state': element.properties.name,
+                    'points': ''
+                }
+                var point = '';
 
-            hexUnitArray.push(hexUnit);
+                for (i = 0; i < hexCoordinate[0].length; i++) {
+                    point += hexCoordinate[0][i][0] + ',' + (hexCoordinate[0][i][1] * (-1)) + ','
+                }
 
-        })
+                hexUnit.points = point.substring(0, point.length - 1);
+                hexUnit.elementId = index;
 
-    });
+                hexUnitArray.push(hexUnit);
 
-    g.selectAll('polyline')
-        .data(hexUnitArray)
-        .enter()
-        .append('polyline')
-        .attr('fill', '#fff')
-        .attr('stroke', d => { return getColorByState(d.state) })
-        .attr('data-state', d => { return d.state; })
-        .attr('points', d => {
-            return d.points;
-        })
-        .on('mouseover', function (d) {
-            $(this).attr('fill', getColorByState(d.state));
-            $('#stateName').text("STATE: " + d.state);
-        })
-        .on('mouseout', function (d) {
-            $(this).attr('fill', '#fff');
-            $('#stateName').text("STATE");
-
-        })
-        .on('mousemove', function (d) {
+            })
 
         });
 
+        g.selectAll('polyline')
+            .data(hexUnitArray)
+            .enter()
+            .append('polyline')
+            .attr('fill', '#fff')
+            .attr('stroke', d => { return getColorByState(d.state) })
+            .attr('data-state', d => { return d.state; })
+            .attr('points', d => {
+                return d.points;
+            })
+            .on('mouseover', function (d) {
+                $(this).attr('fill', getColorByState(d.state));
+                $('#stateName').text("STATE: " + d.state);
+            })
+            .on('mouseout', function (d) {
+                $(this).attr('fill', '#fff');
+                $('#stateName').text("STATE");
+
+            })
+            .on('mousemove', function (d) {
+
+            });
+
+
+        //old code
+        transform = d3.geoTransform({
+            point: function (x, y) {
+                this.stream.point(x, -y)
+            }
+        });
+
+        Dpath = d3.geoPath().projection(transform);
+
+        // Build list of state codes
+        var stateCodes = []
+        tilegram.objects.tiles.geometries.forEach(function (geometry) {
+            if (stateCodes.indexOf(geometry.properties.name) === -1) {
+                stateCodes.push(geometry.properties.name)
+            }
+        })
+
+        // Build merged geometry for each state
+        var stateBorders = stateCodes.map(function (code) {
+            return topojson.merge(
+                tilegram,
+                tilegram.objects.tiles.geometries.filter(function (geometry) {
+                    return geometry.properties.name === code
+                })
+            )
+        })
+
+        // Draw path
+        g.selectAll('path.border')
+            .data(stateBorders)
+            .enter().append('path')
+            .attr('d', Dpath)
+            .attr('class', 'border')
+            .attr('fill', 'rgba(255, 255, 255, 0.01)')
+            .attr('stroke', 'grey')
+            .attr('stroke-width', 1)
+            .on('mouseover', function (d) {
+                $(this).attr('stroke', 'black');
+                $(this).attr('stroke-width', 2);
+            })
+            .on('mouseout', function (d) {
+                $(this).attr('stroke', 'grey');
+                $(this).attr('stroke-width', 1);
+            })
+            .on('mousemove', function (d) {
+
+            });
+
+    })
+
 })
+
+
 
 function getColorByState(stateName) {
 
@@ -116,7 +166,7 @@ function getColorByState(stateName) {
             return colorPalette[2]
             break;
         case 'Tennessee':
-            return colorPalette[3]
+            return colorPalette[9]
             break;
         case 'South Carolina':
             return colorPalette[3]
@@ -212,7 +262,7 @@ function getColorByState(stateName) {
             return colorPalette[9]
             break;
         case 'Georgia':
-            return colorPalette[9]
+            return colorPalette[3]
             break;
         case 'Florida':
             return colorPalette[9]
