@@ -202,14 +202,14 @@ function drawPieCharts(dataset, buckets, svg) {
     //animation
     svg.selectAll('.pie')
       .transition()
-      .ease(d3.easePolyIn.exponent(2))
+      .ease(d3.easeLinear)
       .duration(1000)
       .delay(i * 2000)
       .attr('opacity', 1);
 
     svg.selectAll('.pieLabel')
       .transition()
-      .ease(d3.easePolyIn.exponent(2))
+      .ease(d3.easeLinear)
       .duration(1000)
       .delay(i * 2000)
       .attr('opacity', 1);
