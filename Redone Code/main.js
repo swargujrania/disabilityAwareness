@@ -116,39 +116,49 @@ start = () => {
       .attr('transform', d => `translate(${ d.x },${ d.y })`);
 
 
-    // making pie charts
-    var pie = d3.pie()
-      .sort(null)
-      .value(d => d.value);
+    // make pie charts
+    drawPieCharts(dataset, buckets, svg);
 
-    arcLabel = function () {
-      const radius = BUCKET_WIDTH / 2 * 0.8;
-      return d3.arc().innerRadius(radius).outerRadius(radius);
-    }
+  });
 
-    var arc = d3.arc()
-      .innerRadius(0)
-      .outerRadius(BUCKET_WIDTH / 2 - 1)
 
-    // only 1 piechart for now
-    var bucket1data = dataset[0];
+}
+
+function drawPieCharts(dataset, buckets, svg) {
+
+  const radius = BUCKET_WIDTH / 2 * 0.8;
+
+  // making pie charts
+  var pie = d3.pie()
+    .sort(null)
+    .value(d => d.value);
+
+  var arcLabel = function () {
+    return d3.arc().innerRadius(radius).outerRadius(radius);
+  }
+
+  var arc = d3.arc()
+    .innerRadius(0)
+    .outerRadius(BUCKET_WIDTH / 2 - 1)
+
+
+  for (i = 0; i < dataset.length; i++) {
     var pieData = [];
-    pieData.push({ 'key': bucket1data.key + '_WithDis', 'value': bucket1data.DisabilityCount });
-    pieData.push({ 'key': bucket1data.key + '_WithoutDis', 'value': bucket1data.WoDisabiltyCount });
+    var label = dataset[i].key;
 
-    console.log(pieData);
+    pieData.push({ 'key': dataset[i].key + '_WithDis', 'value': dataset[i].DisabilityCount });
+    pieData.push({ 'key': dataset[i].key + '_WithoutDis', 'value': dataset[i].WoDisabiltyCount });
 
-    //drawing pie
-    arcs = pie(pieData);
+    var arcs = pie(pieData);
 
-    console.log(buckets);
-    var centerX = buckets[0].x;
-    var centerY = buckets[0].y + 200;
+    var centerX = buckets[i].x;
+    var centerY = buckets[i].y + 125;
 
     svg.append("g")
       .attr('class', 'pie')
       .attr('transform', `translate(${ centerX }, ${ centerY })`)
       .attr("stroke", "rgba(242,189,182, 0.5)")
+      .attr("opacity", 0)
       .selectAll("path")
       .data(arcs)
       .join("path")
@@ -162,9 +172,12 @@ start = () => {
       })
       .attr("d", arc)
       .append("title")
-      .text(d => `${ d.data.key }: ${ d.data.value.toLocaleString() }`);
+      .text(d => `${ d.data.key }: ${ d.data.value.toLocaleString() }`)
+
 
     svg.append("g")
+      .attr('class', 'pieLabel')
+      .attr("opacity", 0)
       .attr('transform', `translate(${ centerX }, ${ centerY })`)
       .attr("font-family", "sans-serif")
       .attr("font-size", 12)
@@ -185,7 +198,22 @@ start = () => {
         .attr("fill-opacity", 0.7)
         .text(d => d.data.value.toLocaleString()));
 
-  });
 
+    //animation
+    svg.selectAll('.pie')
+      .transition()
+      .ease(d3.easePolyIn.exponent(2))
+      .duration(1000)
+      .delay(i * 2000)
+      .attr('opacity', 1);
+
+    svg.selectAll('.pieLabel')
+      .transition()
+      .ease(d3.easePolyIn.exponent(2))
+      .duration(1000)
+      .delay(i * 2000)
+      .attr('opacity', 1);
+
+  }
 
 }
