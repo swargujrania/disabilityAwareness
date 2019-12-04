@@ -1,5 +1,7 @@
 const WIDTH = 1400,
-  HEIGHT = 650;
+  HEIGHT = 1000;
+
+const BUCKET_WIDTH = 140;
 
 const PEOPLE_UNIT = 25000;
 
@@ -93,7 +95,7 @@ start = () => {
       .enter()
       .append('circle')
       .attr('class', 'unit')
-      .attr('transform', d => `translate(${d.x},-10)`)
+      .attr('transform', d => `translate(${ d.x },-10)`)
       .attr('cx', 0)
       .attr('cy', 0)
       .attr('r', 4)
@@ -111,6 +113,79 @@ start = () => {
       .ease(d3.easePolyIn.exponent(8))
       .duration(1000)
       .delay((d, i) => i * 2)
-      .attr('transform', d => `translate(${d.x},${d.y})`);
+      .attr('transform', d => `translate(${ d.x },${ d.y })`);
+
+
+    // making pie charts
+    var pie = d3.pie()
+      .sort(null)
+      .value(d => d.value);
+
+    arcLabel = function () {
+      const radius = BUCKET_WIDTH / 2 * 0.8;
+      return d3.arc().innerRadius(radius).outerRadius(radius);
+    }
+
+    var arc = d3.arc()
+      .innerRadius(0)
+      .outerRadius(BUCKET_WIDTH / 2 - 1)
+
+    // only 1 piechart for now
+    var bucket1data = dataset[0];
+    var pieData = [];
+    pieData.push({ 'key': bucket1data.key + '_WithDis', 'value': bucket1data.DisabilityCount });
+    pieData.push({ 'key': bucket1data.key + '_WithoutDis', 'value': bucket1data.WoDisabiltyCount });
+
+    console.log(pieData);
+
+    //drawing pie
+    arcs = pie(pieData);
+
+    console.log(buckets);
+    var centerX = buckets[0].x;
+    var centerY = buckets[0].y + 200;
+
+    svg.append("g")
+      .attr('class', 'pie')
+      .attr('transform', `translate(${ centerX }, ${ centerY })`)
+      .attr("stroke", "rgba(242,189,182, 0.5)")
+      .selectAll("path")
+      .data(arcs)
+      .join("path")
+      .attr("fill", d => {
+        if (d.data.key.endsWith('WithDis')) {
+          return 'rgb(242,189,182)';
+        }
+        else {
+          return 'rgba(242,189,182, 0.2)';
+        }
+      })
+      .attr("d", arc)
+      .append("title")
+      .text(d => `${ d.data.key }: ${ d.data.value.toLocaleString() }`);
+
+    svg.append("g")
+      .attr('transform', `translate(${ centerX }, ${ centerY })`)
+      .attr("font-family", "sans-serif")
+      .attr("font-size", 12)
+      .attr("text-anchor", "middle")
+      .selectAll("text")
+      .data(arcs)
+      .join("text")
+      .attr("transform", d => `translate(${ arcLabel().centroid(d) })`)
+      .call(text => text.append("tspan")
+        .attr("y", "-0.4em")
+        .attr("font-weight", "bold")
+        .text(d => {
+          return d.data.key.endsWith('WithDis') ? 'With Disability' : 'Without Disability';
+        }))
+      .call(text => text.filter(d => (d.endAngle - d.startAngle) > 0.25).append("tspan")
+        .attr("x", 0)
+        .attr("y", "0.7em")
+        .attr("fill-opacity", 0.7)
+        .text(d => d.data.value.toLocaleString()));
+
   });
+
+
 }
