@@ -21,8 +21,8 @@ d3.csv('data/education2018.csv').then(data => {
         e.percentage = +e.percentage;
     });
 
-    var stackData = getStackData(eduDataWithoutTotal, 'educationLevel');
-    showStackedChart(stackData, 10, 0, '#vis1', 'Education Levels in US');
+    var stackData = getTotalStackData(eduDataWithoutTotal, 'educationLevel');
+    showTotalStackedChart(stackData, 10, 0, '#vis1', 'Education Levels in US');
 
 });
 
@@ -38,10 +38,80 @@ d3.csv('data/earning2018.csv').then(data => {
         e.percentage = +e.percentage;
     });
 
-    var stackData = getStackData(earningDataWithoutTotal, 'earningLevel');
-    showStackedChart(stackData, 10,0, '#vis2', 'Earning (past 12 months)');
+    var stackData = getTotalStackData(earningDataWithoutTotal, 'earningLevel');
+    showTotalStackedChart(stackData, 10,0, '#vis2', 'Earning (past 12 months)');
 
 });
+
+//poverty status bar chart
+d3.csv('data/poverty2018.csv').then(data => {
+
+    //clean data
+    povertyData = data;
+
+    var povertyDataWithoutTotal = povertyData.filter(e => e.povertyStatus != "");
+    povertyDataWithoutTotal.forEach(e => {
+        e.numbers = +e.numbers;
+        e.percentage = +e.percentage;
+    });
+
+    var stackData = getTotalStackData(povertyDataWithoutTotal, 'povertyStatus');
+    showTotalStackedChart(stackData, 10,0, '#vis3', 'Poverty Status (past 12 months)');
+
+});
+
+
+//employment status bar chart
+d3.csv('data/employmentStatus2018.csv').then(data => {
+
+    //clean data
+    empData = data;
+
+    var empDataWithoutTotal = empData.filter(e => e.employmentStatus != "");
+    empDataWithoutTotal.forEach(e => {
+        e.numbers = +e.numbers;
+        e.percentage = +e.percentage;
+    });
+
+    var stackData = getTotalStackData(empDataWithoutTotal, 'employmentStatus');
+    showTotalStackedChart(stackData, 10,0, '#vis4', 'Employment Status');
+
+});
+
+//class of worker bar chart
+d3.csv('data/classOfWorker2018.csv').then(data => {
+
+    //clean data
+    cowData = data;
+
+    var cowDataWithoutTotal = cowData.filter(e => e.employmentStatus != "");
+    cowDataWithoutTotal.forEach(e => {
+        e.numbers = +e.numbers;
+        e.percentage = +e.percentage;
+    });
+
+    var stackData = getTotalStackData(cowDataWithoutTotal, 'classOfWorker');
+    showTotalStackedChart(stackData, 10,0, '#vis5', 'Class of Workers');
+
+});
+
+//industry bar chart
+d3.csv('data/industry2018.csv').then(data => {
+
+    //clean data
+    industryData = data;
+
+    var industryDataWithoutTotal = industryData.filter(e => e.employmentStatus != "Total");
+    industryDataWithoutTotal.forEach(e => {
+        e.numbers = +e.numbers;
+        e.percentage = +e.percentage;
+    });
+
+    var stackData = getTotalStackData(industryDataWithoutTotal, 'industry');
+    showTotalStackedChart(stackData, 10,0, '#vis6', 'Industry');
+
+});
+
 
 function downloadObjectAsJson(exportObj, exportName) {
     var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
@@ -72,7 +142,7 @@ function setScales(sData, stackData) {
 
 }
 
-function showStackedChart(stackData, locX, locY, svgSection, title) {
+function showTotalStackedChart(stackData, locX, locY, svgSection, title) {
 
     var sData = d3.stack().keys(stackData.keys)(stackData.data);
 
@@ -83,12 +153,12 @@ function showStackedChart(stackData, locX, locY, svgSection, title) {
         .attr("transform", `translate(${ locX }, ${ locY })`)
         .attr("height", height);
 
-    yAxis = d3.axisLeft(scales.y).ticks(20, 's');
+    yAxis = d3.axisLeft(scales.y).ticks(20);
     xAxis = d3.axisBottom(scales.x).tickSizeOuter([10]);
 
     svg.append('text')
         .text(title)
-        .attr("transform", `translate(0,${ height / 2 })`);
+        .attr("transform", `translate(0,${ height / 2 })`)
 
     svg.append("g")
         .selectAll("g")
@@ -116,7 +186,7 @@ function showStackedChart(stackData, locX, locY, svgSection, title) {
 
 }
 
-function getStackData(data, keyForNesting) {
+function getTotalStackData(data, keyForNesting) {
     var withDisData = data.filter(e => e.disabilityType == 'With a Disability');
     var noDisData = data.filter(e => e.disabilityType == 'No Disability');
 

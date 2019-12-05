@@ -1,0 +1,469 @@
+﻿year,state,disabilityType,employmentStatus,percentage,numbers
+2018,Alaska,Total Civilian Noninstitutionalized Population,,100,548676
+2018,Alaska,With a Disability,,100,84809
+2018,Alaska,No Disability,,100,463867
+2018,Alaska,Total Civilian Noninstitutionalized Population,Employed,63,345665.88
+2018,Alaska,With a Disability,Employed,30,25442.7
+2018,Alaska,No Disability,Employed,69,320068.23
+2018,Alaska,Total Civilian Noninstitutionalized Population,Not in Labor Force,32.4,177771.024
+2018,Alaska,With a Disability,Not in Labor Force,64.9,55041.041
+2018,Alaska,No Disability,Not in Labor Force,26.5,122924.755
+2018,Maine,Total Civilian Noninstitutionalized Population,,100,1105382
+2018,Maine,With a Disability,,100,207186
+2018,Maine,No Disability,,100,898196
+2018,Maine,Total Civilian Noninstitutionalized Population,Employed,61.4,678704.548
+2018,Maine,With a Disability,Employed,24,49724.64
+2018,Maine,No Disability,Employed,70,628737.2
+2018,Maine,Total Civilian Noninstitutionalized Population,Not in Labor Force,36.4,402359.048
+2018,Maine,With a Disability,Not in Labor Force,73,151245.78
+2018,Maine,No Disability,Not in Labor Force,27.9,250596.684
+2018,North Carolina,Total Civilian Noninstitutionalized Population,,100,8154786
+2018,North Carolina,With a Disability,,100,1262808
+2018,North Carolina,No Disability,,100,6891978
+2018,North Carolina,Total Civilian Noninstitutionalized Population,Employed,59.7,4868407.242
+2018,North Carolina,With a Disability,Employed,23,290445.84
+2018,North Carolina,No Disability,Employed,66.5,4583165.37
+2018,North Carolina,Total Civilian Noninstitutionalized Population,Not in Labor Force,37.1,3025425.606
+2018,North Carolina,With a Disability,Not in Labor Force,74.4,939529.152
+2018,North Carolina,No Disability,Not in Labor Force,30.3,2088269.334
+2018,Missouri,Total Civilian Noninstitutionalized Population,,100,4797181
+2018,Missouri,With a Disability,,100,819164
+2018,Missouri,No Disability,,100,3978017
+2018,Missouri,Total Civilian Noninstitutionalized Population,Employed,60.9,2921483.229
+2018,Missouri,With a Disability,Employed,23.7,194141.868
+2018,Missouri,No Disability,Employed,68.5,2724941.645
+2018,Missouri,Total Civilian Noninstitutionalized Population,Not in Labor Force,36.5,1750971.065
+2018,Missouri,With a Disability,Not in Labor Force,74,606181.36
+2018,Missouri,No Disability,Not in Labor Force,28.7,1141690.879
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,,100,10271420
+2018,Pennsylvania,With a Disability,,100,1655011
+2018,Pennsylvania,No Disability,,100,8616409
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,Employed,60.8,6245023.36
+2018,Pennsylvania,With a Disability,Employed,24.1,398857.651
+2018,Pennsylvania,No Disability,Employed,67.9,5850541.711
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,Not in Labor Force,36,3697711.2
+2018,Pennsylvania,With a Disability,Not in Labor Force,72.9,1206503.019
+2018,Pennsylvania,No Disability,Not in Labor Force,29,2498758.61
+2018,Michigan,Total Civilian Noninstitutionalized Population,,100,7986376
+2018,Michigan,With a Disability,,100,1321085
+2018,Michigan,No Disability,,100,6665291
+2018,Michigan,Total Civilian Noninstitutionalized Population,Employed,59,4711961.84
+2018,Michigan,With a Disability,Employed,23,303849.55
+2018,Michigan,No Disability,Employed,66.1,4405757.351
+2018,Michigan,Total Civilian Noninstitutionalized Population,Not in Labor Force,37.7,3010863.752
+2018,Michigan,With a Disability,Not in Labor Force,74.1,978923.985
+2018,Michigan,No Disability,Not in Labor Force,30.5,2032913.755
+2018,Nebraska,Total Civilian Noninstitutionalized Population,,100,1477589
+2018,Nebraska,With a Disability,,100,208823
+2018,Nebraska,No Disability,,100,1268766
+2018,Nebraska,Total Civilian Noninstitutionalized Population,Employed,67.6,998850.164
+2018,Nebraska,With a Disability,Employed,32.8,68493.944
+2018,Nebraska,No Disability,Employed,73.4,931274.244
+2018,Nebraska,Total Civilian Noninstitutionalized Population,Not in Labor Force,29.9,441799.111
+2018,Nebraska,With a Disability,Not in Labor Force,65.1,135943.773
+2018,Nebraska,No Disability,Not in Labor Force,24.1,305772.606
+2018,Oregon,Total Civilian Noninstitutionalized Population,,100,3379241
+2018,Oregon,With a Disability,,100,546292
+2018,Oregon,No Disability,,100,2832949
+2018,Oregon,Total Civilian Noninstitutionalized Population,Employed,60,2027544.6
+2018,Oregon,With a Disability,Employed,25.9,141489.628
+2018,Oregon,No Disability,Employed,66.6,1886744.034
+2018,Oregon,Total Civilian Noninstitutionalized Population,Not in Labor Force,36.8,1243560.688
+2018,Oregon,With a Disability,Not in Labor Force,71,387867.32
+2018,Oregon,No Disability,Not in Labor Force,30.2,855550.598
+2018,Wyoming,Total Civilian Noninstitutionalized Population,,100,449840
+2018,Wyoming,With a Disability,,100,68715
+2018,Wyoming,No Disability,,100,381125
+2018,Wyoming,Total Civilian Noninstitutionalized Population,Employed,63.9,287447.76
+2018,Wyoming,With a Disability,Employed,31.8,21851.37
+2018,Wyoming,No Disability,Employed,69.7,265644.125
+2018,Wyoming,Total Civilian Noninstitutionalized Population,Not in Labor Force,33.5,150696.4
+2018,Wyoming,With a Disability,Not in Labor Force,65.1,44733.465
+2018,Wyoming,No Disability,Not in Labor Force,27.8,105952.75
+2018,California,Total Civilian Noninstitutionalized Population,,100,31085639
+2018,California,With a Disability,,100,3814600
+2018,California,No Disability,,100,27271039
+2018,California,Total Civilian Noninstitutionalized Population,Employed,60.9,18931154.15
+2018,California,With a Disability,Employed,22.2,846841.2
+2018,California,No Disability,Employed,66.3,18080698.86
+2018,California,Total Civilian Noninstitutionalized Population,Not in Labor Force,35.5,11035401.85
+2018,California,With a Disability,Not in Labor Force,75,2860950
+2018,California,No Disability,Not in Labor Force,30,8181311.7
+2018,Mississippi,Total Civilian Noninstitutionalized Population,,100,2296728
+2018,Mississippi,With a Disability,,100,450946
+2018,Mississippi,No Disability,,100,1845782
+2018,Mississippi,Total Civilian Noninstitutionalized Population,Employed,53.6,1231046.208
+2018,Mississippi,With a Disability,Employed,19.8,89287.308
+2018,Mississippi,No Disability,Employed,61.9,1142539.058
+2018,Mississippi,Total Civilian Noninstitutionalized Population,Not in Labor Force,42.3,971515.944
+2018,Mississippi,With a Disability,Not in Labor Force,77.7,350385.042
+2018,Mississippi,No Disability,Not in Labor Force,33.6,620182.752
+2018,Connecticut,Total Civilian Noninstitutionalized Population,,100,2884868
+2018,Connecticut,With a Disability,,100,359465
+2018,Connecticut,No Disability,,100,2525403
+2018,Connecticut,Total Civilian Noninstitutionalized Population,Employed,63.2,1823236.576
+2018,Connecticut,With a Disability,Employed,24.6,88428.39
+2018,Connecticut,No Disability,Employed,68.7,1734951.861
+2018,Connecticut,Total Civilian Noninstitutionalized Population,Not in Labor Force,33.1,954891.308
+2018,Connecticut,With a Disability,Not in Labor Force,71.9,258455.335
+2018,Connecticut,No Disability,Not in Labor Force,27.6,697011.228
+2018,Texas,Total Civilian Noninstitutionalized Population,,100,21663694
+2018,Texas,With a Disability,,100,2965971
+2018,Texas,No Disability,,100,18697723
+2018,Texas,Total Civilian Noninstitutionalized Population,Employed,62.3,13496481.36
+2018,Texas,With a Disability,Employed,26.7,791914.257
+2018,Texas,No Disability,Employed,67.9,12695753.92
+2018,Texas,Total Civilian Noninstitutionalized Population,Not in Labor Force,34.5,7473974.43
+2018,Texas,With a Disability,Not in Labor Force,70.5,2091009.555
+2018,Texas,No Disability,Not in Labor Force,28.8,5384944.224
+2018,Idaho,Total Civilian Noninstitutionalized Population,,100,1337554
+2018,Idaho,With a Disability,,100,218281
+2018,Idaho,No Disability,,100,1119273
+2018,Idaho,Total Civilian Noninstitutionalized Population,Employed,60.3,806545.062
+2018,Idaho,With a Disability,Employed,26.3,57407.903
+2018,Idaho,No Disability,Employed,66.9,748793.637
+2018,Idaho,Total Civilian Noninstitutionalized Population,Not in Labor Force,37.2,497570.088
+2018,Idaho,With a Disability,Not in Labor Force,70.2,153233.262
+2018,Idaho,No Disability,Not in Labor Force,30.7,343616.811
+2018,Maryland,Total Civilian Noninstitutionalized Population,,100,4754654
+2018,Maryland,With a Disability,,100,629864
+2018,Maryland,No Disability,,100,4124790
+2018,Maryland,Total Civilian Noninstitutionalized Population,Employed,65,3090525.1
+2018,Maryland,With a Disability,Employed,28.5,179511.24
+2018,Maryland,No Disability,Employed,70.6,2912101.74
+2018,Maryland,Total Civilian Noninstitutionalized Population,Not in Labor Force,31.6,1502470.664
+2018,Maryland,With a Disability,Not in Labor Force,67.6,425788.064
+2018,Maryland,No Disability,Not in Labor Force,26.1,1076570.19
+2018,New Mexico,Total Civilian Noninstitutionalized Population,,100,1639138
+2018,New Mexico,With a Disability,,100,308794
+2018,New Mexico,No Disability,,100,1330344
+2018,New Mexico,Total Civilian Noninstitutionalized Population,Employed,53.4,875299.692
+2018,New Mexico,With a Disability,Employed,20.5,63302.77
+2018,New Mexico,No Disability,Employed,61,811509.84
+2018,New Mexico,Total Civilian Noninstitutionalized Population,Not in Labor Force,43.1,706468.478
+2018,New Mexico,With a Disability,Not in Labor Force,76.7,236844.998
+2018,New Mexico,No Disability,Not in Labor Force,35.4,470941.776
+2018,Alabama,Total Civilian Noninstitutionalized Population,,100,3854015
+2018,Alabama,With a Disability,,100,744005
+2018,Alabama,No Disability,,100,3110010
+2018,Alabama,Total Civilian Noninstitutionalized Population,Employed,54.3,2092730.145
+2018,Alabama,With a Disability,Employed,19.6,145824.98
+2018,Alabama,No Disability,Employed,62.6,1946866.26
+2018,Alabama,Total Civilian Noninstitutionalized Population,Not in Labor Force,42.4,1634102.36
+2018,Alabama,With a Disability,Not in Labor Force,78,580323.9
+2018,Alabama,No Disability,Not in Labor Force,33.9,1054293.39
+2018,Tennessee,Total Civilian Noninstitutionalized Population,,100,5330967
+2018,Tennessee,With a Disability,,100,967898
+2018,Tennessee,No Disability,,100,4363069
+2018,Tennessee,Total Civilian Noninstitutionalized Population,Employed,58.8,3134608.596
+2018,Tennessee,With a Disability,Employed,23.1,223584.438
+2018,Tennessee,No Disability,Employed,66.7,2910167.023
+2018,Tennessee,Total Civilian Noninstitutionalized Population,Not in Labor Force,37.8,2015105.526
+2018,Tennessee,With a Disability,Not in Labor Force,74.2,718180.316
+2018,Tennessee,No Disability,Not in Labor Force,29.7,1295831.493
+2018,Vermont,Total Civilian Noninstitutionalized Population,,100,519162
+2018,Vermont,With a Disability,,100,83873
+2018,Vermont,No Disability,,100,435289
+2018,Vermont,Total Civilian Noninstitutionalized Population,Employed,63.7,330706.194
+2018,Vermont,With a Disability,Employed,29.7,24910.281
+2018,Vermont,No Disability,Employed,70.3,306008.167
+2018,Vermont,Total Civilian Noninstitutionalized Population,Not in Labor Force,33.7,174957.594
+2018,Vermont,With a Disability,Not in Labor Force,68.2,57201.386
+2018,Vermont,No Disability,Not in Labor Force,27.1,117963.319
+2018,Nevada,Total Civilian Noninstitutionalized Population,,100,2385543
+2018,Nevada,With a Disability,,100,347649
+2018,Nevada,No Disability,,100,2037894
+2018,Nevada,Total Civilian Noninstitutionalized Population,Employed,60.6,1445639.058
+2018,Nevada,With a Disability,Employed,26.5,92126.985
+2018,Nevada,No Disability,Employed,66.4,1353161.616
+2018,Nevada,Total Civilian Noninstitutionalized Population,Not in Labor Force,35.8,854024.394
+2018,Nevada,With a Disability,Not in Labor Force,71,246830.79
+2018,Nevada,No Disability,Not in Labor Force,29.8,607292.412
+2018,West Virginia,Total Civilian Noninstitutionalized Population,,100,1459045
+2018,West Virginia,With a Disability,,100,323275
+2018,West Virginia,No Disability,,100,1135770
+2018,West Virginia,Total Civilian Noninstitutionalized Population,Employed,50.8,741194.86
+2018,West Virginia,With a Disability,Employed,18.2,58836.05
+2018,West Virginia,No Disability,Employed,60.1,682597.77
+2018,West Virginia,Total Civilian Noninstitutionalized Population,Not in Labor Force,46,671160.7
+2018,West Virginia,With a Disability,Not in Labor Force,79.1,255710.525
+2018,West Virginia,No Disability,Not in Labor Force,36.6,415691.82
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,,100,3008712
+2018,Oklahoma,With a Disability,,100,589230
+2018,Oklahoma,No Disability,,100,2419482
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,Employed,59.5,1790183.64
+2018,Oklahoma,With a Disability,Employed,26.7,157324.41
+2018,Oklahoma,No Disability,Employed,67.5,1633150.35
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,Not in Labor Force,37.8,1137293.136
+2018,Oklahoma,With a Disability,Not in Labor Force,70.8,417174.84
+2018,Oklahoma,No Disability,Not in Labor Force,29.7,718586.154
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,,100,4621479
+2018,Wisconsin,With a Disability,,100,626380
+2018,Wisconsin,No Disability,,100,3995099
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,Employed,64.8,2994718.392
+2018,Wisconsin,With a Disability,Employed,25.9,162232.42
+2018,Wisconsin,No Disability,Employed,70.9,2832525.191
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,Not in Labor Force,33.1,1529709.549
+2018,Wisconsin,With a Disability,Not in Labor Force,71.9,450367.22
+2018,Wisconsin,No Disability,Not in Labor Force,27,1078676.73
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,,100,2661470
+2018,Puerto Rico,With a Disability,,100,639396
+2018,Puerto Rico,No Disability,,100,2022074
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,Employed,37.7,1003374.19
+2018,Puerto Rico,With a Disability,Employed,13.2,84400.272
+2018,Puerto Rico,No Disability,Employed,45.5,920043.67
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,Not in Labor Force,55.6,1479777.32
+2018,Puerto Rico,With a Disability,Not in Labor Force,83.4,533256.264
+2018,Puerto Rico,No Disability,Not in Labor Force,46.8,946330.632
+2018,Kansas,Total Civilian Noninstitutionalized Population,,100,2229203
+2018,Kansas,With a Disability,,100,361820
+2018,Kansas,No Disability,,100,1867383
+2018,Kansas,Total Civilian Noninstitutionalized Population,Employed,64.7,1442294.341
+2018,Kansas,With a Disability,Employed,29.3,106013.26
+2018,Kansas,No Disability,Employed,71.6,1337046.228
+2018,Kansas,Total Civilian Noninstitutionalized Population,Not in Labor Force,32.7,728949.381
+2018,Kansas,With a Disability,Not in Labor Force,68,246037.6
+2018,Kansas,No Disability,Not in Labor Force,25.9,483652.197
+2018,Virginia,Total Civilian Noninstitutionalized Population,,100,6642133
+2018,Virginia,With a Disability,,100,928311
+2018,Virginia,No Disability,,100,5713822
+2018,Virginia,Total Civilian Noninstitutionalized Population,Employed,62.9,4177901.657
+2018,Virginia,With a Disability,Employed,25.2,233934.372
+2018,Virginia,No Disability,Employed,69.1,3948251.002
+2018,Virginia,Total Civilian Noninstitutionalized Population,Not in Labor Force,34.3,2278251.619
+2018,Virginia,With a Disability,Not in Labor Force,72.6,673953.786
+2018,Virginia,No Disability,Not in Labor Force,28.1,1605583.982
+2018,North Dakota,Total Civilian Noninstitutionalized Population,,100,585782
+2018,North Dakota,With a Disability,,100,76147
+2018,North Dakota,No Disability,,100,509635
+2018,North Dakota,Total Civilian Noninstitutionalized Population,Employed,68.4,400674.888
+2018,North Dakota,With a Disability,Employed,34.9,26575.303
+2018,North Dakota,No Disability,Employed,73.4,374072.09
+2018,North Dakota,Total Civilian Noninstitutionalized Population,Not in Labor Force,29.6,173391.472
+2018,North Dakota,With a Disability,Not in Labor Force,62.6,47668.022
+2018,North Dakota,No Disability,Not in Labor Force,24.6,125370.21
+2018,New Jersey,Total Civilian Noninstitutionalized Population,,100,7080172
+2018,New Jersey,With a Disability,,100,847859
+2018,New Jersey,No Disability,,100,6232313
+2018,New Jersey,Total Civilian Noninstitutionalized Population,Employed,63.4,4488829.048
+2018,New Jersey,With a Disability,Employed,23.1,195855.429
+2018,New Jersey,No Disability,Employed,68.9,4294063.657
+2018,New Jersey,Total Civilian Noninstitutionalized Population,Not in Labor Force,33.4,2364777.448
+2018,New Jersey,With a Disability,Not in Labor Force,73.8,625719.942
+2018,New Jersey,No Disability,Not in Labor Force,27.9,1738815.327
+2018,Ohio,Total Civilian Noninstitutionalized Population,,100,9237632
+2018,Ohio,With a Disability,,100,1522390
+2018,Ohio,No Disability,,100,7715242
+2018,Ohio,Total Civilian Noninstitutionalized Population,Employed,61,5634955.52
+2018,Ohio,With a Disability,Employed,24.9,379075.11
+2018,Ohio,No Disability,Employed,68.2,5261795.044
+2018,Ohio,Total Civilian Noninstitutionalized Population,Not in Labor Force,35.8,3307072.256
+2018,Ohio,With a Disability,Not in Labor Force,72.3,1100687.97
+2018,Ohio,No Disability,Not in Labor Force,28.6,2206559.212
+2018,South Carolina,Total Civilian Noninstitutionalized Population,,100,4012850
+2018,South Carolina,With a Disability,,100,677329
+2018,South Carolina,No Disability,,100,3335521
+2018,South Carolina,Total Civilian Noninstitutionalized Population,Employed,57.6,2311401.6
+2018,South Carolina,With a Disability,Employed,21.6,146303.064
+2018,South Carolina,No Disability,Employed,64.9,2164753.129
+2018,South Carolina,Total Civilian Noninstitutionalized Population,Not in Labor Force,39.2,1573037.2
+2018,South Carolina,With a Disability,Not in Labor Force,75.5,511383.395
+2018,South Carolina,No Disability,Not in Labor Force,31.8,1060695.678
+2018,Georgia,Total Civilian Noninstitutionalized Population,,100,8128931
+2018,Georgia,With a Disability,,100,1160698
+2018,Georgia,No Disability,,100,6968233
+2018,Georgia,Total Civilian Noninstitutionalized Population,Employed,60.9,4950518.979
+2018,Georgia,With a Disability,Employed,24.1,279728.218
+2018,Georgia,No Disability,Employed,67.1,4675684.343
+2018,Georgia,Total Civilian Noninstitutionalized Population,Not in Labor Force,36,2926415.16
+2018,Georgia,With a Disability,Not in Labor Force,73.1,848470.238
+2018,Georgia,No Disability,Not in Labor Force,29.8,2076533.434
+2018,Colorado,Total Civilian Noninstitutionalized Population,,100,4479249
+2018,Colorado,With a Disability,,100,565629
+2018,Colorado,No Disability,,100,3913620
+2018,Colorado,Total Civilian Noninstitutionalized Population,Employed,66.6,2983179.834
+2018,Colorado,With a Disability,Employed,30.9,174779.361
+2018,Colorado,No Disability,Employed,71.8,2809979.16
+2018,Colorado,Total Civilian Noninstitutionalized Population,Not in Labor Force,30.7,1375129.443
+2018,Colorado,With a Disability,Not in Labor Force,66.4,375577.656
+2018,Colorado,No Disability,Not in Labor Force,25.5,997973.1
+2018,Hawaii,Total Civilian Noninstitutionalized Population,,100,1096009
+2018,Hawaii,With a Disability,,100,149388
+2018,Hawaii,No Disability,,100,946621
+2018,Hawaii,Total Civilian Noninstitutionalized Population,Employed,62.4,683909.616
+2018,Hawaii,With a Disability,Employed,23.9,35703.732
+2018,Hawaii,No Disability,Employed,68.5,648435.385
+2018,Hawaii,Total Civilian Noninstitutionalized Population,Not in Labor Force,35.1,384699.159
+2018,Hawaii,With a Disability,Not in Labor Force,74.5,111294.06
+2018,Hawaii,No Disability,Not in Labor Force,28.8,272626.848
+2018,South Dakota,Total Civilian Noninstitutionalized Population,,100,673526
+2018,South Dakota,With a Disability,,100,98475
+2018,South Dakota,No Disability,,100,575051
+2018,South Dakota,Total Civilian Noninstitutionalized Population,Employed,67.4,453956.524
+2018,South Dakota,With a Disability,Employed,35.2,34663.2
+2018,South Dakota,No Disability,Employed,72.9,419212.179
+2018,South Dakota,Total Civilian Noninstitutionalized Population,Not in Labor Force,30.6,206098.956
+2018,South Dakota,With a Disability,Not in Labor Force,62.3,61349.925
+2018,South Dakota,No Disability,Not in Labor Force,25.2,144912.852
+2018,Indiana,Total Civilian Noninstitutionalized Population,,100,5205600
+2018,Indiana,With a Disability,,100,838007
+2018,Indiana,No Disability,,100,4367593
+2018,Indiana,Total Civilian Noninstitutionalized Population,Employed,62.2,3237883.2
+2018,Indiana,With a Disability,Employed,25.1,210339.757
+2018,Indiana,No Disability,Employed,69.3,3026741.949
+2018,Indiana,Total Civilian Noninstitutionalized Population,Not in Labor Force,34.9,1816754.4
+2018,Indiana,With a Disability,Not in Labor Force,72.2,605041.054
+2018,Indiana,No Disability,Not in Labor Force,27.8,1214190.854
+2018,Kentucky,Total Civilian Noninstitutionalized Population,,100,3492675
+2018,Kentucky,With a Disability,,100,708107
+2018,Kentucky,No Disability,,100,2784568
+2018,Kentucky,Total Civilian Noninstitutionalized Population,Employed,57.1,1994317.425
+2018,Kentucky,With a Disability,Employed,21.3,150826.791
+2018,Kentucky,No Disability,Employed,66.2,1843384.016
+2018,Kentucky,Total Civilian Noninstitutionalized Population,Not in Labor Force,39.7,1386591.975
+2018,Kentucky,With a Disability,Not in Labor Force,75.8,536745.106
+2018,Kentucky,No Disability,Not in Labor Force,30.6,852077.808
+2018,Louisiana,Total Civilian Noninstitutionalized Population,,100,3579169
+2018,Louisiana,With a Disability,,100,650699
+2018,Louisiana,No Disability,,100,2928470
+2018,Louisiana,Total Civilian Noninstitutionalized Population,Employed,56.3,2015072.147
+2018,Louisiana,With a Disability,Employed,22.4,145756.576
+2018,Louisiana,No Disability,Employed,63.8,1868363.86
+2018,Louisiana,Total Civilian Noninstitutionalized Population,Not in Labor Force,39.9,1428088.431
+2018,Louisiana,With a Disability,Not in Labor Force,74.4,484120.056
+2018,Louisiana,No Disability,Not in Labor Force,32.2,942967.34
+2018,Washington,Total Civilian Noninstitutionalized Population,,100,5946027
+2018,Washington,With a Disability,,100,878588
+2018,Washington,No Disability,,100,5067439
+2018,Washington,Total Civilian Noninstitutionalized Population,Employed,62.1,3692482.767
+2018,Washington,With a Disability,Employed,26.1,229311.468
+2018,Washington,No Disability,Employed,68.3,3461060.837
+2018,Washington,Total Civilian Noninstitutionalized Population,Not in Labor Force,35.1,2087055.477
+2018,Washington,With a Disability,Not in Labor Force,71,623797.48
+2018,Washington,No Disability,Not in Labor Force,28.9,1464489.871
+2018,Illinois,Total Civilian Noninstitutionalized Population,,100,10040920
+2018,Illinois,With a Disability,,100,1309498
+2018,Illinois,No Disability,,100,8731422
+2018,Illinois,Total Civilian Noninstitutionalized Population,Employed,62.7,6295656.84
+2018,Illinois,With a Disability,Employed,23.7,310351.026
+2018,Illinois,No Disability,Employed,68.5,5981024.07
+2018,Illinois,Total Civilian Noninstitutionalized Population,Not in Labor Force,33.7,3383790.04
+2018,Illinois,With a Disability,Not in Labor Force,73,955933.54
+2018,Illinois,No Disability,Not in Labor Force,27.8,2427335.316
+2018,Iowa,Total Civilian Noninstitutionalized Population,,100,2464341
+2018,Iowa,With a Disability,,100,340104
+2018,Iowa,No Disability,,100,2124237
+2018,Iowa,Total Civilian Noninstitutionalized Population,Employed,65.6,1616607.696
+2018,Iowa,With a Disability,Employed,29,98630.16
+2018,Iowa,No Disability,Employed,71.4,1516705.218
+2018,Iowa,Total Civilian Noninstitutionalized Population,Not in Labor Force,32,788589.12
+2018,Iowa,With a Disability,Not in Labor Force,68.8,233991.552
+2018,Iowa,No Disability,Not in Labor Force,26.1,554425.857
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,,100,1112869
+2018,New Hampshire,With a Disability,,100,165179
+2018,New Hampshire,No Disability,,100,947690
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,Employed,65.5,728929.195
+2018,New Hampshire,With a Disability,Employed,29.6,48892.984
+2018,New Hampshire,No Disability,Employed,71.8,680441.42
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,Not in Labor Force,32.1,357230.949
+2018,New Hampshire,With a Disability,Not in Labor Force,67.3,111165.467
+2018,New Hampshire,No Disability,Not in Labor Force,25.9,245451.71
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,,100,865601
+2018,Rhode Island,With a Disability,,100,139254
+2018,Rhode Island,No Disability,,100,726347
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,Employed,60.9,527151.009
+2018,Rhode Island,With a Disability,Employed,24.8,34534.992
+2018,Rhode Island,No Disability,Employed,67.9,493189.613
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,Not in Labor Force,35.5,307288.355
+2018,Rhode Island,With a Disability,Not in Labor Force,72.3,100680.642
+2018,Rhode Island,No Disability,Not in Labor Force,28.5,207008.895
+2018,Arkansas,Total Civilian Noninstitutionalized Population,,100,2336993
+2018,Arkansas,With a Disability,,100,487552
+2018,Arkansas,No Disability,,100,1849441
+2018,Arkansas,Total Civilian Noninstitutionalized Population,Employed,56.4,1318064.052
+2018,Arkansas,With a Disability,Employed,21.4,104336.128
+2018,Arkansas,No Disability,Employed,65.6,1213233.296
+2018,Arkansas,Total Civilian Noninstitutionalized Population,Not in Labor Force,41,958167.13
+2018,Arkansas,With a Disability,Not in Labor Force,76.6,373464.832
+2018,Arkansas,No Disability,Not in Labor Force,31.6,584423.356
+2018,Delaware,Total Civilian Noninstitutionalized Population,,100,773385
+2018,Delaware,With a Disability,,100,118757
+2018,Delaware,No Disability,,100,654628
+2018,Delaware,Total Civilian Noninstitutionalized Population,Employed,59.3,458617.305
+2018,Delaware,With a Disability,Employed,24.4,28976.708
+2018,Delaware,No Disability,Employed,65.6,429435.968
+2018,Delaware,Total Civilian Noninstitutionalized Population,Not in Labor Force,37.1,286925.835
+2018,Delaware,With a Disability,Not in Labor Force,72.7,86336.339
+2018,Delaware,No Disability,Not in Labor Force,30.7,200970.796
+2018,Minnesota,Total Civilian Noninstitutionalized Population,,100,4395381
+2018,Minnesota,With a Disability,,100,568725
+2018,Minnesota,No Disability,,100,3826656
+2018,Minnesota,Total Civilian Noninstitutionalized Population,Employed,67.7,2975672.937
+2018,Minnesota,With a Disability,Employed,30.6,174029.85
+2018,Minnesota,No Disability,Employed,73.2,2801112.192
+2018,Minnesota,Total Civilian Noninstitutionalized Population,Not in Labor Force,30,1318614.3
+2018,Minnesota,With a Disability,Not in Labor Force,66.7,379339.575
+2018,Minnesota,No Disability,Not in Labor Force,24.5,937530.72
+2018,Montana,Total Civilian Noninstitutionalized Population,,100,843546
+2018,Montana,With a Disability,,100,131949
+2018,Montana,No Disability,,100,711597
+2018,Montana,Total Civilian Noninstitutionalized Population,Employed,62,522998.52
+2018,Montana,With a Disability,Employed,30,39584.7
+2018,Montana,No Disability,Employed,67.9,483174.363
+2018,Montana,Total Civilian Noninstitutionalized Population,Not in Labor Force,35.7,301145.922
+2018,Montana,With a Disability,Not in Labor Force,67.4,88933.626
+2018,Montana,No Disability,Not in Labor Force,29.9,212767.503
+2018,Arizona,Total Civilian Noninstitutionalized Population,,100,5608516
+2018,Arizona,With a Disability,,100,879502
+2018,Arizona,No Disability,,100,4729014
+2018,Arizona,Total Civilian Noninstitutionalized Population,Employed,57.3,3213679.668
+2018,Arizona,With a Disability,Employed,23.4,205803.468
+2018,Arizona,No Disability,Employed,63.6,3007652.904
+2018,Arizona,Total Civilian Noninstitutionalized Population,Not in Labor Force,39.4,2209755.304
+2018,Arizona,With a Disability,Not in Labor Force,73.4,645554.468
+2018,Arizona,No Disability,Not in Labor Force,33.1,1565303.634
+2018,Florida,Total Civilian Noninstitutionalized Population,,100,17262966
+2018,Florida,With a Disability,,100,2679569
+2018,Florida,No Disability,,100,14583397
+2018,Florida,Total Civilian Noninstitutionalized Population,Employed,56.4,9736312.824
+2018,Florida,With a Disability,Employed,20,535913.8
+2018,Florida,No Disability,Employed,63.1,9202123.507
+2018,Florida,Total Civilian Noninstitutionalized Population,Not in Labor Force,40.5,6991501.23
+2018,Florida,With a Disability,Not in Labor Force,77.5,2076665.975
+2018,Florida,No Disability,Not in Labor Force,33.7,4914604.789
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,,100,5633413
+2018,Massachusetts,With a Disability,,100,741156
+2018,Massachusetts,No Disability,,100,4892257
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,Employed,64.3,3622284.559
+2018,Massachusetts,With a Disability,Employed,24.7,183065.532
+2018,Massachusetts,No Disability,Employed,70.3,3439256.671
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,Not in Labor Force,32.5,1830859.225
+2018,Massachusetts,With a Disability,Not in Labor Force,72.1,534373.476
+2018,Massachusetts,No Disability,Not in Labor Force,26.5,1296448.105
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,,100,576927
+2018,District of Columbia,With a Disability,,100,76811
+2018,District of Columbia,No Disability,,100,500116
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,Employed,66,380771.82
+2018,District of Columbia,With a Disability,Employed,25.9,19894.049
+2018,District of Columbia,No Disability,Employed,72.1,360583.636
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,Not in Labor Force,28.6,165001.122
+2018,District of Columbia,With a Disability,Not in Labor Force,68.3,52461.913
+2018,District of Columbia,No Disability,Not in Labor Force,22.5,112526.1
+2018,Utah,Total Civilian Noninstitutionalized Population,,100,2305534
+2018,Utah,With a Disability,,100,274419
+2018,Utah,No Disability,,100,2031115
+2018,Utah,Total Civilian Noninstitutionalized Population,Employed,66.5,1533180.11
+2018,Utah,With a Disability,Employed,31.1,85344.309
+2018,Utah,No Disability,Employed,71.3,1448184.995
+2018,Utah,Total Civilian Noninstitutionalized Population,Not in Labor Force,31.3,721632.142
+2018,Utah,With a Disability,Not in Labor Force,66.4,182214.216
+2018,Utah,No Disability,Not in Labor Force,26.6,540276.59
+2018,New York,Total Civilian Noninstitutionalized Population,,100,15709161
+2018,New York,With a Disability,,100,2067610
+2018,New York,No Disability,,100,13641551
+2018,New York,Total Civilian Noninstitutionalized Population,Employed,60.5,9504042.405
+2018,New York,With a Disability,Employed,21.4,442468.54
+2018,New York,No Disability,Employed,66.4,9057989.864
+2018,New York,Total Civilian Noninstitutionalized Population,Not in Labor Force,36.3,5702425.443
+2018,New York,With a Disability,Not in Labor Force,76,1571383.6
+2018,New York,No Disability,Not in Labor Force,30.3,4133389.953
