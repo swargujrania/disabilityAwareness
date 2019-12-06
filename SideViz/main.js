@@ -332,15 +332,15 @@ function getTotalStackData(data, keyForNesting) {
     stackData.push(obj);
 
 
-    nestedData = d3.nest()
-        .key(d => d[keyForNesting])
-        .rollup(d => {
-            return { 'numbers': d3.sum(d, v => { return v.numbers; }), 'percentage': d3.mean(d, v => { return v.percentage; }) };
-        })
-        .entries(noDisData);
-    obj = { 'category': 'USA_No' };
-    nestedData.forEach(n => { obj[n.key] = n.value.numbers });
-    stackData.push(obj);
+    // nestedData = d3.nest()
+    //     .key(d => d[keyForNesting])
+    //     .rollup(d => {
+    //         return { 'numbers': d3.sum(d, v => { return v.numbers; }), 'percentage': d3.mean(d, v => { return v.percentage; }) };
+    //     })
+    //     .entries(noDisData);
+    // obj = { 'category': 'USA_No' };
+    // nestedData.forEach(n => { obj[n.key] = n.value.numbers });
+    // stackData.push(obj);
 
     return { 'data': stackData, 'keys': nestedData.map(n => n.key) }
 
