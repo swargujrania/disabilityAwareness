@@ -18,7 +18,8 @@ start = () => {
       .append('svg');
 
     svg.attr('width', WIDTH)
-      .attr('height', HEIGHT);
+      .attr('height', HEIGHT)
+      .attr('transform', 'translate(100,200)');
 
 
 
@@ -40,6 +41,7 @@ start = () => {
       //add drop down
       var stateList = ["Alaska", "Maine", "North Carolina", "Missouri", "Pennsylvania", "Michigan", "Nebraska", "Oregon", "Wyoming", "California", "Mississippi", "Connecticut", "Texas", "Idaho", "Maryland", "New Mexico", "Alabama", "Tennesee", "Vermont", "Nevada", "West Virginia", "Oklahoma", "Wisconsin", "Puerto Rico", "Kansas", "Virginia", "North Dakota", "New Jersey", "Ohio", "South Carolina", "Georgia", "Colorado", "Hawaii", "South Dakota", "Indiana", "Kentucky", "Louisiana", "Washington", "Illinois", "Iowa", "New Hampshire", "Rhode Island", "Arkansas", "Delaware", "Minnesota", "Montana", "Arizona", "Florida", "Massachusetts", "District of Columbia", "Utah", "New York"];
 
+      //buckets
       for (let i = 0; i < 7; i++) {
         let x = 70 + i * 210;
         let w = 140;
@@ -49,6 +51,7 @@ start = () => {
         buckets[i].showLabel(svg);
       }
 
+      //hexes
       for (let k = 0; k < dataset.length; k++) {
 
         let tempUnits = []
@@ -113,6 +116,7 @@ start = () => {
 
       }
 
+      // visual elements
       svg.selectAll('.unit')
         .data(units)
         .enter()

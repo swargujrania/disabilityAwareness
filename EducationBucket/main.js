@@ -139,7 +139,7 @@ start = () => {
 
       setTimeout(function () {
         dataChange();
-      }, 3000);
+      }, 4000);
 
       svg.selectAll('.unit')
         .on('click', d => {
@@ -150,7 +150,7 @@ start = () => {
       // make pie charts
       setTimeout(function () {
         drawPieCharts(data, buckets, svg);
-      }, 3000);
+      }, 4500);
 
       done = true;
 
@@ -288,15 +288,15 @@ function drawPieCharts(data, buckets, svg) {
     svg.selectAll('.pie')
       .transition()
       .ease(d3.easeLinear)
-      .duration(1000)
-      .delay(i * 1000)
+      .duration(2000)
+      .delay(i * 2000)
       .attr('opacity', 1);
 
     svg.selectAll('.pieLabel')
       .transition()
       .ease(d3.easeLinear)
-      .duration(1000)
-      .delay(i * 1000)
+      .duration(2000)
+      .delay(i * 2000)
       .attr('opacity', 1);
 
   }
