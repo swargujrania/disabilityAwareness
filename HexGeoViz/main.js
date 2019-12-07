@@ -5,6 +5,9 @@ var HEIGHT = 2000
 colorPalette = ['#ffd600', '#c9e402', '#b6ff64', '#63c964', '#6fffbf', '#67b1a0', '#00caba', '#06efff', '#008eaa', '#2284dd'];
 $('#stateName').css('left', WIDTH / 2);
 
+selectedStates = [];
+
+
 $(function () {
 
     d3.json("data/topo2018.json").then(tilegram => {
@@ -96,23 +99,38 @@ $(function () {
             .attr('stroke', 'grey')
             .attr('stroke-width', 1);
 
+
         // on hover code combining hexes with boundaries
         hexPolyline.on('mouseover', function (d) {
             $(this).attr('fill', getColorByState(d.state));
             $('#stateName').text("STATE: " + d.state);
-            highlightStateBoundaries(true, d);
+            //highlightStateBoundaries(true, d);
         })
             .on('mouseout', function (d) {
                 $(this).attr('fill', '#fff');
                 $('#stateName').text("STATE");
-                highlightStateBoundaries(false, d);
+                //highlightStateBoundaries(false, d);
             })
+
+        //select on click
+        hexPolyline.on('click', d => {
+
+            if (selectedStates.includes(d.state)) {
+                selectedStates.splice(selectedStates.indexOf(d.state), 1);
+                highlightStateBoundaries(false, d);
+            }
+            else {
+                selectedStates.push(d.state);
+                highlightStateBoundaries(true, d);
+            }
+
+            console.log(selectedStates);
+
+        })
 
     })
 
 })
-
-
 
 function getColorByState(stateName) {
 
@@ -298,6 +316,3 @@ function highlightStateBoundaries(toBeHighlighted, d) {
         $(selectorString).attr('stroke-width', 1);
     }
 }
-
-
-
