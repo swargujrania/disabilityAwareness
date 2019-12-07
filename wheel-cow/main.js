@@ -7,6 +7,7 @@ let units = [];
 let dataset;
 let buckets = [];
 var spokes;
+var totalNumber = [];
 
 start = () => {
 
@@ -17,6 +18,16 @@ start = () => {
   var wheel = d3.select('svg')
     .append('g')
     .attr('class', 'wheel');
+
+  wheel.append('text')
+    .attr('id', 'stateName')
+    .attr('transform', `translate(${ svgWidth / 2 - 20 }, ${ svgHeight / 2 - 50 })`)
+    .text('');
+
+    wheel.append('text')
+    .attr('id', 'stateTotal')
+    .attr('transform', `translate(${ svgWidth / 2 - 20 }, ${ svgHeight / 2 - 30 })`)
+    .text('');
 
   var hub_r = 100;
   var hub_cx = svgWidth / 2;
@@ -33,10 +44,6 @@ start = () => {
   var spokesData = [1, 2, 3, 4, 5, 6, 7, 8, 9];	// number of CoWs
 
   var spoke_length = 250;
-  // var spoke_x1 =  hub_cx + hub_r * Math.cos(d*2*Math.PI/spokesData.length);
-  // var spoke_y1 = hub_cy - hub_r * Math.sin(d*2*Math.PI/spokesData.length);
-  // var spoke_x2 = hub_cx + (hub_r + spoke_length)*Math.cos(d*2*Math.PI/spokesData.length);
-  // var spoke_y2 = hub_cy - (hub_r + spoke_length)*Math.sin(d*2*Math.PI/spokesData.length);
 
   spokes = wheel.selectAll('.spokes')
     .data(spokesData)
@@ -57,6 +64,15 @@ start = () => {
     .attr('stroke', '#ccc');
 
   d3.csv('./classOfWorker2018.csv').then(data => {
+
+    // compute total number
+    var hundredpercent = data.filter(d => d.percentage == 100 && d.disabilityType == "Total Civilian Noninstitutionalized Population");
+    hundredpercent.forEach(h =>{
+      totalNumber.push({'state': h.state, 'numbers': h.numbers});
+    })
+
+    data = data.filter(d => d.disabilityType != "Total Civilian Noninstitutionalized Population");
+
     let nestedData = d3.nest()
       .key(d => d.classOfWorker)
       .entries(data);
@@ -81,35 +97,52 @@ start = () => {
       //buckets[i].showLabel(svg);
     }
 
-    for (let k = 0; k < dataset.length; k++) {
-      let bracket = dataset[k];
-      bracket.DisabilityCount = 0;
-      bracket.WoDisabiltyCount = 0;
-      for (let item of bracket.values) {
-        if (item.disabilityType == "With a Disability") {
-          bracket.DisabilityCount += +item.numbers;
-        } else if (item.disabilityType == "No Disability") {
-          bracket.WoDisabiltyCount += +item.numbers;
-        }
-      }
-      bracket.DisabilityCount = Math.floor(bracket.DisabilityCount);
-      bracket.WoDisabiltyCount = Math.floor(bracket.WoDisabiltyCount);
+    var n2 = d3.nest()
+      .key(d => d.classOfWorker)
+      .key(d => d.state)
+      .entries(data);
+    n2.splice(0, 1);
 
-      let unit1 = {
-        bracket: bracket.key,
-        status: "With a Disability"
-      }
-      let unit2 = {
-        bracket: bracket.key,
-        status: "No Disability"
-      }
+    for (let k = 0; k < n2.length; k++) {
+      let tempUnits = []
+      let bracket = n2[k];
+
+      bracket.values.forEach(item => {
+        //with dis
+        var disCount = +item.values.find(i => i.disabilityType == 'With a Disability').numbers;
+
+        for (j = 0; j < Math.ceil(disCount / PEOPLE_UNIT); j++) {
+          var disUnit = {
+            'bracket': bracket.key,
+            'status': "With a Disability",
+            'state': item.key
+          }
+          tempUnits.push(disUnit)
+        }
+
+        //without dis
+        var woDisCount = +item.values.find(i => i.disabilityType == 'No Disability').numbers;
+        for (j = 0; j < Math.ceil(woDisCount / PEOPLE_UNIT); j++) {
+          var disUnit = {
+            'bracket': bracket.key,
+            'status': "No Disability",
+            'state': item.key
+          }
+          tempUnits.push(disUnit)
+        }
+
+      });
+
+      var totalWithDis = tempUnits.filter(u => u.status == 'With a Disability');
+      var totalNoDis = tempUnits.filter(u => u.status == 'No Disability');
+
       let t = 7;
       let radius = hub_r + 3.5;
       let PrevAngle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
       angle = PrevAngle;
-      // let prevX = x1;
-      // let prevY = buckets[k].y - 4;
-      for (let i = 0; i < bracket.DisabilityCount / PEOPLE_UNIT; i++) {
+
+      // with dis
+      for (let i = 0; i < totalWithDis.length; i++) {
 
         let x = hub_cx + radius * Math.cos(angle);
         let y = hub_cy - radius * Math.sin(angle);
@@ -120,12 +153,13 @@ start = () => {
 
         }
 
-        let unit = new Unit(unit1, x, y, angle);
+        let unit = new Unit(totalWithDis[i], x, y, angle);
         units.push(unit);
 
       }
 
-      for (let i = 0; i < bracket.WoDisabiltyCount / PEOPLE_UNIT; i++) {
+      // without dis
+      for (let i = 0; i < totalNoDis.length; i++) {
 
         let x = hub_cx + radius * Math.cos(angle);
         let y = hub_cy - radius * Math.sin(angle);
@@ -136,23 +170,26 @@ start = () => {
 
         }
 
-        let unit = new Unit(unit2, x, y, angle);
+        let unit = new Unit(totalNoDis[i], x, y, angle);
         units.push(unit);
 
       }
+
     }
-
 
     svg.selectAll('.unit')
       .data(units)
       .enter()
       .append('circle')
-      .attr('class', 'unit')
+      .attr('class', d => {
+        return d.status == "With a Disability" ? 'unit dis_unit' : 'unit reg_unit';
+      })
+      .attr('data-state', d => d.state)
       .attr('transform', d => `translate(${ d.x },${ d.y })`)
       .attr('cx', 0)
       .attr('cy', 0)
       .attr('r', 3)
-      .style('stroke', 'F2BDB6')
+      .attr('stroke', '#F2BDB6')
       .attr('fill', d => {
         if (d.status == "With a Disability") {
           return 'rgb(242,189,182)';
@@ -160,6 +197,12 @@ start = () => {
           return 'white';
         }
       });
+
+    svg.selectAll('.unit')
+      .on('click', d => {
+        resetColors();
+        highlightState(d.state);
+      })
 
     var outerCircle = wheel.append('circle')
       .attr('class', 'outerCircle')
@@ -177,6 +220,26 @@ start = () => {
   });
 }
 
+function highlightState(state) {
+  $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 1)');
+  $('".dis_unit[data-state=\'' + state + '\']"').attr('stroke', 'rgba(0,134,173, 1)');
+  $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', 'white');
+  $('".reg_unit[data-state=\'' + state + '\']"').attr('stroke', 'rgba(0,134,173, 0.4)');
+  
+  $('#stateName').text(state);
+  var total = totalNumber.find(t => t.state == state).numbers;
+  $('#stateTotal').text(total);
+
+}
+
+function resetColors() {
+
+  $('.dis_unit').attr('fill', 'rgb(242,189,182)');
+  $('.dis_unit').attr('stroke', 'none');
+  $('.reg_unit').attr('fill', 'white');
+  $('.reg_unit').attr('stroke', '#F2BDB6');
+}
+
 class Bucket {
   constructor(x1, y1, x2, y2, theta1, theta2, label) {
     this.label = label;
@@ -192,6 +255,7 @@ class Bucket {
 class Unit {
   constructor(unit, x, y, angle) {
     this.status = unit.status;
+    this.state = unit.state;
     this.bracket = unit.bracket;
     this.x = x;
     this.y = y;
