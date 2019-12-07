@@ -30,9 +30,27 @@
 ​
 <body>
 ​<div id="main">
-    <svg width="auto" height="10000" style="border: 1px solid #777;">
+    <svg width="2000" height="2000" style="border: 1px solid #777;">
     </svg>
 </div>
+<div id="dropdown">
+    <div style="position: absolute; top: 50px;">
+        <div>
+            <label for="categorySelect">Select categories to view</label>
+        </div>
+        <select class="custom-select small" id="DisabledSelect" onchange="changeView()">
+          <option value="all">Everyone</option>
+          <option selected value="disabled">Disabled</option>
+          <option value="Hearing">Hearing</option>
+          <option value="Vision">Vision</option>
+          <option value="Cognitive">Cognitive</option>
+          <option value="Ambulatory">Ambulatory</option>
+          <option value="Self-care">Self-care</option>
+          <option value="Independent Living">Independent Living</option>
+        </select>
+    </div>
+</div>
+
 </body>
 ​
 </html>
