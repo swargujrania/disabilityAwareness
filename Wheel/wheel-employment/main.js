@@ -10,26 +10,26 @@ var spokes;
 var labels1;
 var labels2;
 var labels3;
-
+var tempLabel;
 var totalNumber = [];
 
 var pie = d3.pie()
-      .startAngle(-90 * Math.PI/180)
-      .endAngle(-90 * Math.PI/180 + 2*Math.PI)
-      .value(function(d) { return d.value; })
-      .padAngle(.01)
-      .sort(null);
+  .startAngle(-90 * Math.PI / 180)
+  .endAngle(-90 * Math.PI / 180 + 2 * Math.PI)
+  .value(function (d) { return d.value; })
+  .padAngle(.01)
+  .sort(null);
 
 var donutData = [
-      {name: "Antelope",  value: 15},
-      {name: "Bear",    value: 9},
-      {name: "Cheetah",   value: 19},
-      {name: "Dolphin",   value: 12},
-      {name: "Elephant",  value: 14},
-      {name: "Flamingo",  value: 21},
-      {name: "Giraffe", value: 18},
-      {name: "Other",   value: 8}
-    ];      
+  { name: "Antelope", value: 15 },
+  { name: "Bear", value: 9 },
+  { name: "Cheetah", value: 19 },
+  { name: "Dolphin", value: 12 },
+  { name: "Elephant", value: 14 },
+  { name: "Flamingo", value: 21 },
+  { name: "Giraffe", value: 18 },
+  { name: "Other", value: 8 }
+];
 start = () => {
 
   var svg = d3.select('#vis-container svg');
@@ -68,10 +68,6 @@ start = () => {
   var spokesData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];	// number of industry types
 
   var spoke_length = 250;
-  // var spoke_x1 =  hub_cx + hub_r * Math.cos(d*2*Math.PI/spokesData.length);
-  // var spoke_y1 = hub_cy - hub_r * Math.sin(d*2*Math.PI/spokesData.length);
-  // var spoke_x2 = hub_cx + (hub_r + spoke_length)*Math.cos(d*2*Math.PI/spokesData.length);
-  // var spoke_y2 = hub_cy - (hub_r + spoke_length)*Math.sin(d*2*Math.PI/spokesData.length);
 
   spokes = wheel.selectAll('.spokes')
     .data(spokesData)
@@ -141,7 +137,7 @@ start = () => {
         //with dis
         var disCount = +item.values.find(i => i.disabilityType == 'With a Disability').numbers;
 
-        for (j = 0; j < Math.ceil(disCount / PEOPLE_UNIT); j++) {
+        for (j = 0; j < Math.round(disCount / PEOPLE_UNIT); j++) {
           var disUnit = {
             'bracket': bracket.key,
             'status': "With a Disability",
@@ -152,7 +148,7 @@ start = () => {
 
         //without dis
         var woDisCount = +item.values.find(i => i.disabilityType == 'No Disability').numbers;
-        for (j = 0; j < Math.ceil(woDisCount / PEOPLE_UNIT); j++) {
+        for (j = 0; j < Math.round(woDisCount / PEOPLE_UNIT); j++) {
           var disUnit = {
             'bracket': bracket.key,
             'status': "No Disability",
@@ -209,23 +205,23 @@ start = () => {
 
 
     svg.selectAll('.unit')
-    .data(units)
-    .enter()
-    .append('polyline')
-    .attr('class', d => {
-      return d.status == "With a Disability" ? 'unit dis_unit' : 'unit reg_unit';
-    })
-    .attr('data-state', d => d.state)
-    .attr("points", d => d.points_init)
-    .attr("stroke", d => { return getColor(d.status).stroke })
-    .attr("fill", d => { return getColor(d.status).fill });
+      .data(units)
+      .enter()
+      .append('polyline')
+      .attr('class', d => {
+        return d.status == "With a Disability" ? 'unit dis_unit' : 'unit reg_unit';
+      })
+      .attr('data-state', d => d.state)
+      .attr("points", d => d.points_init)
+      .attr("stroke", d => { return getColor(d.status).stroke })
+      .attr("fill", d => { return getColor(d.status).fill });
 
     svg.selectAll('.unit')
-        .transition()
-        .ease(d3.easePolyIn.exponent(2))
-        .duration(400)
-        .delay((d, i) => i * 6)
-        .attr("points", d => d.points_final);
+      .transition()
+      .ease(d3.easePolyIn.exponent(2))
+      .duration(400)
+      .delay((d, i) => i * 6)
+      .attr("points", d => d.points_final);
 
 
     svg.selectAll('.unit')
@@ -234,16 +230,17 @@ start = () => {
         highlightState(d.state);
       })
 
-    labels1 = ["Public administration", "administration)", "and food services"," social assistance" ,"and waste management services" ,
+    labels1 = ["Public administration", "administration)", "and food services", " social assistance", "and waste management services",
       "rental and leasing", "Information", "Transportation and ", "Retail trade", "Wholesale trade", "Manufacturing"
       , "Construction", "Agriculture, forestry,"];
     labels2 = ["", "(except public ", "recreation, and accommodation", "and health care and", "management, and administrative", "and real estate and", "", "warehousing, and utilities", "", "",
       "", "", "fishing and hunting,"];
-    labels3 = ["","Other services " , "Arts, entertainment, and  ", "Educational services, ", "Professional, scientific, and ", "Finance and insurance, ",
+    labels3 = ["", "Other services ", "Arts, entertainment, and  ", "Educational services, ", "Professional, scientific, and ", "Finance and insurance, ",
       "", "", "", "", "", "", "and mining"];
     var outerCircleRadius1 = 4.1 * hub_r;
     var outerCircleRadius2 = 3.9 * hub_r;
     var outerCircleRadius3 = 3.7 * hub_r;
+    var outerCircleRadius4 = 0.9 * hub_r;
 
     var start_x = hub_cx - 350;
     var start_y = hub_cy;
@@ -259,17 +256,18 @@ start = () => {
     }
 
     function describeArc(x, y, radius, startAngle, endAngle) {
-      var start, end,largeArcFlag,sweepFlag, extraAngle;
+      var start, end, largeArcFlag, sweepFlag, extraAngle;
       extraAngle = 0;
       largeArcFlag = 0;
 
-      if(endAngle>Math.PI){
+      if (endAngle > Math.PI) {
         largeArcFlag = 1;
         extraAngle = Math.PI;
+        radius -= 10;
       }
       sweepFlag = largeArcFlag;
-      start = polarToCartesian(x,y,radius,endAngle + extraAngle);
-      end = polarToCartesian(x,y,radius,startAngle + extraAngle);
+      start = polarToCartesian(x, y, radius, endAngle + extraAngle);
+      end = polarToCartesian(x, y, radius, startAngle + extraAngle);
       var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
       var d = [
         "M", start.x, start.y,
@@ -291,38 +289,7 @@ start = () => {
       .style("stroke", "#AAAAAA")
       .attr("stroke-opacity", 0)
       .style("stroke-dasharray", "5,5");
-    //     .each(function(d,i) {
-    //   //Search pattern for everything between the start and the first capital L
-    //   var firstArcSection = /(^.+?)L/;  
 
-    //   //Grab everything up to the first Line statement
-    //   var newArc = firstArcSection.exec( d3.select(this).attr("d") )[1];
-    //   //Replace all the comma's so that IE can handle it
-    //   newArc = newArc.replace(/,/g , " ");
-
-    //   //If the end angle lies beyond a quarter of a circle (90 degrees or pi/2) 
-    //   //flip the end and start position
-    //   if (d.endAngle > 90 * Math.PI/180) {
-    //     var startLoc  = /M(.*?)A/,    //Everything between the first capital M and first capital A
-    //       middleLoc   = /A(.*?)0 0 1/,  //Everything between the first capital A and 0 0 1
-    //       endLoc    = /0 0 1 (.*?)$/; //Everything between the first 0 0 1 and the end of the string (denoted by $)
-    //     //Flip the direction of the arc by switching the start en end point (and sweep flag)
-    //     //of those elements that are below the horizontal line
-    //     var newStart = endLoc.exec( newArc )[1];
-    //     var newEnd = startLoc.exec( newArc )[1];
-    //     var middleSec = middleLoc.exec( newArc )[1];
-
-    //     //Build up the new arc notation, set the sweep-flag to 0
-    //     newArc = "M" + newStart + "A" + middleSec + "0 0 0 " + newEnd;
-    //   }//if
-
-    //   //Create a new invisible arc that the text can flow along
-    //   svg.append("path")
-    //     .attr("class", "hiddenDonutArcs")
-    //     .attr("id", "donutArc"+i)
-    //     .attr("d", newArc)
-    //     .style("fill", "none");
-    // });
 
     var arcs2 = svg.selectAll(".arcs")
       .data(buckets)
@@ -336,7 +303,7 @@ start = () => {
       // } );
       .attr("d", function (d, i) {
         return describeArc(hub_cx, hub_cy, outerCircleRadius2, d.theta1, d.theta2);
-      })//"M"+start_x+","+start_y+", A"+500+","+500+" 0 0,1 "+end_x+","+end_y)
+      })
       .style("stroke", "#AAAAAA")
       .attr("stroke-opacity", 0)
       .style("stroke-dasharray", "5,5");
@@ -347,13 +314,22 @@ start = () => {
       .append("path")
       .attr("fill", "none")
       .attr("id", function (d, i) { return "u" + i; })
-      //.attr("id","huhue")
-      // .attr("d", function(d,i) {
-      //     return describeArc(d.x, d.y, d.r, 160, -160)
-      // } );
       .attr("d", function (d, i) {
         return describeArc(hub_cx, hub_cy, outerCircleRadius3, d.theta1, d.theta2);
-      })//"M"+start_x+","+start_y+", A"+500+","+500+" 0 0,1 "+end_x+","+end_y)
+      })
+      .style("stroke", "#AAAAAA")
+      .attr("stroke-opacity", 0)
+      .style("stroke-dasharray", "5,5");
+
+    var arcs4 = svg.selectAll(".arcs")
+      .data(buckets)
+      .enter()
+      .append("path")
+      .attr("fill", "none")
+      .attr("id", function (d, i) { return "v" + i; })
+      .attr("d", function (d, i) {
+        return describeArc(hub_cx, hub_cy, outerCircleRadius4, d.theta1, d.theta2);
+      })
       .style("stroke", "#AAAAAA")
       .attr("stroke-opacity", 0)
       .style("stroke-dasharray", "5,5");
@@ -395,16 +371,50 @@ start = () => {
       .text(function (d, i) { return d; });
 
 
+    //draw percentage
+    var dataForPercentage = d3.nest().key(d => d.industry).key(d => d.disabilityType).rollup(d => d3.sum(d, v => v.numbers)).entries(data);
+    var p = [];
+
+    //generate labels
+    tempLabel = [];
+    for (var i = 0; i < buckets.length; i++) {
+      tempLabel[i] = buckets[i].label;
+      console.log(tempLabel[i]);
+    }
+    tempLabel.reverse();
+
+    tempLabel.forEach(t => {
+      var o = { 'bucket': t };
+      var iNeedThis = dataForPercentage.find(d => d.key == t);
+      var total = iNeedThis.values[0].value + iNeedThis.values[1].value;
+      o['percentage'] = (d3.format('.1f')(iNeedThis.values.find(x => x.key == 'With a Disability').value / total * 100)) + '%';
+      p.push(o);
+    })
+
+    var textArc4 = svg.selectAll(".percentage")
+      .data(p)
+      .enter()
+      .append("text")
+      .style("text-anchor", "middle")
+      .style("font-size", "10px")
+      .style("fill", "rgb(255,0,0, 0.7)")
+      .append("textPath")        //append a textPath to the text element
+      .attr("xlink:href", function (d, i) {
+        return "#v" + i;
+      })
+      .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
+      .text(function (d, i) { return d.percentage; });
+
   }); //d3.csv end braces
 
 } //start event end braces
 
 
 function highlightState(state) {
-  
+
   $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 1)');
   $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 0.4)');
- 
+
 
   $('#stateName').text(state);
   var total = totalNumber.find(t => t.state == state).numbers;
@@ -424,8 +434,6 @@ function resetColors() {
 function setDropdown(width, height) {
   var dropDown = d3.select('body').select('#stateDropdown')
     .style('position', 'relative');
-    // .style('margin-left', width + 'px')
-    // .style('margin-top', height/2 + 'px');
 
   var stateList = ["Select a state", "Alaska", "Maine", "North Carolina", "Missouri", "Pennsylvania", "Michigan", "Nebraska", "Oregon", "Wyoming", "California", "Mississippi", "Connecticut", "Texas", "Idaho", "Maryland", "New Mexico", "Alabama", "Tennesee", "Vermont", "Nevada", "West Virginia", "Oklahoma", "Wisconsin", "Puerto Rico", "Kansas", "Virginia", "North Dakota", "New Jersey", "Ohio", "South Carolina", "Georgia", "Colorado", "Hawaii", "South Dakota", "Indiana", "Kentucky", "Louisiana", "Washington", "Illinois", "Iowa", "New Hampshire", "Rhode Island", "Arkansas", "Delaware", "Minnesota", "Montana", "Arizona", "Florida", "Massachusetts", "District of Columbia", "Utah", "New York"];
   dropDown.selectAll('option')

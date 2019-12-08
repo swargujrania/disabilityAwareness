@@ -115,7 +115,7 @@ start = () => {
         //with dis
         var disCount = +item.values.find(i => i.disabilityType == 'With a Disability').numbers;
 
-        for (j = 0; j < Math.ceil(disCount / PEOPLE_UNIT); j++) {
+        for (j = 0; j < Math.round(disCount / PEOPLE_UNIT); j++) {
           var disUnit = {
             'bracket': bracket.key,
             'status': "With a Disability",
@@ -126,7 +126,7 @@ start = () => {
 
         //without dis
         var woDisCount = +item.values.find(i => i.disabilityType == 'No Disability').numbers;
-        for (j = 0; j < Math.ceil(woDisCount / PEOPLE_UNIT); j++) {
+        for (j = 0; j < Math.round(woDisCount) / PEOPLE_UNIT; j++) {
           var disUnit = {
             'bracket': bracket.key,
             'status': "No Disability",
@@ -225,6 +225,7 @@ start = () => {
     var outerCircleRadius1 = 4.1 * hub_r;
     var outerCircleRadius2 = 3.9 * hub_r;
     var outerCircleRadius3 = 3.7 * hub_r;
+    var outerCircleRadius4 = 0.9 * hub_r;
 
     function polarToCartesian(centerX, centerY, radius, angleInRadians) {
       //var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
@@ -301,6 +302,19 @@ start = () => {
       .attr("stroke-opacity", 0)
       .style("stroke-dasharray", "5,5");
 
+      var arcs4 = svg.selectAll(".arcs")
+      .data(buckets)
+      .enter()
+      .append("path")
+      .attr("fill", "none")
+      .attr("id", function (d, i) { return "v" + i; })
+      .attr("d", function (d, i) {
+        return describeArc(hub_cx, hub_cy, outerCircleRadius4, d.theta1, d.theta2);
+      })
+      .style("stroke", "#AAAAAA")
+      .attr("stroke-opacity", 0)
+      .style("stroke-dasharray", "5,5");
+
     var textArc1 = svg.selectAll(".industryLabels")
       .data(labels1)
       .enter()
@@ -337,6 +351,39 @@ start = () => {
       .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
       .text(function (d, i) { return d; });
 
+      //draw percentage
+    var dataForPercentage = d3.nest().key(d => d.classOfWorker).key(d => d.disabilityType).rollup(d => d3.sum(d, v => v.numbers)).entries(data);
+    var p = [];
+
+    //generate labels
+    tempLabel = [];
+    for (var i = 0; i < buckets.length; i++) {
+      tempLabel[i] = buckets[i].label;
+      console.log(tempLabel[i]);
+    }
+    tempLabel.reverse();
+
+    tempLabel.forEach(t => {
+      var o = { 'bucket': t };
+      var iNeedThis = dataForPercentage.find(d => d.key == t);
+      var total = iNeedThis.values[0].value + iNeedThis.values[1].value;
+      o['percentage'] = (d3.format('.1f')(iNeedThis.values.find(x => x.key == 'With a Disability').value / total * 100)) + '%';
+      p.push(o);
+    })
+
+    var textArc4 = svg.selectAll(".percentage")
+      .data(p)
+      .enter()
+      .append("text")
+      .style("text-anchor", "middle")
+      .style("font-size", "10px")
+      .style("fill", "rgb(255,0,0, 0.7)")
+      .append("textPath")        //append a textPath to the text element
+      .attr("xlink:href", function (d, i) {
+        return "#v" + i;
+      })
+      .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
+      .text(function (d, i) { return d.percentage; });
 
   });
 }
