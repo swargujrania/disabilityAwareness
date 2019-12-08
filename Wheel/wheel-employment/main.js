@@ -36,6 +36,9 @@ start = () => {
   var svgWidth = $('#vis-container .vis svg').width();
   var svgHeight = $('#vis-container .vis svg').height();
 
+  //add drop down
+  setDropdown(svgWidth, svgHeight);
+
   var wheel = d3.select('svg')
     .append('g')
     .attr('class', 'wheel');
@@ -408,6 +411,7 @@ function highlightState(state) {
   var total = totalNumber.find(t => t.state == state).numbers;
   $('#stateTotal').text(total);
 
+  $('#stateDropdown').val(state);
 }
 
 function resetColors() {
@@ -416,6 +420,30 @@ function resetColors() {
   $('.dis_unit').attr('stroke', 'none');
   $('.reg_unit').attr('fill', 'white');
   $('.reg_unit').attr('stroke', '#F2BDB6');
+}
+
+function setDropdown(width, height) {
+  var dropDown = d3.select('body').select('#stateDropdown')
+    .style('position', 'relative');
+    // .style('margin-left', width + 'px')
+    // .style('margin-top', height/2 + 'px');
+
+  var stateList = ["Select a state", "Alaska", "Maine", "North Carolina", "Missouri", "Pennsylvania", "Michigan", "Nebraska", "Oregon", "Wyoming", "California", "Mississippi", "Connecticut", "Texas", "Idaho", "Maryland", "New Mexico", "Alabama", "Tennesee", "Vermont", "Nevada", "West Virginia", "Oklahoma", "Wisconsin", "Puerto Rico", "Kansas", "Virginia", "North Dakota", "New Jersey", "Ohio", "South Carolina", "Georgia", "Colorado", "Hawaii", "South Dakota", "Indiana", "Kentucky", "Louisiana", "Washington", "Illinois", "Iowa", "New Hampshire", "Rhode Island", "Arkansas", "Delaware", "Minnesota", "Montana", "Arizona", "Florida", "Massachusetts", "District of Columbia", "Utah", "New York"];
+  dropDown.selectAll('option')
+    .data(stateList)
+    .enter()
+    .append('option')
+    .text(d => d)
+    .attr('value', d => { return d == 'Select a state' ? '' : d });
+  $('#stateDropdown').on('change', function () {
+    var state = $(this).find(':selected').text();
+    if (state != 'Select a state') {
+      resetColors();
+      highlightState(state);
+    }
+
+  })
+
 }
 
 class Bucket {
