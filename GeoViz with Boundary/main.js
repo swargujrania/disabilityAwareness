@@ -4,6 +4,8 @@ var HEIGHT = 2000
 colorPalette = ['#ffd600', '#c9e402', '#b6ff64', '#63c964', '#6fffbf', '#67b1a0', '#00caba', '#06efff', '#008eaa', '#2284dd'];
 $('#stateName').css('left', WIDTH / 2);
 
+selectedStates = [];
+
 $(function () {
 
     d3.json("data/topo2018.json").then(tilegram => {
@@ -78,9 +80,12 @@ $(function () {
                     if (datum.state.toLowerCase() == state) {
                         if (datum.countColor > 0) {
                             item.color = 'pink';
+                            item.disabilityStatus = 'WithDisability';
                             datum.countColor--;
                         } else {
                             item.color = 'white';
+                            item.disabilityStatus = 'NoDisability';
+
                         }
                     }
                 }
@@ -101,6 +106,9 @@ $(function () {
                 .attr('stroke-width', 2)
                 .attr('data-state', d => {
                     return d.state;
+                })
+                .attr('data-disabilityStatus', d => {
+                    return d.disabilityStatus;
                 })
                 .attr('points', d => {
                     return d.points;
@@ -136,6 +144,25 @@ $(function () {
                 .attr('stroke', 'black')
                 .attr('stroke-width', 0.5);
 
+
+            //select on click
+            hexPolyline.on('click', d => {
+
+                if (selectedStates.includes(d.state)) {
+                    selectedStates.splice(selectedStates.indexOf(d.state), 1);
+                    highlightStateBoundaries(false, d);
+                    highlightState(false, d, hexPolyline);
+                }
+                else {
+                    selectedStates.push(d.state);
+                    highlightStateBoundaries(true, d);
+                    highlightState(true, d, hexPolyline);
+                }
+
+                console.log(selectedStates);
+
+            })
+
         });
 
         // // on hover code combining hexes with boundaries
@@ -149,6 +176,7 @@ $(function () {
         //         $('#stateName').text("STATE");
         //         highlightStateBoundaries(false, d);
         //     })
+
 
     });
 
@@ -329,13 +357,39 @@ function getColorByState(stateName) {
 }
 
 function highlightStateBoundaries(toBeHighlighted, d) {
-    var selectorString = 'path[data-state=' + d.state + ']';
+    var selectorString = '"path.border[data-state=\'' + d.state + '\']"';
 
     if (toBeHighlighted) {
-        $(selectorString).attr('stroke', 'black');
-        $(selectorString).attr('stroke-width', 2);
+        $(selectorString).attr('stroke', 'rgba(0,134,173, 1)');
+        $(selectorString).attr('stroke-width', 2.5);
     } else {
-        $(selectorString).attr('stroke', 'grey');
+        $(selectorString).attr('stroke', 'black');
         $(selectorString).attr('stroke-width', 1);
+    }
+}
+
+function highlightState(toBeHighlighted, d, hexPolyline) {
+    var selectorString = '"polyline[data-state=\'' + d.state + '\']"';
+    if (toBeHighlighted) {
+        var withDisString = '"polyline[data-state=\'' + d.state + '\'][fill=pink]"';
+        var noDisString = '"polyline[data-state=\'' + d.state + '\'][fill=white]"';
+
+        $(withDisString).attr('fill', 'rgba(0,134,173, 0.4)');
+        $(withDisString).attr('stroke', 'none');
+
+        $(noDisString).attr('fill', 'white');
+        $(noDisString).attr('stroke', 'rgba(0,134,173, 0.4)');
+
+        //color disabled hexes
+
+    } else {
+        var withDisString = '"polyline[data-state=\'' + d.state + '\'][fill=\'rgba(0,134,173, 0.4)\']"';
+        var noDisString = '"polyline[data-state=\'' + d.state + '\'][fill=white]"';
+
+        $(withDisString).attr('fill', 'pink');
+        $(withDisString).attr('stroke', 'none');
+
+        $(noDisString).attr('fill', 'white');
+        $(noDisString).attr('stroke', 'pink');
     }
 }
