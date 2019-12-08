@@ -7,8 +7,27 @@ let units = [];
 let dataset;
 let buckets = [];
 var spokes;
-var totalNumber = [];
+var labels1;
+var labels2;
+var labels3;
 
+// var pie = d3.pie()
+//       .startAngle(-90 * Math.PI/180)
+//       .endAngle(-90 * Math.PI/180 + 2*Math.PI)
+//       .value(function(d) { return d.value; })
+//       .padAngle(.01)
+//       .sort(null);
+
+// var donutData = [
+//       {name: "Antelope",  value: 15},
+//       {name: "Bear",    value: 9},
+//       {name: "Cheetah",   value: 19},
+//       {name: "Dolphin",   value: 12},
+//       {name: "Elephant",  value: 14},
+//       {name: "Flamingo",  value: 21},
+//       {name: "Giraffe", value: 18},
+//       {name: "Other",   value: 8}
+//     ];      
 start = () => {
 
   var svg = d3.select('#vis-container svg');
@@ -103,88 +122,67 @@ start = () => {
       //buckets[i].showLabel(svg);
     }
 
-    var n2 = d3.nest()
-      .key(d => d.industry)
-      .key(d => d.state)
-      .entries(data);
-
-    n2.pop();
-
-    for (let k = 0; k < n2.length; k++) {
-
-      let tempUnits = []
-      let bracket = n2[k];
-
-      bracket.values.forEach(item => {
-        //with dis
-        var disCount = +item.values.find(i => i.disabilityType == 'With a Disability').numbers;
-
-        for (j = 0; j < Math.ceil(disCount / PEOPLE_UNIT); j++) {
-          var disUnit = {
-            'bracket': bracket.key,
-            'status': "With a Disability",
-            'state': item.key
+    for (let k = 0; k < dataset.length; k++) {
+        let bracket = dataset[k];
+        bracket.DisabilityCount = 0;
+        bracket.WoDisabiltyCount = 0;
+        for (let item of bracket.values) {
+          if (item.disabilityType == "With a Disability") {
+            bracket.DisabilityCount += +item.numbers;
+          } else if (item.disabilityType == "No Disability") {
+            bracket.WoDisabiltyCount += +item.numbers;
           }
-          tempUnits.push(disUnit)
         }
+        bracket.DisabilityCount = Math.floor(bracket.DisabilityCount);
+        bracket.WoDisabiltyCount = Math.floor(bracket.WoDisabiltyCount);
 
-        //without dis
-        var woDisCount = +item.values.find(i => i.disabilityType == 'No Disability').numbers;
-        for (j = 0; j < Math.ceil(woDisCount / PEOPLE_UNIT); j++) {
-          var disUnit = {
-            'bracket': bracket.key,
-            'status': "No Disability",
-            'state': item.key
-          }
-          tempUnits.push(disUnit)
+        let unit1 = {
+          bracket: bracket.key,
+          status: "With a Disability"
         }
-
-      });
-
-      var totalWithDis = tempUnits.filter(u => u.status == 'With a Disability');
-      var totalNoDis = tempUnits.filter(u => u.status == 'No Disability');
-
-      let t = 7;
-      let radius = hub_r + 3.5;
-      let PrevAngle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
-      angle = PrevAngle;
-
-      // with dis
-      for (let i = 0; i < totalWithDis.length; i++) {
-
-        let x = hub_cx + radius * Math.cos(angle);
-        let y = hub_cy - radius * Math.sin(angle);
-        angle += 2 * Math.asin(t / (2 * radius));
-        if (angle > buckets[k].theta2) {
-          radius += t;
-          angle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
-
+        let unit2 = {
+          bracket: bracket.key,
+          status: "No Disability"
         }
+        let t = 7;
+        let radius = hub_r + 3.5;
+        let PrevAngle = Math.asin(t/(2*radius)) + buckets[k].theta1;
+        angle = PrevAngle;
+        // let prevX = x1;
+        // let prevY = buckets[k].y - 4;
+        for (let i = 0; i < bracket.DisabilityCount / PEOPLE_UNIT; i++) {
+  	      
+  	     let x = hub_cx + radius * Math.cos(angle);
+  	     let y = hub_cy - radius * Math.sin(angle);
+  	  	   angle+=2*Math.asin(t/(2*radius));
+    		if (angle > buckets[k].theta2) {
+    			radius += t;
+    	     	angle = Math.asin(t/(2*radius)) + buckets[k].theta1;
+    	     
+      	}
+           
+           let unit = new Unit(unit1, x, y,angle);
+        	 units.push(unit);
+        	
+         }
 
-        let unit = new Unit(totalWithDis[i], x, y, angle);
-        units.push(unit);
-
-      }
-
-      // without dis
-      for (let i = 0; i < totalNoDis.length; i++) {
-
-        let x = hub_cx + radius * Math.cos(angle);
-        let y = hub_cy - radius * Math.sin(angle);
-        angle += 2 * Math.asin(t / (2 * radius));
-        if (angle > buckets[k].theta2) {
-          radius += t;
-          angle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
-
+        for (let i = 0; i < bracket.WoDisabiltyCount / PEOPLE_UNIT; i++) {
+           
+    	     let x = hub_cx + radius * Math.cos(angle);
+    	     let y = hub_cy - radius * Math.sin(angle);
+    	  	   angle+=2*Math.asin(t/(2*radius));
+      		if (angle > buckets[k].theta2) {
+      			radius += t;
+      	     	angle = Math.asin(t/(2*radius)) + buckets[k].theta1;
+      	     
+        	}
+             
+             let unit = new Unit(unit2, x, y,angle);
+          	 units.push(unit);
+         
         }
-
-        let unit = new Unit(totalNoDis[i], x, y, angle);
-        units.push(unit);
-
-      }
-
-    }
-
+	   }
+    
 
     svg.selectAll('.unit')
       .data(units)
@@ -207,48 +205,187 @@ start = () => {
         }
       });
 
-    svg.selectAll('.unit')
-      .on('click', d => {
-        resetColors();
-        highlightState(d.state);
+      
+      labels1 = ["Public administration", "Other services ", "Arts, entertainment, and  ","Educational services, ", "Professional, scientific, and ", 
+     "Finance and insurance, " ,"Information","Transportation and ","Retail trade" ,"Wholesale trade","Manufacturing"
+      ,"Construction","Agriculture, forestry,"];
+      labels2 = ["","(except public ", "recreation, and accommodation","and health care and","management, and administrative","and real estate and","","warehousing, and utilities","","",
+      "","","fishing and hunting,"];
+      labels3 = ["","administration)","and food services", " social assistance","and waste management services","rental and leasing",
+      "", "", "","","", "","and mining"];
+      var outerCircleRadius1 = 4.1 *hub_r;
+      var outerCircleRadius2 = 3.9 * hub_r;
+      var outerCircleRadius3 = 3.7 * hub_r;
+      
+      // var outerCircleLabel1 = wheel.append('circle')
+      // .attr('class','outerCircle')
+      // .attr('r',outerCircleRadius1)
+      // .attr('cx',hub_cx)
+      // .attr('cy',hub_cy)
+      // .attr('fill','none')
+      // .attr('stroke','#ccc');
+
+      // var outerCircleLabel2 = wheel.append('circle')
+      // .attr('class','outerCircle')
+      // .attr('r',outerCircleRadius2)
+      // .attr('cx',hub_cx)
+      // .attr('cy',hub_cy)
+      // .attr('fill','none')
+      // .attr('stroke','#ccc');
+
+      // var outerCircleLabel3 = wheel.append('circle')
+      // .attr('class','outerCircle')
+      // .attr('r',outerCircleRadius3)
+      // .attr('cx',hub_cx)
+      // .attr('cy',hub_cy)
+      // .attr('fill','none')
+      // .attr('stroke','#ccc');
+
+
+      var start_x = hub_cx - 350;
+      var start_y = hub_cy;
+      var end_x = hub_cx + 350;
+      var end_y = hub_cy;
+
+    function polarToCartesian(centerX, centerY, radius, angleInRadians) {
+      //var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
+      return {
+          x: centerX + (radius * Math.cos(angleInRadians)),
+          y: centerY + (radius * Math.sin(angleInRadians))
+      };
+    }
+
+    function describeArc(x, y, radius, startAngle, endAngle){
+    var start = polarToCartesian(x, y, radius, endAngle + Math.PI);
+    var end = polarToCartesian(x, y, radius, startAngle + Math.PI);
+    var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
+    var d = [
+        "M", start.x, start.y, 
+        "A", radius, radius, 0, 1, 1, end.x, end.y
+    ].join(" ");
+    return d;       
+    }
+
+
+    var arcs1 = svg.selectAll(".arcs")
+        .data(buckets)
+        .enter()
+        .append("path")
+        .attr("fill","none")
+        .attr("id", function(d,i){return "s"+i;})
+        .attr("d",function(d,i) {
+            return describeArc(hub_cx, hub_cy, outerCircleRadius1, d.theta1, d.theta2);
+        } )
+        .style("stroke", "#AAAAAA")
+        .attr("stroke-opacity", 0)
+        .style("stroke-dasharray", "5,5")
+    //     .each(function(d,i) {
+    //   //Search pattern for everything between the start and the first capital L
+    //   var firstArcSection = /(^.+?)L/;  
+
+    //   //Grab everything up to the first Line statement
+    //   var newArc = firstArcSection.exec( d3.select(this).attr("d") )[1];
+    //   //Replace all the comma's so that IE can handle it
+    //   newArc = newArc.replace(/,/g , " ");
+      
+    //   //If the end angle lies beyond a quarter of a circle (90 degrees or pi/2) 
+    //   //flip the end and start position
+    //   if (d.theta2 > 90 * Math.PI/180) {
+    //     var startLoc  = /M(.*?)A/,    //Everything between the first capital M and first capital A
+    //       middleLoc   = /A(.*?)0 0 1/,  //Everything between the first capital A and 0 0 1
+    //       endLoc    = /0 0 1 (.*?)$/; //Everything between the first 0 0 1 and the end of the string (denoted by $)
+    //     //Flip the direction of the arc by switching the start en end point (and sweep flag)
+    //     //of those elements that are below the horizontal line
+    //     var newStart = endLoc.exec( newArc )[1];
+    //     var newEnd = startLoc.exec( newArc )[1];
+    //     var middleSec = middleLoc.exec( newArc )[1];
+        
+    //     //Build up the new arc notation, set the sweep-flag to 0
+    //     newArc = "M" + newStart + "A" + middleSec + "0 0 0 " + newEnd;
+    //   }//if
+      
+    //   //Create a new invisible arc that the text can flow along
+    //   svg.append("path")
+    //     .attr("class", "hiddenDonutArcs")
+    //     .attr("id", "donutArc"+i)
+    //     .attr("d", newArc)
+    //     .style("fill", "none");
+    // });
+    
+    var arcs2 = svg.selectAll(".arcs")
+        .data(buckets)
+        .enter()
+        .append("path")
+        .attr("fill","none")
+        .attr("id", function(d,i){return "t"+i;})
+        //.attr("id","huhue")
+        // .attr("d", function(d,i) {
+        //     return describeArc(d.x, d.y, d.r, 160, -160)
+        // } );
+        .attr("d",function(d,i) {
+            return describeArc(hub_cx, hub_cy, outerCircleRadius2, d.theta1, d.theta2);
+        } )//"M"+start_x+","+start_y+", A"+500+","+500+" 0 0,1 "+end_x+","+end_y)
+        .style("stroke", "#AAAAAA")
+        .attr("stroke-opacity", 0)
+        .style("stroke-dasharray", "5,5");
+
+    var arcs3 = svg.selectAll(".arcs")
+        .data(buckets)
+        .enter()
+        .append("path")
+        .attr("fill","none")
+        .attr("id", function(d,i){return "u"+i;})
+        //.attr("id","huhue")
+        // .attr("d", function(d,i) {
+        //     return describeArc(d.x, d.y, d.r, 160, -160)
+        // } );
+        .attr("d",function(d,i) {
+            return describeArc(hub_cx, hub_cy, outerCircleRadius3, d.theta1, d.theta2);
+        } )//"M"+start_x+","+start_y+", A"+500+","+500+" 0 0,1 "+end_x+","+end_y)
+        .style("stroke", "#AAAAAA")
+        .attr("stroke-opacity", 0)
+        .style("stroke-dasharray", "5,5");
+
+    var textArc1 = svg.selectAll(".industryLabels")
+      .data(labels1)
+      .enter()
+      .append("text")
+      .style("text-anchor","middle")
+      .append("textPath")        //append a textPath to the text element
+      .attr("xlink:href",function(d,i){
+        return "#s"+i;
       })
+      .attr("startOffset",function(d,i){return "50%";}) //place the text halfway on the arc
+      .text(function(d,i){return d;});
+    
+    var textArc2 = svg.selectAll(".industryLabels")
+      .data(labels2)
+      .enter()
+      .append("text")
+      .style("text-anchor","middle")
+      .append("textPath")        //append a textPath to the text element
+      .attr("xlink:href",function(d,i){
+        return "#t"+i;
+      })
+      .attr("startOffset",function(d,i){return "50%";}) //place the text halfway on the arc
+      .text(function(d,i){return d;});
 
-    var outerCircle = wheel.append('circle')
-      .attr('class', 'outerCircle')
-      .attr('r', 4 * hub_r)
-      .attr('cx', hub_cx)
-      .attr('cy', hub_cy)
-      .attr('fill', 'none')
-      .attr('stroke', '#ccc');
-
-    var start_x = hub_cx - 350;
-    var start_y = hub_cy;
-    var end_x = hub_cx + 350;
-    var end_y = hub_cy;
-
-  });
-}
+    var textArc3 = svg.selectAll(".industryLabels")
+      .data(labels3)
+      .enter()
+      .append("text")
+      .style("text-anchor","middle")
+      .append("textPath")        //append a textPath to the text element
+      .attr("xlink:href",function(d,i){
+        return "#u"+i;
+      })
+      .attr("startOffset",function(d,i){return "50%";}) //place the text halfway on the arc
+      .text(function(d,i){return d;});
 
 
-function highlightState(state) {
-  $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 1)');
-  $('".dis_unit[data-state=\'' + state + '\']"').attr('stroke', 'rgba(0,134,173, 1)');
-  $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', 'white');
-  $('".reg_unit[data-state=\'' + state + '\']"').attr('stroke', 'rgba(0,134,173, 0.4)');
+  }); //d3.csv end braces
 
-  $('#stateName').text(state);
-  var total = totalNumber.find(t => t.state == state).numbers;
-  $('#stateTotal').text(total);
-
-}
-
-function resetColors() {
-
-  $('.dis_unit').attr('fill', 'rgb(242,189,182)');
-  $('.dis_unit').attr('stroke', 'none');
-  $('.reg_unit').attr('fill', 'white');
-  $('.reg_unit').attr('stroke', '#F2BDB6');
-}
+} //start event end braces
 
 class Bucket {
   constructor(x1, y1, x2, y2, theta1, theta2, label) {
