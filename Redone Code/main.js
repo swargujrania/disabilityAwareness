@@ -18,9 +18,11 @@ start = () => {
       .append('svg');
 
     svg.attr('width', WIDTH)
-      .attr('height', HEIGHT)
-      .attr('transform', 'translate(100,200)');
+      .attr('height', HEIGHT);
+    //.attr('transform', 'translate(100,200)');
 
+    //add drop down
+    setDropdown();
 
 
     d3.csv('./earnings.csv').then(data => {
@@ -38,8 +40,6 @@ start = () => {
 
       dataset = nestedData;
 
-      //add drop down
-      var stateList = ["Alaska", "Maine", "North Carolina", "Missouri", "Pennsylvania", "Michigan", "Nebraska", "Oregon", "Wyoming", "California", "Mississippi", "Connecticut", "Texas", "Idaho", "Maryland", "New Mexico", "Alabama", "Tennesee", "Vermont", "Nevada", "West Virginia", "Oklahoma", "Wisconsin", "Puerto Rico", "Kansas", "Virginia", "North Dakota", "New Jersey", "Ohio", "South Carolina", "Georgia", "Colorado", "Hawaii", "South Dakota", "Indiana", "Kentucky", "Louisiana", "Washington", "Illinois", "Iowa", "New Hampshire", "Rhode Island", "Arkansas", "Delaware", "Minnesota", "Montana", "Arizona", "Florida", "Massachusetts", "District of Columbia", "Utah", "New York"];
 
       //buckets
       for (let i = 0; i < 7; i++) {
@@ -148,6 +148,7 @@ start = () => {
         .on('click', d => {
           resetColors();
           highlightState(d.state);
+
         })
 
       // make pie charts
@@ -168,6 +169,7 @@ function highlightState(state) {
   $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 1)');
   $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 0.4)');
   $('#stateName').text(state);
+  $('#stateDropdown').val(state);
 
 }
 
@@ -303,5 +305,30 @@ function drawPieCharts(data, buckets, svg) {
       .attr('opacity', 1);
 
   }
+
+
+
+}
+
+function setDropdown() {
+  var dropDown = d3.select('body').select('#stateDropdown')
+    .style('position', 'relative')
+    .style('margin-left', WIDTH + 'px');
+
+  var stateList = ["Select a state", "Alaska", "Maine", "North Carolina", "Missouri", "Pennsylvania", "Michigan", "Nebraska", "Oregon", "Wyoming", "California", "Mississippi", "Connecticut", "Texas", "Idaho", "Maryland", "New Mexico", "Alabama", "Tennesee", "Vermont", "Nevada", "West Virginia", "Oklahoma", "Wisconsin", "Puerto Rico", "Kansas", "Virginia", "North Dakota", "New Jersey", "Ohio", "South Carolina", "Georgia", "Colorado", "Hawaii", "South Dakota", "Indiana", "Kentucky", "Louisiana", "Washington", "Illinois", "Iowa", "New Hampshire", "Rhode Island", "Arkansas", "Delaware", "Minnesota", "Montana", "Arizona", "Florida", "Massachusetts", "District of Columbia", "Utah", "New York"];
+  dropDown.selectAll('option')
+    .data(stateList)
+    .enter()
+    .append('option')
+    .text(d => d)
+    .attr('value', d => { return d == 'Select a state' ? '' : d });
+  $('#stateDropdown').on('change', function () {
+    var state = $(this).find(':selected').text();
+    if (state != 'Select a state') {
+      resetColors();
+      highlightState(state);
+    }
+
+  })
 
 }
