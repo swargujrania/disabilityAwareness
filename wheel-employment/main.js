@@ -11,6 +11,23 @@ var labels1;
 var labels2;
 var labels3;
 
+// var pie = d3.pie()
+//       .startAngle(-90 * Math.PI/180)
+//       .endAngle(-90 * Math.PI/180 + 2*Math.PI)
+//       .value(function(d) { return d.value; })
+//       .padAngle(.01)
+//       .sort(null);
+
+// var donutData = [
+//       {name: "Antelope",  value: 15},
+//       {name: "Bear",    value: 9},
+//       {name: "Cheetah",   value: 19},
+//       {name: "Dolphin",   value: 12},
+//       {name: "Elephant",  value: 14},
+//       {name: "Flamingo",  value: 21},
+//       {name: "Giraffe", value: 18},
+//       {name: "Other",   value: 8}
+//     ];      
 start = () => {
 
 var svg = d3.select('#vis-container svg');
@@ -163,6 +180,7 @@ var spokesData = [1,2,3,4,5,6,7,8,9,10,11,12,13];	// number of industry types
         }
       });
 
+      
       labels1 = ["Public administration", "Other services ", "Arts, entertainment, and  ","Educational services, ", "Professional, scientific, and ", 
      "Finance and insurance, " ,"Information","Transportation and ","Retail trade" ,"Wholesale trade","Manufacturing"
       ,"Construction","Agriculture, forestry,"];
@@ -223,14 +241,6 @@ var spokesData = [1,2,3,4,5,6,7,8,9,10,11,12,13];	// number of industry types
     return d;       
     }
 
-        //Append the month names to each slice
-    // svg.selectAll(".monthText")
-    //     .data(monthData)
-    //     .enter().append("text")
-    //     .attr("class", "monthText")
-    //     .append("textPath")
-    //     .attr("xlink:href",function(d,i){return "#monthArc_"+i;})
-    //     .text(function(d){return d.month;});
 
     var arcs1 = svg.selectAll(".arcs")
         .data(buckets)
@@ -238,16 +248,44 @@ var spokesData = [1,2,3,4,5,6,7,8,9,10,11,12,13];	// number of industry types
         .append("path")
         .attr("fill","none")
         .attr("id", function(d,i){return "s"+i;})
-        //.attr("id","huhue")
-        // .attr("d", function(d,i) {
-        //     return describeArc(d.x, d.y, d.r, 160, -160)
-        // } );
         .attr("d",function(d,i) {
             return describeArc(hub_cx, hub_cy, outerCircleRadius1, d.theta1, d.theta2);
-        } )//"M"+start_x+","+start_y+", A"+500+","+500+" 0 0,1 "+end_x+","+end_y)
+        } )
         .style("stroke", "#AAAAAA")
         .attr("stroke-opacity", 0)
-        .style("stroke-dasharray", "5,5");
+        .style("stroke-dasharray", "5,5")
+    //     .each(function(d,i) {
+    //   //Search pattern for everything between the start and the first capital L
+    //   var firstArcSection = /(^.+?)L/;  
+
+    //   //Grab everything up to the first Line statement
+    //   var newArc = firstArcSection.exec( d3.select(this).attr("d") )[1];
+    //   //Replace all the comma's so that IE can handle it
+    //   newArc = newArc.replace(/,/g , " ");
+      
+    //   //If the end angle lies beyond a quarter of a circle (90 degrees or pi/2) 
+    //   //flip the end and start position
+    //   if (d.theta2 > 90 * Math.PI/180) {
+    //     var startLoc  = /M(.*?)A/,    //Everything between the first capital M and first capital A
+    //       middleLoc   = /A(.*?)0 0 1/,  //Everything between the first capital A and 0 0 1
+    //       endLoc    = /0 0 1 (.*?)$/; //Everything between the first 0 0 1 and the end of the string (denoted by $)
+    //     //Flip the direction of the arc by switching the start en end point (and sweep flag)
+    //     //of those elements that are below the horizontal line
+    //     var newStart = endLoc.exec( newArc )[1];
+    //     var newEnd = startLoc.exec( newArc )[1];
+    //     var middleSec = middleLoc.exec( newArc )[1];
+        
+    //     //Build up the new arc notation, set the sweep-flag to 0
+    //     newArc = "M" + newStart + "A" + middleSec + "0 0 0 " + newEnd;
+    //   }//if
+      
+    //   //Create a new invisible arc that the text can flow along
+    //   svg.append("path")
+    //     .attr("class", "hiddenDonutArcs")
+    //     .attr("id", "donutArc"+i)
+    //     .attr("d", newArc)
+    //     .style("fill", "none");
+    // });
     
     var arcs2 = svg.selectAll(".arcs")
         .data(buckets)
@@ -282,17 +320,6 @@ var spokesData = [1,2,3,4,5,6,7,8,9,10,11,12,13];	// number of industry types
         .style("stroke", "#AAAAAA")
         .attr("stroke-opacity", 0)
         .style("stroke-dasharray", "5,5");
-
-    // var arcs = svg.append("path")
-    //     .attr("fill","none")
-    //     .attr("id", function(d,i){return "s"+i;})
-    //     .attr("id","huhue")
-    //     // .attr("d", function(d,i) {
-    //     //     return describeArc(d.x, d.y, d.r, 160, -160)
-    //     // } );
-    //     .attr("d",describeArc(hub_cx, hub_cy, outerCircleRadius-20, 0, 3.14))//"M"+start_x+","+start_y+", A"+500+","+500+" 0 0,1 "+end_x+","+end_y)
-    //     .style("stroke", "#AAAAAA")
-    //     .style("stroke-dasharray", "5,5");
 
     var textArc1 = svg.selectAll(".industryLabels")
       .data(labels1)
@@ -329,58 +356,9 @@ var spokesData = [1,2,3,4,5,6,7,8,9,10,11,12,13];	// number of industry types
       })
       .attr("startOffset",function(d,i){return "50%";}) //place the text halfway on the arc
       .text(function(d,i){return d;});
-    // var textArc = svg.append("text")
-    //   .style("text-anchor","middle")
-    //   .append("textPath")        //append a textPath to the text element
-    //   .attr("xlink:href",function(d,i){
-    //     return "#s"+i;
-    //   })
-    //   .attr("startOffset",function(d,i){return "50%";}) //place the text halfway on the arc
-    //   .text(function(d){return "THANK YOU";});
-    
 
-      // var labels = arcPaths.append("text")
-      // // .style("opacity", function(d) {
-      // //       if (d.depth == 0) {
-      // //         return 0.0;
-      // //     }
-      // //       if (!d.children) {
-      // //           return 0.0;
-      // //       }
-      // //       var sumOfChildrenSizes = 0;
-      // //       d.children.forEach(function(child){sumOfChildrenSizes += child.size;});
-      // //       //alert(sumOfChildrenSizes);
-      // //       if (sumOfChildrenSizes <= 5) {
-      // //           return 0.0;
-      // //       }
-      // //       return 0.8;
-      // //   })
-      // .attr("font-size",10)
-      // .style("text-anchor","middle")
-      // .append("textPath")
-      // .attr("xlink:href",function(d,i){return "#s"+i;})
-      // .attr("startOffset",function(d,i){return "50%";})
-      // //.text(function(d){return d.name.toUpperCase();})
-      // .text("HIHIHI");
 
   }); //d3.csv end braces
-
-      //Create an SVG arc starting at location [0,300], ending at [400,300] with a radius of 200 (circle)			
-		// var path = svg.append("path")
-		// 	.attr("id", "wavy") //A unique ID to reference later
-		// 	.attr("d", "M"+start_x+","+start_y+", A"+500+","+500+" 0 0,1 "+end_x+","+end_y) //Notation for an SVG path
-		// 	.style("fill", "none")
-		// 	.style("stroke", "#AAAAAA")
-		// 	.style("stroke-dasharray", "5,5");
-
-		// //Create an SVG text element and append a textPath element
-		// var textArc = svg.append("text")
-		// 	.style("text-anchor","middle")
-		//   .append("textPath")				//append a textPath to the text element
-		// 	.attr("xlink:href", "#wavy") 	//place the ID of the path here
-		// 	.attr("startOffset", "50%")		//place the text halfway on the arc
-		// 	.text("Yay, my text is moving back & forth");
-		
 
 } //start event end braces
 
