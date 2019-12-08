@@ -13,23 +13,23 @@ var labels3;
 
 var totalNumber = [];
 
-// var pie = d3.pie()
-//       .startAngle(-90 * Math.PI/180)
-//       .endAngle(-90 * Math.PI/180 + 2*Math.PI)
-//       .value(function(d) { return d.value; })
-//       .padAngle(.01)
-//       .sort(null);
+var pie = d3.pie()
+      .startAngle(-90 * Math.PI/180)
+      .endAngle(-90 * Math.PI/180 + 2*Math.PI)
+      .value(function(d) { return d.value; })
+      .padAngle(.01)
+      .sort(null);
 
-// var donutData = [
-//       {name: "Antelope",  value: 15},
-//       {name: "Bear",    value: 9},
-//       {name: "Cheetah",   value: 19},
-//       {name: "Dolphin",   value: 12},
-//       {name: "Elephant",  value: 14},
-//       {name: "Flamingo",  value: 21},
-//       {name: "Giraffe", value: 18},
-//       {name: "Other",   value: 8}
-//     ];      
+var donutData = [
+      {name: "Antelope",  value: 15},
+      {name: "Bear",    value: 9},
+      {name: "Cheetah",   value: 19},
+      {name: "Dolphin",   value: 12},
+      {name: "Elephant",  value: 14},
+      {name: "Flamingo",  value: 21},
+      {name: "Giraffe", value: 18},
+      {name: "Other",   value: 8}
+    ];      
 start = () => {
 
   var svg = d3.select('#vis-container svg');
@@ -205,68 +205,6 @@ start = () => {
     }
 
 
-    // for (let k = 0; k < dataset.length; k++) {
-    //   let bracket = dataset[k];
-    //   bracket.DisabilityCount = 0;
-    //   bracket.WoDisabiltyCount = 0;
-    //   for (let item of bracket.values) {
-    //     if (item.disabilityType == "With a Disability") {
-    //       bracket.DisabilityCount += +item.numbers;
-    //     } else if (item.disabilityType == "No Disability") {
-    //       bracket.WoDisabiltyCount += +item.numbers;
-    //     }
-    //   }
-    //   bracket.DisabilityCount = Math.floor(bracket.DisabilityCount);
-    //   bracket.WoDisabiltyCount = Math.floor(bracket.WoDisabiltyCount);
-
-    //   let unit1 = {
-    //     bracket: bracket.key,
-    //     status: "With a Disability"
-    //   }
-    //   let unit2 = {
-    //     bracket: bracket.key,
-    //     status: "No Disability"
-    //   }
-    //   let t = 7;
-    //   let radius = hub_r + 3.5;
-    //   let PrevAngle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
-    //   angle = PrevAngle;
-    //   // let prevX = x1;
-    //   // let prevY = buckets[k].y - 4;
-    //   for (let i = 0; i < bracket.DisabilityCount / PEOPLE_UNIT; i++) {
-
-    //     let x = hub_cx + radius * Math.cos(angle);
-    //     let y = hub_cy - radius * Math.sin(angle);
-    //     angle += 2 * Math.asin(t / (2 * radius));
-    //     if (angle > buckets[k].theta2) {
-    //       radius += t;
-    //       angle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
-
-    //     }
-
-    //     let unit = new Unit(unit1, x, y, angle);
-    //     units.push(unit);
-
-    //   }
-
-    //   for (let i = 0; i < bracket.WoDisabiltyCount / PEOPLE_UNIT; i++) {
-
-    //     let x = hub_cx + radius * Math.cos(angle);
-    //     let y = hub_cy - radius * Math.sin(angle);
-    //     angle += 2 * Math.asin(t / (2 * radius));
-    //     if (angle > buckets[k].theta2) {
-    //       radius += t;
-    //       angle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
-
-    //     }
-
-    //     let unit = new Unit(unit2, x, y, angle);
-    //     units.push(unit);
-
-    //   }
-    // }
-
-
     svg.selectAll('.unit')
       .data(units)
       .enter()
@@ -294,41 +232,16 @@ start = () => {
         highlightState(d.state);
       })
 
-    labels1 = ["Public administration", "Other services ", "Arts, entertainment, and  ", "Educational services, ", "Professional, scientific, and ",
-      "Finance and insurance, ", "Information", "Transportation and ", "Retail trade", "Wholesale trade", "Manufacturing"
+    labels1 = ["Public administration", "administration)", "and food services"," social assistance" ,"and waste management services" ,
+      "rental and leasing", "Information", "Transportation and ", "Retail trade", "Wholesale trade", "Manufacturing"
       , "Construction", "Agriculture, forestry,"];
     labels2 = ["", "(except public ", "recreation, and accommodation", "and health care and", "management, and administrative", "and real estate and", "", "warehousing, and utilities", "", "",
       "", "", "fishing and hunting,"];
-    labels3 = ["", "administration)", "and food services", " social assistance", "and waste management services", "rental and leasing",
+    labels3 = ["","Other services " , "Arts, entertainment, and  ", "Educational services, ", "Professional, scientific, and ", "Finance and insurance, ",
       "", "", "", "", "", "", "and mining"];
     var outerCircleRadius1 = 4.1 * hub_r;
     var outerCircleRadius2 = 3.9 * hub_r;
     var outerCircleRadius3 = 3.7 * hub_r;
-
-    // var outerCircleLabel1 = wheel.append('circle')
-    // .attr('class','outerCircle')
-    // .attr('r',outerCircleRadius1)
-    // .attr('cx',hub_cx)
-    // .attr('cy',hub_cy)
-    // .attr('fill','none')
-    // .attr('stroke','#ccc');
-
-    // var outerCircleLabel2 = wheel.append('circle')
-    // .attr('class','outerCircle')
-    // .attr('r',outerCircleRadius2)
-    // .attr('cx',hub_cx)
-    // .attr('cy',hub_cy)
-    // .attr('fill','none')
-    // .attr('stroke','#ccc');
-
-    // var outerCircleLabel3 = wheel.append('circle')
-    // .attr('class','outerCircle')
-    // .attr('r',outerCircleRadius3)
-    // .attr('cx',hub_cx)
-    // .attr('cy',hub_cy)
-    // .attr('fill','none')
-    // .attr('stroke','#ccc');
-
 
     var start_x = hub_cx - 350;
     var start_y = hub_cy;
@@ -344,12 +257,21 @@ start = () => {
     }
 
     function describeArc(x, y, radius, startAngle, endAngle) {
-      var start = polarToCartesian(x, y, radius, endAngle + Math.PI);
-      var end = polarToCartesian(x, y, radius, startAngle + Math.PI);
+      var start, end,largeArcFlag,sweepFlag, extraAngle;
+      extraAngle = 0;
+      largeArcFlag = 0;
+
+      if(endAngle>Math.PI){
+        largeArcFlag = 1;
+        extraAngle = Math.PI;
+      }
+      sweepFlag = largeArcFlag;
+      start = polarToCartesian(x,y,radius,endAngle + extraAngle);
+      end = polarToCartesian(x,y,radius,startAngle + extraAngle);
       var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
       var d = [
         "M", start.x, start.y,
-        "A", radius, radius, 0, 1, 1, end.x, end.y
+        "A", radius, radius, 0, largeArcFlag, sweepFlag, end.x, end.y
       ].join(" ");
       return d;
     }
@@ -366,7 +288,7 @@ start = () => {
       })
       .style("stroke", "#AAAAAA")
       .attr("stroke-opacity", 0)
-      .style("stroke-dasharray", "5,5")
+      .style("stroke-dasharray", "5,5");
     //     .each(function(d,i) {
     //   //Search pattern for everything between the start and the first capital L
     //   var firstArcSection = /(^.+?)L/;  
@@ -378,7 +300,7 @@ start = () => {
 
     //   //If the end angle lies beyond a quarter of a circle (90 degrees or pi/2) 
     //   //flip the end and start position
-    //   if (d.theta2 > 90 * Math.PI/180) {
+    //   if (d.endAngle > 90 * Math.PI/180) {
     //     var startLoc  = /M(.*?)A/,    //Everything between the first capital M and first capital A
     //       middleLoc   = /A(.*?)0 0 1/,  //Everything between the first capital A and 0 0 1
     //       endLoc    = /0 0 1 (.*?)$/; //Everything between the first 0 0 1 and the end of the string (denoted by $)
