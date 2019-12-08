@@ -218,9 +218,9 @@ start = () => {
     var end_x = hub_cx + 350;
     var end_y = hub_cy;
 
-    labels1 = ["Unpaid family" ,"Self-employed in own","Federal government","State government","Local government","Private not-for-profit","Self-employed in  ","Employee of private","Private for-profit"];
-      labels2 = ["workers", " not incorporated ","workers","workers","workers","wage and salary","own incorporated","company workers","wage and salary" ];
-      labels3 = ["","business workers","","","","workers","business workers","","workers"];
+    labels1 = ["workers" ,"business workers","","","Local government","Private not-for-profit","Self-employed in  ","Employee of private","Private for-profit"];
+      labels2 = ["Unpaid family", " not incorporated ","workers","workers","workers","wage and salary","own incorporated","company workers","wage and salary" ];
+      labels3 = ["","Self-employed in own","Federal government","State government","","workers","business workers","","workers"];
       var outerCircleRadius1 = 4.1 *hub_r;
       var outerCircleRadius2 = 3.9 * hub_r;
       var outerCircleRadius3 = 3.7 * hub_r;
@@ -233,15 +233,24 @@ start = () => {
       };
     }
 
-    function describeArc(x, y, radius, startAngle, endAngle){
-    var start = polarToCartesian(x, y, radius, endAngle + Math.PI);
-    var end = polarToCartesian(x, y, radius, startAngle + Math.PI);
-    var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
-    var d = [
-        "M", start.x, start.y, 
-        "A", radius, radius, 0, 1, 1, end.x, end.y
-    ].join(" ");
-    return d;       
+    function describeArc(x, y, radius, startAngle, endAngle) {
+      var start, end,largeArcFlag,sweepFlag, extraAngle;
+      extraAngle = 0;
+      largeArcFlag = 0;
+
+      if(endAngle>Math.PI){
+        largeArcFlag = 1;
+        extraAngle = Math.PI;
+      }
+      sweepFlag = largeArcFlag;
+      start = polarToCartesian(x,y,radius,endAngle + extraAngle);
+      end = polarToCartesian(x,y,radius,startAngle + extraAngle);
+      var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
+      var d = [
+        "M", start.x, start.y,
+        "A", radius, radius, 0, largeArcFlag, sweepFlag, end.x, end.y
+      ].join(" ");
+      return d;
     }
 
 
