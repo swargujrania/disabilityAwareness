@@ -184,24 +184,22 @@ start = () => {
     svg.selectAll('.unit')
       .data(units)
       .enter()
-      .append('circle')
+      .append('polyline')
       .attr('class', d => {
         return d.status == "With a Disability" ? 'unit dis_unit' : 'unit reg_unit';
       })
       .attr('data-state', d => d.state)
-      .attr('transform', d => `translate(${ d.x },${ d.y })`)
-      .attr('cx', 0)
-      .attr('cy', 0)
-      .attr('r', 3)
-      .attr('stroke', '#F2BDB6')
-      .attr('fill', d => {
-        if (d.status == "With a Disability") {
-          return 'rgb(242,189,182)';
-        } else {
-          return 'white';
-        }
-      });
+      .attr("points", d => d.points_init)
+      .attr("stroke", d => { return getColor(d.status).stroke })
+      .attr("fill", d => { return getColor(d.status).fill });
 
+      svg.selectAll('.unit')
+        .transition()
+        .ease(d3.easePolyIn.exponent(2))
+        .duration(400)
+        .delay((d, i) => i * 6)
+        .attr("points", d => d.points_final);
+        
     svg.selectAll('.unit')
       .on('click', d => {
         resetColors();
@@ -345,9 +343,8 @@ start = () => {
 
 function highlightState(state) {
   $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 1)');
-  $('".dis_unit[data-state=\'' + state + '\']"').attr('stroke', 'rgba(0,134,173, 1)');
-  $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', 'white');
-  $('".reg_unit[data-state=\'' + state + '\']"').attr('stroke', 'rgba(0,134,173, 0.4)');
+  $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 0.4)');
+ 
 
   $('#stateName').text(state);
   var total = totalNumber.find(t => t.state == state).numbers;
@@ -358,18 +355,18 @@ function highlightState(state) {
 
 function resetColors() {
 
-  $('.dis_unit').attr('fill', 'rgb(242,189,182)');
-  $('.dis_unit').attr('stroke', 'none');
-  $('.reg_unit').attr('fill', 'white');
-  $('.reg_unit').attr('stroke', '#F2BDB6');
+  $('.dis_unit').attr('fill', getColor('With a Disability').fill);
+  $('.dis_unit').attr('stroke', getColor('With a Disability').stroke);
+  $('.reg_unit').attr('fill', getColor('No Disability').fill);
+  $('.reg_unit').attr('stroke', getColor('No Disability').stroke);
 }
 
 
 function setDropdown(width, height) {
   var dropDown = d3.select('body').select('#stateDropdown')
     .style('position', 'relative');
-    //.style('margin-left', width + 'px');
-    //.style('margin-bottom', height/2 + 'px');
+  //.style('margin-left', width + 'px');
+  //.style('margin-bottom', height/2 + 'px');
 
   var stateList = ["Select a state", "Alaska", "Maine", "North Carolina", "Missouri", "Pennsylvania", "Michigan", "Nebraska", "Oregon", "Wyoming", "California", "Mississippi", "Connecticut", "Texas", "Idaho", "Maryland", "New Mexico", "Alabama", "Tennesee", "Vermont", "Nevada", "West Virginia", "Oklahoma", "Wisconsin", "Puerto Rico", "Kansas", "Virginia", "North Dakota", "New Jersey", "Ohio", "South Carolina", "Georgia", "Colorado", "Hawaii", "South Dakota", "Indiana", "Kentucky", "Louisiana", "Washington", "Illinois", "Iowa", "New Hampshire", "Rhode Island", "Arkansas", "Delaware", "Minnesota", "Montana", "Arizona", "Florida", "Massachusetts", "District of Columbia", "Utah", "New York"];
   dropDown.selectAll('option')
@@ -387,6 +384,13 @@ function setDropdown(width, height) {
 
   })
 
+}
+
+function getColor(status) {
+  switch (status) {
+    case 'With a Disability': return { 'fill': 'rgba(255,0,0,0.6)', 'stroke': 'white' };
+    case 'No Disability': return { 'fill': 'rgba(255,0,0,0.1)', 'stroke': 'white' };
+  }
 }
 
 class Bucket {
@@ -409,6 +413,9 @@ class Unit {
     this.x = x;
     this.y = y;
     this.angle = angle;
+    this.points_init = `${ x - 4 },${ y - 1000 } ${ x - 2 },${ y - 3.5 - 1000 } ${ x + 2 },${ y - 3.5 - 1000 } ${ x + 4 },${ y - 1000 } ${ x + 2 },${ y + 3.5 - 1000 } ${ x - 2 },${ y + 3.5 - 1000 } ${ x - 4 },${ y - 1000 }`;
+    this.points_final = `${ x - 4 },${ y } ${ x - 2 },${ y - 3.5 } ${ x + 2 },${ y - 3.5 } ${ x + 4 },${ y } ${ x + 2 },${ y + 3.5 } ${ x - 2 },${ y + 3.5 } ${ x - 4 },${ y }`;
+
   }
 }
 
