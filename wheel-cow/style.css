@@ -18,8 +18,8 @@ body {
 }
 
 #outer-container {
-	width: 1000px;
-	height: 710px;
+	width: 1400px;
+	height: 1000px;
 	margin-left: auto;
     margin-right: auto;
 	border: #c6dbef 1px solid;
@@ -27,7 +27,7 @@ body {
 }
 
 #vis-container {
-	height: calc(100% - 100px);
+	height: calc(100%);
 	white-space: nowrap;
 	font-size: 0px;
 }
