@@ -1,7 +1,6 @@
 var WIDTH = 2500
 var HEIGHT = 2000
 
-colorPalette = ['#ffd600', '#c9e402', '#b6ff64', '#63c964', '#6fffbf', '#67b1a0', '#00caba', '#06efff', '#008eaa', '#2284dd'];
 $('#stateName').css('left', WIDTH / 2);
 
 selectedStates = [];
@@ -16,6 +15,7 @@ $(function () {
                 this.stream.point(x, -y)
             }
         });
+
         Dpath = d3.geoPath().projection(transform);
 
         //draw svg area
@@ -57,8 +57,6 @@ $(function () {
 
             })
         });
-
-
 
         d3.csv('./2018.csv').then(data => {
             for (let datum of data) {
@@ -152,14 +150,13 @@ $(function () {
                     selectedStates.splice(selectedStates.indexOf(d.state), 1);
                     highlightStateBoundaries(false, d);
                     highlightState(false, d, hexPolyline);
-                }
-                else {
+                    changeView(selectedStates);
+                } else {
                     selectedStates.push(d.state);
                     highlightStateBoundaries(true, d);
                     highlightState(true, d, hexPolyline);
+                    changeView(selectedStates);
                 }
-
-                console.log(selectedStates);
 
             })
 
@@ -180,181 +177,7 @@ $(function () {
 
     });
 
-})
-
-
-
-function getColorByState(stateName) {
-
-    var stt = stateName[0] + stateName.substr(1).toLowerCase();
-
-    switch (stt) {
-        case 'Wyoming':
-            return colorPalette[1]
-            break;
-        case 'Wisconsin':
-            return colorPalette[1]
-            break;
-        case 'West Virginia':
-            return colorPalette[1]
-            break;
-        case 'Washington':
-            return colorPalette[1]
-            break;
-        case 'Virginia':
-            return colorPalette[1]
-            break;
-        case 'Virgin Islands':
-            return colorPalette[2]
-            break;
-        case 'Vermont':
-            return colorPalette[2]
-            break;
-        case 'Utah':
-            return colorPalette[2]
-            break;
-        case 'Texas':
-            return colorPalette[2]
-            break;
-        case 'South Dakota':
-            return colorPalette[2]
-            break;
-        case 'Tennessee':
-            return colorPalette[9]
-            break;
-        case 'South Carolina':
-            return colorPalette[3]
-            break;
-        case 'Rhode Island':
-            return colorPalette[3]
-            break;
-        case 'Pennsylvania':
-            return colorPalette[3]
-            break;
-        case 'Oregon':
-            return colorPalette[3]
-            break;
-        case 'Oklahoma':
-            return colorPalette[4]
-            break;
-        case 'Ohio':
-            return colorPalette[4]
-            break;
-        case 'North Dakota':
-            return colorPalette[4]
-            break;
-        case 'North Carolina':
-            return colorPalette[4]
-            break;
-        case "New York":
-            return colorPalette[4]
-            break;
-        case 'New Mexico':
-            return colorPalette[5]
-            break;
-        case 'New Jersey':
-            return colorPalette[5]
-            break;
-        case 'New Hampshire':
-            return colorPalette[5]
-            break;
-        case 'Nevada':
-            return colorPalette[5]
-            break;
-        case 'Nebraska':
-            return colorPalette[5]
-            break;
-        case 'Montana':
-            return colorPalette[6]
-            break;
-        case 'Missouri':
-            return colorPalette[6]
-            break;
-        case 'Mississippi':
-            return colorPalette[6]
-            break;
-        case 'Minnesota':
-            return colorPalette[6]
-            break;
-        case 'Michigan':
-            return colorPalette[6]
-            break;
-        case 'Massachusetts':
-            return colorPalette[7]
-            break;
-        case 'Maryland':
-            return colorPalette[7]
-            break;
-        case 'Maine':
-            return colorPalette[7]
-            break;
-        case 'Louisiana':
-            return colorPalette[7]
-            break;
-        case 'Kentucky':
-            return colorPalette[7]
-            break;
-        case 'Kansas':
-            return colorPalette[8]
-            break;
-        case 'Iowa':
-            return colorPalette[8]
-            break;
-        case 'Indiana':
-            return colorPalette[8]
-            break;
-        case 'Illinois':
-            return colorPalette[8]
-            break;
-        case 'Idaho':
-            return colorPalette[8]
-            break;
-        case 'Hawaii':
-            return colorPalette[9]
-            break;
-        case 'Guam':
-            return colorPalette[9]
-            break;
-        case 'Georgia':
-            return colorPalette[3]
-            break;
-        case 'Florida':
-            return colorPalette[9]
-            break;
-        case 'District Of Columbia':
-            return colorPalette[9]
-            break;
-        case 'Delaware':
-            return colorPalette[0]
-            break;
-        case 'Connecticut':
-            return colorPalette[0]
-            break;
-        case 'Colorado':
-            return colorPalette[0]
-            break;
-        case 'California':
-            return colorPalette[0]
-            break;
-        case 'Arkansas':
-            return colorPalette[0]
-            break;
-        case 'Arizona':
-            return colorPalette[0]
-            break;
-        case 'Alaska':
-            return colorPalette[0]
-            break;
-        case 'Alabama':
-            return colorPalette[0]
-            break;
-        default:
-            return colorPalette[0]
-            break;
-
-    }
-
-}
+});
 
 function highlightStateBoundaries(toBeHighlighted, d) {
     var selectorString = '"path.border[data-state=\'' + d.state + '\']"';
