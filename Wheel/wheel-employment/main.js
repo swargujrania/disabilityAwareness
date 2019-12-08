@@ -3,15 +3,21 @@ var margin = { top: 100, left: 100, bottom: 20, right: 100 };
 var a, b;
 const PEOPLE_UNIT = 50000;
 
-let units = [];
-let dataset;
-let buckets = [];
+units_6 = [];
+
+var hub_r_6;
+var hub_cx_6;
+var hub_cy_6;
+
+let dataset_6;
+let buckets_6 = [];
 var spokes;
 var labels1;
 var labels2;
 var labels3;
 var tempLabel;
 var totalNumber = [];
+
 
 var pie = d3.pie()
   .startAngle(-90 * Math.PI / 180)
@@ -30,6 +36,8 @@ var donutData = [
   { name: "Giraffe", value: 18 },
   { name: "Other", value: 8 }
 ];
+
+
 start = () => {
 
   var svg = d3.select('#vis-container svg');
@@ -39,66 +47,21 @@ start = () => {
   //add drop down
   setDropdown(svgWidth, svgHeight);
 
-  var wheel = d3.select('svg')
-    .append('g')
-    .attr('class', 'wheel');
-
-  wheel.append('text')
-    .attr('id', 'stateName')
-    .attr('transform', `translate(${ svgWidth / 2 - 20 }, ${ svgHeight / 2 - 50 })`)
-    .text('');
-
-  wheel.append('text')
-    .attr('id', 'stateTotal')
-    .attr('transform', `translate(${ svgWidth / 2 - 20 }, ${ svgHeight / 2 - 30 })`)
-    .text('');
-
-  var hub_r = 100;
-  var hub_cx = svgWidth / 2;
-  var hub_cy = svgHeight / 2 + margin.top / 2 - 100;
-
-  var hub = wheel.append('circle')
-    .attr('class', 'hub')
-    .attr('r', hub_r)
-    .attr('cx', hub_cx)
-    .attr('cy', hub_cy)
-    .attr('fill', 'none')
-    .attr('stroke', '#ccc');
-
   var spokesData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];	// number of industry types
+  var wheel = drawWheel(svgWidth, svgHeight, spokesData);
 
-  var spoke_length = 250;
-
-  spokes = wheel.selectAll('.spokes')
-    .data(spokesData)
-    .enter()
-    .append("line")
-    .attr('x1', function (d) {
-      return hub_cx + hub_r * Math.cos(d * 2 * Math.PI / spokesData.length);	//spoke_x1
-    })
-    .attr('y1', function (d) {
-      return hub_cy - hub_r * Math.sin(d * 2 * Math.PI / spokesData.length);	//spoke_y1
-    })
-    .attr('x2', function (d) {
-      return hub_cx + (hub_r + spoke_length) * Math.cos(d * 2 * Math.PI / spokesData.length);	//spoke_x2
-    })
-    .attr('y2', function (d) {
-      return hub_cy - (hub_r + spoke_length) * Math.sin(d * 2 * Math.PI / spokesData.length);	//spoke_y2
-    })
-    .attr('stroke', '#ccc');
+  hub_r_6 = wheel.r;
+  hub_cx_6 = wheel.cx;
+  hub_cy_6 = wheel.cy;
 
 
 
   d3.csv('./industry2018.csv').then(data => {
 
     // compute total number
-    var hundredpercent = data.filter(d => d.percentage == 100 && d.disabilityType == "Total Civilian Noninstitutionalized Population");
-    hundredpercent.forEach(h => {
-      totalNumber.push({ 'state': h.state, 'numbers': h.numbers });
-    })
+    totalNumber = calculateTotal(data);
 
     data = data.filter(d => d.disabilityType != "Total Civilian Noninstitutionalized Population");
-
     let nestedData = d3.nest()
       .key(d => d.industry)
       .entries(data);
@@ -106,129 +69,14 @@ start = () => {
     //nestedData.splice(0, 1);
     nestedData.pop();
 
-    dataset = nestedData;
-    console.log(dataset);
+    dataset_6 = nestedData;
 
-    var prevTheta = 0;
-    for (let i = 0; i < spokesData.length; i++) {
-      let x1 = $($('.wheel > line')[i]).attr('x1');
-      let x2 = $($('.wheel > line')[i]).attr('x2');
-      let y1 = $($('.wheel > line')[i]).attr('y1');
-      let y2 = $($('.wheel > line')[i]).attr('y2');
-      let theta1 = prevTheta;
-      let theta2 = (i + 1) * 2 * Math.PI / spokesData.length;
-      let label = dataset[i].key;
-      buckets[i] = new Bucket(x1, y1, x2, y2, theta1, theta2, label);
-      prevTheta = theta2;
-      //buckets[i].showLabel(svg);
-    }
+    buckets_6 = drawBuckets(dataset_6, spokesData);
 
-    var n2 = d3.nest()
-      .key(d => d.industry)
-      .key(d => d.state)
-      .entries(data);
-    n2.pop();
-
-    for (let k = 0; k < n2.length; k++) {
-      let tempUnits = []
-      let bracket = n2[k];
-
-      bracket.values.forEach(item => {
-        //with dis
-        var disCount = +item.values.find(i => i.disabilityType == 'With a Disability').numbers;
-
-        for (j = 0; j < Math.round(disCount / PEOPLE_UNIT); j++) {
-          var disUnit = {
-            'bracket': bracket.key,
-            'status': "With a Disability",
-            'state': item.key
-          }
-          tempUnits.push(disUnit)
-        }
-
-        //without dis
-        var woDisCount = +item.values.find(i => i.disabilityType == 'No Disability').numbers;
-        for (j = 0; j < Math.round(woDisCount / PEOPLE_UNIT); j++) {
-          var disUnit = {
-            'bracket': bracket.key,
-            'status': "No Disability",
-            'state': item.key
-          }
-          tempUnits.push(disUnit)
-        }
-
-      });
-
-      var totalWithDis = tempUnits.filter(u => u.status == 'With a Disability');
-      var totalNoDis = tempUnits.filter(u => u.status == 'No Disability');
-
-      let t = 7;
-      let radius = hub_r + 3.5;
-      let PrevAngle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
-      angle = PrevAngle;
-
-      // with dis
-      for (let i = 0; i < totalWithDis.length; i++) {
-
-        let x = hub_cx + radius * Math.cos(angle);
-        let y = hub_cy - radius * Math.sin(angle);
-        angle += 2 * Math.asin(t / (2 * radius));
-        if (angle > buckets[k].theta2) {
-          radius += t;
-          angle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
-
-        }
-
-        let unit = new Unit(totalWithDis[i], x, y, angle);
-        units.push(unit);
-
-      }
-
-      // without dis
-      for (let i = 0; i < totalNoDis.length; i++) {
-
-        let x = hub_cx + radius * Math.cos(angle);
-        let y = hub_cy - radius * Math.sin(angle);
-        angle += 2 * Math.asin(t / (2 * radius));
-        if (angle > buckets[k].theta2) {
-          radius += t;
-          angle = Math.asin(t / (2 * radius)) + buckets[k].theta1;
-
-        }
-
-        let unit = new Unit(totalNoDis[i], x, y, angle);
-        units.push(unit);
-
-      }
-
-    }
-
-
-    svg.selectAll('.unit')
-      .data(units)
-      .enter()
-      .append('polyline')
-      .attr('class', d => {
-        return d.status == "With a Disability" ? 'unit dis_unit' : 'unit reg_unit';
-      })
-      .attr('data-state', d => d.state)
-      .attr("points", d => d.points_init)
-      .attr("stroke", d => { return getColor(d.status).stroke })
-      .attr("fill", d => { return getColor(d.status).fill });
-
-    svg.selectAll('.unit')
-      .transition()
-      .ease(d3.easePolyIn.exponent(2))
-      .duration(400)
-      .delay((d, i) => i * 6)
-      .attr("points", d => d.points_final);
-
-
-    svg.selectAll('.unit')
-      .on('click', d => {
-        resetColors();
-        highlightState(d.state);
-      })
+    d3.json('wheelEmploymentUnits.json').then(units => {
+      units_6 = units;
+      drawUnits(svg, units_6);
+    })
 
     labels1 = ["Public administration", "administration)", "and food services", " social assistance", "and waste management services",
       "rental and leasing", "Information", "Transportation and ", "Retail trade", "Wholesale trade", "Manufacturing"
@@ -237,103 +85,23 @@ start = () => {
       "", "", "fishing and hunting,"];
     labels3 = ["", "Other services ", "Arts, entertainment, and  ", "Educational services, ", "Professional, scientific, and ", "Finance and insurance, ",
       "", "", "", "", "", "", "and mining"];
-    var outerCircleRadius1 = 4.1 * hub_r;
-    var outerCircleRadius2 = 3.9 * hub_r;
-    var outerCircleRadius3 = 3.7 * hub_r;
-    var outerCircleRadius4 = 0.9 * hub_r;
+    var outerCircleRadius1 = 4.1 * hub_r_6;
+    var outerCircleRadius2 = 3.9 * hub_r_6;
+    var outerCircleRadius3 = 3.7 * hub_r_6;
+    var outerCircleRadius4 = 0.9 * hub_r_6;
 
-    var start_x = hub_cx - 350;
-    var start_y = hub_cy;
-    var end_x = hub_cx + 350;
-    var end_y = hub_cy;
+    var start_x = hub_cx_6 - 350;
+    var start_y = hub_cy_6;
+    var end_x = hub_cx_6 + 350;
+    var end_y = hub_cy_6;
 
-    function polarToCartesian(centerX, centerY, radius, angleInRadians) {
-      //var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
-      return {
-        x: centerX + (radius * Math.cos(angleInRadians)),
-        y: centerY + (radius * Math.sin(angleInRadians))
-      };
-    }
+    //arc1
+    var arc1 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 0);
+    var arc2 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 1);
+    var arc3 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 2);
+    var arc4 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 3);
 
-    function describeArc(x, y, radius, startAngle, endAngle) {
-      var start, end, largeArcFlag, sweepFlag, extraAngle;
-      extraAngle = 0;
-      largeArcFlag = 0;
-
-      if (endAngle > Math.PI) {
-        largeArcFlag = 1;
-        extraAngle = Math.PI;
-        radius -= 10;
-      }
-      sweepFlag = largeArcFlag;
-      start = polarToCartesian(x, y, radius, endAngle + extraAngle);
-      end = polarToCartesian(x, y, radius, startAngle + extraAngle);
-      var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
-      var d = [
-        "M", start.x, start.y,
-        "A", radius, radius, 0, largeArcFlag, sweepFlag, end.x, end.y
-      ].join(" ");
-      return d;
-    }
-
-
-    var arcs1 = svg.selectAll(".arcs")
-      .data(buckets)
-      .enter()
-      .append("path")
-      .attr("fill", "none")
-      .attr("id", function (d, i) { return "s" + i; })
-      .attr("d", function (d, i) {
-        return describeArc(hub_cx, hub_cy, outerCircleRadius1, d.theta1, d.theta2);
-      })
-      .style("stroke", "#AAAAAA")
-      .attr("stroke-opacity", 0)
-      .style("stroke-dasharray", "5,5");
-
-
-    var arcs2 = svg.selectAll(".arcs")
-      .data(buckets)
-      .enter()
-      .append("path")
-      .attr("fill", "none")
-      .attr("id", function (d, i) { return "t" + i; })
-      //.attr("id","huhue")
-      // .attr("d", function(d,i) {
-      //     return describeArc(d.x, d.y, d.r, 160, -160)
-      // } );
-      .attr("d", function (d, i) {
-        return describeArc(hub_cx, hub_cy, outerCircleRadius2, d.theta1, d.theta2);
-      })
-      .style("stroke", "#AAAAAA")
-      .attr("stroke-opacity", 0)
-      .style("stroke-dasharray", "5,5");
-
-    var arcs3 = svg.selectAll(".arcs")
-      .data(buckets)
-      .enter()
-      .append("path")
-      .attr("fill", "none")
-      .attr("id", function (d, i) { return "u" + i; })
-      .attr("d", function (d, i) {
-        return describeArc(hub_cx, hub_cy, outerCircleRadius3, d.theta1, d.theta2);
-      })
-      .style("stroke", "#AAAAAA")
-      .attr("stroke-opacity", 0)
-      .style("stroke-dasharray", "5,5");
-
-    var arcs4 = svg.selectAll(".arcs")
-      .data(buckets)
-      .enter()
-      .append("path")
-      .attr("fill", "none")
-      .attr("id", function (d, i) { return "v" + i; })
-      .attr("d", function (d, i) {
-        return describeArc(hub_cx, hub_cy, outerCircleRadius4, d.theta1, d.theta2);
-      })
-      .style("stroke", "#AAAAAA")
-      .attr("stroke-opacity", 0)
-      .style("stroke-dasharray", "5,5");
-
+    //text arcs
     var textArc1 = svg.selectAll(".industryLabels")
       .data(labels1)
       .enter()
@@ -377,9 +145,9 @@ start = () => {
 
     //generate labels
     tempLabel = [];
-    for (var i = 0; i < buckets.length; i++) {
-      tempLabel[i] = buckets[i].label;
-      console.log(tempLabel[i]);
+    for (var i = 0; i < buckets_6.length; i++) {
+      tempLabel[i] = buckets_6[i].label;
+      (tempLabel[i]);
     }
     tempLabel.reverse();
 
@@ -409,6 +177,160 @@ start = () => {
 
 } //start event end braces
 
+function drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r, id) {
+
+  var outerCircleRadius = [];
+  outerCircleRadius.push(4.1 * hub_r);
+  outerCircleRadius.push(3.9 * hub_r);
+  outerCircleRadius.push(3.7 * hub_r);
+  outerCircleRadius.push(0.9 * hub_r);
+
+  var idArray = ['s', 't', 'u', 'v']
+
+  svg.selectAll(".arcs")
+    .data(buckets_6)
+    .enter()
+    .append("path")
+    .attr("fill", "none")
+    .attr("id", function (d, i) { return idArray[id] + i; })
+    .attr("d", function (d, i) {
+      return describeArc(hub_cx_6, hub_cy_6, outerCircleRadius[id], d.theta1, d.theta2);
+    })
+    .style("stroke", "#AAAAAA")
+    .attr("stroke-opacity", 0)
+    .style("stroke-dasharray", "5,5");
+
+}
+
+function describeArc(x, y, radius, startAngle, endAngle) {
+  var start, end, largeArcFlag, sweepFlag, extraAngle;
+  extraAngle = 0;
+  largeArcFlag = 0;
+
+  if (endAngle > Math.PI) {
+    largeArcFlag = 1;
+    extraAngle = Math.PI;
+    radius -= 10;
+  }
+  sweepFlag = largeArcFlag;
+  start = polarToCartesian(x, y, radius, endAngle + extraAngle);
+  end = polarToCartesian(x, y, radius, startAngle + extraAngle);
+  var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
+  var d = [
+    "M", start.x, start.y,
+    "A", radius, radius, 0, largeArcFlag, sweepFlag, end.x, end.y
+  ].join(" ");
+  return d;
+}
+
+
+function drawUnits(svg, units_6) {
+  svg.selectAll('.unit')
+    .data(units_6)
+    .enter()
+    .append('polyline')
+    .attr('class', d => {
+      return d.status == "With a Disability" ? 'unit dis_unit' : 'unit reg_unit';
+    })
+    .attr('data-state', d => d.state)
+    .attr("points", d => d.points_final)
+    .attr("stroke", d => { return getColor(d.status).stroke })
+    .attr("fill", d => { return getColor(d.status).fill });
+
+  svg.selectAll('.unit')
+    .transition()
+    .ease(d3.easePolyIn.exponent(2))
+    .duration(400)
+    .delay((d, i) => i * 6)
+    .attr("points", d => d.points_final);
+
+
+  svg.selectAll('.unit')
+    .on('click', d => {
+      resetColors();
+      highlightState(d.state);
+    })
+}
+
+function calculateTotal(data) {
+  totalNumber = [];
+  var hundredpercent = data.filter(d => d.percentage == 100 && d.disabilityType == "Total Civilian Noninstitutionalized Population");
+  hundredpercent.forEach(h => {
+    totalNumber.push({ 'state': h.state, 'numbers': h.numbers });
+  })
+
+  return totalNumber
+}
+
+function drawBuckets(dataset, spokesData) {
+
+  var prevTheta = 0;
+  for (let i = 0; i < spokesData.length; i++) {
+    let x1 = $($('.wheel > line')[i]).attr('x1');
+    let x2 = $($('.wheel > line')[i]).attr('x2');
+    let y1 = $($('.wheel > line')[i]).attr('y1');
+    let y2 = $($('.wheel > line')[i]).attr('y2');
+    let theta1 = prevTheta;
+    let theta2 = (i + 1) * 2 * Math.PI / spokesData.length;
+    let label = dataset[i].key;
+    buckets_6[i] = new Bucket(x1, y1, x2, y2, theta1, theta2, label);
+    prevTheta = theta2;
+    //buckets_6[i].showLabel(svg);
+  }
+
+  return buckets_6;
+}
+
+function drawWheel(svgWidth, svgHeight, spokesData) {
+  var wheel = d3.select('svg')
+    .append('g')
+    .attr('class', 'wheel');
+
+  wheel.append('text')
+    .attr('id', 'stateName')
+    .attr('transform', `translate(${ svgWidth / 2 - 20 }, ${ svgHeight / 2 - 50 })`)
+    .text('');
+
+  wheel.append('text')
+    .attr('id', 'stateTotal')
+    .attr('transform', `translate(${ svgWidth / 2 - 20 }, ${ svgHeight / 2 - 30 })`)
+    .text('');
+
+  var hub_r = 100;
+  var hub_cx = svgWidth / 2;
+  var hub_cy = svgHeight / 2 + margin.top / 2 - 100;
+
+  var hub = wheel.append('circle')
+    .attr('class', 'hub')
+    .attr('r', hub_r)
+    .attr('cx', hub_cx)
+    .attr('cy', hub_cy)
+    .attr('fill', 'none')
+    .attr('stroke', '#ccc');
+
+
+  var spoke_length = 250;
+
+  spokes = wheel.selectAll('.spokes')
+    .data(spokesData)
+    .enter()
+    .append("line")
+    .attr('x1', function (d) {
+      return hub_cx + hub_r * Math.cos(d * 2 * Math.PI / spokesData.length);	//spoke_x1
+    })
+    .attr('y1', function (d) {
+      return hub_cy - hub_r * Math.sin(d * 2 * Math.PI / spokesData.length);	//spoke_y1
+    })
+    .attr('x2', function (d) {
+      return hub_cx + (hub_r + spoke_length) * Math.cos(d * 2 * Math.PI / spokesData.length);	//spoke_x2
+    })
+    .attr('y2', function (d) {
+      return hub_cy - (hub_r + spoke_length) * Math.sin(d * 2 * Math.PI / spokesData.length);	//spoke_y2
+    })
+    .attr('stroke', '#ccc');
+
+  return { 'wheel': wheel, 'r': hub_r, 'cx': hub_cx, 'cy': hub_cy };// wheel;
+}
 
 function highlightState(state) {
 
@@ -485,6 +407,24 @@ class Unit {
     this.points_final = `${ x - 4 },${ y } ${ x - 2 },${ y - 3.5 } ${ x + 2 },${ y - 3.5 } ${ x + 4 },${ y } ${ x + 2 },${ y + 3.5 } ${ x - 2 },${ y + 3.5 } ${ x - 4 },${ y }`;
 
   }
+}
+
+function polarToCartesian(centerX, centerY, radius, angleInRadians) {
+  //var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
+  return {
+    x: centerX + (radius * Math.cos(angleInRadians)),
+    y: centerY + (radius * Math.sin(angleInRadians))
+  };
+}
+
+function downloadObjectAsJson(exportObj, exportName) {
+  var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
+  var downloadAnchorNode = document.createElement('a');
+  downloadAnchorNode.setAttribute("href", dataStr);
+  downloadAnchorNode.setAttribute("download", exportName + ".json");
+  document.body.appendChild(downloadAnchorNode); // required for firefox
+  downloadAnchorNode.click();
+  downloadAnchorNode.remove();
 }
 
 
