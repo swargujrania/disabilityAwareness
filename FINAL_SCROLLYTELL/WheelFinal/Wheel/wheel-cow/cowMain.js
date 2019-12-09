@@ -178,7 +178,7 @@ cowMainStart = () => {
         .style("text-anchor", "middle")
         .style("font-size", "10px")
         .style("font-family", "AvenirNext-Regular")
-        .style("fill", "grey")
+        .style("fill", "#FFAC1D")
         .append("textPath") //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
           return "#vc" + i;
@@ -244,12 +244,12 @@ function drawUnits_7(svg, units_7) {
     })
     .attr('transform', 'translate(50, 250)');
 
-  svg.selectAll('.cowunit')
-    .transition()
-    .ease(d3.easePolyIn.exponent(2))
-    .duration(400)
-    .delay((d, i) => i * 6)
-    .attr("points", d => d.points_final);
+  // svg.selectAll('.cowunit')
+  //   .transition()
+  //   .ease(d3.easePolyIn.exponent(2))
+  //   .duration(400)
+  //   .delay((d, i) => i * 6)
+  //   .attr("points", d => d.points_init);
 
 
   svg.selectAll('.cowunit')
@@ -276,6 +276,7 @@ function describeArc_7(x, y, radius, startAngle, endAngle) {
   if (endAngle > Math.PI) {
     largeArcFlag = 1;
     extraAngle = Math.PI;
+    radius -= 10;
   }
   sweepFlag = largeArcFlag;
   start = polarToCartesian_7(x, y, radius, endAngle + extraAngle);

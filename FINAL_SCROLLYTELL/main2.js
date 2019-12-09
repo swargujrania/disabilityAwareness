@@ -228,7 +228,6 @@ function updateChart_2() {
 
     d3.selectAll("svg > *").remove();
     var svg = d3.select('#age-svg');
-    svg.call(toolTip);
 
     var lineG = svg.selectAll('.rect')
         .data(plot_2)
@@ -274,16 +273,6 @@ function updateChart_2() {
             console.log('hi');
             changeView_2(true, d.dis);
         })
-        .on('mouseover', d => {
-            var x = d3.event.x,
-                y = d3.event.y;
-
-            toolTip.show(d);
-
-            toolTip.style('top', y);
-            toolTip.style('left', x);
-        })
-        .on('mouseout', toolTip.hide)
         .exit()
         .remove();
     /*.selectAll('.unit')
@@ -309,7 +298,7 @@ function updateChart_2() {
 
     if (selectedVal_2 == "disabled" || selectedVal_2 == "all") {
         var xScale = d3.scaleBand()
-            .domain(["Hearing Difficulty", "Vision Difficulty", "Cognitive Difficulty", "Ambulatory Difficulty", "Self-care Difficulty", "Independent living Difficulty"])
+            .domain(["Hearing Difficulty", "Vision Difficulty", "Cognitive Difficulty", "Ambulatory Difficulty", "Self-care Difficulty", "Independent living difficulty"])
             //.range([100,1000]);
             .range([margin_2.left + axis_2.l + reSize(75), chartWidth_2 - reSize(50)]);
 
@@ -321,7 +310,7 @@ function updateChart_2() {
             .attr('class', 'x axis') // Use a class to css style the axes together
             .attr('transform', 'translate(0,' + margin_2.top + ')') // Position the axis
             .call(xAxis) // Call the axis function
-            .style("font", "10px times")
+            .style("font-size", "11")
             .style("font-family", "Avenir Next")
             .style("font-weight", "600")
             .style("color", "#607173")
@@ -354,7 +343,7 @@ function updateChart_2() {
             })
             .attr('font-family', 'Avenir Next')
             .style('stroke', '#607173')
-            .style('font-size', '12px')
+            .style('font-size', '11px')
             .attr('transform', function (d, i) {
                 return 'translate(800,' + (20 * i + 45) + ')';
             });
@@ -374,7 +363,7 @@ function updateChart_2() {
         .attr('class', 'y axis') // Use a class to css style the axes together
         .attr('transform', 'translate(' + [margin_2.left + axis_2.l, 0] + ')') // Position the axis
         .call(yAxisLeft) // Call the axis function
-        .style("font", "10px times")
+        .style("font-size", "11px")
         .style("font-family", "Avenir Next")
         .style("font-weight", "600")
         .style("color", "#607173")

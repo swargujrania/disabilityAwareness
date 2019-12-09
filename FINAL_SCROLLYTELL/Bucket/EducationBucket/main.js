@@ -164,7 +164,7 @@ function ed_drawPieCharts(ed_buckets, ed_svg) {
         for (i = 0; i < ed_arcs.length; i++) {
 
           var centerX = ed_buckets[i].x;
-          var centerY = ed_buckets[i].y + 175;
+          var centerY = ed_buckets[i].y + 140;
 
           ed_svg.append("g")
             .attr('class', 'pie')

@@ -300,6 +300,14 @@ d3.csv('./data/linedata.csv').then(usa => {
       .ticks(4)
     // .tickFormat(d3.format('%'));
 
+    sideview.append('text')
+      .text('Years')
+      .attr('transform', `translate(170, 550)`);
+
+    sideview.append('text')
+      .text('Prevalence of People with Disability')
+      .attr('transform', `translate(50, 25)`);
+
     sideview.append('g')
       .call(xAxis)
       .attr('transform', 'translate(0,500)');
@@ -517,6 +525,9 @@ changeView = (selectedStates) => {
 
   yAxisLine.call(yAxis)
     .attr('transform', 'translate(50,0)');
+
+  option_percent.style('opacity', 0.5);
+  option_count.style('opacity', 1);
 }
 
 changeToPercent = () => {

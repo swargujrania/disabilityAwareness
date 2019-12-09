@@ -168,7 +168,7 @@ empMainStart = () => {
         };
 
         var total = $('.emp_unit[data-bracket="' + t + '"]').length;
-        var wD = $('.dis_unit[data-bracket="' + t + '"]').length;
+        var wD = $('.dis_empunit[data-bracket="' + t + '"]').length;
 
         if (wD != 0) {
           o['percentage'] = d3.format('.2f')(wD / total * 100) + '%';
@@ -186,7 +186,7 @@ empMainStart = () => {
         .append("text")
         .style("text-anchor", "middle")
         .style("font-size", "10px")
-        .style("fill", "grey")
+        .style("fill", "FFAC1D")
         .style("font-family", "AvenirNext-Regular")
         .append("textPath") //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
@@ -277,12 +277,12 @@ function empdrawUnits(svg, units_6) {
       emphighlightState(d.state);
     });
 
-  svg.selectAll('.emp_unit')
-    .transition()
-    .ease(d3.easePolyIn.exponent(2))
-    .duration(400)
-    .delay((d, i) => i * 6)
-    .attr("points", d => d.points_final);
+  // svg.selectAll('.emp_unit')
+  //   .transition()
+  //   .ease(d3.easePolyIn.exponent(2))
+  //   .duration(400)
+  //   .delay((d, i) => i * 6)
+  //   .attr("points", d => d.points_init);
 
 
   // svg.selectAll('.emp_unit')
@@ -330,7 +330,7 @@ function empdrawWheel(svgWidth, svgHeight, spokesData) {
 
   wheel.append('text')
     .attr('id', 'stateNameE')
-    .attr('transform', `translate(${ svgWidth / 2 - 22 }, ${ svgHeight / 2 - 50 })`)
+    .attr('transform', `translate(${ svgWidth / 2 - 30 }, ${ svgHeight / 2 - 50 })`)
     .attr('margin', 'auto')
     .text('');
 
@@ -386,12 +386,12 @@ function emphighlightState(state) {
   $('".reg_empunit[data-state=\'' + state + '\']"').attr('fill', '#D5F0F0');
 
 
-  // $('#stateNameE').text(state);
-  // $('#stateNameE').css('font-family', 'AvenirNext-Regular');
-  // $('#stateNameE').css('text-align', 'center');
+  $('#stateNameE').text(state);
+  $('#stateNameE').css('font-family', 'AvenirNext-Regular');
+  $('#stateNameE').css('text-align', 'center');
 
-  // var total = totalNumber_6.find(t => t.state == state).numbers;
-  // $('#stateTotal').text(total);
+  var total = totalNumber_6.find(t => t.state == state).numbers;
+  $('#stateTotal').text(total);
 
 
   $('#stateDropdown1').val(state);

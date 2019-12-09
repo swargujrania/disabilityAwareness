@@ -142,7 +142,7 @@ function er_drawPieCharts(er_buckets) {
 
                 console.log(er_arcs);
 
-                const radius = ER_BUCKET_WIDTH / 2 * 0.8;
+                const radius = ER_BUCKET_WIDTH / 3;
 
                 // making pie charts
                 var pie = d3.pie()
@@ -153,14 +153,14 @@ function er_drawPieCharts(er_buckets) {
                   return d3.arc().innerRadius(radius).outerRadius(radius);
                 }
 
-                var arc = d3.arc()
+                var arc1 = d3.arc()
                   .innerRadius(0)
                   .outerRadius(ER_BUCKET_WIDTH / 2 - 1)
 
                 for (i = 0; i < er_arcs.length; i++) {
 
                   var centerX = er_buckets[i].x;
-                  var centerY = er_buckets[i].y + 175;
+                  var centerY = er_buckets[i].y + 140;
 
                   er_svg.append("g")
                     .attr('class', 'pie')
@@ -177,7 +177,7 @@ function er_drawPieCharts(er_buckets) {
                         return '#FEF1D6';
                       }
                     })
-                    .attr("d", arc)
+                    .attr("d", arc1)
                     .append("title")
                     .text(d => `${ d.data.key }: ${ d.data.value }`)
 

@@ -167,7 +167,7 @@ function p_drawPieCharts(p_buckets, p_svg) {
         for (i = 0; i < p_arcs.length; i++) {
 
           var centerX = p_buckets[i].x;
-          var centerY = p_buckets[i].y + 170;
+          var centerY = p_buckets[i].y + 140;
 
           p_svg.append("g")
             .attr('class', 'pie')

@@ -152,7 +152,7 @@ let readyFunction = () => {
 
   let endBucket = new ScrollMagic.Scene({
       triggerElement: '#end-bucket',
-      triggerHook: 1
+      triggerHook: 0
     })
     // .addIndicators()
     .addTo(controller);
@@ -163,7 +163,7 @@ let readyFunction = () => {
       triggerElement: '#start-wheel',
       triggerHook: 0.5
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   startSun.on('start', () => empMainStart());
@@ -171,7 +171,7 @@ let readyFunction = () => {
       triggerElement: '#start-wheel2',
       triggerHook: 0.5
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   startSun2.on('start', () => {
