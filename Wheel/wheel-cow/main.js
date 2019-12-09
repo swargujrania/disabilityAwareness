@@ -36,7 +36,7 @@ start = () => {
   d3.csv('./classOfWorker2018.csv').then(data => {
 
     // compute total number
-    totalNumber_7 = calculateTotal_7(data);
+    //totalNumber_7 = calculateTotal_7(data);
 
     data = data.filter(d => d.disabilityType != "Total Civilian Noninstitutionalized Population");
 
@@ -50,90 +50,93 @@ start = () => {
     dataset_7 = nestedData;
     buckets_7 = drawBuckets_7(dataset_7, spokesData);
 
-    // var n2 = d3.nest()
-    //   .key(d => d.classOfWorker)
-    //   .key(d => d.state)
-    //   .entries(data);
-    // n2.splice(0, 1);
+    var n2 = d3.nest()
+      .key(d => d.classOfWorker)
+      .key(d => d.state)
+      .entries(data);
+    n2.splice(0, 1);
 
-    // for (let k = 0; k < n2.length; k++) {
-    //   let tempUnits = []
-    //   let bracket = n2[k];
+    for (let k = 0; k < n2.length; k++) {
+      let tempUnits = []
+      let bracket = n2[k];
 
-    //   bracket.values.forEach(item => {
-    //     //with dis
-    //     var disCount = +item.values.find(i => i.disabilityType == 'With a Disability').numbers;
+      bracket.values.forEach(item => {
+        //with dis
+        var disCount = +item.values.find(i => i.disabilityType == 'With a Disability').numbers;
 
-    //     for (j = 0; j < Math.round(disCount / PEOPLE_UNIT); j++) {
-    //       var disUnit = {
-    //         'bracket': bracket.key,
-    //         'status': "With a Disability",
-    //         'state': item.key
-    //       }
-    //       tempUnits.push(disUnit)
-    //     }
+        for (j = 0; j < Math.round(disCount / PEOPLE_UNIT); j++) {
+          var disUnit = {
+            'bracket': bracket.key,
+            'status': "With a Disability",
+            'state': item.key
+          }
+          tempUnits.push(disUnit)
+        }
 
-    //     //without dis
-    //     var woDisCount = +item.values.find(i => i.disabilityType == 'No Disability').numbers;
-    //     for (j = 0; j < Math.round(woDisCount) / PEOPLE_UNIT; j++) {
-    //       var disUnit = {
-    //         'bracket': bracket.key,
-    //         'status': "No Disability",
-    //         'state': item.key
-    //       }
-    //       tempUnits.push(disUnit)
-    //     }
+        //without dis
+        var woDisCount = +item.values.find(i => i.disabilityType == 'No Disability').numbers;
+        for (j = 0; j < Math.round(woDisCount / PEOPLE_UNIT); j++) {
+          var disUnit = {
+            'bracket': bracket.key,
+            'status': "No Disability",
+            'state': item.key
+          }
+          tempUnits.push(disUnit)
+        }
 
-    //   });
+      });
 
-    //   var totalWithDis = tempUnits.filter(u => u.status == 'With a Disability');
-    //   var totalNoDis = tempUnits.filter(u => u.status == 'No Disability');
+      var totalWithDis = tempUnits.filter(u => u.status == 'With a Disability');
+      var totalNoDis = tempUnits.filter(u => u.status == 'No Disability');
 
-    //   let t = 7;
-    //   let radius = hub_r_7 + 3.5;
-    //   let PrevAngle = Math.asin(t / (2 * radius)) + buckets_7[k].theta1;
-    //   angle = PrevAngle;
+      let t = 7;
+      let radius = hub_r_7 + 3.5;
+      let PrevAngle = Math.asin(t / (2 * radius)) + buckets_7[k].theta1;
+      angle = PrevAngle;
 
-    //   // with dis
-    //   for (let i = 0; i < totalWithDis.length; i++) {
+      // with dis
+      for (let i = 0; i < totalWithDis.length; i++) {
 
-    //     let x = hub_cx_7 + radius * Math.cos(angle);
-    //     let y = hub_cy_7 - radius * Math.sin(angle);
-    //     angle += 2 * Math.asin(t / (2 * radius));
-    //     if (angle > buckets_7[k].theta2) {
-    //       radius += t;
-    //       angle = Math.asin(t / (2 * radius)) + buckets_7[k].theta1;
+        let x = hub_cx_7 + radius * Math.cos(angle);
+        let y = hub_cy_7 - radius * Math.sin(angle);
+        angle += 2 * Math.asin(t / (2 * radius));
+        if (angle > buckets_7[k].theta2) {
+          radius += t;
+          angle = Math.asin(t / (2 * radius)) + buckets_7[k].theta1;
 
-    //     }
+        }
 
-    //     let unit = new Unit(totalWithDis[i], x, y, angle);
-    //     units_7.push(unit);
+        let unit = new Unit(totalWithDis[i], x, y, angle);
+        units_7.push(unit);
 
-    //   }
+      }
 
-    //   // without dis
-    //   for (let i = 0; i < totalNoDis.length; i++) {
+      // without dis
+      for (let i = 0; i < totalNoDis.length; i++) {
 
-    //     let x = hub_cx_7 + radius * Math.cos(angle);
-    //     let y = hub_cy_7 - radius * Math.sin(angle);
-    //     angle += 2 * Math.asin(t / (2 * radius));
-    //     if (angle > buckets_7[k].theta2) {
-    //       radius += t;
-    //       angle = Math.asin(t / (2 * radius)) + buckets_7[k].theta1;
+        let x = hub_cx_7 + radius * Math.cos(angle);
+        let y = hub_cy_7 - radius * Math.sin(angle);
+        angle += 2 * Math.asin(t / (2 * radius));
+        if (angle > buckets_7[k].theta2) {
+          radius += t;
+          angle = Math.asin(t / (2 * radius)) + buckets_7[k].theta1;
 
-    //     }
+        }
 
-    //     let unit = new Unit(totalNoDis[i], x, y, angle);
-    //     units_7.push(unit);
+        let unit = new Unit(totalNoDis[i], x, y, angle);
+        units_7.push(unit);
 
-    //   }
+      }
 
-    // }
+    }
 
-    d3.json('wheelCowUnits.json').then(units => {
-      units_7 = units;
-      drawUnits_7(svg, units_7);
-    })
+    drawUnits_7(svg, units_7);
+
+
+    // d3.json('wheelCowUnits.json').then(units => {
+    //   units_7 = units;
+    //   drawUnits_7(svg, units_7);
+    // })
 
     var start_x = hub_cx_7 - 350;
     var start_y = hub_cy_7;
@@ -191,7 +194,9 @@ start = () => {
       .text(function (d, i) { return d; });
 
     //draw percentage
-    var dataForPercentage = d3.nest().key(d => d.classOfWorker).key(d => d.disabilityType).rollup(d => d3.sum(d, v => v.numbers)).entries(data);
+    pData = data;
+    var dataForPercentage = d3.nest().key(d => d.classOfWorker).entries(pData);
+    dataForPercentage.splice(0, 1);
     var p = [];
 
     //generate labels
@@ -203,12 +208,22 @@ start = () => {
     tempLabel.reverse();
 
     tempLabel.forEach(t => {
+
       var o = { 'bucket': t };
-      var iNeedThis = dataForPercentage.find(d => d.key == t);
-      var total = iNeedThis.values[0].value + iNeedThis.values[1].value;
-      o['percentage'] = (d3.format('.1f')(iNeedThis.values.find(x => x.key == 'With a Disability').value / total * 100)) + '%';
+     
+      var total = $('.unit[data-bracket="'+t+'"]').length;
+      var wD = $('.dis_unit[data-bracket="'+t+'"]').length;
+      
+      if(wD != 0){
+        o['percentage'] = d3.format('.2f')(wD/total * 100) + '%';
+      }
+      else{
+        o['percentage'] = '< '  + d3.format('.2f')(1/total * 100) + '%';
+      }
+      
       p.push(o);
     })
+
 
     var textArc4 = svg.selectAll(".percentage")
       .data(p)
@@ -262,6 +277,8 @@ function drawUnits_7(svg, units_7) {
       return d.status == "With a Disability" ? 'unit dis_unit' : 'unit reg_unit';
     })
     .attr('data-state', d => d.state)
+    .attr('data-disStat', d => d.status)
+    .attr('data-bracket', d => d.bracket)
     .attr("points", d => d.points_final)
     .attr("stroke", d => { return getColor_7(d.status).stroke })
     .attr("fill", d => { return getColor_7(d.status).fill });
@@ -329,13 +346,13 @@ function drawBuckets_7(dataset, spokesData) {
   return buckets_7;
 }
 
-function calculateTotal_7(data) {
-  totalNumber_7 = [];
-  var hundredpercent = data.filter(d => d.percentage == 100 && d.disabilityType == "Total Civilian Noninstitutionalized Population");
-  hundredpercent.forEach(h => {
-    totalNumber_7.push({ 'state': h.state, 'numbers': h.numbers });
-  });
-}
+// function calculateTotal_7(data) {
+//   totalNumber_7 = [];
+//   var hundredpercent = data.filter(d => d.percentage == 100 && d.disabilityType == "Total Civilian Noninstitutionalized Population");
+//   hundredpercent.forEach(h => {
+//     totalNumber_7.push({ 'state': h.state, 'numbers': h.numbers });
+//   });
+// }
 
 function drawWheel_7(svgWidth, svgHeight, spokesData) {
   var wheel = d3.select('svg')
@@ -394,8 +411,8 @@ function highlightState_7(state) {
 
 
   $('#stateName').text(state);
-  var total = totalNumber.find(t => t.state == state).numbers;
-  $('#stateTotal').text(total);
+  //var total = totalNumber_7.find(t => t.state == state).numbers;
+  //$('#stateTotal').text(total);
 
   $('#stateDropdown').val(state);
 }
