@@ -1,0 +1,1405 @@
+year,state,dis_stat,income_bracket,percentage,value
+2018,Alaska,Total Civilian Noninstitutionalized Population,,100,390448
+2018,Alaska,With a Disability,,100,31586
+2018,Alaska,No Disability,,100,358862
+2018,Alaska,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.8,34359.424
+2018,Alaska,With a Disability,"$1 to $4,999 or loss",13,4106.18
+2018,Alaska,No Disability,"$1 to $4,999 or loss",8.4,30144.408
+2018,Alaska,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.3,51929.584
+2018,Alaska,With a Disability,$5000 to $14999,18.7,5906.582
+2018,Alaska,No Disability,$5000 to $14999,12.9,46293.198
+2018,Alaska,Total Civilian Noninstitutionalized Population,$15000 to $24999,10.7,41777.936
+2018,Alaska,With a Disability,$15000 to $24999,10.1,3190.186
+2018,Alaska,No Disability,$15000 to $24999,10.8,38757.096
+2018,Alaska,Total Civilian Noninstitutionalized Population,$25000 to $34999,11.5,44901.52
+2018,Alaska,With a Disability,$25000 to $34999,10.9,3442.874
+2018,Alaska,No Disability,$25000 to $34999,11.6,41627.992
+2018,Alaska,Total Civilian Noninstitutionalized Population,$35000 to $49999,14.5,56614.96
+2018,Alaska,With a Disability,$35000 to $49999,15.2,4801.072
+2018,Alaska,No Disability,$35000 to $49999,14.4,51676.128
+2018,Alaska,Total Civilian Noninstitutionalized Population,$50000 to $74999,19.1,74575.568
+2018,Alaska,With a Disability,$50000 to $74999,17.5,5527.55
+2018,Alaska,No Disability,$50000 to $74999,19.2,68901.504
+2018,Alaska,Total Civilian Noninstitutionalized Population,$75000 or more,22.1,86289.008
+2018,Alaska,With a Disability,$75000 or more,14.4,4548.384
+2018,Alaska,No Disability,$75000 or more,22.7,81461.674
+2018,Alaska,Total Civilian Noninstitutionalized Population,Median Earnings,,40320
+2018,Alaska,With a Disability,Median Earnings,,31900
+2018,Alaska,No Disability,Median Earnings,,40818
+2018,Maine,Total Civilian Noninstitutionalized Population,,100,749292
+2018,Maine,With a Disability,,100,61698
+2018,Maine,No Disability,,100,687594
+2018,Maine,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.5,78675.66
+2018,Maine,With a Disability,"$1 to $4,999 or loss",19.8,12216.204
+2018,Maine,No Disability,"$1 to $4,999 or loss",9.7,66696.618
+2018,Maine,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.7,102653.004
+2018,Maine,With a Disability,$5000 to $14999,23.9,14745.822
+2018,Maine,No Disability,$5000 to $14999,12.7,87324.438
+2018,Maine,Total Civilian Noninstitutionalized Population,$15000 to $24999,13.3,99655.836
+2018,Maine,With a Disability,$15000 to $24999,14.9,9193.002
+2018,Maine,No Disability,$15000 to $24999,13.1,90074.814
+2018,Maine,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.9,111644.508
+2018,Maine,With a Disability,$25000 to $34999,13.2,8144.136
+2018,Maine,No Disability,$25000 to $34999,15,103139.1
+2018,Maine,Total Civilian Noninstitutionalized Population,$35000 to $49999,17.4,130376.808
+2018,Maine,With a Disability,$35000 to $49999,11.6,7156.968
+2018,Maine,No Disability,$35000 to $49999,17.9,123079.326
+2018,Maine,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.1,128128.932
+2018,Maine,With a Disability,$50000 to $74999,10.9,6725.082
+2018,Maine,No Disability,$50000 to $74999,17.7,121704.138
+2018,Maine,Total Civilian Noninstitutionalized Population,$75000 or more,13.2,98906.544
+2018,Maine,With a Disability,$75000 or more,5.7,3516.786
+2018,Maine,No Disability,$75000 or more,13.8,94887.972
+2018,Maine,Total Civilian Noninstitutionalized Population,Median Earnings,,32973
+2018,Maine,With a Disability,Median Earnings,,19158
+2018,Maine,No Disability,Median Earnings,,34505
+2018,North Carolina,Total Civilian Noninstitutionalized Population,,100,5321951
+2018,North Carolina,With a Disability,,100,350352
+2018,North Carolina,No Disability,,100,4971599
+2018,North Carolina,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10,532195.1
+2018,North Carolina,With a Disability,"$1 to $4,999 or loss",15.7,55005.264
+2018,North Carolina,No Disability,"$1 to $4,999 or loss",9.6,477273.504
+2018,North Carolina,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.1,750395.091
+2018,North Carolina,With a Disability,$5000 to $14999,20.2,70771.104
+2018,North Carolina,No Disability,$5000 to $14999,13.7,681109.063
+2018,North Carolina,Total Civilian Noninstitutionalized Population,$15000 to $24999,14.8,787648.748
+2018,North Carolina,With a Disability,$15000 to $24999,16,56056.32
+2018,North Carolina,No Disability,$15000 to $24999,14.7,730825.053
+2018,North Carolina,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.3,761038.993
+2018,North Carolina,With a Disability,$25000 to $34999,13.3,46596.816
+2018,North Carolina,No Disability,$25000 to $34999,14.4,715910.256
+2018,North Carolina,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.7,888765.817
+2018,North Carolina,With a Disability,$35000 to $49999,14.5,50801.04
+2018,North Carolina,No Disability,$35000 to $49999,16.9,840200.231
+2018,North Carolina,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.1,803614.601
+2018,North Carolina,With a Disability,$50000 to $74999,11.3,39589.776
+2018,North Carolina,No Disability,$50000 to $74999,15.4,765626.246
+2018,North Carolina,Total Civilian Noninstitutionalized Population,$75000 or more,15,798292.65
+2018,North Carolina,With a Disability,$75000 or more,8.9,31181.328
+2018,North Carolina,No Disability,$75000 or more,15.5,770597.845
+2018,North Carolina,Total Civilian Noninstitutionalized Population,Median Earnings,,32093
+2018,North Carolina,With a Disability,Median Earnings,,23244
+2018,North Carolina,No Disability,Median Earnings,,32560
+2018,Missouri,Total Civilian Noninstitutionalized Population,,100,3209212
+2018,Missouri,With a Disability,,100,236496
+2018,Missouri,No Disability,,100,2972716
+2018,Missouri,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.2,327339.624
+2018,Missouri,With a Disability,"$1 to $4,999 or loss",17.8,42096.288
+2018,Missouri,No Disability,"$1 to $4,999 or loss",9.6,285380.736
+2018,Missouri,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.8,442871.256
+2018,Missouri,With a Disability,$5000 to $14999,21.2,50137.152
+2018,Missouri,No Disability,$5000 to $14999,13.2,392398.512
+2018,Missouri,Total Civilian Noninstitutionalized Population,$15000 to $24999,14,449289.68
+2018,Missouri,With a Disability,$15000 to $24999,15.6,36893.376
+2018,Missouri,No Disability,$15000 to $24999,13.8,410234.808
+2018,Missouri,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.8,474963.376
+2018,Missouri,With a Disability,$25000 to $34999,14,33109.44
+2018,Missouri,No Disability,$25000 to $34999,14.8,439961.968
+2018,Missouri,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.6,532729.192
+2018,Missouri,With a Disability,$35000 to $49999,13.4,31690.464
+2018,Missouri,No Disability,$35000 to $49999,16.9,502389.004
+2018,Missouri,Total Civilian Noninstitutionalized Population,$50000 to $74999,16,513473.92
+2018,Missouri,With a Disability,$50000 to $74999,10.2,24122.592
+2018,Missouri,No Disability,$50000 to $74999,16.5,490498.14
+2018,Missouri,Total Civilian Noninstitutionalized Population,$75000 or more,14.7,471754.164
+2018,Missouri,With a Disability,$75000 or more,7.7,18210.192
+2018,Missouri,No Disability,$75000 or more,15.2,451852.832
+2018,Missouri,Total Civilian Noninstitutionalized Population,Median Earnings,,32317
+2018,Missouri,With a Disability,Median Earnings,,21577
+2018,Missouri,No Disability,Median Earnings,,33456
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,,100,6885473
+2018,Pennsylvania,With a Disability,,100,485525
+2018,Pennsylvania,No Disability,,100,6399948
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.5,722974.665
+2018,Pennsylvania,With a Disability,"$1 to $4,999 or loss",18.1,87880.025
+2018,Pennsylvania,No Disability,"$1 to $4,999 or loss",9.9,633594.852
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.3,915767.909
+2018,Pennsylvania,With a Disability,$5000 to $14999,21,101960.25
+2018,Pennsylvania,No Disability,$5000 to $14999,12.8,819193.344
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.1,833142.233
+2018,Pennsylvania,With a Disability,$15000 to $24999,14.5,70401.125
+2018,Pennsylvania,No Disability,$15000 to $24999,11.9,761593.812
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.9,888226.017
+2018,Pennsylvania,With a Disability,$25000 to $34999,12,58263
+2018,Pennsylvania,No Disability,$25000 to $34999,12.9,825593.292
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.6,1074133.788
+2018,Pennsylvania,With a Disability,$35000 to $49999,12.9,62632.725
+2018,Pennsylvania,No Disability,$35000 to $49999,15.8,1011191.784
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.6,1211843.248
+2018,Pennsylvania,With a Disability,$50000 to $74999,12.5,60690.625
+2018,Pennsylvania,No Disability,$50000 to $74999,17.9,1145590.692
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,$75000 or more,18,1239385.14
+2018,Pennsylvania,With a Disability,$75000 or more,9,43697.25
+2018,Pennsylvania,No Disability,$75000 or more,18.7,1196790.276
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,Median Earnings,,35824
+2018,Pennsylvania,With a Disability,Median Earnings,,21957
+2018,Pennsylvania,No Disability,Median Earnings,,36698
+2018,Michigan,Total Civilian Noninstitutionalized Population,,100,5202958
+2018,Michigan,With a Disability,,100,371927
+2018,Michigan,No Disability,,100,4831031
+2018,Michigan,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.8,561919.464
+2018,Michigan,With a Disability,"$1 to $4,999 or loss",19.2,71409.984
+2018,Michigan,No Disability,"$1 to $4,999 or loss",10.1,487934.131
+2018,Michigan,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.9,775240.742
+2018,Michigan,With a Disability,$5000 to $14999,21.9,81452.013
+2018,Michigan,No Disability,$5000 to $14999,14.4,695668.464
+2018,Michigan,Total Civilian Noninstitutionalized Population,$15000 to $24999,13.6,707602.288
+2018,Michigan,With a Disability,$15000 to $24999,14.5,53929.415
+2018,Michigan,No Disability,$15000 to $24999,13.5,652189.185
+2018,Michigan,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.1,681587.498
+2018,Michigan,With a Disability,$25000 to $34999,12.1,45003.167
+2018,Michigan,No Disability,$25000 to $34999,13.2,637696.092
+2018,Michigan,Total Civilian Noninstitutionalized Population,$35000 to $49999,14.6,759631.868
+2018,Michigan,With a Disability,$35000 to $49999,12,44631.24
+2018,Michigan,No Disability,$35000 to $49999,14.8,714992.588
+2018,Michigan,Total Civilian Noninstitutionalized Population,$50000 to $74999,16.1,837676.238
+2018,Michigan,With a Disability,$50000 to $74999,10.6,39424.262
+2018,Michigan,No Disability,$50000 to $74999,16.5,797120.115
+2018,Michigan,Total Civilian Noninstitutionalized Population,$75000 or more,16.9,879299.902
+2018,Michigan,With a Disability,$75000 or more,9.7,36076.919
+2018,Michigan,No Disability,$75000 or more,17.4,840599.394
+2018,Michigan,Total Civilian Noninstitutionalized Population,Median Earnings,,32284
+2018,Michigan,With a Disability,Median Earnings,,21033
+2018,Michigan,No Disability,Median Earnings,,33471
+2018,Nebraska,Total Civilian Noninstitutionalized Population,,100,1093515
+2018,Nebraska,With a Disability,,100,80543
+2018,Nebraska,No Disability,,100,1012972
+2018,Nebraska,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.3,112632.045
+2018,Nebraska,With a Disability,"$1 to $4,999 or loss",16.2,13047.966
+2018,Nebraska,No Disability,"$1 to $4,999 or loss",9.8,99271.256
+2018,Nebraska,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.8,150905.07
+2018,Nebraska,With a Disability,$5000 to $14999,18.6,14980.998
+2018,Nebraska,No Disability,$5000 to $14999,13.4,135738.248
+2018,Nebraska,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.9,141063.435
+2018,Nebraska,With a Disability,$15000 to $24999,15.5,12484.165
+2018,Nebraska,No Disability,$15000 to $24999,12.7,128647.444
+2018,Nebraska,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.9,151998.585
+2018,Nebraska,With a Disability,$25000 to $34999,14.6,11759.278
+2018,Nebraska,No Disability,$25000 to $34999,13.9,140803.108
+2018,Nebraska,Total Civilian Noninstitutionalized Population,$35000 to $49999,17.5,191365.125
+2018,Nebraska,With a Disability,$35000 to $49999,13.6,10953.848
+2018,Nebraska,No Disability,$35000 to $49999,17.8,180309.016
+2018,Nebraska,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.6,192458.64
+2018,Nebraska,With a Disability,$50000 to $74999,11.9,9584.617
+2018,Nebraska,No Disability,$50000 to $74999,18.1,183347.932
+2018,Nebraska,Total Civilian Noninstitutionalized Population,$75000 or more,14.1,154185.615
+2018,Nebraska,With a Disability,$75000 or more,9.6,7732.128
+2018,Nebraska,No Disability,$75000 or more,14.4,145867.968
+2018,Nebraska,Total Civilian Noninstitutionalized Population,Median Earnings,,34044
+2018,Nebraska,With a Disability,Median Earnings,,24770
+2018,Nebraska,No Disability,Median Earnings,,35156
+2018,Oregon,Total Civilian Noninstitutionalized Population,,100,2244595
+2018,Oregon,With a Disability,,100,168967
+2018,Oregon,No Disability,,100,2075628
+2018,Oregon,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.8,219970.31
+2018,Oregon,With a Disability,"$1 to $4,999 or loss",17.3,29231.291
+2018,Oregon,No Disability,"$1 to $4,999 or loss",9.2,190957.776
+2018,Oregon,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.6,305264.92
+2018,Oregon,With a Disability,$5000 to $14999,21.7,36665.839
+2018,Oregon,No Disability,$5000 to $14999,12.9,267756.012
+2018,Oregon,Total Civilian Noninstitutionalized Population,$15000 to $24999,14,314243.3
+2018,Oregon,With a Disability,$15000 to $24999,14.4,24331.248
+2018,Oregon,No Disability,$15000 to $24999,14,290587.92
+2018,Oregon,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.9,289552.755
+2018,Oregon,With a Disability,$25000 to $34999,11.2,18924.304
+2018,Oregon,No Disability,$25000 to $34999,13,269831.64
+2018,Oregon,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.5,347912.225
+2018,Oregon,With a Disability,$35000 to $49999,12.9,21796.743
+2018,Oregon,No Disability,$35000 to $49999,15.7,325873.596
+2018,Oregon,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.9,356890.605
+2018,Oregon,With a Disability,$50000 to $74999,12.6,21289.842
+2018,Oregon,No Disability,$50000 to $74999,16.2,336251.736
+2018,Oregon,Total Civilian Noninstitutionalized Population,$75000 or more,18.2,408516.29
+2018,Oregon,With a Disability,$75000 or more,9.9,16727.733
+2018,Oregon,No Disability,$75000 or more,18.8,390218.064
+2018,Oregon,Total Civilian Noninstitutionalized Population,Median Earnings,,34513
+2018,Oregon,With a Disability,Median Earnings,,22339
+2018,Oregon,No Disability,Median Earnings,,35530
+2018,Wyoming,Total Civilian Noninstitutionalized Population,,100,315590
+2018,Wyoming,With a Disability,,100,25725
+2018,Wyoming,No Disability,,100,289865
+2018,Wyoming,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.8,34083.72
+2018,Wyoming,With a Disability,"$1 to $4,999 or loss",13.3,3421.425
+2018,Wyoming,No Disability,"$1 to $4,999 or loss",10.6,30725.69
+2018,Wyoming,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.8,43551.42
+2018,Wyoming,With a Disability,$5000 to $14999,16.5,4244.625
+2018,Wyoming,No Disability,$5000 to $14999,13.6,39421.64
+2018,Wyoming,Total Civilian Noninstitutionalized Population,$15000 to $24999,14.5,45760.55
+2018,Wyoming,With a Disability,$15000 to $24999,22.1,5685.225
+2018,Wyoming,No Disability,$15000 to $24999,13.8,40001.37
+2018,Wyoming,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.2,38501.98
+2018,Wyoming,With a Disability,$25000 to $34999,10.3,2649.675
+2018,Wyoming,No Disability,$25000 to $34999,12.4,35943.26
+2018,Wyoming,Total Civilian Noninstitutionalized Population,$35000 to $49999,15,47338.5
+2018,Wyoming,With a Disability,$35000 to $49999,13.8,3550.05
+2018,Wyoming,No Disability,$35000 to $49999,15.1,43769.615
+2018,Wyoming,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.4,54912.66
+2018,Wyoming,With a Disability,$50000 to $74999,10.3,2649.675
+2018,Wyoming,No Disability,$50000 to $74999,18,52175.7
+2018,Wyoming,Total Civilian Noninstitutionalized Population,$75000 or more,16.2,51125.58
+2018,Wyoming,With a Disability,$75000 or more,13.6,3498.6
+2018,Wyoming,No Disability,$75000 or more,16.5,47827.725
+2018,Wyoming,Total Civilian Noninstitutionalized Population,Median Earnings,,32772
+2018,Wyoming,With a Disability,Median Earnings,,23754
+2018,Wyoming,No Disability,Median Earnings,,34418
+2018,California,Total Civilian Noninstitutionalized Population,,100,20506593
+2018,California,With a Disability,,100,999897
+2018,California,No Disability,,100,19506696
+2018,California,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",7.7,1579007.661
+2018,California,With a Disability,"$1 to $4,999 or loss",14.9,148984.653
+2018,California,No Disability,"$1 to $4,999 or loss",7.3,1423988.808
+2018,California,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.3,2727376.869
+2018,California,With a Disability,$5000 to $14999,18.6,185980.842
+2018,California,No Disability,$5000 to $14999,13,2535870.48
+2018,California,Total Civilian Noninstitutionalized Population,$15000 to $24999,14.1,2891429.613
+2018,California,With a Disability,$15000 to $24999,14.9,148984.653
+2018,California,No Disability,$15000 to $24999,14.1,2750444.136
+2018,California,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.4,2542817.532
+2018,California,With a Disability,$25000 to $34999,11.5,114988.155
+2018,California,No Disability,$25000 to $34999,12.5,2438337
+2018,California,Total Civilian Noninstitutionalized Population,$35000 to $49999,13.4,2747883.462
+2018,California,With a Disability,$35000 to $49999,11.4,113988.258
+2018,California,No Disability,$35000 to $49999,13.5,2633403.96
+2018,California,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.2,3117002.136
+2018,California,With a Disability,$50000 to $74999,12.7,126986.919
+2018,California,No Disability,$50000 to $74999,15.3,2984524.488
+2018,California,Total Civilian Noninstitutionalized Population,$75000 or more,23.9,4901075.727
+2018,California,With a Disability,$75000 or more,16.1,160983.417
+2018,California,No Disability,$75000 or more,24.3,4740127.128
+2018,California,Total Civilian Noninstitutionalized Population,Median Earnings,,36812
+2018,California,With a Disability,Median Earnings,,26169
+2018,California,No Disability,Median Earnings,,37256
+2018,Mississippi,Total Civilian Noninstitutionalized Population,,100,1365600
+2018,Mississippi,With a Disability,,100,110221
+2018,Mississippi,No Disability,,100,1255379
+2018,Mississippi,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.6,144753.6
+2018,Mississippi,With a Disability,"$1 to $4,999 or loss",16.9,18627.349
+2018,Mississippi,No Disability,"$1 to $4,999 or loss",10.1,126793.279
+2018,Mississippi,Total Civilian Noninstitutionalized Population,$5000 to $14999,15.6,213033.6
+2018,Mississippi,With a Disability,$5000 to $14999,21.3,23477.073
+2018,Mississippi,No Disability,$5000 to $14999,15.1,189562.229
+2018,Mississippi,Total Civilian Noninstitutionalized Population,$15000 to $24999,16.5,225324
+2018,Mississippi,With a Disability,$15000 to $24999,19,20941.99
+2018,Mississippi,No Disability,$15000 to $24999,16.3,204626.777
+2018,Mississippi,Total Civilian Noninstitutionalized Population,$25000 to $34999,15,204840
+2018,Mississippi,With a Disability,$25000 to $34999,12,13226.52
+2018,Mississippi,No Disability,$25000 to $34999,15.3,192072.987
+2018,Mississippi,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.7,228055.2
+2018,Mississippi,With a Disability,$35000 to $49999,12.2,13446.962
+2018,Mississippi,No Disability,$35000 to $49999,17.1,214669.809
+2018,Mississippi,Total Civilian Noninstitutionalized Population,$50000 to $74999,14.6,199377.6
+2018,Mississippi,With a Disability,$50000 to $74999,11.1,12234.531
+2018,Mississippi,No Disability,$50000 to $74999,14.9,187051.471
+2018,Mississippi,Total Civilian Noninstitutionalized Population,$75000 or more,11,150216
+2018,Mississippi,With a Disability,$75000 or more,7.6,8376.796
+2018,Mississippi,No Disability,$75000 or more,11.3,141857.827
+2018,Mississippi,Total Civilian Noninstitutionalized Population,Median Earnings,,30055
+2018,Mississippi,With a Disability,Median Earnings,,20731
+2018,Mississippi,No Disability,Median Earnings,,30573
+2018,Connecticut,Total Civilian Noninstitutionalized Population,,100,1993472
+2018,Connecticut,With a Disability,,100,105064
+2018,Connecticut,No Disability,,100,1888408
+2018,Connecticut,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.1,181405.952
+2018,Connecticut,With a Disability,"$1 to $4,999 or loss",14.5,15234.28
+2018,Connecticut,No Disability,"$1 to $4,999 or loss",8.8,166179.904
+2018,Connecticut,Total Civilian Noninstitutionalized Population,$5000 to $14999,12.4,247190.528
+2018,Connecticut,With a Disability,$5000 to $14999,20,21012.8
+2018,Connecticut,No Disability,$5000 to $14999,11.9,224720.552
+2018,Connecticut,Total Civilian Noninstitutionalized Population,$15000 to $24999,11,219281.92
+2018,Connecticut,With a Disability,$15000 to $24999,12.3,12922.872
+2018,Connecticut,No Disability,$15000 to $24999,10.9,205836.472
+2018,Connecticut,Total Civilian Noninstitutionalized Population,$25000 to $34999,10.9,217288.448
+2018,Connecticut,With a Disability,$25000 to $34999,12.7,13343.128
+2018,Connecticut,No Disability,$25000 to $34999,10.8,203948.064
+2018,Connecticut,Total Civilian Noninstitutionalized Population,$35000 to $49999,12.8,255164.416
+2018,Connecticut,With a Disability,$35000 to $49999,9.6,10086.144
+2018,Connecticut,No Disability,$35000 to $49999,13,245493.04
+2018,Connecticut,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.6,350851.072
+2018,Connecticut,With a Disability,$50000 to $74999,12.3,12922.872
+2018,Connecticut,No Disability,$50000 to $74999,17.9,338025.032
+2018,Connecticut,Total Civilian Noninstitutionalized Population,$75000 or more,26.3,524283.136
+2018,Connecticut,With a Disability,$75000 or more,18.7,19646.968
+2018,Connecticut,No Disability,$75000 or more,26.7,504204.936
+2018,Connecticut,Total Civilian Noninstitutionalized Population,Median Earnings,,41691
+2018,Connecticut,With a Disability,Median Earnings,,26931
+2018,Connecticut,No Disability,Median Earnings,,42258
+2018,Texas,Total Civilian Noninstitutionalized Population,,100,14640183
+2018,Texas,With a Disability,,100,933585
+2018,Texas,No Disability,,100,13706598
+2018,Texas,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.8,1288336.104
+2018,Texas,With a Disability,"$1 to $4,999 or loss",14.8,138170.58
+2018,Texas,No Disability,"$1 to $4,999 or loss",8.4,1151354.232
+2018,Texas,Total Civilian Noninstitutionalized Population,$5000 to $14999,14,2049625.62
+2018,Texas,With a Disability,$5000 to $14999,19.7,183916.245
+2018,Texas,No Disability,$5000 to $14999,13.7,1877803.926
+2018,Texas,Total Civilian Noninstitutionalized Population,$15000 to $24999,14.8,2166747.084
+2018,Texas,With a Disability,$15000 to $24999,15.7,146572.845
+2018,Texas,No Disability,$15000 to $24999,14.8,2028576.504
+2018,Texas,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.3,1947144.339
+2018,Texas,With a Disability,$25000 to $34999,11.7,109229.445
+2018,Texas,No Disability,$25000 to $34999,13.4,1836684.132
+2018,Texas,Total Civilian Noninstitutionalized Population,$35000 to $49999,14.7,2152106.901
+2018,Texas,With a Disability,$35000 to $49999,13.2,123233.22
+2018,Texas,No Disability,$35000 to $49999,14.8,2028576.504
+2018,Texas,Total Civilian Noninstitutionalized Population,$50000 to $74999,16.2,2371709.646
+2018,Texas,With a Disability,$50000 to $74999,12.5,116698.125
+2018,Texas,No Disability,$50000 to $74999,16.5,2261588.67
+2018,Texas,Total Civilian Noninstitutionalized Population,$75000 or more,18.1,2649873.123
+2018,Texas,With a Disability,$75000 or more,12.4,115764.54
+2018,Texas,No Disability,$75000 or more,18.5,2535720.63
+2018,Texas,Total Civilian Noninstitutionalized Population,Median Earnings,,33710
+2018,Texas,With a Disability,Median Earnings,,24849
+2018,Texas,No Disability,Median Earnings,,34734
+2018,Idaho,Total Civilian Noninstitutionalized Population,,100,904113
+2018,Idaho,With a Disability,,100,73590
+2018,Idaho,No Disability,,100,830523
+2018,Idaho,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",12.4,112110.012
+2018,Idaho,With a Disability,"$1 to $4,999 or loss",22.5,16557.75
+2018,Idaho,No Disability,"$1 to $4,999 or loss",11.5,95510.145
+2018,Idaho,Total Civilian Noninstitutionalized Population,$5000 to $14999,15.4,139233.402
+2018,Idaho,With a Disability,$5000 to $14999,21.3,15674.67
+2018,Idaho,No Disability,$5000 to $14999,14.9,123747.927
+2018,Idaho,Total Civilian Noninstitutionalized Population,$15000 to $24999,14.6,132000.498
+2018,Idaho,With a Disability,$15000 to $24999,14.3,10523.37
+2018,Idaho,No Disability,$15000 to $24999,14.6,121256.358
+2018,Idaho,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.1,127479.933
+2018,Idaho,With a Disability,$25000 to $34999,11.9,8757.21
+2018,Idaho,No Disability,$25000 to $34999,14.3,118764.789
+2018,Idaho,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.3,147370.419
+2018,Idaho,With a Disability,$35000 to $49999,12.9,9493.11
+2018,Idaho,No Disability,$35000 to $49999,16.6,137866.818
+2018,Idaho,Total Civilian Noninstitutionalized Population,$50000 to $74999,14.7,132904.611
+2018,Idaho,With a Disability,$50000 to $74999,9,6623.1
+2018,Idaho,No Disability,$50000 to $74999,15.1,125408.973
+2018,Idaho,Total Civilian Noninstitutionalized Population,$75000 or more,12.6,113918.238
+2018,Idaho,With a Disability,$75000 or more,8,5887.2
+2018,Idaho,No Disability,$75000 or more,13,107967.99
+2018,Idaho,Total Civilian Noninstitutionalized Population,Median Earnings,,30491
+2018,Idaho,With a Disability,Median Earnings,,19146
+2018,Idaho,No Disability,Median Earnings,,31074
+2018,Maryland,Total Civilian Noninstitutionalized Population,,100,3362976
+2018,Maryland,With a Disability,,100,213277
+2018,Maryland,No Disability,,100,3149699
+2018,Maryland,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.7,292578.912
+2018,Maryland,With a Disability,"$1 to $4,999 or loss",14.5,30925.165
+2018,Maryland,No Disability,"$1 to $4,999 or loss",8.3,261425.017
+2018,Maryland,Total Civilian Noninstitutionalized Population,$5000 to $14999,11.2,376653.312
+2018,Maryland,With a Disability,$5000 to $14999,17.9,38176.583
+2018,Maryland,No Disability,$5000 to $14999,10.8,340167.492
+2018,Maryland,Total Civilian Noninstitutionalized Population,$15000 to $24999,10.4,349749.504
+2018,Maryland,With a Disability,$15000 to $24999,11.6,24740.132
+2018,Maryland,No Disability,$15000 to $24999,10.3,324418.997
+2018,Maryland,Total Civilian Noninstitutionalized Population,$25000 to $34999,11,369927.36
+2018,Maryland,With a Disability,$25000 to $34999,10.8,23033.916
+2018,Maryland,No Disability,$25000 to $34999,11,346466.89
+2018,Maryland,Total Civilian Noninstitutionalized Population,$35000 to $49999,13.9,467453.664
+2018,Maryland,With a Disability,$35000 to $49999,12,25593.24
+2018,Maryland,No Disability,$35000 to $49999,14,440957.86
+2018,Maryland,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.8,598609.728
+2018,Maryland,With a Disability,$50000 to $74999,15.2,32418.104
+2018,Maryland,No Disability,$50000 to $74999,17.9,563796.121
+2018,Maryland,Total Civilian Noninstitutionalized Population,$75000 or more,27.1,911366.496
+2018,Maryland,With a Disability,$75000 or more,18,38389.86
+2018,Maryland,No Disability,$75000 or more,27.7,872466.623
+2018,Maryland,Total Civilian Noninstitutionalized Population,Median Earnings,,42999
+2018,Maryland,With a Disability,Median Earnings,,30744
+2018,Maryland,No Disability,Median Earnings,,44590
+2018,New Mexico,Total Civilian Noninstitutionalized Population,,100,963038
+2018,New Mexico,With a Disability,,100,78203
+2018,New Mexico,No Disability,,100,884835
+2018,New Mexico,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.5,101118.99
+2018,New Mexico,With a Disability,"$1 to $4,999 or loss",18.7,14623.961
+2018,New Mexico,No Disability,"$1 to $4,999 or loss",9.7,85828.995
+2018,New Mexico,Total Civilian Noninstitutionalized Population,$5000 to $14999,17.4,167568.612
+2018,New Mexico,With a Disability,$5000 to $14999,23.1,18064.893
+2018,New Mexico,No Disability,$5000 to $14999,16.9,149537.115
+2018,New Mexico,Total Civilian Noninstitutionalized Population,$15000 to $24999,16.1,155049.118
+2018,New Mexico,With a Disability,$15000 to $24999,14.5,11339.435
+2018,New Mexico,No Disability,$15000 to $24999,16.2,143343.27
+2018,New Mexico,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.1,135788.358
+2018,New Mexico,With a Disability,$25000 to $34999,11.5,8993.345
+2018,New Mexico,No Disability,$25000 to $34999,14.4,127416.24
+2018,New Mexico,Total Civilian Noninstitutionalized Population,$35000 to $49999,14.3,137714.434
+2018,New Mexico,With a Disability,$35000 to $49999,13.3,10400.999
+2018,New Mexico,No Disability,$35000 to $49999,14.4,127416.24
+2018,New Mexico,Total Civilian Noninstitutionalized Population,$50000 to $74999,13.9,133862.282
+2018,New Mexico,With a Disability,$50000 to $74999,9,7038.27
+2018,New Mexico,No Disability,$50000 to $74999,14.3,126531.405
+2018,New Mexico,Total Civilian Noninstitutionalized Population,$75000 or more,13.6,130973.168
+2018,New Mexico,With a Disability,$75000 or more,9.9,7742.097
+2018,New Mexico,No Disability,$75000 or more,14,123876.9
+2018,New Mexico,Total Civilian Noninstitutionalized Population,Median Earnings,,29026
+2018,New Mexico,With a Disability,Median Earnings,,20553
+2018,New Mexico,No Disability,Median Earnings,,29917
+2018,Alabama,Total Civilian Noninstitutionalized Population,,100,2301633
+2018,Alabama,With a Disability,,100,175501
+2018,Alabama,No Disability,,100,2126132
+2018,Alabama,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.6,243973.098
+2018,Alabama,With a Disability,"$1 to $4,999 or loss",15.8,27729.158
+2018,Alabama,No Disability,"$1 to $4,999 or loss",10.1,214739.332
+2018,Alabama,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.4,331435.152
+2018,Alabama,With a Disability,$5000 to $14999,19.1,33520.691
+2018,Alabama,No Disability,$5000 to $14999,14,297658.48
+2018,Alabama,Total Civilian Noninstitutionalized Population,$15000 to $24999,15.9,365959.647
+2018,Alabama,With a Disability,$15000 to $24999,16.2,28431.162
+2018,Alabama,No Disability,$15000 to $24999,15.9,338054.988
+2018,Alabama,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.8,317625.354
+2018,Alabama,With a Disability,$25000 to $34999,12.9,22639.629
+2018,Alabama,No Disability,$25000 to $34999,13.9,295532.348
+2018,Alabama,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.6,359054.748
+2018,Alabama,With a Disability,$35000 to $49999,13.5,23692.635
+2018,Alabama,No Disability,$35000 to $49999,15.7,333802.724
+2018,Alabama,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.6,359054.748
+2018,Alabama,With a Disability,$50000 to $74999,11.5,20182.615
+2018,Alabama,No Disability,$50000 to $74999,15.9,338054.988
+2018,Alabama,Total Civilian Noninstitutionalized Population,$75000 or more,14.2,326831.886
+2018,Alabama,With a Disability,$75000 or more,10.9,19129.609
+2018,Alabama,No Disability,$75000 or more,14.5,308289.14
+2018,Alabama,Total Civilian Noninstitutionalized Population,Median Earnings,,31216
+2018,Alabama,With a Disability,Median Earnings,,24074
+2018,Alabama,No Disability,Median Earnings,,31620
+2018,Tennesee,Total Civilian Noninstitutionalized Population,,100,3428599
+2018,Tennesee,With a Disability,,100,266325
+2018,Tennesee,No Disability,,100,3162274
+2018,Tennesee,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.7,332574.103
+2018,Tennesee,With a Disability,"$1 to $4,999 or loss",14.4,38350.8
+2018,Tennesee,No Disability,"$1 to $4,999 or loss",9.3,294091.482
+2018,Tennesee,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.3,490289.657
+2018,Tennesee,With a Disability,$5000 to $14999,20.4,54330.3
+2018,Tennesee,No Disability,$5000 to $14999,13.8,436393.812
+2018,Tennesee,Total Civilian Noninstitutionalized Population,$15000 to $24999,15,514289.85
+2018,Tennesee,With a Disability,$15000 to $24999,17,45275.25
+2018,Tennesee,No Disability,$15000 to $24999,14.9,471178.826
+2018,Tennesee,Total Civilian Noninstitutionalized Population,$25000 to $34999,15.1,517718.449
+2018,Tennesee,With a Disability,$25000 to $34999,13.1,34888.575
+2018,Tennesee,No Disability,$25000 to $34999,15.3,483827.922
+2018,Tennesee,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.8,576004.632
+2018,Tennesee,With a Disability,$35000 to $49999,14.7,39149.775
+2018,Tennesee,No Disability,$35000 to $49999,17,537586.58
+2018,Tennesee,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.3,524575.647
+2018,Tennesee,With a Disability,$50000 to $74999,11.6,30893.7
+2018,Tennesee,No Disability,$50000 to $74999,15.7,496477.018
+2018,Tennesee,Total Civilian Noninstitutionalized Population,$75000 or more,13.7,469718.063
+2018,Tennesee,With a Disability,$75000 or more,8.6,22903.95
+2018,Tennesee,No Disability,$75000 or more,14.1,445880.634
+2018,Tennesee,Total Civilian Noninstitutionalized Population,Median Earnings,,31644
+2018,Tennesee,With a Disability,Median Earnings,,23682
+2018,Tennesee,No Disability,Median Earnings,,32090
+2018,Vermont,Total Civilian Noninstitutionalized Population,,100,371596
+2018,Vermont,With a Disability,,100,30678
+2018,Vermont,No Disability,,100,340918
+2018,Vermont,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",12,44591.52
+2018,Vermont,With a Disability,"$1 to $4,999 or loss",21.9,6718.482
+2018,Vermont,No Disability,"$1 to $4,999 or loss",11.1,37841.898
+2018,Vermont,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.6,50537.056
+2018,Vermont,With a Disability,$5000 to $14999,19.7,6043.566
+2018,Vermont,No Disability,$5000 to $14999,13,44319.34
+2018,Vermont,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.4,46077.904
+2018,Vermont,With a Disability,$15000 to $24999,15.8,4847.124
+2018,Vermont,No Disability,$15000 to $24999,12.1,41251.078
+2018,Vermont,Total Civilian Noninstitutionalized Population,$25000 to $34999,14,52023.44
+2018,Vermont,With a Disability,$25000 to $34999,12.1,3712.038
+2018,Vermont,No Disability,$25000 to $34999,14.1,48069.438
+2018,Vermont,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.7,62056.532
+2018,Vermont,With a Disability,$35000 to $49999,11.8,3620.004
+2018,Vermont,No Disability,$35000 to $49999,17.1,58296.978
+2018,Vermont,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.5,65029.3
+2018,Vermont,With a Disability,$50000 to $74999,10.2,3129.156
+2018,Vermont,No Disability,$50000 to $74999,18.1,61706.158
+2018,Vermont,Total Civilian Noninstitutionalized Population,$75000 or more,13.9,51651.844
+2018,Vermont,With a Disability,$75000 or more,8.6,2638.308
+2018,Vermont,No Disability,$75000 or more,14.3,48751.274
+2018,Vermont,Total Civilian Noninstitutionalized Population,Median Earnings,,32757
+2018,Vermont,With a Disability,Median Earnings,,20199
+2018,Vermont,No Disability,Median Earnings,,34566
+2018,Nevada,Total Civilian Noninstitutionalized Population,,100,1569428
+2018,Nevada,With a Disability,,100,106325
+2018,Nevada,No Disability,,100,1463103
+2018,Nevada,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",7.5,117707.1
+2018,Nevada,With a Disability,"$1 to $4,999 or loss",13.5,14353.875
+2018,Nevada,No Disability,"$1 to $4,999 or loss",7.1,103880.313
+2018,Nevada,Total Civilian Noninstitutionalized Population,$5000 to $14999,12.7,185814.081
+2018,Nevada,With a Disability,$5000 to $14999,15.8,16799.35
+2018,Nevada,No Disability,$5000 to $14999,12.5,182887.875
+2018,Nevada,Total Civilian Noninstitutionalized Population,$15000 to $24999,14.8,216539.244
+2018,Nevada,With a Disability,$15000 to $24999,16.7,244338.201
+2018,Nevada,No Disability,$15000 to $24999,14.7,215076.141
+2018,Nevada,Total Civilian Noninstitutionalized Population,$25000 to $34999,15.7,229707.171
+2018,Nevada,With a Disability,$25000 to $34999,15.6,228244.068
+2018,Nevada,No Disability,$25000 to $34999,15.7,229707.171
+2018,Nevada,Total Civilian Noninstitutionalized Population,$35000 to $49999,18,263358.54
+2018,Nevada,With a Disability,$35000 to $49999,15.6,228244.068
+2018,Nevada,No Disability,$35000 to $49999,18.1,264821.643
+2018,Nevada,Total Civilian Noninstitutionalized Population,$50000 to $74999,16.1,235559.583
+2018,Nevada,With a Disability,$50000 to $74999,12.3,179961.669
+2018,Nevada,No Disability,$50000 to $74999,16.4,239948.892
+2018,Nevada,Total Civilian Noninstitutionalized Population,$75000 or more,15.2,222391.656
+2018,Nevada,With a Disability,$75000 or more,10.4,152162.712
+2018,Nevada,No Disability,$75000 or more,15.6,228244.068
+2018,Nevada,Total Civilian Noninstitutionalized Population,Median Earnings,,34249
+2018,Nevada,With a Disability,Median Earnings,,27425
+2018,Nevada,No Disability,Median Earnings,,35028
+2018,West Virginia,Total Civilian Noninstitutionalized Population,,100,821408
+2018,West Virginia,With a Disability,,100,71074
+2018,West Virginia,No Disability,,100,750334
+2018,West Virginia,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.2,83783.616
+2018,West Virginia,With a Disability,"$1 to $4,999 or loss",15.7,11158.618
+2018,West Virginia,No Disability,"$1 to $4,999 or loss",9.7,72782.398
+2018,West Virginia,Total Civilian Noninstitutionalized Population,$5000 to $14999,15.3,125675.424
+2018,West Virginia,With a Disability,$5000 to $14999,21.6,15351.984
+2018,West Virginia,No Disability,$5000 to $14999,14.7,110299.098
+2018,West Virginia,Total Civilian Noninstitutionalized Population,$15000 to $24999,17,139639.36
+2018,West Virginia,With a Disability,$15000 to $24999,18.4,13077.616
+2018,West Virginia,No Disability,$15000 to $24999,16.8,126056.112
+2018,West Virginia,Total Civilian Noninstitutionalized Population,$25000 to $34999,15.1,124032.608
+2018,West Virginia,With a Disability,$25000 to $34999,14.3,10163.582
+2018,West Virginia,No Disability,$25000 to $34999,15.2,114050.768
+2018,West Virginia,Total Civilian Noninstitutionalized Population,$35000 to $49999,15,123211.2
+2018,West Virginia,With a Disability,$35000 to $49999,11.9,8457.806
+2018,West Virginia,No Disability,$35000 to $49999,15.3,114801.102
+2018,West Virginia,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.3,125675.424
+2018,West Virginia,With a Disability,$50000 to $74999,10.5,7462.77
+2018,West Virginia,No Disability,$50000 to $74999,15.8,118552.772
+2018,West Virginia,Total Civilian Noninstitutionalized Population,$75000 or more,12.2,100211.776
+2018,West Virginia,With a Disability,$75000 or more,7.6,5401.624
+2018,West Virginia,No Disability,$75000 or more,12.6,94542.084
+2018,West Virginia,Total Civilian Noninstitutionalized Population,Median Earnings,,30158
+2018,West Virginia,With a Disability,Median Earnings,,21838
+2018,West Virginia,No Disability,Median Earnings,,30694
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,,100,1963465
+2018,Oklahoma,With a Disability,,100,188034
+2018,Oklahoma,No Disability,,100,1775431
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.1,198309.965
+2018,Oklahoma,With a Disability,"$1 to $4,999 or loss",15.1,28393.134
+2018,Oklahoma,No Disability,"$1 to $4,999 or loss",9.6,170441.376
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,$5000 to $14999,15.1,296483.215
+2018,Oklahoma,With a Disability,$5000 to $14999,19.6,36854.664
+2018,Oklahoma,No Disability,$5000 to $14999,14.6,259212.926
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,$15000 to $24999,15.4,302373.61
+2018,Oklahoma,With a Disability,$15000 to $24999,15.8,29709.372
+2018,Oklahoma,No Disability,$15000 to $24999,15.4,273416.374
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.5,284702.425
+2018,Oklahoma,With a Disability,$25000 to $34999,13.3,25008.522
+2018,Oklahoma,No Disability,$25000 to $34999,14.7,260988.357
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.5,323971.725
+2018,Oklahoma,With a Disability,$35000 to $49999,14.2,26700.828
+2018,Oklahoma,No Disability,$35000 to $49999,16.8,298272.408
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,$50000 to $74999,15,294519.75
+2018,Oklahoma,With a Disability,$50000 to $74999,13.1,24632.454
+2018,Oklahoma,No Disability,$50000 to $74999,15.2,269865.512
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,$75000 or more,13.4,263104.31
+2018,Oklahoma,With a Disability,$75000 or more,8.9,16735.026
+2018,Oklahoma,No Disability,$75000 or more,13.8,245009.478
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,Median Earnings,,31119
+2018,Oklahoma,With a Disability,Median Earnings,,24685
+2018,Oklahoma,No Disability,Median Earnings,,31556
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,,100,3275762
+2018,Wisconsin,With a Disability,,100,197508
+2018,Wisconsin,No Disability,,100,3078254
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.8,321024.676
+2018,Wisconsin,With a Disability,"$1 to $4,999 or loss",19.9,39304.092
+2018,Wisconsin,No Disability,"$1 to $4,999 or loss",9.1,280121.114
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.6,445503.632
+2018,Wisconsin,With a Disability,$5000 to $14999,21.8,43056.744
+2018,Wisconsin,No Disability,$5000 to $14999,13.1,403251.274
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.1,396367.202
+2018,Wisconsin,With a Disability,$15000 to $24999,12.2,24095.976
+2018,Wisconsin,No Disability,$15000 to $24999,12,369390.48
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.3,435676.346
+2018,Wisconsin,With a Disability,$25000 to $34999,12.1,23898.468
+2018,Wisconsin,No Disability,$25000 to $34999,13.3,409407.782
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,$35000 to $49999,17.8,583085.636
+2018,Wisconsin,With a Disability,$35000 to $49999,13.3,26268.564
+2018,Wisconsin,No Disability,$35000 to $49999,18,554085.72
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,$50000 to $74999,18.7,612567.494
+2018,Wisconsin,With a Disability,$50000 to $74999,12.9,25478.532
+2018,Wisconsin,No Disability,$50000 to $74999,19.1,587946.514
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,$75000 or more,14.8,484812.776
+2018,Wisconsin,With a Disability,$75000 or more,7.9,15603.132
+2018,Wisconsin,No Disability,$75000 or more,15.2,467894.608
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,Median Earnings,,35771
+2018,Wisconsin,With a Disability,Median Earnings,,21512
+2018,Wisconsin,No Disability,Median Earnings,,36411
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,,100,1082718
+2018,Puerto Rico,With a Disability,,100,95359
+2018,Puerto Rico,No Disability,,100,987359
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",12.6,136422.468
+2018,Puerto Rico,With a Disability,"$1 to $4,999 or loss",17.9,17069.261
+2018,Puerto Rico,No Disability,"$1 to $4,999 or loss",12,118483.08
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,$5000 to $14999,29,313988.22
+2018,Puerto Rico,With a Disability,$5000 to $14999,32.3,30800.957
+2018,Puerto Rico,No Disability,$5000 to $14999,28.7,283372.033
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,$15000 to $24999,28.3,306409.194
+2018,Puerto Rico,With a Disability,$15000 to $24999,24.6,23458.314
+2018,Puerto Rico,No Disability,$15000 to $24999,28.6,282384.674
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.2,132091.596
+2018,Puerto Rico,With a Disability,$25000 to $34999,10.9,10394.131
+2018,Puerto Rico,No Disability,$25000 to $34999,12.3,121445.157
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,$35000 to $49999,8.6,93113.748
+2018,Puerto Rico,With a Disability,$35000 to $49999,7.5,7151.925
+2018,Puerto Rico,No Disability,$35000 to $49999,8.7,85900.233
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,$50000 to $74999,5.1,55218.618
+2018,Puerto Rico,With a Disability,$50000 to $74999,3.6,3432.924
+2018,Puerto Rico,No Disability,$50000 to $74999,5.2,51342.668
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,$75000 or more,4.3,46556.874
+2018,Puerto Rico,With a Disability,$75000 or more,3.2,3051.488
+2018,Puerto Rico,No Disability,$75000 or more,4.4,43443.796
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,Median Earnings,,16947
+2018,Puerto Rico,With a Disability,Median Earnings,,14942
+2018,Puerto Rico,No Disability,Median Earnings,,17126
+2018,Kansas,Total Civilian Noninstitutionalized Population,,100,1576795
+2018,Kansas,With a Disability,,100,127989
+2018,Kansas,No Disability,,100,1448806
+2018,Kansas,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",11.3,178177.835
+2018,Kansas,With a Disability,"$1 to $4,999 or loss",19,24317.91
+2018,Kansas,No Disability,"$1 to $4,999 or loss",10.6,153573.436
+2018,Kansas,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.3,225481.685
+2018,Kansas,With a Disability,$5000 to $14999,18.9,24189.921
+2018,Kansas,No Disability,$5000 to $14999,13.9,201384.034
+2018,Kansas,Total Civilian Noninstitutionalized Population,$15000 to $24999,13,204983.35
+2018,Kansas,With a Disability,$15000 to $24999,16.5,21118.185
+2018,Kansas,No Disability,$15000 to $24999,12.7,183998.362
+2018,Kansas,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.4,211290.53
+2018,Kansas,With a Disability,$25000 to $34999,11.5,14718.735
+2018,Kansas,No Disability,$25000 to $34999,13.6,197037.616
+2018,Kansas,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.4,258594.38
+2018,Kansas,With a Disability,$35000 to $49999,12.2,15614.658
+2018,Kansas,No Disability,$35000 to $49999,16.8,243399.408
+2018,Kansas,Total Civilian Noninstitutionalized Population,$50000 to $74999,16.2,255440.79
+2018,Kansas,With a Disability,$50000 to $74999,11.7,14974.713
+2018,Kansas,No Disability,$50000 to $74999,16.6,240501.796
+2018,Kansas,Total Civilian Noninstitutionalized Population,$75000 or more,15.3,241249.635
+2018,Kansas,With a Disability,$75000 or more,10.1,12926.889
+2018,Kansas,No Disability,$75000 or more,15.8,228911.348
+2018,Kansas,Total Civilian Noninstitutionalized Population,Median Earnings,,32476
+2018,Kansas,With a Disability,Median Earnings,,21845
+2018,Kansas,No Disability,Median Earnings,,33958
+2018,Virginia,Total Civilian Noninstitutionalized Population,,100,4557115
+2018,Virginia,With a Disability,,100,276595
+2018,Virginia,No Disability,,100,4280520
+2018,Virginia,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.8,446597.27
+2018,Virginia,With a Disability,"$1 to $4,999 or loss",16.1,44531.795
+2018,Virginia,No Disability,"$1 to $4,999 or loss",9.4,402368.88
+2018,Virginia,Total Civilian Noninstitutionalized Population,$5000 to $14999,12.3,560525.145
+2018,Virginia,With a Disability,$5000 to $14999,18.4,50893.48
+2018,Virginia,No Disability,$5000 to $14999,11.9,509381.88
+2018,Virginia,Total Civilian Noninstitutionalized Population,$15000 to $24999,11.9,542296.685
+2018,Virginia,With a Disability,$15000 to $24999,13.4,37063.73
+2018,Virginia,No Disability,$15000 to $24999,11.8,505101.36
+2018,Virginia,Total Civilian Noninstitutionalized Population,$25000 to $34999,11.5,524068.225
+2018,Virginia,With a Disability,$25000 to $34999,10.6,29319.07
+2018,Virginia,No Disability,$25000 to $34999,11.5,492259.8
+2018,Virginia,Total Civilian Noninstitutionalized Population,$35000 to $49999,14.6,665338.79
+2018,Virginia,With a Disability,$35000 to $49999,13.2,36510.54
+2018,Virginia,No Disability,$35000 to $49999,14.7,629236.44
+2018,Virginia,Total Civilian Noninstitutionalized Population,$50000 to $74999,16.4,747366.86
+2018,Virginia,With a Disability,$50000 to $74999,13.1,36233.945
+2018,Virginia,No Disability,$50000 to $74999,16.7,714846.84
+2018,Virginia,Total Civilian Noninstitutionalized Population,$75000 or more,23.4,1066364.91
+2018,Virginia,With a Disability,$75000 or more,15.2,42042.44
+2018,Virginia,No Disability,$75000 or more,24,1027324.8
+2018,Virginia,Total Civilian Noninstitutionalized Population,Median Earnings,,39286
+2018,Virginia,With a Disability,Median Earnings,,26518
+2018,Virginia,No Disability,Median Earnings,,40219
+2018,North Dakota,Total Civilian Noninstitutionalized Population,,100,439466
+2018,North Dakota,With a Disability,,100,31645
+2018,North Dakota,No Disability,,100,407821
+2018,North Dakota,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.3,40870.338
+2018,North Dakota,With a Disability,"$1 to $4,999 or loss",17.4,5506.23
+2018,North Dakota,No Disability,"$1 to $4,999 or loss",8.7,35480.427
+2018,North Dakota,Total Civilian Noninstitutionalized Population,$5000 to $14999,11.9,52296.454
+2018,North Dakota,With a Disability,$5000 to $14999,17.9,5664.455
+2018,North Dakota,No Disability,$5000 to $14999,11.5,46899.415
+2018,North Dakota,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.5,54933.25
+2018,North Dakota,With a Disability,$15000 to $24999,18.1,5727.745
+2018,North Dakota,No Disability,$15000 to $24999,12,48938.52
+2018,North Dakota,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.2,53614.852
+2018,North Dakota,With a Disability,$25000 to $34999,11.4,3607.53
+2018,North Dakota,No Disability,$25000 to $34999,12.2,49754.162
+2018,North Dakota,Total Civilian Noninstitutionalized Population,$35000 to $49999,17.8,78224.948
+2018,North Dakota,With a Disability,$35000 to $49999,13.9,4398.655
+2018,North Dakota,No Disability,$35000 to $49999,18.1,73815.601
+2018,North Dakota,Total Civilian Noninstitutionalized Population,$50000 to $74999,20,87893.2
+2018,North Dakota,With a Disability,$50000 to $74999,11.5,3639.175
+2018,North Dakota,No Disability,$50000 to $74999,20.6,84011.126
+2018,North Dakota,Total Civilian Noninstitutionalized Population,$75000 or more,16.4,72072.424
+2018,North Dakota,With a Disability,$75000 or more,9.9,3132.855
+2018,North Dakota,No Disability,$75000 or more,16.9,68921.749
+2018,North Dakota,Total Civilian Noninstitutionalized Population,Median Earnings,,37504
+2018,North Dakota,With a Disability,Median Earnings,,22548
+2018,North Dakota,No Disability,Median Earnings,,39505
+2018,New Jersey,Total Civilian Noninstitutionalized Population,,100,4838525
+2018,New Jersey,With a Disability,,100,232679
+2018,New Jersey,No Disability,,100,4605846
+2018,New Jersey,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",7.7,372566.425
+2018,New Jersey,With a Disability,"$1 to $4,999 or loss",14.2,33040.418
+2018,New Jersey,No Disability,"$1 to $4,999 or loss",7.3,336226.758
+2018,New Jersey,Total Civilian Noninstitutionalized Population,$5000 to $14999,11.2,541914.8
+2018,New Jersey,With a Disability,$5000 to $14999,18.8,43743.652
+2018,New Jersey,No Disability,$5000 to $14999,10.8,497431.368
+2018,New Jersey,Total Civilian Noninstitutionalized Population,$15000 to $24999,11.7,566107.425
+2018,New Jersey,With a Disability,$15000 to $24999,13.6,31644.344
+2018,New Jersey,No Disability,$15000 to $24999,11.6,534278.136
+2018,New Jersey,Total Civilian Noninstitutionalized Population,$25000 to $34999,10.9,527399.225
+2018,New Jersey,With a Disability,$25000 to $34999,9.9,23035.221
+2018,New Jersey,No Disability,$25000 to $34999,10.9,502037.214
+2018,New Jersey,Total Civilian Noninstitutionalized Population,$35000 to $49999,12.5,604815.625
+2018,New Jersey,With a Disability,$35000 to $49999,11.3,26292.727
+2018,New Jersey,No Disability,$35000 to $49999,12.6,580336.596
+2018,New Jersey,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.7,856418.925
+2018,New Jersey,With a Disability,$50000 to $74999,14.7,34203.813
+2018,New Jersey,No Disability,$50000 to $74999,17.9,824446.434
+2018,New Jersey,Total Civilian Noninstitutionalized Population,$75000 or more,28.3,1369302.575
+2018,New Jersey,With a Disability,$75000 or more,17.5,40718.825
+2018,New Jersey,No Disability,$75000 or more,28.9,1331089.494
+2018,New Jersey,Total Civilian Noninstitutionalized Population,Median Earnings,,43852
+2018,New Jersey,With a Disability,Median Earnings,,28014
+2018,New Jersey,No Disability,Median Earnings,,45193
+2018,Ohio,Total Civilian Noninstitutionalized Population,,100,6211464
+2018,Ohio,With a Disability,,100,455526
+2018,Ohio,No Disability,,100,5755938
+2018,Ohio,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.2,633569.328
+2018,Ohio,With a Disability,"$1 to $4,999 or loss",16.9,76983.894
+2018,Ohio,No Disability,"$1 to $4,999 or loss",9.7,558325.986
+2018,Ohio,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.3,888239.352
+2018,Ohio,With a Disability,$5000 to $14999,22.4,102037.824
+2018,Ohio,No Disability,$5000 to $14999,13.6,782807.568
+2018,Ohio,Total Civilian Noninstitutionalized Population,$15000 to $24999,13.4,832336.176
+2018,Ohio,With a Disability,$15000 to $24999,15.3,69695.478
+2018,Ohio,No Disability,$15000 to $24999,13.3,765539.754
+2018,Ohio,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.2,819913.248
+2018,Ohio,With a Disability,$25000 to $34999,12.8,58307.328
+2018,Ohio,No Disability,$25000 to $34999,13.2,759783.816
+2018,Ohio,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.9,987622.776
+2018,Ohio,With a Disability,$35000 to $49999,13.1,59673.906
+2018,Ohio,No Disability,$35000 to $49999,16.1,926706.018
+2018,Ohio,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.4,1080794.736
+2018,Ohio,With a Disability,$50000 to $74999,11.4,51929.964
+2018,Ohio,No Disability,$50000 to $74999,17.9,1030312.902
+2018,Ohio,Total Civilian Noninstitutionalized Population,$75000 or more,15.5,962776.92
+2018,Ohio,With a Disability,$75000 or more,8.1,36897.606
+2018,Ohio,No Disability,$75000 or more,16.1,926706.018
+2018,Ohio,Total Civilian Noninstitutionalized Population,Median Earnings,,33789
+2018,Ohio,With a Disability,Median Earnings,,21413
+2018,Ohio,No Disability,Median Earnings,,35126
+2018,South Carolina,Total Civilian Noninstitutionalized Population,,100,2541016
+2018,South Carolina,With a Disability,,100,179640
+2018,South Carolina,No Disability,,100,2361376
+2018,South Carolina,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.4,264265.664
+2018,South Carolina,With a Disability,"$1 to $4,999 or loss",17.6,31616.64
+2018,South Carolina,No Disability,"$1 to $4,999 or loss",9.8,231414.848
+2018,South Carolina,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.4,365906.304
+2018,South Carolina,With a Disability,$5000 to $14999,19.6,35209.44
+2018,South Carolina,No Disability,$5000 to $14999,14.1,332954.016
+2018,South Carolina,Total Civilian Noninstitutionalized Population,$15000 to $24999,15.6,396398.496
+2018,South Carolina,With a Disability,$15000 to $24999,18.1,32514.84
+2018,South Carolina,No Disability,$15000 to $24999,15.4,363651.904
+2018,South Carolina,Total Civilian Noninstitutionalized Population,$25000 to $34999,15.1,383693.416
+2018,South Carolina,With a Disability,$25000 to $34999,12.1,21736.44
+2018,South Carolina,No Disability,$25000 to $34999,15.4,363651.904
+2018,South Carolina,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.7,398939.512
+2018,South Carolina,With a Disability,$35000 to $49999,12.1,21736.44
+2018,South Carolina,No Disability,$35000 to $49999,16,377820.16
+2018,South Carolina,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.5,393857.48
+2018,South Carolina,With a Disability,$50000 to $74999,11.8,21197.52
+2018,South Carolina,No Disability,$50000 to $74999,15.8,373097.408
+2018,South Carolina,Total Civilian Noninstitutionalized Population,$75000 or more,13.2,335414.112
+2018,South Carolina,With a Disability,$75000 or more,8.7,15628.68
+2018,South Carolina,No Disability,$75000 or more,13.6,321147.136
+2018,South Carolina,Total Civilian Noninstitutionalized Population,Median Earnings,,30957
+2018,South Carolina,With a Disability,Median Earnings,,22146
+2018,South Carolina,No Disability,Median Earnings,,31383
+2018,Georgia,Total Civilian Noninstitutionalized Population,,100,5363996
+2018,Georgia,With a Disability,,100,330738
+2018,Georgia,No Disability,,100,5033258
+2018,Georgia,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.9,477395.644
+2018,Georgia,With a Disability,"$1 to $4,999 or loss",15.4,50933.652
+2018,Georgia,No Disability,"$1 to $4,999 or loss",8.5,427826.93
+2018,Georgia,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.4,718775.464
+2018,Georgia,With a Disability,$5000 to $14999,18.2,60194.316
+2018,Georgia,No Disability,$5000 to $14999,13.1,659356.798
+2018,Georgia,Total Civilian Noninstitutionalized Population,$15000 to $24999,14.6,783143.416
+2018,Georgia,With a Disability,$15000 to $24999,16.7,55233.246
+2018,Georgia,No Disability,$15000 to $24999,14.5,729822.41
+2018,Georgia,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.4,772415.424
+2018,Georgia,With a Disability,$25000 to $34999,12.6,41672.988
+2018,Georgia,No Disability,$25000 to $34999,14.6,734855.668
+2018,Georgia,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.1,809963.396
+2018,Georgia,With a Disability,$35000 to $49999,12.2,40350.036
+2018,Georgia,No Disability,$35000 to $49999,15.2,765055.216
+2018,Georgia,Total Civilian Noninstitutionalized Population,$50000 to $74999,16.1,863603.356
+2018,Georgia,With a Disability,$50000 to $74999,13.7,45311.106
+2018,Georgia,No Disability,$50000 to $74999,16.2,815387.796
+2018,Georgia,Total Civilian Noninstitutionalized Population,$75000 or more,17.4,933335.304
+2018,Georgia,With a Disability,$75000 or more,11.2,37042.656
+2018,Georgia,No Disability,$75000 or more,17.8,895919.924
+2018,Georgia,Total Civilian Noninstitutionalized Population,Median Earnings,,33189
+2018,Georgia,With a Disability,Median Earnings,,24757
+2018,Georgia,No Disability,Median Earnings,,34150
+2018,Colorado,Total Civilian Noninstitutionalized Population,,100,3251508
+2018,Colorado,With a Disability,,100,208381
+2018,Colorado,No Disability,,100,3043127
+2018,Colorado,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.6,279629.688
+2018,Colorado,With a Disability,"$1 to $4,999 or loss",13.8,28756.578
+2018,Colorado,No Disability,"$1 to $4,999 or loss",8.3,252579.541
+2018,Colorado,Total Civilian Noninstitutionalized Population,$5000 to $14999,11.8,383677.944
+2018,Colorado,With a Disability,$5000 to $14999,18,37508.58
+2018,Colorado,No Disability,$5000 to $14999,11.3,343873.351
+2018,Colorado,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.5,406438.5
+2018,Colorado,With a Disability,$15000 to $24999,15,31257.15
+2018,Colorado,No Disability,$15000 to $24999,12.4,377347.748
+2018,Colorado,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.6,409690.008
+2018,Colorado,With a Disability,$25000 to $34999,13,27089.53
+2018,Colorado,No Disability,$25000 to $34999,12.6,383434.002
+2018,Colorado,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.8,513738.264
+2018,Colorado,With a Disability,$35000 to $49999,14.1,29381.721
+2018,Colorado,No Disability,$35000 to $49999,15.9,483857.193
+2018,Colorado,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.6,572265.408
+2018,Colorado,With a Disability,$50000 to $74999,12.7,26464.387
+2018,Colorado,No Disability,$50000 to $74999,17.9,544719.733
+2018,Colorado,Total Civilian Noninstitutionalized Population,$75000 or more,21.1,686068.188
+2018,Colorado,With a Disability,$75000 or more,13.5,28131.435
+2018,Colorado,No Disability,$75000 or more,21.6,657315.432
+2018,Colorado,Total Civilian Noninstitutionalized Population,Median Earnings,,38487
+2018,Colorado,With a Disability,Median Earnings,,27040
+2018,Colorado,No Disability,Median Earnings,,39799
+2018,Hawaii,Total Civilian Noninstitutionalized Population,,100,736765
+2018,Hawaii,With a Disability,,100,40614
+2018,Hawaii,No Disability,,100,696151
+2018,Hawaii,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",7.5,55257.375
+2018,Hawaii,With a Disability,"$1 to $4,999 or loss",11.4,4629.996
+2018,Hawaii,No Disability,"$1 to $4,999 or loss",7.3,50819.023
+2018,Hawaii,Total Civilian Noninstitutionalized Population,$5000 to $14999,12.7,93569.155
+2018,Hawaii,With a Disability,$5000 to $14999,17,6904.38
+2018,Hawaii,No Disability,$5000 to $14999,12.5,87018.875
+2018,Hawaii,Total Civilian Noninstitutionalized Population,$15000 to $24999,13.4,98726.51
+2018,Hawaii,With a Disability,$15000 to $24999,14.5,5889.03
+2018,Hawaii,No Disability,$15000 to $24999,13.3,92588.083
+2018,Hawaii,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.2,97252.98
+2018,Hawaii,With a Disability,$25000 to $34999,9.9,4020.786
+2018,Hawaii,No Disability,$25000 to $34999,13.4,93284.234
+2018,Hawaii,Total Civilian Noninstitutionalized Population,$35000 to $49999,17,125250.05
+2018,Hawaii,With a Disability,$35000 to $49999,14.8,6010.872
+2018,Hawaii,No Disability,$35000 to $49999,17.1,119041.821
+2018,Hawaii,Total Civilian Noninstitutionalized Population,$50000 to $74999,18.3,134827.995
+2018,Hawaii,With a Disability,$50000 to $74999,16.7,6782.538
+2018,Hawaii,No Disability,$50000 to $74999,18.4,128091.784
+2018,Hawaii,Total Civilian Noninstitutionalized Population,$75000 or more,17.9,131880.935
+2018,Hawaii,With a Disability,$75000 or more,15.9,6457.626
+2018,Hawaii,No Disability,$75000 or more,18,125307.18
+2018,Hawaii,Total Civilian Noninstitutionalized Population,Median Earnings,,36904
+2018,Hawaii,With a Disability,Median Earnings,,32838
+2018,Hawaii,No Disability,Median Earnings,,37083
+2018,South Dakota,Total Civilian Noninstitutionalized Population,,100,498083
+2018,South Dakota,With a Disability,,100,41141
+2018,South Dakota,No Disability,,100,456942
+2018,South Dakota,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.4,51800.632
+2018,South Dakota,With a Disability,"$1 to $4,999 or loss",19.2,7899.072
+2018,South Dakota,No Disability,"$1 to $4,999 or loss",9.6,43866.432
+2018,South Dakota,Total Civilian Noninstitutionalized Population,$5000 to $14999,15.4,76704.782
+2018,South Dakota,With a Disability,$5000 to $14999,23.1,9503.571
+2018,South Dakota,No Disability,$5000 to $14999,14.7,67170.474
+2018,South Dakota,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.8,63754.624
+2018,South Dakota,With a Disability,$15000 to $24999,14.2,5842.022
+2018,South Dakota,No Disability,$15000 to $24999,12.7,58031.634
+2018,South Dakota,Total Civilian Noninstitutionalized Population,$25000 to $34999,15,74712.45
+2018,South Dakota,With a Disability,$25000 to $34999,14.7,6047.727
+2018,South Dakota,No Disability,$25000 to $34999,15,68541.3
+2018,South Dakota,Total Civilian Noninstitutionalized Population,$35000 to $49999,20.1,100114.683
+2018,South Dakota,With a Disability,$35000 to $49999,13.2,5430.612
+2018,South Dakota,No Disability,$35000 to $49999,20.7,94586.994
+2018,South Dakota,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.9,79195.197
+2018,South Dakota,With a Disability,$50000 to $74999,9.7,3990.677
+2018,South Dakota,No Disability,$50000 to $74999,16.5,75395.43
+2018,South Dakota,Total Civilian Noninstitutionalized Population,$75000 or more,10.5,52298.715
+2018,South Dakota,With a Disability,$75000 or more,6,2468.46
+2018,South Dakota,No Disability,$75000 or more,11,50263.62
+2018,South Dakota,Total Civilian Noninstitutionalized Population,Median Earnings,,32049
+2018,South Dakota,With a Disability,Median Earnings,,19721
+2018,South Dakota,No Disability,Median Earnings,,33048
+2018,Indiana,Total Civilian Noninstitutionalized Population,,100,3549312
+2018,Indiana,With a Disability,,100,254288
+2018,Indiana,No Disability,,100,3295024
+2018,Indiana,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.2,362029.824
+2018,Indiana,With a Disability,"$1 to $4,999 or loss",16.2,41194.656
+2018,Indiana,No Disability,"$1 to $4,999 or loss",9.7,319617.328
+2018,Indiana,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.1,500452.992
+2018,Indiana,With a Disability,$5000 to $14999,20.8,52891.904
+2018,Indiana,No Disability,$5000 to $14999,13.6,448123.264
+2018,Indiana,Total Civilian Noninstitutionalized Population,$15000 to $24999,13.4,475607.808
+2018,Indiana,With a Disability,$15000 to $24999,16.6,42211.808
+2018,Indiana,No Disability,$15000 to $24999,13.2,434943.168
+2018,Indiana,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.1,500452.992
+2018,Indiana,With a Disability,$25000 to $34999,13.4,34074.592
+2018,Indiana,No Disability,$25000 to $34999,14.1,464598.384
+2018,Indiana,Total Civilian Noninstitutionalized Population,$35000 to $49999,17.2,610481.664
+2018,Indiana,With a Disability,$35000 to $49999,14.2,36108.896
+2018,Indiana,No Disability,$35000 to $49999,17.5,576629.2
+2018,Indiana,Total Civilian Noninstitutionalized Population,$50000 to $74999,16.9,599833.728
+2018,Indiana,With a Disability,$50000 to $74999,10.8,27463.104
+2018,Indiana,No Disability,$50000 to $74999,17.3,570039.152
+2018,Indiana,Total Civilian Noninstitutionalized Population,$75000 or more,14.1,500452.992
+2018,Indiana,With a Disability,$75000 or more,8,20343.04
+2018,Indiana,No Disability,$75000 or more,14.6,481073.504
+2018,Indiana,Total Civilian Noninstitutionalized Population,Median Earnings,,33046
+2018,Indiana,With a Disability,Median Earnings,,22371
+2018,Indiana,No Disability,Median Earnings,,34314
+2018,Kentucky,Total Civilian Noninstitutionalized Population,,100,2200263
+2018,Kentucky,With a Disability,,100,186737
+2018,Kentucky,No Disability,,100,2013526
+2018,Kentucky,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.4,228827.352
+2018,Kentucky,With a Disability,"$1 to $4,999 or loss",16.1,30064.657
+2018,Kentucky,No Disability,"$1 to $4,999 or loss",9.9,199339.074
+2018,Kentucky,Total Civilian Noninstitutionalized Population,$5000 to $14999,15.4,338840.502
+2018,Kentucky,With a Disability,$5000 to $14999,22,41082.14
+2018,Kentucky,No Disability,$5000 to $14999,14.8,298001.848
+2018,Kentucky,Total Civilian Noninstitutionalized Population,$15000 to $24999,14.5,319038.135
+2018,Kentucky,With a Disability,$15000 to $24999,15.6,29130.972
+2018,Kentucky,No Disability,$15000 to $24999,14.3,287934.218
+2018,Kentucky,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.6,321238.398
+2018,Kentucky,With a Disability,$25000 to $34999,13.5,25209.495
+2018,Kentucky,No Disability,$25000 to $34999,14.7,295988.322
+2018,Kentucky,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.1,354242.343
+2018,Kentucky,With a Disability,$35000 to $49999,12.7,23715.599
+2018,Kentucky,No Disability,$35000 to $49999,16.5,332231.79
+2018,Kentucky,Total Civilian Noninstitutionalized Population,$50000 to $74999,16.1,354242.343
+2018,Kentucky,With a Disability,$50000 to $74999,11.8,22034.966
+2018,Kentucky,No Disability,$50000 to $74999,16.5,332231.79
+2018,Kentucky,Total Civilian Noninstitutionalized Population,$75000 or more,13,286034.19
+2018,Kentucky,With a Disability,$75000 or more,8.3,15499.171
+2018,Kentucky,No Disability,$75000 or more,13.4,269812.484
+2018,Kentucky,Total Civilian Noninstitutionalized Population,Median Earnings,,31330
+2018,Kentucky,With a Disability,Median Earnings,,22019
+2018,Kentucky,No Disability,Median Earnings,,31891
+2018,Louisiana,Total Civilian Noninstitutionalized Population,,100,2196311
+2018,Louisiana,With a Disability,,100,174906
+2018,Louisiana,No Disability,,100,2021405
+2018,Louisiana,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.6,188882.746
+2018,Louisiana,With a Disability,"$1 to $4,999 or loss",14.9,26060.994
+2018,Louisiana,No Disability,"$1 to $4,999 or loss",8,161712.4
+2018,Louisiana,Total Civilian Noninstitutionalized Population,$5000 to $14999,15.3,336035.583
+2018,Louisiana,With a Disability,$5000 to $14999,22,38479.32
+2018,Louisiana,No Disability,$5000 to $14999,14.8,299167.94
+2018,Louisiana,Total Civilian Noninstitutionalized Population,$15000 to $24999,16.8,368980.248
+2018,Louisiana,With a Disability,$15000 to $24999,16.6,29034.396
+2018,Louisiana,No Disability,$15000 to $24999,16.8,339596.04
+2018,Louisiana,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.1,287716.741
+2018,Louisiana,With a Disability,$25000 to $34999,12.3,21513.438
+2018,Louisiana,No Disability,$25000 to $34999,13.1,264804.055
+2018,Louisiana,Total Civilian Noninstitutionalized Population,$35000 to $49999,14.4,316268.784
+2018,Louisiana,With a Disability,$35000 to $49999,11.7,20464.002
+2018,Louisiana,No Disability,$35000 to $49999,14.7,297146.535
+2018,Louisiana,Total Civilian Noninstitutionalized Population,$50000 to $74999,16.3,357998.693
+2018,Louisiana,With a Disability,$50000 to $74999,12.2,21338.532
+2018,Louisiana,No Disability,$50000 to $74999,16.7,337574.635
+2018,Louisiana,Total Civilian Noninstitutionalized Population,$75000 or more,15.5,340428.205
+2018,Louisiana,With a Disability,$75000 or more,10.1,17665.506
+2018,Louisiana,No Disability,$75000 or more,16,323424.8
+2018,Louisiana,Total Civilian Noninstitutionalized Population,Median Earnings,,31388
+2018,Louisiana,With a Disability,Median Earnings,,22185
+2018,Louisiana,No Disability,Median Earnings,,31945
+2018,Washington,Total Civilian Noninstitutionalized Population,,100,4048947
+2018,Washington,With a Disability,,100,275023
+2018,Washington,No Disability,,100,3773924
+2018,Washington,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.3,336062.601
+2018,Washington,With a Disability,"$1 to $4,999 or loss",13.8,37953.174
+2018,Washington,No Disability,"$1 to $4,999 or loss",7.9,298139.996
+2018,Washington,Total Civilian Noninstitutionalized Population,$5000 to $14999,11.8,477775.746
+2018,Washington,With a Disability,$5000 to $14999,17.3,47578.979
+2018,Washington,No Disability,$5000 to $14999,11.4,430227.336
+2018,Washington,Total Civilian Noninstitutionalized Population,$15000 to $24999,11.6,469677.852
+2018,Washington,With a Disability,$15000 to $24999,13,35752.99
+2018,Washington,No Disability,$15000 to $24999,11.5,434001.26
+2018,Washington,Total Civilian Noninstitutionalized Population,$25000 to $34999,12,485873.64
+2018,Washington,With a Disability,$25000 to $34999,12.5,34377.875
+2018,Washington,No Disability,$25000 to $34999,12,452870.88
+2018,Washington,Total Civilian Noninstitutionalized Population,$35000 to $49999,14.9,603293.103
+2018,Washington,With a Disability,$35000 to $49999,14.4,39603.312
+2018,Washington,No Disability,$35000 to $49999,14.9,562314.676
+2018,Washington,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.2,696418.884
+2018,Washington,With a Disability,$50000 to $74999,13.9,38228.197
+2018,Washington,No Disability,$50000 to $74999,17.4,656662.776
+2018,Washington,Total Civilian Noninstitutionalized Population,$75000 or more,24.2,979845.174
+2018,Washington,With a Disability,$75000 or more,15,41253.45
+2018,Washington,No Disability,$75000 or more,24.9,939707.076
+2018,Washington,Total Civilian Noninstitutionalized Population,Median Earnings,,40439
+2018,Washington,With a Disability,Median Earnings,,29654
+2018,Washington,No Disability,Median Earnings,,41074
+2018,Illinois,Total Civilian Noninstitutionalized Population,,100,6863743
+2018,Illinois,With a Disability,,100,379810
+2018,Illinois,No Disability,,100,6483933
+2018,Illinois,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.3,638328.099
+2018,Illinois,With a Disability,"$1 to $4,999 or loss",17.5,66466.75
+2018,Illinois,No Disability,"$1 to $4,999 or loss",8.8,570586.104
+2018,Illinois,Total Civilian Noninstitutionalized Population,$5000 to $14999,12.9,885422.847
+2018,Illinois,With a Disability,$5000 to $14999,20.1,76341.81
+2018,Illinois,No Disability,$5000 to $14999,12.5,810491.625
+2018,Illinois,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.6,864831.618
+2018,Illinois,With a Disability,$15000 to $24999,14.1,53553.21
+2018,Illinois,No Disability,$15000 to $24999,12.5,810491.625
+2018,Illinois,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.2,837376.646
+2018,Illinois,With a Disability,$25000 to $34999,11.2,42538.72
+2018,Illinois,No Disability,$25000 to $34999,12.3,797523.759
+2018,Illinois,Total Civilian Noninstitutionalized Population,$35000 to $49999,14.6,1002106.478
+2018,Illinois,With a Disability,$35000 to $49999,13.2,50134.92
+2018,Illinois,No Disability,$35000 to $49999,14.7,953138.151
+2018,Illinois,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.4,1194291.282
+2018,Illinois,With a Disability,$50000 to $74999,12.6,47856.06
+2018,Illinois,No Disability,$50000 to $74999,17.7,1147656.141
+2018,Illinois,Total Civilian Noninstitutionalized Population,$75000 or more,21,1441386.03
+2018,Illinois,With a Disability,$75000 or more,11.3,42918.53
+2018,Illinois,No Disability,$75000 or more,21.6,1400529.528
+2018,Illinois,Total Civilian Noninstitutionalized Population,Median Earnings,,37122
+2018,Illinois,With a Disability,Median Earnings,,23414
+2018,Illinois,No Disability,Median Earnings,,38068
+2018,Iowa,Total Civilian Noninstitutionalized Population,,100,1772952
+2018,Iowa,With a Disability,,100,117892
+2018,Iowa,No Disability,,100,1655060
+2018,Iowa,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.6,187932.912
+2018,Iowa,With a Disability,"$1 to $4,999 or loss",19.4,22871.048
+2018,Iowa,No Disability,"$1 to $4,999 or loss",10,165506
+2018,Iowa,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.8,244667.376
+2018,Iowa,With a Disability,$5000 to $14999,21,24757.32
+2018,Iowa,No Disability,$5000 to $14999,13.3,220122.98
+2018,Iowa,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.5,221619
+2018,Iowa,With a Disability,$15000 to $24999,14.3,16858.556
+2018,Iowa,No Disability,$15000 to $24999,12.4,205227.44
+2018,Iowa,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.4,237575.568
+2018,Iowa,With a Disability,$25000 to $34999,12.4,14618.608
+2018,Iowa,No Disability,$25000 to $34999,13.5,223433.1
+2018,Iowa,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.9,299628.888
+2018,Iowa,With a Disability,$35000 to $49999,12.6,14854.392
+2018,Iowa,No Disability,$35000 to $49999,17.2,284670.32
+2018,Iowa,Total Civilian Noninstitutionalized Population,$50000 to $74999,19.1,338633.832
+2018,Iowa,With a Disability,$50000 to $74999,13,15325.96
+2018,Iowa,No Disability,$50000 to $74999,19.6,324391.76
+2018,Iowa,Total Civilian Noninstitutionalized Population,$75000 or more,13.7,242894.424
+2018,Iowa,With a Disability,$75000 or more,7.4,8724.008
+2018,Iowa,No Disability,$75000 or more,14.2,235018.52
+2018,Iowa,Total Civilian Noninstitutionalized Population,Median Earnings,,34727
+2018,Iowa,With a Disability,Median Earnings,,21461
+2018,Iowa,No Disability,Median Earnings,,35596
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,,100,798493
+2018,New Hampshire,With a Disability,,100,58518
+2018,New Hampshire,No Disability,,100,739975
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.7,77453.821
+2018,New Hampshire,With a Disability,"$1 to $4,999 or loss",18.6,10884.348
+2018,New Hampshire,No Disability,"$1 to $4,999 or loss",9.1,67337.725
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,$5000 to $14999,11.5,91826.695
+2018,New Hampshire,With a Disability,$5000 to $14999,17.1,10006.578
+2018,New Hampshire,No Disability,$5000 to $14999,11,81397.25
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,$15000 to $24999,11.8,94222.174
+2018,New Hampshire,With a Disability,$15000 to $24999,15.2,8894.736
+2018,New Hampshire,No Disability,$15000 to $24999,11.5,85097.125
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.1,96617.653
+2018,New Hampshire,With a Disability,$25000 to $34999,11.6,6788.088
+2018,New Hampshire,No Disability,$25000 to $34999,12.1,89536.975
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.9,126960.387
+2018,New Hampshire,With a Disability,$35000 to $49999,14.2,8309.556
+2018,New Hampshire,No Disability,$35000 to $49999,16.1,119135.975
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.9,142930.247
+2018,New Hampshire,With a Disability,$50000 to $74999,10.6,6202.908
+2018,New Hampshire,No Disability,$50000 to $74999,18.5,136895.375
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,$75000 or more,21,167683.53
+2018,New Hampshire,With a Disability,$75000 or more,12.8,7490.304
+2018,New Hampshire,No Disability,$75000 or more,21.7,160574.575
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,Median Earnings,,39289
+2018,New Hampshire,With a Disability,Median Earnings,,24349
+2018,New Hampshire,No Disability,Median Earnings,,40450
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,,100,574992
+2018,Rhode Island,With a Disability,,100,39724
+2018,Rhode Island,No Disability,,100,535268
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.9,51174.288
+2018,Rhode Island,With a Disability,"$1 to $4,999 or loss",16.2,6435.288
+2018,Rhode Island,No Disability,"$1 to $4,999 or loss",8.4,44962.512
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.3,76473.936
+2018,Rhode Island,With a Disability,$5000 to $14999,19.9,7905.076
+2018,Rhode Island,No Disability,$5000 to $14999,12.8,68514.304
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,$15000 to $24999,11.8,67849.056
+2018,Rhode Island,With a Disability,$15000 to $24999,16.5,6554.46
+2018,Rhode Island,No Disability,$15000 to $24999,11.4,61020.552
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.3,70724.016
+2018,Rhode Island,With a Disability,$25000 to $34999,12.3,4886.052
+2018,Rhode Island,No Disability,$25000 to $34999,12.3,65837.964
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.1,86823.792
+2018,Rhode Island,With a Disability,$35000 to $49999,13.3,5283.292
+2018,Rhode Island,No Disability,$35000 to $49999,15.3,81896.004
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,$50000 to $74999,19.5,112123.44
+2018,Rhode Island,With a Disability,$50000 to $74999,10.7,4250.468
+2018,Rhode Island,No Disability,$50000 to $74999,20.2,108124.136
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,$75000 or more,19.1,109823.472
+2018,Rhode Island,With a Disability,$75000 or more,10.9,4329.916
+2018,Rhode Island,No Disability,$75000 or more,19.8,105983.064
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,Median Earnings,,37977
+2018,Rhode Island,With a Disability,Median Earnings,,22646
+2018,Rhode Island,No Disability,Median Earnings,,39923
+2018,Arkansas,Total Civilian Noninstitutionalized Population,,100,1441845
+2018,Arkansas,With a Disability,,100,126952
+2018,Arkansas,No Disability,,100,1314893
+2018,Arkansas,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.5,136975.275
+2018,Arkansas,With a Disability,"$1 to $4,999 or loss",17.7,22470.504
+2018,Arkansas,No Disability,"$1 to $4,999 or loss",8.7,114395.691
+2018,Arkansas,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.4,207625.68
+2018,Arkansas,With a Disability,$5000 to $14999,20.5,26025.16
+2018,Arkansas,No Disability,$5000 to $14999,13.8,181455.234
+2018,Arkansas,Total Civilian Noninstitutionalized Population,$15000 to $24999,16.8,242229.96
+2018,Arkansas,With a Disability,$15000 to $24999,17.8,22597.456
+2018,Arkansas,No Disability,$15000 to $24999,16.7,219587.131
+2018,Arkansas,Total Civilian Noninstitutionalized Population,$25000 to $34999,15.3,220602.285
+2018,Arkansas,With a Disability,$25000 to $34999,12.8,16249.856
+2018,Arkansas,No Disability,$25000 to $34999,15.6,205123.308
+2018,Arkansas,Total Civilian Noninstitutionalized Population,$35000 to $49999,17.4,250881.03
+2018,Arkansas,With a Disability,$35000 to $49999,12.3,15615.096
+2018,Arkansas,No Disability,$35000 to $49999,17.9,235365.847
+2018,Arkansas,Total Civilian Noninstitutionalized Population,$50000 to $74999,14.6,210509.37
+2018,Arkansas,With a Disability,$50000 to $74999,11.3,14345.576
+2018,Arkansas,No Disability,$50000 to $74999,14.9,195919.057
+2018,Arkansas,Total Civilian Noninstitutionalized Population,$75000 or more,12,173021.4
+2018,Arkansas,With a Disability,$75000 or more,7.7,9775.304
+2018,Arkansas,No Disability,$75000 or more,12.4,163046.732
+2018,Arkansas,Total Civilian Noninstitutionalized Population,Median Earnings,,30816
+2018,Arkansas,With a Disability,Median Earnings,,21077
+2018,Arkansas,No Disability,Median Earnings,,31430
+2018,Delaware,Total Civilian Noninstitutionalized Population,,100,504149
+2018,Delaware,With a Disability,,100,34875
+2018,Delaware,No Disability,,100,469274
+2018,Delaware,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.9,54952.241
+2018,Delaware,With a Disability,"$1 to $4,999 or loss",21.3,7428.375
+2018,Delaware,No Disability,"$1 to $4,999 or loss",10.1,47396.674
+2018,Delaware,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.5,68060.115
+2018,Delaware,With a Disability,$5000 to $14999,19.3,6730.875
+2018,Delaware,No Disability,$5000 to $14999,13.1,61474.894
+2018,Delaware,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.5,63018.625
+2018,Delaware,With a Disability,$15000 to $24999,12.6,4394.25
+2018,Delaware,No Disability,$15000 to $24999,12.5,58659.25
+2018,Delaware,Total Civilian Noninstitutionalized Population,$25000 to $34999,13.2,66547.668
+2018,Delaware,With a Disability,$25000 to $34999,11.8,4115.25
+2018,Delaware,No Disability,$25000 to $34999,13.3,62413.442
+2018,Delaware,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.1,76126.499
+2018,Delaware,With a Disability,$35000 to $49999,15.5,5405.625
+2018,Delaware,No Disability,$35000 to $49999,15.1,70860.374
+2018,Delaware,Total Civilian Noninstitutionalized Population,$50000 to $74999,17,85705.33
+2018,Delaware,With a Disability,$50000 to $74999,8.7,3034.125
+2018,Delaware,No Disability,$50000 to $74999,17.6,82592.224
+2018,Delaware,Total Civilian Noninstitutionalized Population,$75000 or more,17.8,89738.522
+2018,Delaware,With a Disability,$75000 or more,10.7,3731.625
+2018,Delaware,No Disability,$75000 or more,18.3,85877.142
+2018,Delaware,Total Civilian Noninstitutionalized Population,Median Earnings,,34892
+2018,Delaware,With a Disability,Median Earnings,,21799
+2018,Delaware,No Disability,Median Earnings,,35795
+2018,Minnesota,Total Civilian Noninstitutionalized Population,,100,3234810
+2018,Minnesota,With a Disability,,100,206307
+2018,Minnesota,No Disability,,100,3028503
+2018,Minnesota,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.2,297602.52
+2018,Minnesota,With a Disability,"$1 to $4,999 or loss",18.7,38579.409
+2018,Minnesota,No Disability,"$1 to $4,999 or loss",8.6,260451.258
+2018,Minnesota,Total Civilian Noninstitutionalized Population,$5000 to $14999,12.4,401116.44
+2018,Minnesota,With a Disability,$5000 to $14999,20.4,42086.628
+2018,Minnesota,No Disability,$5000 to $14999,11.8,357363.354
+2018,Minnesota,Total Civilian Noninstitutionalized Population,$15000 to $24999,11.1,359063.91
+2018,Minnesota,With a Disability,$15000 to $24999,13.3,27438.831
+2018,Minnesota,No Disability,$15000 to $24999,10.9,330106.827
+2018,Minnesota,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.2,394646.82
+2018,Minnesota,With a Disability,$25000 to $34999,12.3,25375.761
+2018,Minnesota,No Disability,$25000 to $34999,12.2,369477.366
+2018,Minnesota,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.5,533743.65
+2018,Minnesota,With a Disability,$35000 to $49999,12.6,25994.682
+2018,Minnesota,No Disability,$35000 to $49999,16.8,508788.504
+2018,Minnesota,Total Civilian Noninstitutionalized Population,$50000 to $74999,18.9,611379.09
+2018,Minnesota,With a Disability,$50000 to $74999,12.6,25994.682
+2018,Minnesota,No Disability,$50000 to $74999,19.3,584501.079
+2018,Minnesota,Total Civilian Noninstitutionalized Population,$75000 or more,19.7,637257.57
+2018,Minnesota,With a Disability,$75000 or more,10.1,20837.007
+2018,Minnesota,No Disability,$75000 or more,20.4,617814.612
+2018,Minnesota,Total Civilian Noninstitutionalized Population,Median Earnings,,39232
+2018,Minnesota,With a Disability,Median Earnings,,23000
+2018,Minnesota,No Disability,Median Earnings,,40370
+2018,Montana,Total Civilian Noninstitutionalized Population,,100,584046
+2018,Montana,With a Disability,,100,50122
+2018,Montana,No Disability,,100,533924
+2018,Montana,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",10.9,63661.014
+2018,Montana,With a Disability,"$1 to $4,999 or loss",21.3,10675.986
+2018,Montana,No Disability,"$1 to $4,999 or loss",10,53392.4
+2018,Montana,Total Civilian Noninstitutionalized Population,$5000 to $14999,15.3,89359.038
+2018,Montana,With a Disability,$5000 to $14999,23.6,11828.792
+2018,Montana,No Disability,$5000 to $14999,14.5,77418.98
+2018,Montana,Total Civilian Noninstitutionalized Population,$15000 to $24999,15.6,91111.176
+2018,Montana,With a Disability,$15000 to $24999,11.9,5964.518
+2018,Montana,No Disability,$15000 to $24999,16,85427.84
+2018,Montana,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.8,86438.808
+2018,Montana,With a Disability,$25000 to $34999,12.1,6064.762
+2018,Montana,No Disability,$25000 to $34999,15.1,80622.524
+2018,Montana,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.2,88774.992
+2018,Montana,With a Disability,$35000 to $49999,10.8,5413.176
+2018,Montana,No Disability,$35000 to $49999,15.6,83292.144
+2018,Montana,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.6,91111.176
+2018,Montana,With a Disability,$50000 to $74999,13.1,6565.982
+2018,Montana,No Disability,$50000 to $74999,15.8,84359.992
+2018,Montana,Total Civilian Noninstitutionalized Population,$75000 or more,12.4,72421.704
+2018,Montana,With a Disability,$75000 or more,7.2,3608.784
+2018,Montana,No Disability,$75000 or more,12.9,68876.196
+2018,Montana,Total Civilian Noninstitutionalized Population,Median Earnings,,30257
+2018,Montana,With a Disability,Median Earnings,,19510
+2018,Montana,No Disability,Median Earnings,,30869
+2018,Arizona,Total Civilian Noninstitutionalized Population,,100,3528240
+2018,Arizona,With a Disability,,100,249061
+2018,Arizona,No Disability,,100,3279179
+2018,Arizona,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9,317541.6
+2018,Arizona,With a Disability,"$1 to $4,999 or loss",15.4,38355.394
+2018,Arizona,No Disability,"$1 to $4,999 or loss",8.6,282009.394
+2018,Arizona,Total Civilian Noninstitutionalized Population,$5000 to $14999,13.6,479840.64
+2018,Arizona,With a Disability,$5000 to $14999,20.2,50310.322
+2018,Arizona,No Disability,$5000 to $14999,13.1,429572.449
+2018,Arizona,Total Civilian Noninstitutionalized Population,$15000 to $24999,15,529236
+2018,Arizona,With a Disability,$15000 to $24999,16.5,41095.065
+2018,Arizona,No Disability,$15000 to $24999,14.9,488597.671
+2018,Arizona,Total Civilian Noninstitutionalized Population,$25000 to $34999,14.7,518651.28
+2018,Arizona,With a Disability,$25000 to $34999,12.9,32128.869
+2018,Arizona,No Disability,$25000 to $34999,14.8,485318.492
+2018,Arizona,Total Civilian Noninstitutionalized Population,$35000 to $49999,16.4,578631.36
+2018,Arizona,With a Disability,$35000 to $49999,13.4,33374.174
+2018,Arizona,No Disability,$35000 to $49999,16.6,544343.714
+2018,Arizona,Total Civilian Noninstitutionalized Population,$50000 to $74999,15,529236
+2018,Arizona,With a Disability,$50000 to $74999,11.3,28143.893
+2018,Arizona,No Disability,$50000 to $74999,15.2,498435.208
+2018,Arizona,Total Civilian Noninstitutionalized Population,$75000 or more,16.4,578631.36
+2018,Arizona,With a Disability,$75000 or more,10.2,25404.222
+2018,Arizona,No Disability,$75000 or more,16.8,550902.072
+2018,Arizona,Total Civilian Noninstitutionalized Population,Median Earnings,,32509
+2018,Arizona,With a Disability,Median Earnings,,23426
+2018,Arizona,No Disability,Median Earnings,,33548
+2018,Florida,Total Civilian Noninstitutionalized Population,,100,10534326
+2018,Florida,With a Disability,,100,642026
+2018,Florida,No Disability,,100,9892300
+2018,Florida,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",7.7,811143.102
+2018,Florida,With a Disability,"$1 to $4,999 or loss",14.1,90525.666
+2018,Florida,No Disability,"$1 to $4,999 or loss",7.3,722137.9
+2018,Florida,Total Civilian Noninstitutionalized Population,$5000 to $14999,14.6,1538011.596
+2018,Florida,With a Disability,$5000 to $14999,21.6,138677.616
+2018,Florida,No Disability,$5000 to $14999,14.2,1404706.6
+2018,Florida,Total Civilian Noninstitutionalized Population,$15000 to $24999,17,1790835.42
+2018,Florida,With a Disability,$15000 to $24999,17.7,113638.602
+2018,Florida,No Disability,$15000 to $24999,17,1681691
+2018,Florida,Total Civilian Noninstitutionalized Population,$25000 to $34999,15.4,1622286.204
+2018,Florida,With a Disability,$25000 to $34999,13.2,84747.432
+2018,Florida,No Disability,$25000 to $34999,15.6,1543198.8
+2018,Florida,Total Civilian Noninstitutionalized Population,$35000 to $49999,16,1685492.16
+2018,Florida,With a Disability,$35000 to $49999,12.2,78327.172
+2018,Florida,No Disability,$35000 to $49999,16.3,1612444.9
+2018,Florida,Total Civilian Noninstitutionalized Population,$50000 to $74999,14.7,1548545.922
+2018,Florida,With a Disability,$50000 to $74999,11.4,73190.964
+2018,Florida,No Disability,$50000 to $74999,14.9,1473952.7
+2018,Florida,Total Civilian Noninstitutionalized Population,$75000 or more,14.5,1527477.27
+2018,Florida,With a Disability,$75000 or more,9.7,62276.522
+2018,Florida,No Disability,$75000 or more,14.8,1464060.4
+2018,Florida,Total Civilian Noninstitutionalized Population,Median Earnings,,31343
+2018,Florida,With a Disability,Median Earnings,,22458
+2018,Florida,No Disability,Median Earnings,,31707
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,,100,3994467
+2018,Massachusetts,With a Disability,,100,221736
+2018,Massachusetts,No Disability,,100,3772731
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",9.3,371485.431
+2018,Massachusetts,With a Disability,"$1 to $4,999 or loss",18.6,41242.896
+2018,Massachusetts,No Disability,"$1 to $4,999 or loss",8.7,328227.597
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,$5000 to $14999,11.4,455369.238
+2018,Massachusetts,With a Disability,$5000 to $14999,17.9,39690.744
+2018,Massachusetts,No Disability,$5000 to $14999,11.1,418773.141
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,$15000 to $24999,10.4,415424.568
+2018,Massachusetts,With a Disability,$15000 to $24999,13.1,29047.416
+2018,Massachusetts,No Disability,$15000 to $24999,10.3,388591.293
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,$25000 to $34999,10.7,427407.969
+2018,Massachusetts,With a Disability,$25000 to $34999,11,24390.96
+2018,Massachusetts,No Disability,$25000 to $34999,10.7,403682.217
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,$35000 to $49999,13.5,539253.045
+2018,Massachusetts,With a Disability,$35000 to $49999,12.2,27051.792
+2018,Massachusetts,No Disability,$35000 to $49999,13.6,513091.416
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.8,711015.126
+2018,Massachusetts,With a Disability,$50000 to $74999,13.2,29269.152
+2018,Massachusetts,No Disability,$50000 to $74999,18.1,682864.311
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,$75000 or more,26.8,1070517.156
+2018,Massachusetts,With a Disability,$75000 or more,14,31043.04
+2018,Massachusetts,No Disability,$75000 or more,27.6,1041273.756
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,Median Earnings,,42317
+2018,Massachusetts,With a Disability,Median Earnings,,25299
+2018,Massachusetts,No Disability,Median Earnings,,44038
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,,100,423202
+2018,District of Columbia,With a Disability,,100,23697
+2018,District of Columbia,No Disability,,100,399505
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.6,36395.372
+2018,District of Columbia,With a Disability,"$1 to $4,999 or loss",17.1,4052.187
+2018,District of Columbia,No Disability,"$1 to $4,999 or loss",8.1,32359.905
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,$5000 to $14999,9.2,38934.584
+2018,District of Columbia,With a Disability,$5000 to $14999,18.3,4336.551
+2018,District of Columbia,No Disability,$5000 to $14999,8.7,34756.935
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,$15000 to $24999,6.8,28777.736
+2018,District of Columbia,With a Disability,$15000 to $24999,6,1421.82
+2018,District of Columbia,No Disability,$15000 to $24999,6.8,27166.34
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,$25000 to $34999,8.1,34279.362
+2018,District of Columbia,With a Disability,$25000 to $34999,9.4,2227.518
+2018,District of Columbia,No Disability,$25000 to $34999,8,31960.4
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,$35000 to $49999,10.4,44013.008
+2018,District of Columbia,With a Disability,$35000 to $49999,12.5,2962.125
+2018,District of Columbia,No Disability,$35000 to $49999,10.3,41149.015
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,$50000 to $74999,18.7,79138.774
+2018,District of Columbia,With a Disability,$50000 to $74999,18.8,4455.036
+2018,District of Columbia,No Disability,$50000 to $74999,18.7,74707.435
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,$75000 or more,38.2,161663.164
+2018,District of Columbia,With a Disability,$75000 or more,17.9,4241.763
+2018,District of Columbia,No Disability,$75000 or more,39.4,157404.97
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,Median Earnings,,58158
+2018,District of Columbia,With a Disability,Median Earnings,,33236
+2018,District of Columbia,No Disability,Median Earnings,,60495
+2018,Utah,Total Civilian Noninstitutionalized Population,,100,1670817
+2018,Utah,With a Disability,,100,101052
+2018,Utah,No Disability,,100,1569765
+2018,Utah,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",11.3,188802.321
+2018,Utah,With a Disability,"$1 to $4,999 or loss",16.4,16572.528
+2018,Utah,No Disability,"$1 to $4,999 or loss",11,172674.15
+2018,Utah,Total Civilian Noninstitutionalized Population,$5000 to $14999,15.1,252293.367
+2018,Utah,With a Disability,$5000 to $14999,22.1,22332.492
+2018,Utah,No Disability,$5000 to $14999,14.7,230755.455
+2018,Utah,Total Civilian Noninstitutionalized Population,$15000 to $24999,13.2,220547.844
+2018,Utah,With a Disability,$15000 to $24999,14.7,14854.644
+2018,Utah,No Disability,$15000 to $24999,13.1,205639.215
+2018,Utah,Total Civilian Noninstitutionalized Population,$25000 to $34999,12.6,210522.942
+2018,Utah,With a Disability,$25000 to $34999,10.8,10913.616
+2018,Utah,No Disability,$25000 to $34999,12.8,200929.92
+2018,Utah,Total Civilian Noninstitutionalized Population,$35000 to $49999,15.4,257305.818
+2018,Utah,With a Disability,$35000 to $49999,12.6,12732.552
+2018,Utah,No Disability,$35000 to $49999,15.5,243313.575
+2018,Utah,Total Civilian Noninstitutionalized Population,$50000 to $74999,15.8,263989.086
+2018,Utah,With a Disability,$50000 to $74999,12,12126.24
+2018,Utah,No Disability,$50000 to $74999,16.1,252732.165
+2018,Utah,Total Civilian Noninstitutionalized Population,$75000 or more,16.5,275684.805
+2018,Utah,With a Disability,$75000 or more,11.4,11519.928
+2018,Utah,No Disability,$75000 or more,16.8,263720.52
+2018,Utah,Total Civilian Noninstitutionalized Population,Median Earnings,,32301
+2018,Utah,With a Disability,Median Earnings,,22564
+2018,Utah,No Disability,Median Earnings,,32991
+2018,New York,Total Civilian Noninstitutionalized Population,,100,10349604
+2018,New York,With a Disability,,100,527048
+2018,New York,No Disability,,100,9822556
+2018,New York,Total Civilian Noninstitutionalized Population,"$1 to $4,999 or loss",8.3,859017.132
+2018,New York,With a Disability,"$1 to $4,999 or loss",15.2,80111.296
+2018,New York,No Disability,"$1 to $4,999 or loss",8,785804.48
+2018,New York,Total Civilian Noninstitutionalized Population,$5000 to $14999,12.3,1273001.292
+2018,New York,With a Disability,$5000 to $14999,20,105409.6
+2018,New York,No Disability,$5000 to $14999,11.9,1168884.164
+2018,New York,Total Civilian Noninstitutionalized Population,$15000 to $24999,12.4,1283350.896
+2018,New York,With a Disability,$15000 to $24999,13.6,71678.528
+2018,New York,No Disability,$15000 to $24999,12.3,1208174.388
+2018,New York,Total Civilian Noninstitutionalized Population,$25000 to $34999,11.6,1200554.064
+2018,New York,With a Disability,$25000 to $34999,11.9,62718.712
+2018,New York,No Disability,$25000 to $34999,11.6,1139416.496
+2018,New York,Total Civilian Noninstitutionalized Population,$35000 to $49999,14,1448944.56
+2018,New York,With a Disability,$35000 to $49999,12.6,66408.048
+2018,New York,No Disability,$35000 to $49999,14.1,1384980.396
+2018,New York,Total Civilian Noninstitutionalized Population,$50000 to $74999,17.4,1800831.096
+2018,New York,With a Disability,$50000 to $74999,12.2,64299.856
+2018,New York,No Disability,$50000 to $74999,17.7,1738592.412
+2018,New York,Total Civilian Noninstitutionalized Population,$75000 or more,24,2483904.96
+2018,New York,With a Disability,$75000 or more,14.5,76421.96
+2018,New York,No Disability,$75000 or more,24.5,2406526.22
+2018,New York,Total Civilian Noninstitutionalized Population,Median Earnings,,40272
+2018,New York,With a Disability,Median Earnings,,25802
+2018,New York,No Disability,Median Earnings,,40804

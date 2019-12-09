@@ -1,0 +1,781 @@
+﻿year,state,dis_stat,education_bracket,percentage,value
+2018,Alaska,Total Civilian Noninstitutionalized Population,Less than high school graduate,6.7,31456
+2018,Alaska,With a Disability,Less than high school graduate,12.6,10067
+2018,Alaska,No Disability,Less than high school graduate,5.5,21427
+2018,Alaska,Total Civilian Noninstitutionalized Population,High school graduate,28.3,132869
+2018,Alaska,With a Disability,High school graduate,32.5,25968
+2018,Alaska,No Disability,High school graduate,27.5,107139
+2018,Alaska,Total Civilian Noninstitutionalized Population,Some college or associate's degree,34.7,162917
+2018,Alaska,With a Disability,Some college or associate's degree,35.8,28605
+2018,Alaska,No Disability,Some college or associate's degree,34.4,134022
+2018,Alaska,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,30.2,141789
+2018,Alaska,With a Disability,Bachelor's degree or higher,19.1,15261
+2018,Alaska,No Disability,Bachelor's degree or higher,32.5,126619
+2018,Alaska,Total Civilian Noninstitutionalized Population,,100,469503
+2018,Alaska,With a Disability,,100,79904
+2018,Alaska,No Disability,,100,389599
+2018,Maine,Total Civilian Noninstitutionalized Population,Less than high school graduate,6.8,65923
+2018,Maine,With a Disability,Less than high school graduate,14.7,28140
+2018,Maine,No Disability,Less than high school graduate,4.9,38123
+2018,Maine,Total Civilian Noninstitutionalized Population,High school graduate,31.2,302471
+2018,Maine,With a Disability,High school graduate,38.4,73509
+2018,Maine,No Disability,High school graduate,29.4,228740
+2018,Maine,Total Civilian Noninstitutionalized Population,Some college or associate's degree,30.1,291807
+2018,Maine,With a Disability,Some college or associate's degree,29,55514
+2018,Maine,No Disability,Some college or associate's degree,30.4,236520
+2018,Maine,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,31.8,308287
+2018,Maine,With a Disability,Bachelor's degree or higher,17.8,34074
+2018,Maine,No Disability,Bachelor's degree or higher,35.3,274643
+2018,Maine,Total Civilian Noninstitutionalized Population,,100,969459
+2018,Maine,With a Disability,,100,191431
+2018,Maine,No Disability,,100,778028
+2018,North Carolina,Total Civilian Noninstitutionalized Population,Less than high school graduate,11.6,807055
+2018,North Carolina,With a Disability,Less than high school graduate,21.6,257712
+2018,North Carolina,No Disability,Less than high school graduate,9.5,547605
+2018,North Carolina,Total Civilian Noninstitutionalized Population,High school graduate,25.3,1760216
+2018,North Carolina,With a Disability,High school graduate,31.9,380603
+2018,North Carolina,No Disability,High school graduate,23.9,1377659
+2018,North Carolina,Total Civilian Noninstitutionalized Population,Some college or associate's degree,30.9,2149829
+2018,North Carolina,With a Disability,Some college or associate's degree,29.7,354354
+2018,North Carolina,No Disability,Some college or associate's degree,31.2,1798450
+2018,North Carolina,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,32.2,2240275
+2018,North Carolina,With a Disability,Bachelor's degree or higher,16.8,200442
+2018,North Carolina,No Disability,Bachelor's degree or higher,35.4,2040549
+2018,North Carolina,Total Civilian Noninstitutionalized Population,Less than high school graduate,9.3,380250
+2018,North Carolina,With a Disability,,100,6957377
+2018,North Carolina,No Disability,,100,1193113
+2018,North Carolina,Total Civilian Noninstitutionalized Population,,100,5764264
+2018,Missouri,With a Disability,Less than high school graduate,18.3,141131
+2018,Missouri,No Disability,Less than high school graduate,7.2,238860
+2018,Missouri,Total Civilian Noninstitutionalized Population,High school graduate,30,1226613
+2018,Missouri,With a Disability,High school graduate,38.6,297686
+2018,Missouri,No Disability,High school graduate,27.9,925583
+2018,Missouri,Total Civilian Noninstitutionalized Population,Some college or associate's degree,30.7,1255234
+2018,Missouri,With a Disability,Some college or associate's degree,29.4,226735
+2018,Missouri,No Disability,Some college or associate's degree,31,1028426
+2018,Missouri,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,30,1226613
+2018,Missouri,With a Disability,Bachelor's degree or higher,13.8,106426
+2018,Missouri,No Disability,Bachelor's degree or higher,33.8,1121316
+2018,Missouri,Total Civilian Noninstitutionalized Population,,100,4088712
+2018,Missouri,With a Disability,,100,771208
+2018,Missouri,No Disability,,100,3317504
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,Less than high school graduate,8.8,775595
+2018,Pennsylvania,With a Disability,Less than high school graduate,17.5,270148
+2018,Pennsylvania,No Disability,Less than high school graduate,6.9,501621
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,High school graduate,34.3,3023059
+2018,Pennsylvania,With a Disability,High school graduate,43.9,677686
+2018,Pennsylvania,No Disability,High school graduate,32.2,2340901
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,Some college or associate's degree,24.7,2176955
+2018,Pennsylvania,With a Disability,Some college or associate's degree,23.5,362770
+2018,Pennsylvania,No Disability,Some college or associate's degree,24.9,1810200
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,32.3,2846788
+2018,Pennsylvania,With a Disability,Bachelor's degree or higher,15.1,233099
+2018,Pennsylvania,No Disability,Bachelor's degree or higher,35.9,2609886
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,,100,8813586
+2018,Pennsylvania,With a Disability,,100,1543706
+2018,Pennsylvania,No Disability,,100,7269880
+2018,Michigan,Total Civilian Noninstitutionalized Population,Less than high school graduate,8.8,596172
+2018,Michigan,With a Disability,Less than high school graduate,17.1,210312
+2018,Michigan,No Disability,Less than high school graduate,6.9,382590
+2018,Michigan,Total Civilian Noninstitutionalized Population,High school graduate,28.4,1924011
+2018,Michigan,With a Disability,High school graduate,36.9,453832
+2018,Michigan,No Disability,High school graduate,26.6,1474914
+2018,Michigan,Total Civilian Noninstitutionalized Population,Some college or associate's degree,32.9,2228872
+2018,Michigan,With a Disability,Some college or associate's degree,31.4,386187
+2018,Michigan,No Disability,Some college or associate's degree,33.3,1846415
+2018,Michigan,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,29.9,2025631
+2018,Michigan,With a Disability,Bachelor's degree or higher,14.6,179565
+2018,Michigan,No Disability,Bachelor's degree or higher,33.3,1846415
+2018,Michigan,Total Civilian Noninstitutionalized Population,,100,6774688
+2018,Michigan,With a Disability,,100,1229898
+2018,Michigan,No Disability,,100,5544790
+2018,Nebraska,Total Civilian Noninstitutionalized Population,Less than high school graduate,8.4,104270
+2018,Nebraska,With a Disability,Less than high school graduate,14.3,27500
+2018,Nebraska,No Disability,Less than high school graduate,7.3,76577
+2018,Nebraska,Total Civilian Noninstitutionalized Population,High school graduate,25.5,316534
+2018,Nebraska,With a Disability,High school graduate,35.2,67693
+2018,Nebraska,No Disability,High school graduate,23.7,248613
+2018,Nebraska,Total Civilian Noninstitutionalized Population,Some college or associate's degree,33.4,414598
+2018,Nebraska,With a Disability,Some college or associate's degree,33.2,63847
+2018,Nebraska,No Disability,Some college or associate's degree,33.4,350366
+2018,Nebraska,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,32.8,407150
+2018,Nebraska,With a Disability,Bachelor's degree or higher,17.2,33077
+2018,Nebraska,No Disability,Bachelor's degree or higher,35.6,373444
+2018,Nebraska,Total Civilian Noninstitutionalized Population,,100,1241313
+2018,Nebraska,With a Disability,,100,192312
+2018,Nebraska,No Disability,,100,1049001
+2018,Oregon,Total Civilian Noninstitutionalized Population,Less than high school graduate,9.4,274271
+2018,Oregon,With a Disability,Less than high school graduate,14.2,71998
+2018,Oregon,No Disability,Less than high school graduate,8.4,202503
+2018,Oregon,Total Civilian Noninstitutionalized Population,High school graduate,22,641912
+2018,Oregon,With a Disability,High school graduate,29.8,151095
+2018,Oregon,No Disability,High school graduate,20.4,491793
+2018,Oregon,Total Civilian Noninstitutionalized Population,Some college or associate's degree,34.4,1003718
+2018,Oregon,With a Disability,Some college or associate's degree,35.8,181517
+2018,Oregon,No Disability,Some college or associate's degree,34.1,822066
+2018,Oregon,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,34.2,997882
+2018,Oregon,With a Disability,Bachelor's degree or higher,20.2,102420
+2018,Oregon,No Disability,Bachelor's degree or higher,37.1,894389
+2018,Oregon,Total Civilian Noninstitutionalized Population,,100,2917785
+2018,Oregon,With a Disability,,100,507032
+2018,Oregon,No Disability,,100,2410753
+2018,Wyoming,Total Civilian Noninstitutionalized Population,Less than high school graduate,6.6,25391
+2018,Wyoming,With a Disability,Less than high school graduate,11.7,7486
+2018,Wyoming,No Disability,Less than high school graduate,5.6,17961
+2018,Wyoming,Total Civilian Noninstitutionalized Population,High school graduate,28.7,110414
+2018,Wyoming,With a Disability,High school graduate,35,22395
+2018,Wyoming,No Disability,High school graduate,27.5,88201
+2018,Wyoming,Total Civilian Noninstitutionalized Population,Some college or associate's degree,37.6,144655
+2018,Wyoming,With a Disability,Some college or associate's degree,36.6,23419
+2018,Wyoming,No Disability,Some college or associate's degree,37.8,121237
+2018,Wyoming,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,27.1,104259
+2018,Wyoming,With a Disability,Bachelor's degree or higher,16.6,10621
+2018,Wyoming,No Disability,Bachelor's degree or higher,29.1,93333
+2018,Wyoming,Total Civilian Noninstitutionalized Population,,100,384721
+2018,Wyoming,With a Disability,,100,63987
+2018,Wyoming,No Disability,,100,320734
+2018,California,Total Civilian Noninstitutionalized Population,Less than high school graduate,16.1,4255050
+2018,California,With a Disability,Less than high school graduate,24.2,867261
+2018,California,No Disability,Less than high school graduate,14.8,3381084
+2018,California,Total Civilian Noninstitutionalized Population,High school graduate,20.6,5444350
+2018,California,With a Disability,High school graduate,24.9,892347
+2018,California,No Disability,High school graduate,19.9,4546187
+2018,California,Total Civilian Noninstitutionalized Population,Some college or associate's degree,28.8,7611519
+2018,California,With a Disability,Some college or associate's degree,30.4,1089452
+2018,California,No Disability,Some college or associate's degree,28.5,6510871
+2018,California,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,34.5,9117966
+2018,California,With a Disability,Bachelor's degree or higher,20.5,734663
+2018,California,No Disability,Bachelor's degree or higher,36.7,8384174
+2018,California,Total Civilian Noninstitutionalized Population,,100,26428887
+2018,California,With a Disability,,100,3583724
+2018,California,No Disability,,100,22845163
+2018,Mississipi,Total Civilian Noninstitutionalized Population,Less than high school graduate,14.1,271023
+2018,Mississipi,With a Disability,Less than high school graduate,25.7,109465
+2018,Mississipi,No Disability,Less than high school graduate,10.8,161591
+2018,Mississipi,Total Civilian Noninstitutionalized Population,High school graduate,29.6,568957
+2018,Mississipi,With a Disability,High school graduate,33.4,142262
+2018,Mississipi,No Disability,High school graduate,28.5,426422
+2018,Mississipi,Total Civilian Noninstitutionalized Population,Some college or associate's degree,32.7,628544
+2018,Mississipi,With a Disability,Some college or associate's degree,28,119261
+2018,Mississipi,No Disability,Some college or associate's degree,34,508714
+2018,Mississipi,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,23.6,453628
+2018,Mississipi,With a Disability,Bachelor's degree or higher,12.8,54519
+2018,Mississipi,No Disability,Bachelor's degree or higher,26.7,399490
+2018,Mississipi,Total Civilian Noninstitutionalized Population,,100,1922153
+2018,Mississipi,With a Disability,,100,425935
+2018,Mississipi,No Disability,,100,1496218
+2018,Connecticut,Total Civilian Noninstitutionalized Population,Less than high school graduate,8.8,215858
+2018,Connecticut,With a Disability,Less than high school graduate,18.5,62517
+2018,Connecticut,No Disability,Less than high school graduate,7.3,154395
+2018,Connecticut,Total Civilian Noninstitutionalized Population,High school graduate,26.5,650028
+2018,Connecticut,With a Disability,High school graduate,37.6,127062
+2018,Connecticut,No Disability,High school graduate,24.8,524521
+2018,Connecticut,Total Civilian Noninstitutionalized Population,Some college or associate's degree,24.6,603422
+2018,Connecticut,With a Disability,Some college or associate's degree,24.4,82455
+2018,Connecticut,No Disability,Some college or associate's degree,24.6,520291
+2018,Connecticut,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,40.1,983627
+2018,Connecticut,With a Disability,Bachelor's degree or higher,19.6,66234
+2018,Connecticut,No Disability,Bachelor's degree or higher,43.3,915797
+2018,Connecticut,Total Civilian Noninstitutionalized Population,,100,2452937
+2018,Connecticut,With a Disability,,100,337931
+2018,Connecticut,No Disability,,100,2115006
+2018,Texas,Total Civilian Noninstitutionalized Population,Less than high school graduate,15.8,2859675
+2018,Texas,With a Disability,Less than high school graduate,23.7,653522
+2018,Texas,No Disability,Less than high school graduate,14.4,2209209
+2018,Texas,Total Civilian Noninstitutionalized Population,High school graduate,24.8,4488604
+2018,Texas,With a Disability,High school graduate,30.2,832758
+2018,Texas,No Disability,High school graduate,23.8,3651332
+2018,Texas,Total Civilian Noninstitutionalized Population,Some college or associate's degree,28.7,5194474
+2018,Texas,With a Disability,Some college or associate's degree,28.8,794153
+2018,Texas,No Disability,Some college or associate's degree,28.6,4387736
+2018,Texas,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,30.7,5556458
+2018,Texas,With a Disability,Bachelor's degree or higher,17.2,474286
+2018,Texas,No Disability,Bachelor's degree or higher,33.2,5093456
+2018,Texas,Total Civilian Noninstitutionalized Population,,100,18099213
+2018,Texas,With a Disability,,100,2757478
+2018,Texas,No Disability,,100,15341735
+2018,Idaho,Total Civilian Noninstitutionalized Population,Less than high school graduate,9,101405
+2018,Idaho,With a Disability,Less than high school graduate,15.1,29945
+2018,Idaho,No Disability,Less than high school graduate,7.7,71487
+2018,Idaho,Total Civilian Noninstitutionalized Population,High school graduate,27.7,312103
+2018,Idaho,With a Disability,High school graduate,33.3,66038
+2018,Idaho,No Disability,High school graduate,26.5,246029
+2018,Idaho,Total Civilian Noninstitutionalized Population,Some college or associate's degree,35.4,398861
+2018,Idaho,With a Disability,Some college or associate's degree,34.1,67624
+2018,Idaho,No Disability,Some college or associate's degree,35.7,331443
+2018,Idaho,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,28,315483
+2018,Idaho,With a Disability,Bachelor's degree or higher,17.4,34506
+2018,Idaho,No Disability,Bachelor's degree or higher,30.2,280380
+2018,Idaho,Total Civilian Noninstitutionalized Population,,100,1126726
+2018,Idaho,With a Disability,,100,198313
+2018,Idaho,No Disability,,100,928413
+2018,Maryland,Total Civilian Noninstitutionalized Population,Less than high school graduate,9.3,380003
+2018,Maryland,With a Disability,Less than high school graduate,18.3,106700
+2018,Maryland,No Disability,Less than high school graduate,7.9,276737
+2018,Maryland,Total Civilian Noninstitutionalized Population,High school graduate,24,980655
+2018,Maryland,With a Disability,High school graduate,32,186579
+2018,Maryland,No Disability,High school graduate,22.7,795181
+2018,Maryland,Total Civilian Noninstitutionalized Population,Some college or associate's degree,25.5,1041946
+2018,Maryland,With a Disability,Some college or associate's degree,25.9,151012
+2018,Maryland,No Disability,Some college or associate's degree,25.4,889762
+2018,Maryland,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,41.2,1683457
+2018,Maryland,With a Disability,Bachelor's degree or higher,23.9,139351
+2018,Maryland,No Disability,Bachelor's degree or higher,44.1,1544823
+2018,Maryland,Total Civilian Noninstitutionalized Population,,100,4086063
+2018,Maryland,With a Disability,,100,583061
+2018,Maryland,No Disability,,100,3503002
+2018,New Mexico,Total Civilian Noninstitutionalized Population,Less than high school graduate,14.3,
+2018,New Mexico,With a Disability,Less than high school graduate,23.3,
+2018,New Mexico,No Disability,Less than high school graduate,11.9,
+2018,New Mexico,Total Civilian Noninstitutionalized Population,High school graduate,26.2,
+2018,New Mexico,With a Disability,High school graduate,28.8,
+2018,New Mexico,No Disability,High school graduate,25.5,
+2018,New Mexico,Total Civilian Noninstitutionalized Population,Some college or associate's degree,31.5,
+2018,New Mexico,With a Disability,Some college or associate's degree,28.4,
+2018,New Mexico,No Disability,Some college or associate's degree,32.3,
+2018,New Mexico,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,28,
+2018,New Mexico,With a Disability,Bachelor's degree or higher,19.4,
+2018,New Mexico,No Disability,Bachelor's degree or higher,30.2,
+2018,New Mexico,Total Civilian Noninstitutionalized Population,,100,1388178
+2018,New Mexico,With a Disability,,100,288485
+2018,New Mexico,No Disability,,100,1099693
+2018,Alabama,Total Civilian Noninstitutionalized Population,Less than high school graduate,13.1,198509
+2018,Alabama,With a Disability,Less than high school graduate,24.2,67217
+2018,Alabama,No Disability,Less than high school graduate,10.1,130863
+2018,Alabama,Total Civilian Noninstitutionalized Population,High school graduate,30.6,363702
+2018,Alabama,With a Disability,High school graduate,35.2,83083
+2018,Alabama,No Disability,High school graduate,29.4,280421
+2018,Alabama,Total Civilian Noninstitutionalized Population,Some college or associate's degree,30.4,437276
+2018,Alabama,With a Disability,Some college or associate's degree,26.6,81929
+2018,Alabama,No Disability,Some college or associate's degree,31.5,355200
+2018,Alabama,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,25.8,388689
+2018,Alabama,With a Disability,Bachelor's degree or higher,14,55966
+2018,Alabama,No Disability,Bachelor's degree or higher,29,332107
+2018,Alabama,Total Civilian Noninstitutionalized Population,,100,3268978
+2018,Alabama,With a Disability,,100,702936
+2018,Alabama,No Disability,,100,2566042
+2018,Tennessee,Total Civilian Noninstitutionalized Population,Less than high school graduate,11.9,541882
+2018,Tennessee,With a Disability,Less than high school graduate,22.9,209019
+2018,Tennessee,No Disability,Less than high school graduate,9.1,331321
+2018,Tennessee,Total Civilian Noninstitutionalized Population,High school graduate,31.7,1443503
+2018,Tennessee,With a Disability,High school graduate,37,337716
+2018,Tennessee,No Disability,High school graduate,30.3,1103189
+2018,Tennessee,Total Civilian Noninstitutionalized Population,Some college or associate's degree,28.6,1302340
+2018,Tennessee,With a Disability,Some college or associate's degree,26.3,240052
+2018,Tennessee,No Disability,Some college or associate's degree,29.2,1063140
+2018,Tennessee,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,27.8,1265911
+2018,Tennessee,With a Disability,Bachelor's degree or higher,13.8,125959
+2018,Tennessee,No Disability,Bachelor's degree or higher,31.3,1139598
+2018,Tennessee,Total Civilian Noninstitutionalized Population,,100,4553638
+2018,Tennessee,With a Disability,,100,912747
+2018,Tennessee,No Disability,,100,3640891
+2018,Vermont,Total Civilian Noninstitutionalized Population,Less than high school graduate,6.3,27742
+2018,Vermont,With a Disability,Less than high school graduate,15.1,11759
+2018,Vermont,No Disability,Less than high school graduate,4.4,15948
+2018,Vermont,Total Civilian Noninstitutionalized Population,High school graduate,28.5,125500
+2018,Vermont,With a Disability,High school graduate,41.2,32086
+2018,Vermont,No Disability,High school graduate,25.8,93517
+2018,Vermont,Total Civilian Noninstitutionalized Population,Some college or associate's degree,26.2,115372
+2018,Vermont,With a Disability,Some college or associate's degree,24.9,19392
+2018,Vermont,No Disability,Some college or associate's degree,26.5,96055
+2018,Vermont,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,39,171737
+2018,Vermont,With a Disability,Bachelor's degree or higher,18.8,14641
+2018,Vermont,No Disability,Bachelor's degree or higher,43.3,156950
+2018,Vermont,Total Civilian Noninstitutionalized Population,,100,440352
+2018,Vermont,With a Disability,,100,77880
+2018,Vermont,No Disability,,100,362472
+2018,Nevada,Total Civilian Noninstitutionalized Population,Less than high school graduate,13,268743
+2018,Nevada,With a Disability,Less than high school graduate,16.9,55618
+2018,Nevada,No Disability,Less than high school graduate,12.3,213793
+2018,Nevada,Total Civilian Noninstitutionalized Population,High school graduate,27.7,572630
+2018,Nevada,With a Disability,High school graduate,30.2,99388
+2018,Nevada,No Disability,High school graduate,27.2,472778
+2018,Nevada,Total Civilian Noninstitutionalized Population,Some college or associate's degree,34.2,707001
+2018,Nevada,With a Disability,Some college or associate's degree,34.8,114527
+2018,Nevada,No Disability,Some college or associate's degree,34.1,592711
+2018,Nevada,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,25.1,518881
+2018,Nevada,With a Disability,Bachelor's degree or higher,18.1,59567
+2018,Nevada,No Disability,Bachelor's degree or higher,26.4,458873
+2018,Nevada,Total Civilian Noninstitutionalized Population,,100,2067257
+2018,Nevada,With a Disability,,100,329101
+2018,Nevada,No Disability,,100,1738156
+2018,West Virginia,Total Civilian Noninstitutionalized Population,Less than high school graduate,12,150574
+2018,West Virginia,With a Disability,Less than high school graduate,22.5,68979
+2018,West Virginia,No Disability,Less than high school graduate,8.5,80597
+2018,West Virginia,Total Civilian Noninstitutionalized Population,High school graduate,39.5,495640
+2018,West Virginia,With a Disability,High school graduate,42.4,129987
+2018,West Virginia,No Disability,High school graduate,38.6,366009
+2018,West Virginia,Total Civilian Noninstitutionalized Population,Some college or associate's degree,26.9,337537
+2018,West Virginia,With a Disability,Some college or associate's degree,23.3,71431
+2018,West Virginia,No Disability,Some college or associate's degree,28.1,266447
+2018,West Virginia,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,21.6,271033
+2018,West Virginia,With a Disability,Bachelor's degree or higher,11.8,36175
+2018,West Virginia,No Disability,Bachelor's degree or higher,24.8,235156
+2018,West Virginia,Total Civilian Noninstitutionalized Population,,100,1254785
+2018,West Virginia,With a Disability,,100,306574
+2018,West Virginia,No Disability,,100,948211
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,Less than high school graduate,11.2,284662
+2018,Oklahoma,With a Disability,Less than high school graduate,17,94010
+2018,Oklahoma,No Disability,Less than high school graduate,9.6,190907
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,High school graduate,31.1,790445
+2018,Oklahoma,With a Disability,High school graduate,36.4,201293
+2018,Oklahoma,No Disability,High school graduate,29.7,590621
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,Some college or associate's degree,31.6,803153
+2018,Oklahoma,With a Disability,Some college or associate's degree,31.5,174195
+2018,Oklahoma,No Disability,Some college or associate's degree,31.7,630393
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,26,660822
+2018,Oklahoma,With a Disability,Bachelor's degree or higher,15.1,83503
+2018,Oklahoma,No Disability,Bachelor's degree or higher,29,576700
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,,100,2541626
+2018,Oklahoma,With a Disability,,100,553003
+2018,Oklahoma,No Disability,,100,1988623
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,Less than high school graduate,7.7,302393
+2018,Wisconsin,With a Disability,Less than high school graduate,15.1,88259
+2018,Wisconsin,No Disability,Less than high school graduate,6.4,213932
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,High school graduate,30.4,1193866
+2018,Wisconsin,With a Disability,High school graduate,39.7,232046
+2018,Wisconsin,No Disability,High school graduate,28.7,959352
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,Some college or associate's degree,31.6,1240992
+2018,Wisconsin,With a Disability,Some college or associate's degree,28.6,167167
+2018,Wisconsin,No Disability,Some college or associate's degree,32.1,1073003
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,30.4,1193866
+2018,Wisconsin,With a Disability,Bachelor's degree or higher,16.6,97027
+2018,Wisconsin,No Disability,Bachelor's degree or higher,32.8,1096402
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,,100,3927192
+2018,Wisconsin,With a Disability,,100,584501
+2018,Wisconsin,No Disability,,100,3342691
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,Less than high school graduate,22.3,505575
+2018,Puerto Rico,With a Disability,Less than high school graduate,37.8,229748
+2018,Puerto Rico,No Disability,Less than high school graduate,16.7,277111
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,High school graduate,28.2,639337
+2018,Puerto Rico,With a Disability,High school graduate,27.8,168968
+2018,Puerto Rico,No Disability,High school graduate,28.3,469596
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,Some college or associate's degree,22.8,516911
+2018,Puerto Rico,With a Disability,Some college or associate's degree,18.4,111835
+2018,Puerto Rico,No Disability,Some college or associate's degree,24.3,403222
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,26.8,607597
+2018,Puerto Rico,With a Disability,Bachelor's degree or higher,16,97248
+2018,Puerto Rico,No Disability,Bachelor's degree or higher,30.7,509421
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,,100,2267154
+2018,Puerto Rico,With a Disability,,100,607801
+2018,Puerto Rico,No Disability,,100,1659353
+2018,Kansas,Total Civilian Noninstitutionalized Population,Less than high school graduate,8.8,164254
+2018,Kansas,With a Disability,Less than high school graduate,14.6,48825
+2018,Kansas,No Disability,Less than high school graduate,7.6,116440
+2018,Kansas,Total Civilian Noninstitutionalized Population,High school graduate,25.1,468499
+2018,Kansas,With a Disability,High school graduate,34.6,115708
+2018,Kansas,No Disability,High school graduate,23,352385
+2018,Kansas,Total Civilian Noninstitutionalized Population,Some college or associate's degree,31.8,593556
+2018,Kansas,With a Disability,Some college or associate's degree,32.3,108017
+2018,Kansas,No Disability,Some college or associate's degree,31.7,485679
+2018,Kansas,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,34.2,638353
+2018,Kansas,With a Disability,Bachelor's degree or higher,18.5,61867
+2018,Kansas,No Disability,Bachelor's degree or higher,37.7,577606
+2018,Kansas,Total Civilian Noninstitutionalized Population,,100,1866530
+2018,Kansas,With a Disability,,100,334418
+2018,Kansas,No Disability,,100,1532112
+2018,Virginia,Total Civilian Noninstitutionalized Population,Less than high school graduate,10,565960
+2018,Virginia,With a Disability,Less than high school graduate,19.7,169778
+2018,Virginia,No Disability,Less than high school graduate,8.2,393418
+2018,Virginia,Total Civilian Noninstitutionalized Population,High school graduate,23.8,1346985
+2018,Virginia,With a Disability,High school graduate,31.4,270610
+2018,Virginia,No Disability,High school graduate,22.5,1079502
+2018,Virginia,Total Civilian Noninstitutionalized Population,Some college or associate's degree,26.5,1499795
+2018,Virginia,With a Disability,Some college or associate's degree,27.3,235276
+2018,Virginia,No Disability,Some college or associate's degree,26.4,1266615
+2018,Virginia,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,39.7,2246863
+2018,Virginia,With a Disability,Bachelor's degree or higher,21.6,186152
+2018,Virginia,No Disability,Bachelor's degree or higher,42.9,2058250
+2018,Virginia,Total Civilian Noninstitutionalized Population,,100,5659605
+2018,Virginia,With a Disability,,100,861818
+2018,Virginia,No Disability,,100,4797787
+2018,North Dakota,Total Civilian Noninstitutionalized Population,Less than high school graduate,7.4,36104
+2018,North Dakota,With a Disability,Less than high school graduate,16.7,11719
+2018,North Dakota,No Disability,Less than high school graduate,5.8,24227
+2018,North Dakota,Total Civilian Noninstitutionalized Population,High school graduate,25.5,124414
+2018,North Dakota,With a Disability,High school graduate,32.7,22947
+2018,North Dakota,No Disability,High school graduate,24.3,101506
+2018,North Dakota,Total Civilian Noninstitutionalized Population,Some college or associate's degree,37,180523
+2018,North Dakota,With a Disability,Some college or associate's degree,33.8,23719
+2018,North Dakota,No Disability,Some college or associate's degree,37.5,156646
+2018,North Dakota,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,30.1,146857
+2018,North Dakota,With a Disability,Bachelor's degree or higher,16.7,11719
+2018,North Dakota,No Disability,Bachelor's degree or higher,32.4,135342
+2018,North Dakota,Total Civilian Noninstitutionalized Population,,100,487900
+2018,North Dakota,With a Disability,,100,70177
+2018,North Dakota,No Disability,,100,417723
+2018,New Jersey,Total Civilian Noninstitutionalized Population,Less than high school graduate,9.6,585662
+2018,New Jersey,With a Disability,Less than high school graduate,19.6,155912
+2018,New Jersey,No Disability,Less than high school graduate,8.1,429719
+2018,New Jersey,Total Civilian Noninstitutionalized Population,High school graduate,26,1586168
+2018,New Jersey,With a Disability,High school graduate,36.7,291938
+2018,New Jersey,No Disability,High school graduate,24.4,1294462
+2018,New Jersey,Total Civilian Noninstitutionalized Population,Some college or associate's degree,23.1,1409249
+2018,New Jersey,With a Disability,Some college or associate's degree,22.2,176594
+2018,New Jersey,No Disability,Some college or associate's degree,23.3,1236105
+2018,New Jersey,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,41.2,2513466
+2018,New Jersey,With a Disability,Bachelor's degree or higher,21.5,171026
+2018,New Jersey,No Disability,Bachelor's degree or higher,44.2,2344887
+2018,New Jersey,Total Civilian Noninstitutionalized Population,,100,6100647
+2018,New Jersey,With a Disability,,100,795472
+2018,New Jersey,No Disability,,100,5305175
+2018,Ohio,Total Civilian Noninstitutionalized Population,Less than high school graduate,9,708346
+2018,Ohio,With a Disability,Less than high school graduate,18.1,257355
+2018,Ohio,No Disability,Less than high school graduate,7,451406
+2018,Ohio,Total Civilian Noninstitutionalized Population,High school graduate,32.5,2557917
+2018,Ohio,With a Disability,High school graduate,40.3,573006
+2018,Ohio,No Disability,High school graduate,30.8,1986188
+2018,Ohio,Total Civilian Noninstitutionalized Population,Some college or associate's degree,29.1,2290319
+2018,Ohio,With a Disability,Some college or associate's degree,27.3,388165
+2018,Ohio,No Disability,Some college or associate's degree,29.6,1908804
+2018,Ohio,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,29.3,2306060
+2018,Ohio,With a Disability,Bachelor's degree or higher,14.3,203324
+2018,Ohio,No Disability,Bachelor's degree or higher,32.6,2102264
+2018,Ohio,Total Civilian Noninstitutionalized Population,,100,7870515
+2018,Ohio,With a Disability,,100,1421852
+2018,Ohio,No Disability,,100,6448663
+2018,South Carolina,Total Civilian Noninstitutionalized Population,Less than high school graduate,11.3,387007
+2018,South Carolina,With a Disability,Less than high school graduate,21.5,137042
+2018,South Carolina,No Disability,Less than high school graduate,8.9,248081
+2018,South Carolina,Total Civilian Noninstitutionalized Population,High school graduate,29.8,1020603
+2018,South Carolina,With a Disability,High school graduate,35,223093
+2018,South Carolina,No Disability,High school graduate,28.6,797206
+2018,South Carolina,Total Civilian Noninstitutionalized Population,Some college or associate's degree,30.4,1041152
+2018,South Carolina,With a Disability,Some college or associate's degree,27.9,177837
+2018,South Carolina,No Disability,Some college or associate's degree,30.9,861317
+2018,South Carolina,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,28.6,979505
+2018,South Carolina,With a Disability,Bachelor's degree or higher,15.6,99435
+2018,South Carolina,No Disability,Bachelor's degree or higher,31.6,880829
+2018,South Carolina,Total Civilian Noninstitutionalized Population,,100,3424843
+2018,South Carolina,With a Disability,,100,637409
+2018,South Carolina,No Disability,,100,2787434
+2018,Georgia,Total Civilian Noninstitutionalized Population,Less than high school graduate,12.1,826837
+2018,Georgia,With a Disability,Less than high school graduate,21.1,228220
+2018,Georgia,No Disability,Less than high school graduate,10.4,598182
+2018,Georgia,Total Civilian Noninstitutionalized Population,High school graduate,27.6,1886009
+2018,Georgia,With a Disability,High school graduate,34.4,372075
+2018,Georgia,No Disability,High school graduate,26.4,1518462
+2018,Georgia,Total Civilian Noninstitutionalized Population,Some college or associate's degree,28,1913342
+2018,Georgia,With a Disability,Some college or associate's degree,27.1,293117
+2018,Georgia,No Disability,Some college or associate's degree,28.1,1616242
+2018,Georgia,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,32.3,2207177
+2018,Georgia,With a Disability,Bachelor's degree or higher,17.3,187119
+2018,Georgia,No Disability,Bachelor's degree or higher,35.2,2024617
+2018,Georgia,Total Civilian Noninstitutionalized Population,,100,6833367
+2018,Georgia,With a Disability,,100,1081614
+2018,Georgia,No Disability,,100,5751753
+2018,Colorado,Total Civilian Noninstitutionalized Population,Less than high school graduate,8,306284
+2018,Colorado,With a Disability,Less than high school graduate,13.1,68679
+2018,Colorado,No Disability,Less than high school graduate,7.2,237908
+2018,Colorado,Total Civilian Noninstitutionalized Population,High school graduate,20.5,784854
+2018,Colorado,With a Disability,High school graduate,27.6,144699
+2018,Colorado,No Disability,High school graduate,19.4,641031
+2018,Colorado,Total Civilian Noninstitutionalized Population,Some college or associate's degree,29.3,1121767
+2018,Colorado,With a Disability,Some college or associate's degree,33.4,175107
+2018,Colorado,No Disability,Some college or associate's degree,28.7,948329
+2018,Colorado,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,42.1,1611822
+2018,Colorado,With a Disability,Bachelor's degree or higher,25.9,135786
+2018,Colorado,No Disability,Bachelor's degree or higher,44.7,1477014
+2018,Colorado,Total Civilian Noninstitutionalized Population,,100,3828557
+2018,Colorado,With a Disability,,100,524273
+2018,Colorado,No Disability,,100,3304284
+2018,Hawaii,Total Civilian Noninstitutionalized Population,Less than high school graduate,8,76826
+2018,Hawaii,With a Disability,Less than high school graduate,14.1,20261
+2018,Hawaii,No Disability,Less than high school graduate,7,57163
+2018,Hawaii,Total Civilian Noninstitutionalized Population,High school graduate,26.8,257367
+2018,Hawaii,With a Disability,High school graduate,33.8,48570
+2018,Hawaii,No Disability,High school graduate,25.6,209056
+2018,Hawaii,Total Civilian Noninstitutionalized Population,Some college or associate's degree,31.6,303463
+2018,Hawaii,With a Disability,Some college or associate's degree,29.7,42678
+2018,Hawaii,No Disability,Some college or associate's degree,32,261320
+2018,Hawaii,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,33.5,321709
+2018,Hawaii,With a Disability,Bachelor's degree or higher,22.4,32188
+2018,Hawaii,No Disability,Bachelor's degree or higher,35.4,289085
+2018,Hawaii,Total Civilian Noninstitutionalized Population,,100,960326
+2018,Hawaii,With a Disability,,100,143699
+2018,Hawaii,No Disability,,100,816627
+2018,South Dakota,Total Civilian Noninstitutionalized Population,Less than high school graduate,7.5,42628
+2018,South Dakota,With a Disability,Less than high school graduate,11.9,10801
+2018,South Dakota,No Disability,Less than high school graduate,6.6,31521
+2018,South Dakota,Total Civilian Noninstitutionalized Population,High school graduate,30.7,174490
+2018,South Dakota,With a Disability,High school graduate,39,35401
+2018,South Dakota,No Disability,High school graduate,29.1,138982
+2018,South Dakota,Total Civilian Noninstitutionalized Population,Some college or associate's degree,32.2,183016
+2018,South Dakota,With a Disability,Some college or associate's degree,29.8,27050
+2018,South Dakota,No Disability,Some college or associate's degree,32.7,156175
+2018,South Dakota,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,29.6,168238
+2018,South Dakota,With a Disability,Bachelor's degree or higher,19.3,17518
+2018,South Dakota,No Disability,Bachelor's degree or higher,31.6,150922
+2018,South Dakota,Total Civilian Noninstitutionalized Population,,100,568374
+2018,South Dakota,With a Disability,,100,90772
+2018,South Dakota,No Disability,,100,477602
+2018,Indiana,Total Civilian Noninstitutionalized Population,Less than high school graduate,10.8,473181
+2018,Indiana,With a Disability,Less than high school graduate,20,156104
+2018,Indiana,No Disability,Less than high school graduate,8.8,316869
+2018,Indiana,Total Civilian Noninstitutionalized Population,High school graduate,32.8,1437070
+2018,Indiana,With a Disability,High school graduate,40.4,315331
+2018,Indiana,No Disability,High school graduate,31.2,1123446
+2018,Indiana,Total Civilian Noninstitutionalized Population,Some college or associate's degree,29,1270581
+2018,Indiana,With a Disability,Some college or associate's degree,26.2,204497
+2018,Indiana,No Disability,Some college or associate's degree,29.6,1065833
+2018,Indiana,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,27.5,1204861
+2018,Indiana,With a Disability,Bachelor's degree or higher,13.4,104590
+2018,Indiana,No Disability,Bachelor's degree or higher,30.5,1098240
+2018,Indiana,Total Civilian Noninstitutionalized Population,,100,4381314
+2018,Indiana,With a Disability,,100,780524
+2018,Indiana,No Disability,,100,3600790
+2018,Kentucky,Total Civilian Noninstitutionalized Population,Less than high school graduate,12.9,383219
+2018,Kentucky,With a Disability,Less than high school graduate,24.3,161972
+2018,Kentucky,No Disability,Less than high school graduate,9.6,221197
+2018,Kentucky,Total Civilian Noninstitutionalized Population,High school graduate,32.5,965475
+2018,Kentucky,With a Disability,High school graduate,38.3,255290
+2018,Kentucky,No Disability,High school graduate,30.8,709675
+2018,Kentucky,Total Civilian Noninstitutionalized Population,Some college or associate's degree,29.5,876354
+2018,Kentucky,With a Disability,Some college or associate's degree,25.7,171304
+2018,Kentucky,No Disability,Some college or associate's degree,30.6,705066
+2018,Kentucky,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,25.2,748614
+2018,Kentucky,With a Disability,Bachelor's degree or higher,11.8,78653
+2018,Kentucky,No Disability,Bachelor's degree or higher,29,668200
+2018,Kentucky,Total Civilian Noninstitutionalized Population,,100,2970694
+2018,Kentucky,With a Disability,,100,666554
+2018,Kentucky,No Disability,,100,2304140
+2018,Louisiana,Total Civilian Noninstitutionalized Population,Less than high school graduate,13.6,413398
+2018,Louisiana,With a Disability,Less than high school graduate,24.8,150273
+2018,Louisiana,No Disability,Less than high school graduate,10.8,262845
+2018,Louisiana,Total Civilian Noninstitutionalized Population,High school graduate,34.2,1039576
+2018,Louisiana,With a Disability,High school graduate,37.7,228440
+2018,Louisiana,No Disability,High school graduate,33.3,810440
+2018,Louisiana,Total Civilian Noninstitutionalized Population,Some college or associate's degree,27.5,835916
+2018,Louisiana,With a Disability,Some college or associate's degree,24.1,146032
+2018,Louisiana,No Disability,Some college or associate's degree,28.3,688752
+2018,Louisiana,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,24.7,750805
+2018,Louisiana,With a Disability,Bachelor's degree or higher,13.5,81802
+2018,Louisiana,No Disability,Bachelor's degree or higher,27.5,669282
+2018,Louisiana,Total Civilian Noninstitutionalized Population,,100,3039697
+2018,Louisiana,With a Disability,,100,605942
+2018,Louisiana,No Disability,,100,2433755
+2018,Washington,Total Civilian Noninstitutionalized Population,Less than high school graduate,8.3,426071
+2018,Washington,With a Disability,Less than high school graduate,12.9,106648
+2018,Washington,No Disability,Less than high school graduate,7.5,322999
+2018,Washington,Total Civilian Noninstitutionalized Population,High school graduate,21.7,1113945
+2018,Washington,With a Disability,High school graduate,28.6,236445
+2018,Washington,No Disability,High school graduate,20.4,878558
+2018,Washington,Total Civilian Noninstitutionalized Population,Some college or associate's degree,33.1,1699151
+2018,Washington,With a Disability,Some college or associate's degree,37.2,307543
+2018,Washington,No Disability,Some college or associate's degree,32.3,1391050
+2018,Washington,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,36.9,1894220
+2018,Washington,With a Disability,Bachelor's degree or higher,21.3,176093
+2018,Washington,No Disability,Bachelor's degree or higher,39.9,1718356
+2018,Washington,Total Civilian Noninstitutionalized Population,,100,5133389
+2018,Washington,With a Disability,,100,826731
+2018,Washington,No Disability,,100,4306658
+2018,Illinois,Total Civilian Noninstitutionalized Population,Less than high school graduate,10.2,872763
+2018,Illinois,With a Disability,Less than high school graduate,18.4,225623
+2018,Illinois,No Disability,Less than high school graduate,8.8,645065
+2018,Illinois,Total Civilian Noninstitutionalized Population,High school graduate,25.8,2207578
+2018,Illinois,With a Disability,High school graduate,34.2,419365
+2018,Illinois,No Disability,High school graduate,24.5,1795921
+2018,Illinois,Total Civilian Noninstitutionalized Population,Some college or associate's degree,28.5,2438604
+2018,Illinois,With a Disability,Some college or associate's degree,29.2,358055
+2018,Illinois,No Disability,Some college or associate's degree,28.3,2074472
+2018,Illinois,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,35.5,3037559
+2018,Illinois,With a Disability,Bachelor's degree or higher,18.2,223171
+2018,Illinois,No Disability,Bachelor's degree or higher,38.4,2814831
+2018,Illinois,Total Civilian Noninstitutionalized Population,,100,8556506
+2018,Illinois,With a Disability,,100,1226216
+2018,Illinois,No Disability,,100,7330290
+2018,Iowa,Total Civilian Noninstitutionalized Population,Less than high school graduate,7.5,154958
+2018,Iowa,With a Disability,Less than high school graduate,14.3,45276
+2018,Iowa,No Disability,Less than high school graduate,6.3,110218
+2018,Iowa,Total Civilian Noninstitutionalized Population,High school graduate,30.5,630165
+2018,Iowa,With a Disability,High school graduate,40.1,126964
+2018,Iowa,No Disability,High school graduate,28.7,502105
+2018,Iowa,Total Civilian Noninstitutionalized Population,Some college or associate's degree,32.7,675620
+2018,Iowa,With a Disability,Some college or associate's degree,29.9,94669
+2018,Iowa,No Disability,Some college or associate's degree,33.2,580833
+2018,Iowa,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,29.4,607438
+2018,Iowa,With a Disability,Bachelor's degree or higher,15.7,49709
+2018,Iowa,No Disability,Bachelor's degree or higher,31.8,556340
+2018,Iowa,Total Civilian Noninstitutionalized Population,,100,2066117
+2018,Iowa,With a Disability,,100,316620
+2018,Iowa,No Disability,,100,1749497
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,Less than high school graduate,6.7,64035
+2018,New Hampshire,With a Disability,Less than high school graduate,15.4,23617
+2018,New Hampshire,No Disability,Less than high school graduate,5,40119
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,High school graduate,27.4,261875
+2018,New Hampshire,With a Disability,High school graduate,36.5,55977
+2018,New Hampshire,No Disability,High school graduate,25.7,206213
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,Some college or associate's degree,28.7,274299
+2018,New Hampshire,With a Disability,Some college or associate's degree,26.5,40641
+2018,New Hampshire,No Disability,Some college or associate's degree,29.1,233494
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,37.2,355538
+2018,New Hampshire,With a Disability,Bachelor's degree or higher,21.6,33126
+2018,New Hampshire,No Disability,Bachelor's degree or higher,40.2,322559
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,,100,955749
+2018,New Hampshire,With a Disability,,100,153363
+2018,New Hampshire,No Disability,,100,802386
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,Less than high school graduate,10.7,77769
+2018,Rhode Island,With a Disability,Less than high school graduate,21.7,27825
+2018,Rhode Island,No Disability,Less than high school graduate,8.3,49683
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,High school graduate,28.3,205690
+2018,Rhode Island,With a Disability,High school graduate,38.5,49368
+2018,Rhode Island,No Disability,High school graduate,26.1,156232
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,Some college or associate's degree,26.4,191881
+2018,Rhode Island,With a Disability,Some college or associate's degree,23.8,30518
+2018,Rhode Island,No Disability,Some college or associate's degree,27,161619
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,34.6,251480
+2018,Rhode Island,With a Disability,Bachelor's degree or higher,16,20516
+2018,Rhode Island,No Disability,Bachelor's degree or higher,38.6,231056
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,,100,726822
+2018,Rhode Island,With a Disability,,100,128230
+2018,Rhode Island,No Disability,,100,598592
+2018,Arkansas,Total Civilian Noninstitutionalized Population,Less than high school graduate,12.6,248815
+2018,Arkansas,With a Disability,Less than high school graduate,20.8,95355
+2018,Arkansas,No Disability,Less than high school graduate,10.1,153145
+2018,Arkansas,Total Civilian Noninstitutionalized Population,High school graduate,33.8,667458
+2018,Arkansas,With a Disability,High school graduate,39.2,179708
+2018,Arkansas,No Disability,High school graduate,32.1,486729
+2018,Arkansas,Total Civilian Noninstitutionalized Population,Some college or associate's degree,30.1,594393
+2018,Arkansas,With a Disability,Some college or associate's degree,27.8,127446
+2018,Arkansas,No Disability,Some college or associate's degree,30.8,467017
+2018,Arkansas,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,23.6,466036
+2018,Arkansas,With a Disability,Bachelor's degree or higher,12.1,55471
+2018,Arkansas,No Disability,Bachelor's degree or higher,27,409398
+2018,Arkansas,Total Civilian Noninstitutionalized Population,,100,1974730
+2018,Arkansas,With a Disability,,100,458439
+2018,Arkansas,No Disability,,100,1516291
+2018,Delaware,Total Civilian Noninstitutionalized Population,Less than high school graduate,9.8,65339
+2018,Delaware,With a Disability,Less than high school graduate,16.3,17880
+2018,Delaware,No Disability,Less than high school graduate,8.5,47347
+2018,Delaware,Total Civilian Noninstitutionalized Population,High school graduate,33.3,222021
+2018,Delaware,With a Disability,High school graduate,40.3,44208
+2018,Delaware,No Disability,High school graduate,31.9,177693
+2018,Delaware,Total Civilian Noninstitutionalized Population,Some college or associate's degree,25.2,168016
+2018,Delaware,With a Disability,Some college or associate's degree,25.1,27534
+2018,Delaware,No Disability,Some college or associate's degree,25.2,140372
+2018,Delaware,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,31.8,212020
+2018,Delaware,With a Disability,Bachelor's degree or higher,18.2,19965
+2018,Delaware,No Disability,Bachelor's degree or higher,34.4,191619
+2018,Delaware,Total Civilian Noninstitutionalized Population,,100,666731
+2018,Delaware,With a Disability,,100,109699
+2018,Delaware,No Disability,,100,557032
+2018,Minnesota,Total Civilian Noninstitutionalized Population,Less than high school graduate,6.5,244189
+2018,Minnesota,With a Disability,Less than high school graduate,13.7,72559
+2018,Minnesota,No Disability,Less than high school graduate,5.3,171037
+2018,Minnesota,Total Civilian Noninstitutionalized Population,High school graduate,23.9,897866
+2018,Minnesota,With a Disability,High school graduate,35.5,188020
+2018,Minnesota,No Disability,High school graduate,21.9,706740
+2018,Minnesota,Total Civilian Noninstitutionalized Population,Some college or associate's degree,32.6,1224704
+2018,Minnesota,With a Disability,Some college or associate's degree,30.4,161009
+2018,Minnesota,No Disability,Some college or associate's degree,33,1064951
+2018,Minnesota,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,37,1390001
+2018,Minnesota,With a Disability,Bachelor's degree or higher,20.5,108575
+2018,Minnesota,No Disability,Bachelor's degree or higher,39.7,1281169
+2018,Minnesota,Total Civilian Noninstitutionalized Population,,100,3756762
+2018,Minnesota,With a Disability,,100,529635
+2018,Minnesota,No Disability,,100,3227127
+2018,Montana,Total Civilian Noninstitutionalized Population,Less than high school graduate,5.9,42701
+2018,Montana,With a Disability,Less than high school graduate,11.8,14544
+2018,Montana,No Disability,Less than high school graduate,4.7,28223
+2018,Montana,Total Civilian Noninstitutionalized Population,High school graduate,27.8,201205
+2018,Montana,With a Disability,High school graduate,35.1,43263
+2018,Montana,No Disability,High school graduate,26.3,157932
+2018,Montana,Total Civilian Noninstitutionalized Population,Some college or associate's degree,34.3,248250
+2018,Montana,With a Disability,Some college or associate's degree,32.6,40182
+2018,Montana,No Disability,Some college or associate's degree,34.7,208374
+2018,Montana,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,32,231603
+2018,Montana,With a Disability,Bachelor's degree or higher,20.5,25267
+2018,Montana,No Disability,Bachelor's degree or higher,34.4,206573
+2018,Montana,Total Civilian Noninstitutionalized Population,,100,723761
+2018,Montana,With a Disability,,100,123258
+2018,Montana,No Disability,,100,600503
+2018,Arizona,Total Civilian Noninstitutionalized Population,Less than high school graduate,12.3,584668
+2018,Arizona,With a Disability,Less than high school graduate,17.5,143757
+2018,Arizona,No Disability,Less than high school graduate,11.3,444308
+2018,Arizona,Total Civilian Noninstitutionalized Population,High school graduate,23.7,1126556
+2018,Arizona,With a Disability,High school graduate,29.5,242333
+2018,Arizona,No Disability,High school graduate,22.5,884684
+2018,Arizona,Total Civilian Noninstitutionalized Population,Some college or associate's degree,33.8,1606649
+2018,Arizona,With a Disability,Some college or associate's degree,34.5,283407
+2018,Arizona,No Disability,Some college or associate's degree,33.7,1325061
+2018,Arizona,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,30.1,1430774
+2018,Arizona,With a Disability,Bachelor's degree or higher,18.5,151971
+2018,Arizona,No Disability,Bachelor's degree or higher,32.5,1277877
+2018,Arizona,Total Civilian Noninstitutionalized Population,,100,4753402
+2018,Arizona,With a Disability,,100,821470
+2018,Arizona,No Disability,,100,3931932
+2018,Florida,Total Civilian Noninstitutionalized Population,Less than high school graduate,11.3,1700509
+2018,Florida,With a Disability,Less than high school graduate,19,484802
+2018,Florida,No Disability,Less than high school graduate,9.7,1212224
+2018,Florida,Total Civilian Noninstitutionalized Population,High school graduate,28.5,4288895
+2018,Florida,With a Disability,High school graduate,33.8,862438
+2018,Florida,No Disability,High school graduate,27.4,3424222
+2018,Florida,Total Civilian Noninstitutionalized Population,Some college or associate's degree,29.5,4439383
+2018,Florida,With a Disability,Some college or associate's degree,28,714446
+2018,Florida,No Disability,Some college or associate's degree,29.8,3724154
+2018,Florida,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,30.7,4619968
+2018,Florida,With a Disability,Bachelor's degree or higher,19.2,489906
+2018,Florida,No Disability,Bachelor's degree or higher,33,4124063
+2018,Florida,Total Civilian Noninstitutionalized Population,,100,15048756
+2018,Florida,With a Disability,,100,2551594
+2018,Florida,No Disability,,100,12497162
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,Less than high school graduate,9,429169
+2018,Massachusetts,With a Disability,Less than high school graduate,20.7,140974
+2018,Massachusetts,No Disability,Less than high school graduate,7.1,290213
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,High school graduate,23.1,1101533
+2018,Massachusetts,With a Disability,High school graduate,31.9,217250
+2018,Massachusetts,No Disability,High school graduate,21.7,886989
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,Some college or associate's degree,23,1096765
+2018,Massachusetts,With a Disability,Some college or associate's degree,25.7,175025
+2018,Massachusetts,No Disability,Some college or associate's degree,22.5,919689
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,44.9,2141076
+2018,Massachusetts,With a Disability,Bachelor's degree or higher,21.6,147103
+2018,Massachusetts,No Disability,Bachelor's degree or higher,48.8,1994704
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,,100,4768545
+2018,Massachusetts,With a Disability,,100,681035
+2018,Massachusetts,No Disability,,100,4087510
+2018,DC,Total Civilian Noninstitutionalized Population,Less than high school graduate,7.8,38433
+2018,DC,With a Disability,Less than high school graduate,20.9,14831
+2018,DC,No Disability,Less than high school graduate,5.5,23197
+2018,DC,Total Civilian Noninstitutionalized Population,High school graduate,16.3,80315
+2018,DC,With a Disability,High school graduate,29.2,20721
+2018,DC,No Disability,High school graduate,14.1,59469
+2018,DC,Total Civilian Noninstitutionalized Population,Some college or associate's degree,15.1,74403
+2018,DC,With a Disability,Some college or associate's degree,20.8,14760
+2018,DC,No Disability,Some college or associate's degree,14.1,59469
+2018,DC,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,60.9,300076
+2018,DC,With a Disability,Bachelor's degree or higher,29.1,20650
+2018,DC,No Disability,Bachelor's degree or higher,66.2,279213
+2018,DC,Total Civilian Noninstitutionalized Population,,100,492736
+2018,DC,With a Disability,,100,70964
+2018,DC,No Disability,,100,421772
+2018,Utah,Total Civilian Noninstitutionalized Population,Less than high school graduate,7.4,137091
+2018,Utah,With a Disability,Less than high school graduate,12.6,31334
+2018,Utah,No Disability,Less than high school graduate,6.6,105857
+2018,Utah,Total Civilian Noninstitutionalized Population,High school graduate,22.6,418684
+2018,Utah,With a Disability,High school graduate,29.9,74357
+2018,Utah,No Disability,High school graduate,21.5,344838
+2018,Utah,Total Civilian Noninstitutionalized Population,Some college or associate's degree,34.9,646552
+2018,Utah,With a Disability,Some college or associate's degree,35.3,87786
+2018,Utah,No Disability,Some college or associate's degree,34.8,558157
+2018,Utah,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,35.1,650258
+2018,Utah,With a Disability,Bachelor's degree or higher,22.2,55208
+2018,Utah,No Disability,Bachelor's degree or higher,37.1,595047
+2018,Utah,Total Civilian Noninstitutionalized Population,,100,1852587
+2018,Utah,With a Disability,,100,248686
+2018,Utah,No Disability,,100,1603901
+2018,New York,Total Civilian Noninstitutionalized Population,Less than high school graduate,12.6,1696996
+2018,New York,With a Disability,Less than high school graduate,24.3,472941
+2018,New York,No Disability,Less than high school graduate,10.7,1232850
+2018,New York,Total Civilian Noninstitutionalized Population,High school graduate,25.7,3461334
+2018,New York,With a Disability,High school graduate,32.5,632534
+2018,New York,No Disability,High school graduate,24.5,2822882
+2018,New York,Total Civilian Noninstitutionalized Population,Some college or associate's degree,24.1,3245842
+2018,New York,With a Disability,Some college or associate's degree,23.1,449586
+2018,New York,No Disability,Some college or associate's degree,24.2,2788316
+2018,New York,Total Civilian Noninstitutionalized Population,Bachelor's degree or higher,37.6,5064053
+2018,New York,With a Disability,Bachelor's degree or higher,20.1,391198
+2018,New York,No Disability,Bachelor's degree or higher,40.6,4677919
+2018,New York,Total Civilian Noninstitutionalized Population,,100,13468228
+2018,New York,With a Disability,,100,1946260
+2018,New York,No Disability,,100,11521968

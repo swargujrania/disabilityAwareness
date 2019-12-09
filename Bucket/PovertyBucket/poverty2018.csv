@@ -1,0 +1,625 @@
+﻿year,state,dis_stat,poverty_bracket,percentage,value
+2018,Alaska,Total Civilian Noninstitutionalized Population,,100,547044
+2018,Alaska,With a Disability,,100,84682
+2018,Alaska,No Disability,,100,462362
+2018,Alaska,Total Civilian Noninstitutionalized Population,< 100% poverty level,10.1,55251.444
+2018,Alaska,With a Disability,< 100% poverty level,16.9,14311.258
+2018,Alaska,No Disability,< 100% poverty level,8.8,40687.856
+2018,Alaska,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6.4,35010.816
+2018,Alaska,With a Disability,100% - 150% poverty level,12.4,10500.568
+2018,Alaska,No Disability,100% - 150% poverty level,5.3,24505.186
+2018,Alaska,Total Civilian Noninstitutionalized Population,>= 150% poverty level,83.6,457328.784
+2018,Alaska,With a Disability,>= 150% poverty level,70.7,59870.174
+2018,Alaska,No Disability,>= 150% poverty level,85.9,397168.958
+2018,Maine,Total Civilian Noninstitutionalized Population,,100,1089359
+2018,Maine,With a Disability,,100,205909
+2018,Maine,No Disability,,100,883450
+2018,Maine,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.1,120918.849
+2018,Maine,With a Disability,< 100% poverty level,23.1,47564.979
+2018,Maine,No Disability,< 100% poverty level,8.3,73326.35
+2018,Maine,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.9,86059.361
+2018,Maine,With a Disability,100% - 150% poverty level,14.9,30680.441
+2018,Maine,No Disability,100% - 150% poverty level,6.2,54773.9
+2018,Maine,Total Civilian Noninstitutionalized Population,>= 150% poverty level,81.1,883470.149
+2018,Maine,With a Disability,>= 150% poverty level,61.9,127457.671
+2018,Maine,No Disability,>= 150% poverty level,85.5,755349.75
+2018,North Carolina,Total Civilian Noninstitutionalized Population,,100,8051945
+2018,North Carolina,With a Disability,,100,1259723
+2018,North Carolina,No Disability,,100,6792222
+2018,North Carolina,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.5,1006493.125
+2018,North Carolina,With a Disability,< 100% poverty level,20.1,253204.323
+2018,North Carolina,No Disability,< 100% poverty level,11.1,753936.642
+2018,North Carolina,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8.7,700519.215
+2018,North Carolina,With a Disability,100% - 150% poverty level,13.6,171322.328
+2018,North Carolina,No Disability,100% - 150% poverty level,7.7,523001.094
+2018,North Carolina,Total Civilian Noninstitutionalized Population,>= 150% poverty level,78.9,6352984.605
+2018,North Carolina,With a Disability,>= 150% poverty level,66.4,836456.072
+2018,North Carolina,No Disability,>= 150% poverty level,81.2,5515284.264
+2018,Missouri,Total Civilian Noninstitutionalized Population,,100,4744041
+2018,Missouri,With a Disability,,100,818034
+2018,Missouri,No Disability,,100,3926007
+2018,Missouri,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.9,564540.879
+2018,Missouri,With a Disability,< 100% poverty level,20.7,169333.038
+2018,Missouri,No Disability,< 100% poverty level,10.1,396526.707
+2018,Missouri,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8.1,384267.321
+2018,Missouri,With a Disability,100% - 150% poverty level,13.6,111252.624
+2018,Missouri,No Disability,100% - 150% poverty level,6.9,270894.483
+2018,Missouri,Total Civilian Noninstitutionalized Population,>= 150% poverty level,80,3795232.8
+2018,Missouri,With a Disability,>= 150% poverty level,65.7,537448.338
+2018,Missouri,No Disability,>= 150% poverty level,83,3258585.81
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,,100,10097882
+2018,Pennsylvania,With a Disability,,100,1642980
+2018,Pennsylvania,No Disability,,100,8454902
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.2,1130962.784
+2018,Pennsylvania,With a Disability,< 100% poverty level,20.9,343382.82
+2018,Pennsylvania,No Disability,< 100% poverty level,9.3,786305.886
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.1,716949.622
+2018,Pennsylvania,With a Disability,100% - 150% poverty level,12.9,211944.42
+2018,Pennsylvania,No Disability,100% - 150% poverty level,5.9,498839.218
+2018,Pennsylvania,Total Civilian Noninstitutionalized Population,>= 150% poverty level,81.8,8260067.476
+2018,Pennsylvania,With a Disability,>= 150% poverty level,66.2,1087652.76
+2018,Pennsylvania,No Disability,>= 150% poverty level,84.8,7169756.896
+2018,Michigan,Total Civilian Noninstitutionalized Population,,100,7904749
+2018,Michigan,With a Disability,,100,1316397
+2018,Michigan,No Disability,,100,6588352
+2018,Michigan,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.7,1003903.123
+2018,Michigan,With a Disability,< 100% poverty level,21.3,280392.561
+2018,Michigan,No Disability,< 100% poverty level,10.9,718130.368
+2018,Michigan,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.6,600760.924
+2018,Michigan,With a Disability,100% - 150% poverty level,12.2,160600.434
+2018,Michigan,No Disability,100% - 150% poverty level,6.7,441419.584
+2018,Michigan,Total Civilian Noninstitutionalized Population,>= 150% poverty level,79.7,6300084.953
+2018,Michigan,With a Disability,>= 150% poverty level,66.5,875404.005
+2018,Michigan,No Disability,>= 150% poverty level,82.3,5422213.696
+2018,Nebraska,Total Civilian Noninstitutionalized Population,,100,1455410
+2018,Nebraska,With a Disability,,100,207768
+2018,Nebraska,No Disability,,100,1247642
+2018,Nebraska,Total Civilian Noninstitutionalized Population,< 100% poverty level,10.5,152818.05
+2018,Nebraska,With a Disability,< 100% poverty level,17.3,35943.864
+2018,Nebraska,No Disability,< 100% poverty level,9.3,116030.706
+2018,Nebraska,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.7,112066.57
+2018,Nebraska,With a Disability,100% - 150% poverty level,13.2,27425.376
+2018,Nebraska,No Disability,100% - 150% poverty level,6.7,83592.014
+2018,Nebraska,Total Civilian Noninstitutionalized Population,>= 150% poverty level,81.9,1191980.79
+2018,Nebraska,With a Disability,>= 150% poverty level,69.5,144398.76
+2018,Nebraska,No Disability,>= 150% poverty level,83.9,1046771.638
+2018,Oregon,Total Civilian Noninstitutionalized Population,,100,3354524
+2018,Oregon,With a Disability,,100,544374
+2018,Oregon,No Disability,,100,2810150
+2018,Oregon,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.8,395833.832
+2018,Oregon,With a Disability,< 100% poverty level,20.8,113229.792
+2018,Oregon,No Disability,< 100% poverty level,10.1,283825.15
+2018,Oregon,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8,268361.92
+2018,Oregon,With a Disability,100% - 150% poverty level,12,65324.88
+2018,Oregon,No Disability,100% - 150% poverty level,7.2,202330.8
+2018,Oregon,Total Civilian Noninstitutionalized Population,>= 150% poverty level,80.2,2690328.248
+2018,Oregon,With a Disability,>= 150% poverty level,67.3,366363.702
+2018,Oregon,No Disability,>= 150% poverty level,82.7,2323994.05
+2018,Wyoming,Total Civilian Noninstitutionalized Population,,100,445531
+2018,Wyoming,With a Disability,,100,68406
+2018,Wyoming,No Disability,,100,377125
+2018,Wyoming,Total Civilian Noninstitutionalized Population,< 100% poverty level,10.4,46335.224
+2018,Wyoming,With a Disability,< 100% poverty level,13.8,9440.028
+2018,Wyoming,No Disability,< 100% poverty level,9.8,36958.25
+2018,Wyoming,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6.7,29850.577
+2018,Wyoming,With a Disability,100% - 150% poverty level,9.2,6293.352
+2018,Wyoming,No Disability,100% - 150% poverty level,6.3,23758.875
+2018,Wyoming,Total Civilian Noninstitutionalized Population,>= 150% poverty level,82.9,369345.199
+2018,Wyoming,With a Disability,>= 150% poverty level,76.9,52604.214
+2018,Wyoming,No Disability,>= 150% poverty level,83.9,316407.875
+2018,California,Total Civilian Noninstitutionalized Population,,100,30870498
+2018,California,With a Disability,,100,3804636
+2018,California,No Disability,,100,27065862
+2018,California,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.6,3580977.768
+2018,California,With a Disability,< 100% poverty level,18.8,715271.568
+2018,California,No Disability,< 100% poverty level,10.6,2868981.372
+2018,California,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.7,2377028.346
+2018,California,With a Disability,100% - 150% poverty level,11.7,445142.412
+2018,California,No Disability,100% - 150% poverty level,7.2,1948742.064
+2018,California,Total Civilian Noninstitutionalized Population,>= 150% poverty level,80.6,24881621.39
+2018,California,With a Disability,>= 150% poverty level,69.5,2644222.02
+2018,California,No Disability,>= 150% poverty level,82.2,22248138.56
+2018,Mississippi,Total Civilian Noninstitutionalized Population,,100,2265298
+2018,Mississippi,With a Disability,,100,449679
+2018,Mississippi,No Disability,,100,1815619
+2018,Mississippi,Total Civilian Noninstitutionalized Population,< 100% poverty level,17.3,391896.554
+2018,Mississippi,With a Disability,< 100% poverty level,25,112419.75
+2018,Mississippi,No Disability,< 100% poverty level,15.5,281420.945
+2018,Mississippi,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,11.1,251448.078
+2018,Mississippi,With a Disability,100% - 150% poverty level,15.6,70149.924
+2018,Mississippi,No Disability,100% - 150% poverty level,10,181561.9
+2018,Mississippi,Total Civilian Noninstitutionalized Population,>= 150% poverty level,71.6,1621953.368
+2018,Mississippi,With a Disability,>= 150% poverty level,59.4,267109.326
+2018,Mississippi,No Disability,>= 150% poverty level,74.6,1354451.774
+2018,Connecticut,Total Civilian Noninstitutionalized Population,,100,2832802
+2018,Connecticut,With a Disability,,100,357584
+2018,Connecticut,No Disability,,100,2475218
+2018,Connecticut,Total Civilian Noninstitutionalized Population,< 100% poverty level,9.5,269116.19
+2018,Connecticut,With a Disability,< 100% poverty level,19,67940.96
+2018,Connecticut,No Disability,< 100% poverty level,8.1,200492.658
+2018,Connecticut,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,5.6,158636.912
+2018,Connecticut,With a Disability,100% - 150% poverty level,10.1,36115.984
+2018,Connecticut,No Disability,100% - 150% poverty level,4.9,121285.682
+2018,Connecticut,Total Civilian Noninstitutionalized Population,>= 150% poverty level,84.9,2405048.898
+2018,Connecticut,With a Disability,>= 150% poverty level,70.9,253527.056
+2018,Connecticut,No Disability,>= 150% poverty level,86.9,2150964.442
+2018,Texas,Total Civilian Noninstitutionalized Population,,100,21523667
+2018,Texas,With a Disability,,100,2957272
+2018,Texas,No Disability,,100,18566395
+2018,Texas,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.9,2776553.043
+2018,Texas,With a Disability,< 100% poverty level,19.7,582582.584
+2018,Texas,No Disability,< 100% poverty level,11.9,2209401.005
+2018,Texas,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8.9,1915606.363
+2018,Texas,With a Disability,100% - 150% poverty level,12.7,375573.544
+2018,Texas,No Disability,100% - 150% poverty level,8.3,1541010.785
+2018,Texas,Total Civilian Noninstitutionalized Population,>= 150% poverty level,78.2,16831507.59
+2018,Texas,With a Disability,>= 150% poverty level,67.6,1999115.872
+2018,Texas,No Disability,>= 150% poverty level,79.9,14834549.61
+2018,Idaho,Total Civilian Noninstitutionalized Population,,100,1329382
+2018,Idaho,With a Disability,,100,217656
+2018,Idaho,No Disability,,100,1111726
+2018,Idaho,Total Civilian Noninstitutionalized Population,< 100% poverty level,11,146232.02
+2018,Idaho,With a Disability,< 100% poverty level,18.2,39613.392
+2018,Idaho,No Disability,< 100% poverty level,9.6,106725.696
+2018,Idaho,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8.8,116985.616
+2018,Idaho,With a Disability,100% - 150% poverty level,13.3,28948.248
+2018,Idaho,No Disability,100% - 150% poverty level,7.9,87826.354
+2018,Idaho,Total Civilian Noninstitutionalized Population,>= 150% poverty level,80.2,1066164.364
+2018,Idaho,With a Disability,>= 150% poverty level,68.5,149094.36
+2018,Idaho,No Disability,>= 150% poverty level,82.5,917173.95
+2018,Maryland,Total Civilian Noninstitutionalized Population,,100,4704333
+2018,Maryland,With a Disability,,100,626805
+2018,Maryland,No Disability,,100,4077528
+2018,Maryland,Total Civilian Noninstitutionalized Population,< 100% poverty level,8.4,395163.972
+2018,Maryland,With a Disability,< 100% poverty level,16,100288.8
+2018,Maryland,No Disability,< 100% poverty level,7.2,293582.016
+2018,Maryland,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,5.2,244625.316
+2018,Maryland,With a Disability,100% - 150% poverty level,9.3,58292.865
+2018,Maryland,No Disability,100% - 150% poverty level,4.5,183488.76
+2018,Maryland,Total Civilian Noninstitutionalized Population,>= 150% poverty level,86.5,4069248.045
+2018,Maryland,With a Disability,>= 150% poverty level,74.7,468223.335
+2018,Maryland,No Disability,>= 150% poverty level,88.3,3600457.224
+2018,New Mexico,Total Civilian Noninstitutionalized Population,,100,1630715
+2018,New Mexico,With a Disability,,100,307652
+2018,New Mexico,No Disability,,100,1323063
+2018,New Mexico,Total Civilian Noninstitutionalized Population,< 100% poverty level,17.8,290267.27
+2018,New Mexico,With a Disability,< 100% poverty level,25.7,79066.564
+2018,New Mexico,No Disability,< 100% poverty level,15.9,210367.017
+2018,New Mexico,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,11,179378.65
+2018,New Mexico,With a Disability,100% - 150% poverty level,14.6,44917.192
+2018,New Mexico,No Disability,100% - 150% poverty level,10.2,134952.426
+2018,New Mexico,Total Civilian Noninstitutionalized Population,>= 150% poverty level,71.2,1161069.08
+2018,New Mexico,With a Disability,>= 150% poverty level,59.7,183668.244
+2018,New Mexico,No Disability,>= 150% poverty level,73.9,977743.557
+2018,Alabama,Total Civilian Noninstitutionalized Population,,100,3814339
+2018,Alabama,With a Disability,,100,742582
+2018,Alabama,No Disability,,100,3071757
+2018,Alabama,Total Civilian Noninstitutionalized Population,< 100% poverty level,15,572150.85
+2018,Alabama,With a Disability,< 100% poverty level,22.3,165595.786
+2018,Alabama,No Disability,< 100% poverty level,13.3,408543.681
+2018,Alabama,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,9.6,366176.544
+2018,Alabama,With a Disability,100% - 150% poverty level,14.9,110644.718
+2018,Alabama,No Disability,100% - 150% poverty level,8.4,258027.588
+2018,Alabama,Total Civilian Noninstitutionalized Population,>= 150% poverty level,75.3,2872197.267
+2018,Alabama,With a Disability,>= 150% poverty level,62.8,466341.496
+2018,Alabama,No Disability,>= 150% poverty level,78.4,2408257.488
+2018,Tennessee,Total Civilian Noninstitutionalized Population,,100,5276797
+2018,Tennessee,With a Disability,,100,964878
+2018,Tennessee,No Disability,,100,4311919
+2018,Tennessee,Total Civilian Noninstitutionalized Population,< 100% poverty level,13.5,712367.595
+2018,Tennessee,With a Disability,< 100% poverty level,21.9,211308.282
+2018,Tennessee,No Disability,< 100% poverty level,11.6,500182.604
+2018,Tennessee,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,9.3,490742.121
+2018,Tennessee,With a Disability,100% - 150% poverty level,14.3,137977.554
+2018,Tennessee,No Disability,100% - 150% poverty level,8.1,349265.439
+2018,Tennessee,Total Civilian Noninstitutionalized Population,>= 150% poverty level,77.3,4078964.081
+2018,Tennessee,With a Disability,>= 150% poverty level,63.8,615592.164
+2018,Tennessee,No Disability,>= 150% poverty level,80.3,3462470.957
+2018,Vermont,Total Civilian Noninstitutionalized Population,,100,501790
+2018,Vermont,With a Disability,,100,82185
+2018,Vermont,No Disability,,100,419605
+2018,Vermont,Total Civilian Noninstitutionalized Population,< 100% poverty level,10.8,54193.32
+2018,Vermont,With a Disability,< 100% poverty level,21.3,17505.405
+2018,Vermont,No Disability,< 100% poverty level,8.7,36505.635
+2018,Vermont,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6.2,31110.98
+2018,Vermont,With a Disability,100% - 150% poverty level,11.9,9780.015
+2018,Vermont,No Disability,100% - 150% poverty level,5.1,21399.855
+2018,Vermont,Total Civilian Noninstitutionalized Population,>= 150% poverty level,83.1,416987.49
+2018,Vermont,With a Disability,>= 150% poverty level,66.8,54899.58
+2018,Vermont,No Disability,>= 150% poverty level,86.3,362119.115
+2018,Nevada,Total Civilian Noninstitutionalized Population,,100,2382207
+2018,Nevada,With a Disability,,100,347625
+2018,Nevada,No Disability,,100,2034582
+2018,Nevada,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.7,278718.219
+2018,Nevada,With a Disability,< 100% poverty level,19.6,68134.5
+2018,Nevada,No Disability,< 100% poverty level,10.4,211596.528
+2018,Nevada,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8,190576.56
+2018,Nevada,With a Disability,100% - 150% poverty level,10.9,37891.125
+2018,Nevada,No Disability,100% - 150% poverty level,7.5,152593.65
+2018,Nevada,Total Civilian Noninstitutionalized Population,>= 150% poverty level,80.2,1910530.014
+2018,Nevada,With a Disability,>= 150% poverty level,69.5,241599.375
+2018,Nevada,No Disability,>= 150% poverty level,82.1,1670391.822
+2018,West Virginia,Total Civilian Noninstitutionalized Population,,100,1442809
+2018,West Virginia,With a Disability,,100,322611
+2018,West Virginia,No Disability,,100,1120198
+2018,West Virginia,Total Civilian Noninstitutionalized Population,< 100% poverty level,16.3,235177.867
+2018,West Virginia,With a Disability,< 100% poverty level,23.7,76458.807
+2018,West Virginia,No Disability,< 100% poverty level,14.2,159068.116
+2018,West Virginia,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,10.4,150052.136
+2018,West Virginia,With a Disability,100% - 150% poverty level,15.2,49036.872
+2018,West Virginia,No Disability,100% - 150% poverty level,9,100817.82
+2018,West Virginia,Total Civilian Noninstitutionalized Population,>= 150% poverty level,73.3,1057578.997
+2018,West Virginia,With a Disability,>= 150% poverty level,61.1,197115.321
+2018,West Virginia,No Disability,>= 150% poverty level,76.9,861432.262
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,,100,2978461
+2018,Oklahoma,With a Disability,,100,587640
+2018,Oklahoma,No Disability,,100,2390821
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,< 100% poverty level,13.8,411027.618
+2018,Oklahoma,With a Disability,< 100% poverty level,19.3,113414.52
+2018,Oklahoma,No Disability,< 100% poverty level,12.4,296461.804
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,9.1,271039.951
+2018,Oklahoma,With a Disability,100% - 150% poverty level,13.1,76980.84
+2018,Oklahoma,No Disability,100% - 150% poverty level,8.1,193656.501
+2018,Oklahoma,Total Civilian Noninstitutionalized Population,>= 150% poverty level,77.1,2296393.431
+2018,Oklahoma,With a Disability,>= 150% poverty level,67.6,397244.64
+2018,Oklahoma,No Disability,>= 150% poverty level,79.5,1900702.695
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,,100,4564387
+2018,Wisconsin,With a Disability,,100,622375
+2018,Wisconsin,No Disability,,100,3942012
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,< 100% poverty level,10.3,470131.861
+2018,Wisconsin,With a Disability,< 100% poverty level,18.1,112649.875
+2018,Wisconsin,No Disability,< 100% poverty level,9,354781.08
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6.7,305813.929
+2018,Wisconsin,With a Disability,100% - 150% poverty level,11.9,74062.625
+2018,Wisconsin,No Disability,100% - 150% poverty level,5.9,232578.708
+2018,Wisconsin,Total Civilian Noninstitutionalized Population,>= 150% poverty level,83.1,3793005.597
+2018,Wisconsin,With a Disability,>= 150% poverty level,70.1,436284.875
+2018,Wisconsin,No Disability,>= 150% poverty level,85.1,3354652.212
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,,100,2658656
+2018,Puerto Rico,With a Disability,,100,639155
+2018,Puerto Rico,No Disability,,100,2019501
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,< 100% poverty level,40.3,1071438.368
+2018,Puerto Rico,With a Disability,< 100% poverty level,45.7,292093.835
+2018,Puerto Rico,No Disability,< 100% poverty level,38.6,779527.386
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,17.4,462606.144
+2018,Puerto Rico,With a Disability,100% - 150% poverty level,19.4,123996.07
+2018,Puerto Rico,No Disability,100% - 150% poverty level,16.7,337256.667
+2018,Puerto Rico,Total Civilian Noninstitutionalized Population,>= 150% poverty level,42.3,1124611.488
+2018,Puerto Rico,With a Disability,>= 150% poverty level,34.9,223065.095
+2018,Puerto Rico,No Disability,>= 150% poverty level,44.7,902716.947
+2018,Kansas,Total Civilian Noninstitutionalized Population,,100,2201294
+2018,Kansas,With a Disability,,100,359509
+2018,Kansas,No Disability,,100,1841785
+2018,Kansas,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.1,244343.634
+2018,Kansas,With a Disability,< 100% poverty level,18.9,67947.201
+2018,Kansas,No Disability,< 100% poverty level,9.6,176811.36
+2018,Kansas,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.8,171700.932
+2018,Kansas,With a Disability,100% - 150% poverty level,12.1,43500.589
+2018,Kansas,No Disability,100% - 150% poverty level,7,128924.95
+2018,Kansas,Total Civilian Noninstitutionalized Population,>= 150% poverty level,81.1,1785249.434
+2018,Kansas,With a Disability,>= 150% poverty level,69,248061.21
+2018,Kansas,No Disability,>= 150% poverty level,83.4,1536048.69
+2018,Virginia,Total Civilian Noninstitutionalized Population,,100,6552197
+2018,Virginia,With a Disability,,100,922447
+2018,Virginia,No Disability,,100,5629750
+2018,Virginia,Total Civilian Noninstitutionalized Population,< 100% poverty level,10,655219.7
+2018,Virginia,With a Disability,< 100% poverty level,17.5,161428.225
+2018,Virginia,No Disability,< 100% poverty level,8.8,495418
+2018,Virginia,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6.2,406236.214
+2018,Virginia,With a Disability,100% - 150% poverty level,10.9,100546.723
+2018,Virginia,No Disability,100% - 150% poverty level,5.4,304006.5
+2018,Virginia,Total Civilian Noninstitutionalized Population,>= 150% poverty level,83.8,5490741.086
+2018,Virginia,With a Disability,>= 150% poverty level,71.6,660472.052
+2018,Virginia,No Disability,>= 150% poverty level,85.8,4830325.5
+2018,North Dakota,Total Civilian Noninstitutionalized Population,,100,575541
+2018,North Dakota,With a Disability,,100,75595
+2018,North Dakota,No Disability,,100,499946
+2018,North Dakota,Total Civilian Noninstitutionalized Population,< 100% poverty level,11,63309.51
+2018,North Dakota,With a Disability,< 100% poverty level,18.6,14060.67
+2018,North Dakota,No Disability,< 100% poverty level,9.8,48994.708
+2018,North Dakota,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.1,40863.411
+2018,North Dakota,With a Disability,100% - 150% poverty level,10.9,8239.855
+2018,North Dakota,No Disability,100% - 150% poverty level,6.6,32996.436
+2018,North Dakota,Total Civilian Noninstitutionalized Population,>= 150% poverty level,81.9,471368.079
+2018,North Dakota,With a Disability,>= 150% poverty level,70.5,53294.475
+2018,North Dakota,No Disability,>= 150% poverty level,83.6,417954.856
+2018,New Jersey,Total Civilian Noninstitutionalized Population,,100,7022619
+2018,New Jersey,With a Disability,,100,846364
+2018,New Jersey,No Disability,,100,6176255
+2018,New Jersey,Total Civilian Noninstitutionalized Population,< 100% poverty level,8.5,596922.615
+2018,New Jersey,With a Disability,< 100% poverty level,16.7,141342.788
+2018,New Jersey,No Disability,< 100% poverty level,7.3,450866.615
+2018,New Jersey,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,5.7,400289.283
+2018,New Jersey,With a Disability,100% - 150% poverty level,10.1,85482.764
+2018,New Jersey,No Disability,100% - 150% poverty level,5.1,314989.005
+2018,New Jersey,Total Civilian Noninstitutionalized Population,>= 150% poverty level,85.9,6032429.721
+2018,New Jersey,With a Disability,>= 150% poverty level,73.3,620384.812
+2018,New Jersey,No Disability,>= 150% poverty level,87.6,5410399.38
+2018,Ohio,Total Civilian Noninstitutionalized Population,,100,9120247
+2018,Ohio,With a Disability,,100,1516196
+2018,Ohio,No Disability,,100,7604051
+2018,Ohio,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.4,1130910.628
+2018,Ohio,With a Disability,< 100% poverty level,21.8,330530.728
+2018,Ohio,No Disability,< 100% poverty level,10.5,798425.355
+2018,Ohio,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.5,684018.525
+2018,Ohio,With a Disability,100% - 150% poverty level,13.2,200137.872
+2018,Ohio,No Disability,100% - 150% poverty level,6.4,486659.264
+2018,Ohio,Total Civilian Noninstitutionalized Population,>= 150% poverty level,80.1,7305317.847
+2018,Ohio,With a Disability,>= 150% poverty level,65,985527.4
+2018,Ohio,No Disability,>= 150% poverty level,83.1,6318966.381
+2018,South Carolina,Total Civilian Noninstitutionalized Population,,100,3964785
+2018,South Carolina,With a Disability,,100,675158
+2018,South Carolina,No Disability,,100,3289627
+2018,South Carolina,Total Civilian Noninstitutionalized Population,< 100% poverty level,13.4,531281.19
+2018,South Carolina,With a Disability,< 100% poverty level,19.9,134356.442
+2018,South Carolina,No Disability,< 100% poverty level,12,394755.24
+2018,South Carolina,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,9.1,360795.435
+2018,South Carolina,With a Disability,100% - 150% poverty level,14.3,96547.594
+2018,South Carolina,No Disability,100% - 150% poverty level,8,263170.16
+2018,South Carolina,Total Civilian Noninstitutionalized Population,>= 150% poverty level,77.6,3076673.16
+2018,South Carolina,With a Disability,>= 150% poverty level,65.8,444253.964
+2018,South Carolina,No Disability,>= 150% poverty level,80,2631701.6
+2018,Georgia,Total Civilian Noninstitutionalized Population,,100,8039917
+2018,Georgia,With a Disability,,100,1156668
+2018,Georgia,No Disability,,100,6883249
+2018,Georgia,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.6,1013029.542
+2018,Georgia,With a Disability,< 100% poverty level,20.1,232490.268
+2018,Georgia,No Disability,< 100% poverty level,11.3,777807.137
+2018,Georgia,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8.5,683392.945
+2018,Georgia,With a Disability,100% - 150% poverty level,12.8,148053.504
+2018,Georgia,No Disability,100% - 150% poverty level,7.8,536893.422
+2018,Georgia,Total Civilian Noninstitutionalized Population,>= 150% poverty level,78.9,6343494.513
+2018,Georgia,With a Disability,>= 150% poverty level,67.1,776124.228
+2018,Georgia,No Disability,>= 150% poverty level,80.9,5568548.441
+2018,Colorado,Total Civilian Noninstitutionalized Population,,100,4441315
+2018,Colorado,With a Disability,,100,563500
+2018,Colorado,No Disability,,100,3877815
+2018,Colorado,Total Civilian Noninstitutionalized Population,< 100% poverty level,9.1,404159.665
+2018,Colorado,With a Disability,< 100% poverty level,17.2,96922
+2018,Colorado,No Disability,< 100% poverty level,7.9,306347.385
+2018,Colorado,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6,266478.9
+2018,Colorado,With a Disability,100% - 150% poverty level,10.4,58604
+2018,Colorado,No Disability,100% - 150% poverty level,5.4,209402.01
+2018,Colorado,Total Civilian Noninstitutionalized Population,>= 150% poverty level,84.9,3770676.435
+2018,Colorado,With a Disability,>= 150% poverty level,72.4,407974
+2018,Colorado,No Disability,>= 150% poverty level,86.7,3362065.605
+2018,Hawaii,Total Civilian Noninstitutionalized Population,,100,1087105
+2018,Hawaii,With a Disability,,100,149066
+2018,Hawaii,No Disability,,100,938039
+2018,Hawaii,Total Civilian Noninstitutionalized Population,< 100% poverty level,8.3,90229.715
+2018,Hawaii,With a Disability,< 100% poverty level,13.2,19676.712
+2018,Hawaii,No Disability,< 100% poverty level,7.5,70352.925
+2018,Hawaii,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,5.4,58703.67
+2018,Hawaii,With a Disability,100% - 150% poverty level,10.1,15055.666
+2018,Hawaii,No Disability,100% - 150% poverty level,4.7,44087.833
+2018,Hawaii,Total Civilian Noninstitutionalized Population,>= 150% poverty level,86.3,938171.615
+2018,Hawaii,With a Disability,>= 150% poverty level,76.7,114333.622
+2018,Hawaii,No Disability,>= 150% poverty level,87.8,823598.242
+2018,South Dakota,Total Civilian Noninstitutionalized Population,,100,663201
+2018,South Dakota,With a Disability,,100,98057
+2018,South Dakota,No Disability,,100,565144
+2018,South Dakota,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.3,81573.723
+2018,South Dakota,With a Disability,< 100% poverty level,21.6,21180.312
+2018,South Dakota,No Disability,< 100% poverty level,10.7,60470.408
+2018,South Dakota,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.3,48413.673
+2018,South Dakota,With a Disability,100% - 150% poverty level,10.4,10197.928
+2018,South Dakota,No Disability,100% - 150% poverty level,6.7,37864.648
+2018,South Dakota,Total Civilian Noninstitutionalized Population,>= 150% poverty level,80.4,533213.604
+2018,South Dakota,With a Disability,>= 150% poverty level,68,66678.76
+2018,South Dakota,No Disability,>= 150% poverty level,82.5,466243.8
+2018,Indiana,Total Civilian Noninstitutionalized Population,,100,5129885
+2018,Indiana,With a Disability,,100,833123
+2018,Indiana,No Disability,,100,4296762
+2018,Indiana,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.9,610456.315
+2018,Indiana,With a Disability,< 100% poverty level,19.9,165791.477
+2018,Indiana,No Disability,< 100% poverty level,10.3,442566.486
+2018,Indiana,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.9,405260.915
+2018,Indiana,With a Disability,100% - 150% poverty level,12.4,103307.252
+2018,Indiana,No Disability,100% - 150% poverty level,7,300773.34
+2018,Indiana,Total Civilian Noninstitutionalized Population,>= 150% poverty level,80.3,4119297.655
+2018,Indiana,With a Disability,>= 150% poverty level,67.7,564024.271
+2018,Indiana,No Disability,>= 150% poverty level,82.7,3553422.174
+2018,Kentucky,Total Civilian Noninstitutionalized Population,,100,3449326
+2018,Kentucky,With a Disability,,100,704723
+2018,Kentucky,No Disability,,100,2744603
+2018,Kentucky,Total Civilian Noninstitutionalized Population,< 100% poverty level,15.2,524297.552
+2018,Kentucky,With a Disability,< 100% poverty level,24.1,169838.243
+2018,Kentucky,No Disability,< 100% poverty level,13,356798.39
+2018,Kentucky,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,9.4,324236.644
+2018,Kentucky,With a Disability,100% - 150% poverty level,15.4,108527.342
+2018,Kentucky,No Disability,100% - 150% poverty level,7.9,216823.637
+2018,Kentucky,Total Civilian Noninstitutionalized Population,>= 150% poverty level,75.4,2600791.804
+2018,Kentucky,With a Disability,>= 150% poverty level,60.5,426357.415
+2018,Kentucky,No Disability,>= 150% poverty level,79.2,2173725.576
+2018,Louisiana,Total Civilian Noninstitutionalized Population,,100,3554235
+2018,Louisiana,With a Disability,,100,648899
+2018,Louisiana,No Disability,,100,2905336
+2018,Louisiana,Total Civilian Noninstitutionalized Population,< 100% poverty level,16.5,586448.775
+2018,Louisiana,With a Disability,< 100% poverty level,24.3,157682.457
+2018,Louisiana,No Disability,< 100% poverty level,14.8,429989.728
+2018,Louisiana,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,10.4,369640.44
+2018,Louisiana,With a Disability,100% - 150% poverty level,15.2,98632.648
+2018,Louisiana,No Disability,100% - 150% poverty level,9.4,273101.584
+2018,Louisiana,Total Civilian Noninstitutionalized Population,>= 150% poverty level,73.1,2598145.785
+2018,Louisiana,With a Disability,>= 150% poverty level,60.5,392583.895
+2018,Louisiana,No Disability,>= 150% poverty level,75.9,2205150.024
+2018,Washington,Total Civilian Noninstitutionalized Population,,100,5908413
+2018,Washington,With a Disability,,100,876716
+2018,Washington,No Disability,,100,5031697
+2018,Washington,Total Civilian Noninstitutionalized Population,< 100% poverty level,9.7,573116.061
+2018,Washington,With a Disability,< 100% poverty level,17.3,151671.868
+2018,Washington,No Disability,< 100% poverty level,8.4,422662.548
+2018,Washington,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6,354504.78
+2018,Washington,With a Disability,100% - 150% poverty level,10,87671.6
+2018,Washington,No Disability,100% - 150% poverty level,5.3,266679.941
+2018,Washington,Total Civilian Noninstitutionalized Population,>= 150% poverty level,84.3,4980792.159
+2018,Washington,With a Disability,>= 150% poverty level,72.7,637372.532
+2018,Washington,No Disability,>= 150% poverty level,86.4,4347386.208
+2018,Illinois,Total Civilian Noninstitutionalized Population,,100,9949648
+2018,Illinois,With a Disability,,100,1304678
+2018,Illinois,No Disability,,100,8644970
+2018,Illinois,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.1,1104410.928
+2018,Illinois,With a Disability,< 100% poverty level,19.9,259630.922
+2018,Illinois,No Disability,< 100% poverty level,9.7,838562.09
+2018,Illinois,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7,696475.36
+2018,Illinois,With a Disability,100% - 150% poverty level,11.5,150037.97
+2018,Illinois,No Disability,100% - 150% poverty level,6.3,544633.11
+2018,Illinois,Total Civilian Noninstitutionalized Population,>= 150% poverty level,82,8158711.36
+2018,Illinois,With a Disability,>= 150% poverty level,68.6,895009.108
+2018,Illinois,No Disability,>= 150% poverty level,84,7261774.8
+2018,Iowa,Total Civilian Noninstitutionalized Population,,100,2417553
+2018,Iowa,With a Disability,,100,338091
+2018,Iowa,No Disability,,100,2079462
+2018,Iowa,Total Civilian Noninstitutionalized Population,< 100% poverty level,10.6,256260.618
+2018,Iowa,With a Disability,< 100% poverty level,17.5,59165.925
+2018,Iowa,No Disability,< 100% poverty level,9.5,197548.89
+2018,Iowa,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.3,176481.369
+2018,Iowa,With a Disability,100% - 150% poverty level,13.2,44628.012
+2018,Iowa,No Disability,100% - 150% poverty level,6.3,131006.106
+2018,Iowa,Total Civilian Noninstitutionalized Population,>= 150% poverty level,82.1,1984811.013
+2018,Iowa,With a Disability,>= 150% poverty level,69.3,234297.063
+2018,Iowa,No Disability,>= 150% poverty level,84.2,1750907.004
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,,100,1089863
+2018,New Hampshire,With a Disability,,100,164348
+2018,New Hampshire,No Disability,,100,925515
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,< 100% poverty level,6.9,75200.547
+2018,New Hampshire,With a Disability,< 100% poverty level,13.6,22351.328
+2018,New Hampshire,No Disability,< 100% poverty level,5.8,53679.87
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,5.3,57762.739
+2018,New Hampshire,With a Disability,100% - 150% poverty level,11.2,18406.976
+2018,New Hampshire,No Disability,100% - 150% poverty level,4.3,39797.145
+2018,New Hampshire,Total Civilian Noninstitutionalized Population,>= 150% poverty level,87.7,955809.851
+2018,New Hampshire,With a Disability,>= 150% poverty level,75.1,123425.348
+2018,New Hampshire,No Disability,>= 150% poverty level,90,832963.5
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,,100,841286
+2018,Rhode Island,With a Disability,,100,137183
+2018,Rhode Island,No Disability,,100,704103
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,< 100% poverty level,11.8,99271.748
+2018,Rhode Island,With a Disability,< 100% poverty level,24.6,33747.018
+2018,Rhode Island,No Disability,< 100% poverty level,9.3,65481.579
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6.7,56366.162
+2018,Rhode Island,With a Disability,100% - 150% poverty level,13.9,19068.437
+2018,Rhode Island,No Disability,100% - 150% poverty level,5.3,37317.459
+2018,Rhode Island,Total Civilian Noninstitutionalized Population,>= 150% poverty level,81.5,685648.09
+2018,Rhode Island,With a Disability,>= 150% poverty level,61.5,84367.545
+2018,Rhode Island,No Disability,>= 150% poverty level,85.4,601303.962
+2018,Arkansas,Total Civilian Noninstitutionalized Population,,100,2309695
+2018,Arkansas,With a Disability,,100,486079
+2018,Arkansas,No Disability,,100,1823616
+2018,Arkansas,Total Civilian Noninstitutionalized Population,< 100% poverty level,15.1,348763.945
+2018,Arkansas,With a Disability,< 100% poverty level,22.2,107909.538
+2018,Arkansas,No Disability,< 100% poverty level,13.2,240717.312
+2018,Arkansas,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,10.7,247137.365
+2018,Arkansas,With a Disability,100% - 150% poverty level,15.5,75342.245
+2018,Arkansas,No Disability,100% - 150% poverty level,9.5,173243.52
+2018,Arkansas,Total Civilian Noninstitutionalized Population,>= 150% poverty level,74.2,1713793.69
+2018,Arkansas,With a Disability,>= 150% poverty level,62.3,302827.217
+2018,Arkansas,No Disability,>= 150% poverty level,77.3,1409655.168
+2018,Delaware,Total Civilian Noninstitutionalized Population,,100,762612
+2018,Delaware,With a Disability,,100,117789
+2018,Delaware,No Disability,,100,644823
+2018,Delaware,Total Civilian Noninstitutionalized Population,< 100% poverty level,11,83887.32
+2018,Delaware,With a Disability,< 100% poverty level,17.6,20730.864
+2018,Delaware,No Disability,< 100% poverty level,9.8,63192.654
+2018,Delaware,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,5.7,43468.884
+2018,Delaware,With a Disability,100% - 150% poverty level,8.8,10365.432
+2018,Delaware,No Disability,100% - 150% poverty level,5.1,32885.973
+2018,Delaware,Total Civilian Noninstitutionalized Population,>= 150% poverty level,83.3,635255.796
+2018,Delaware,With a Disability,>= 150% poverty level,73.6,86692.704
+2018,Delaware,No Disability,>= 150% poverty level,85.1,548744.373
+2018,Minnesota,Total Civilian Noninstitutionalized Population,,100,4347852
+2018,Minnesota,With a Disability,,100,565810
+2018,Minnesota,No Disability,,100,3782042
+2018,Minnesota,Total Civilian Noninstitutionalized Population,< 100% poverty level,9.1,395654.532
+2018,Minnesota,With a Disability,< 100% poverty level,18.7,105806.47
+2018,Minnesota,No Disability,< 100% poverty level,7.6,287435.192
+2018,Minnesota,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6.1,265218.972
+2018,Minnesota,With a Disability,100% - 150% poverty level,12.1,68463.01
+2018,Minnesota,No Disability,100% - 150% poverty level,5.2,196666.184
+2018,Minnesota,Total Civilian Noninstitutionalized Population,>= 150% poverty level,84.8,3686978.496
+2018,Minnesota,With a Disability,>= 150% poverty level,69.2,391540.52
+2018,Minnesota,No Disability,>= 150% poverty level,87.2,3297940.624
+2018,Montana,Total Civilian Noninstitutionalized Population,,100,835171
+2018,Montana,With a Disability,,100,131418
+2018,Montana,No Disability,,100,703753
+2018,Montana,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.4,103561.204
+2018,Montana,With a Disability,< 100% poverty level,19.8,26020.764
+2018,Montana,No Disability,< 100% poverty level,11,77412.83
+2018,Montana,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8.5,70989.535
+2018,Montana,With a Disability,100% - 150% poverty level,13,17084.34
+2018,Montana,No Disability,100% - 150% poverty level,7.7,54188.981
+2018,Montana,Total Civilian Noninstitutionalized Population,>= 150% poverty level,79.1,660620.261
+2018,Montana,With a Disability,>= 150% poverty level,67.3,88444.314
+2018,Montana,No Disability,>= 150% poverty level,81.3,572151.189
+2018,Arizona,Total Civilian Noninstitutionalized Population,,100,5567114
+2018,Arizona,With a Disability,,100,875699
+2018,Arizona,No Disability,,100,4691415
+2018,Arizona,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.4,690322.136
+2018,Arizona,With a Disability,< 100% poverty level,18.2,159377.218
+2018,Arizona,No Disability,< 100% poverty level,11.4,534821.31
+2018,Arizona,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8.5,473204.69
+2018,Arizona,With a Disability,100% - 150% poverty level,12.3,107710.977
+2018,Arizona,No Disability,100% - 150% poverty level,7.8,365930.37
+2018,Arizona,Total Civilian Noninstitutionalized Population,>= 150% poverty level,79,4398020.06
+2018,Arizona,With a Disability,>= 150% poverty level,69.4,607735.106
+2018,Arizona,No Disability,>= 150% poverty level,80.8,3790663.32
+2018,Florida,Total Civilian Noninstitutionalized Population,,100,17165682
+2018,Florida,With a Disability,,100,2675085
+2018,Florida,No Disability,,100,14490597
+2018,Florida,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.3,2111378.886
+2018,Florida,With a Disability,< 100% poverty level,18.1,484190.385
+2018,Florida,No Disability,< 100% poverty level,11.2,1622946.864
+2018,Florida,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,8.8,1510580.016
+2018,Florida,With a Disability,100% - 150% poverty level,12.7,339735.795
+2018,Florida,No Disability,100% - 150% poverty level,8,1159247.76
+2018,Florida,Total Civilian Noninstitutionalized Population,>= 150% poverty level,79,13560888.78
+2018,Florida,With a Disability,>= 150% poverty level,69.2,1851158.82
+2018,Florida,No Disability,>= 150% poverty level,80.8,11708402.38
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,,100,5482585
+2018,Massachusetts,With a Disability,,100,733252
+2018,Massachusetts,No Disability,,100,4749333
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,< 100% poverty level,9.5,520845.575
+2018,Massachusetts,With a Disability,< 100% poverty level,19.7,144450.644
+2018,Massachusetts,No Disability,< 100% poverty level,7.9,375197.307
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,5.6,307024.76
+2018,Massachusetts,With a Disability,100% - 150% poverty level,11.8,86523.736
+2018,Massachusetts,No Disability,100% - 150% poverty level,4.6,218469.318
+2018,Massachusetts,Total Civilian Noninstitutionalized Population,>= 150% poverty level,85,4660197.25
+2018,Massachusetts,With a Disability,>= 150% poverty level,68.5,502277.62
+2018,Massachusetts,No Disability,>= 150% poverty level,87.5,4155666.375
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,,100,552328
+2018,District of Columbia,With a Disability,,100,75325
+2018,District of Columbia,No Disability,,100,477003
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,< 100% poverty level,14.9,82296.872
+2018,District of Columbia,With a Disability,< 100% poverty level,33.5,25233.875
+2018,District of Columbia,No Disability,< 100% poverty level,11.9,56763.357
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,5.3,29273.384
+2018,District of Columbia,With a Disability,100% - 150% poverty level,11.1,8361.075
+2018,District of Columbia,No Disability,100% - 150% poverty level,4.3,20511.129
+2018,District of Columbia,Total Civilian Noninstitutionalized Population,>= 150% poverty level,79.9,441310.072
+2018,District of Columbia,With a Disability,>= 150% poverty level,55.4,41730.05
+2018,District of Columbia,No Disability,>= 150% poverty level,83.8,399728.514
+2018,Utah,Total Civilian Noninstitutionalized Population,,100,2287547
+2018,Utah,With a Disability,,100,274060
+2018,Utah,No Disability,,100,2013487
+2018,Utah,Total Civilian Noninstitutionalized Population,< 100% poverty level,8.9,203591.683
+2018,Utah,With a Disability,< 100% poverty level,14.3,39190.58
+2018,Utah,No Disability,< 100% poverty level,8.1,163092.447
+2018,Utah,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,6.5,148690.555
+2018,Utah,With a Disability,100% - 150% poverty level,9.2,25213.52
+2018,Utah,No Disability,100% - 150% poverty level,6.1,122822.707
+2018,Utah,Total Civilian Noninstitutionalized Population,>= 150% poverty level,84.7,1937552.309
+2018,Utah,With a Disability,>= 150% poverty level,76.5,209655.9
+2018,Utah,No Disability,>= 150% poverty level,85.8,1727571.846
+2018,New York,Total Civilian Noninstitutionalized Population,,100,15485676
+2018,New York,With a Disability,,100,2057904
+2018,New York,No Disability,,100,13427772
+2018,New York,Total Civilian Noninstitutionalized Population,< 100% poverty level,12.5,1935709.5
+2018,New York,With a Disability,< 100% poverty level,23.5,483607.44
+2018,New York,No Disability,< 100% poverty level,10.8,1450199.376
+2018,New York,Total Civilian Noninstitutionalized Population,100% - 150% poverty level,7.3,1130454.348
+2018,New York,With a Disability,100% - 150% poverty level,12.3,253122.192
+2018,New York,No Disability,100% - 150% poverty level,6.5,872805.18
+2018,New York,Total Civilian Noninstitutionalized Population,>= 150% poverty level,80.3,12434997.83
+2018,New York,With a Disability,>= 150% poverty level,64.3,1323232.272
+2018,New York,No Disability,>= 150% poverty level,82.7,11104767.44
