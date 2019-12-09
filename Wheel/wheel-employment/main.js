@@ -11,31 +11,9 @@ var hub_cy_6;
 
 let dataset_6;
 let buckets_6 = [];
-var spokes;
-var labels1;
-var labels2;
-var labels3;
+var spokes_6;
 var tempLabel;
-var totalNumber = [];
-
-
-var pie = d3.pie()
-  .startAngle(-90 * Math.PI / 180)
-  .endAngle(-90 * Math.PI / 180 + 2 * Math.PI)
-  .value(function (d) { return d.value; })
-  .padAngle(.01)
-  .sort(null);
-
-var donutData = [
-  { name: "Antelope", value: 15 },
-  { name: "Bear", value: 9 },
-  { name: "Cheetah", value: 19 },
-  { name: "Dolphin", value: 12 },
-  { name: "Elephant", value: 14 },
-  { name: "Flamingo", value: 21 },
-  { name: "Giraffe", value: 18 },
-  { name: "Other", value: 8 }
-];
+var totalNumber_6 = [];
 
 
 start = () => {
@@ -59,7 +37,7 @@ start = () => {
   d3.csv('./industry2018.csv').then(data => {
 
     // compute total number
-    totalNumber = calculateTotal(data);
+    totalNumber_6 = calculateTotal(data);
 
     data = data.filter(d => d.disabilityType != "Total Civilian Noninstitutionalized Population");
     let nestedData = d3.nest()
@@ -253,13 +231,13 @@ function drawUnits(svg, units_6) {
 }
 
 function calculateTotal(data) {
-  totalNumber = [];
+  totalNumber_6 = [];
   var hundredpercent = data.filter(d => d.percentage == 100 && d.disabilityType == "Total Civilian Noninstitutionalized Population");
   hundredpercent.forEach(h => {
-    totalNumber.push({ 'state': h.state, 'numbers': h.numbers });
+    totalNumber_6.push({ 'state': h.state, 'numbers': h.numbers });
   })
 
-  return totalNumber
+  return totalNumber_6
 }
 
 function drawBuckets(dataset, spokesData) {
@@ -311,7 +289,7 @@ function drawWheel(svgWidth, svgHeight, spokesData) {
 
   var spoke_length = 250;
 
-  spokes = wheel.selectAll('.spokes')
+  spokes_6 = wheel.selectAll('.spokes')
     .data(spokesData)
     .enter()
     .append("line")
@@ -339,7 +317,7 @@ function highlightState(state) {
 
 
   $('#stateName').text(state);
-  var total = totalNumber.find(t => t.state == state).numbers;
+  var total = totalNumber_6.find(t => t.state == state).numbers;
   $('#stateTotal').text(total);
 
   $('#stateDropdown').val(state);
