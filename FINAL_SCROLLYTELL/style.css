@@ -1,0 +1,176 @@
+body {
+  font-family: 'AvenirNext-DemiBold';
+  background: #FEFDFA;
+}
+
+#viz1 {
+  opacity: 0;
+  transition: ease 2s;
+  margin-top: 200px;
+  z-index: 0;
+}
+
+.after-viz {
+  margin-top: 1000px;
+}
+
+#viz1.fade-in {
+  opacity: 1;
+}
+
+
+
+.d3-tip {
+  line-height: 1;
+  font-weight: 600;
+  font-family: "Avenir Next";
+  font-size: 10px;
+  padding: 5px;
+  background: rgba(250, 251, 254, 1);
+  border: 1px solid #798D8F;
+
+  color: #2794A1;
+  border-radius: 5px;
+}
+
+#main.stay {}
+
+#geoviz-row.fade-out {
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.getout {
+  position: relative;
+}
+
+.link {
+  stroke: #ccc;
+}
+
+.node {
+  stroke: #999;
+  stroke-width: 1;
+}
+
+.node:hover {
+  stroke-width: 2;
+}
+
+#main {
+  z-index: 0;
+  margin: 20px;
+}
+
+#viz2 {
+  opacity: 0;
+  transition: ease 2s;
+}
+
+#viz2.fade-in {
+  opacity: 1;
+}
+
+#viz1.stick {
+  top: -180px;
+  position: fixed;
+}
+
+div.tooltip {
+  background: #FFFFFF;
+  border: 1px solid #798D8F;
+  border-radius: 3px;
+  font-family: AvenirNext-Bold;
+  font-size: 16px;
+  color: #2794A1;
+  text-align: left;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font: 12px sans-serif;
+  pointer-events: none;
+}
+
+.title {
+  font-family: AvenirNext-Bold;
+  font-size: 36px;
+  color: #5C595D;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+#viz2 {
+  position: fixed;
+  right: 0%;
+  top: 0%;
+}
+
+.title-row {
+  margin-top: 300px;
+  opacity: 1;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+
+  transition: ease 1s all;
+}
+
+.title-row.fade-out {
+  opacity: 0;
+}
+
+a {
+  color: #49929F;
+}
+
+.content-card-row {
+  z-index: 10;
+  position: relative;
+  margin-top: 60px;
+  width: 620px;
+  margin: auto;
+  opacity: 0;
+  transition: all ease-out 0.7s;
+}
+
+.content-card-row.fade-in {
+  opacity: 1;
+}
+
+.content-card {
+  margin-top: 200px;
+  background: #D8D8D8;
+  border: 1px solid #979797;
+  box-shadow: 0 9px 30px -1px rgba(89, 117, 120, 0.30);
+  background: #FFFFFF;
+  border: 1px solid rgba(121, 141, 143, 0.21);
+  color: #607173;
+  text-align: justify;
+  padding: 20px;
+}
+
+.content {
+  font-family: AvenirNext-Regular;
+  font-size: 16px;
+  line-height: 28px;
+  color: #607173;
+  text-align: justify;
+}
+
+#first-card {
+  margin-top: 500px;
+}
+
+#bucket-viz-one-row {
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+}
+
+#first-after-bucket {
+  margin-top: 50px;
+}

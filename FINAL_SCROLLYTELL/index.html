@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/d3-hexgrid"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>
+  <script src="./d3-tip.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="./main.js"></script>
+  <script src="./sideview.js"></script>
+  <script src="./scroll.js"></script>
+  <script src="./main2.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>InfoViz</title>
+</head>
+
+<body onload="readyFunction()">
+  <div class="container">
+    <div class="title-row">
+      <div class="col-lg-8">
+        <h1 class="title">Visualizing Data about People with Special Needs</h1>
+      </div>
+    </div>
+    <div class="content-card-row" id="first-card">
+      <div class="content-card">
+        <p class="content">The <a href="https://www.ada.gov/ada_intro.htm">ADA</a> defines a person with a disability as
+          a person who has a physical or
+          mental impairment that substantially limits one or more major life activity. This includes people who have a
+          record of such an impairment, even if they do not currently have a disability.
+        </p>
+      </div>
+    </div>
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">What does it really mean for a person when one or more of their major life activities have
+          been impaired? </p>
+      </div>
+    </div>
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">How is their life different from anyone else? </p>
+      </div>
+    </div>
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">This is what this visualization hopes to illustrate.</p>
+      </div>
+    </div>
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">In the visualization below, each hexagon represents 50,000 people. The darker hexagons
+          represent people with disabilities and the lighter ones are those without.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="geoviz-row">
+    ​<div id="viz1">
+    </div>
+    ​<div id="viz2">
+    </div>
+  </div>
+  <div class="container" class="after-viz">
+    <div class="content-card-row" id="first-card">
+      <div class="content-card">
+        <p class="content">This is what the US would look like if it was scaled by the population density of each state.
+          Over time, as the population of the country increased, so did the number of people with disabilities.
+        </p>
+      </div>
+    </div>
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">States with a higher population generally have higher population of disabled people as well.
+          Click on one or multiple states to look at their disability prevalence over the years and compare. </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+  <div class="container">
+    <div class="title-row" id="age">
+      <div class="col-lg-8">
+        <h1 class="title">Visualizing Age by Disability type</h1>
+      </div>
+    </div>
+    <div class="content-card-row" id="first-card1">
+      <div class="content-card">
+        <p class="content">The <a href="https://www.ada.gov/ada_intro.htm">ADA</a> defines a person with a disability
+          as
+          a person who has a physical or
+          mental impairment that substantially limits one or more major life activity. This includes people who have a
+          record of such an impairment, even if they do not currently have a disability.
+        </p>
+      </div>
+    </div>
+  </div>
+  ​<div id="main">
+    <div style="text-align:center;">
+      <svg width="945" height="800" style="border: 1px solid #777;">
+      </svg>
+    </div>
+  </div>
+  <div class="container">
+    <div class="title-row" id="age">
+      <div class="col-lg-8">
+        <h1 class="title">Visualizing Age by Disability type</h1>
+      </div>
+    </div>
+    <div class="content-card-row" id="first-card">
+      <div class="content-card">
+        <p class="content">The <a href="https://www.ada.gov/ada_intro.htm">ADA</a> defines a person with a disability
+          as
+          a person who has a physical or
+          mental impairment that substantially limits one or more major life activity. This includes people who have a
+          record of such an impairment, even if they do not currently have a disability.
+        </p>
+      </div>
+    </div>
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">What does it really mean for a person when one or more of their major life activities have
+          been impaired? </p>
+      </div>
+    </div>
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">How is their life different from anyone else? </p>
+      </div>
+    </div>
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">This is what this visualization hopes to illustrate.</p>
+      </div>
+    </div>
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">In the visualization below, each hexagon represents 50,000 people. The darker hexagons
+          represent people with disabilities and the lighter ones are those without.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+​
+
+</html>
