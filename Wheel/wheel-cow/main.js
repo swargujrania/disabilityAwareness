@@ -74,41 +74,47 @@ start = () => {
     var arc3 = drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r_7, 2);
     var arc4 = drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r_7, 3);
 
-    var textArc1 = svg.selectAll(".industryLabels")
-      .data(labels1)
-      .enter()
-      .append("text")
-      .style("text-anchor", "middle")
-      .append("textPath")        //append a textPath to the text element
-      .attr("xlink:href", function (d, i) {
-        return "#s" + i;
-      })
-      .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
-      .text(function (d, i) { return d; });
+    setTimeout(() => {
+      var textArc1 = svg.selectAll(".industryLabels")
+        .data(labels1)
+        .enter()
+        .append("text")
+        .style("text-anchor", "middle")
+        .style("font-family", "AvenirNext-Regular")
+        .append("textPath")        //append a textPath to the text element
+        .attr("xlink:href", function (d, i) {
+          return "#s" + i;
+        })
+        .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
+        .text(function (d, i) { return d; });
 
-    var textArc2 = svg.selectAll(".industryLabels")
-      .data(labels2)
-      .enter()
-      .append("text")
-      .style("text-anchor", "middle")
-      .append("textPath")        //append a textPath to the text element
-      .attr("xlink:href", function (d, i) {
-        return "#t" + i;
-      })
-      .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
-      .text(function (d, i) { return d; });
+      var textArc2 = svg.selectAll(".industryLabels")
+        .data(labels2)
+        .enter()
+        .append("text")
+        .style("text-anchor", "middle")
+        .style("font-family", "AvenirNext-Regular")
+        .append("textPath")        //append a textPath to the text element
+        .attr("xlink:href", function (d, i) {
+          return "#t" + i;
+        })
+        .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
+        .text(function (d, i) { return d; });
 
-    var textArc3 = svg.selectAll(".industryLabels")
-      .data(labels3)
-      .enter()
-      .append("text")
-      .style("text-anchor", "middle")
-      .append("textPath")        //append a textPath to the text element
-      .attr("xlink:href", function (d, i) {
-        return "#u" + i;
-      })
-      .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
-      .text(function (d, i) { return d; });
+      var textArc3 = svg.selectAll(".industryLabels")
+        .data(labels3)
+        .enter()
+        .append("text")
+        .style("text-anchor", "middle")
+        .style("font-family", "AvenirNext-Regular")
+        .append("textPath")        //append a textPath to the text element
+        .attr("xlink:href", function (d, i) {
+          return "#u" + i;
+        })
+        .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
+        .text(function (d, i) { return d; });
+    }, 2000);
+
 
     //draw percentage
     setTimeout(() => {
@@ -150,6 +156,7 @@ start = () => {
         .append("text")
         .style("text-anchor", "middle")
         .style("font-size", "10px")
+        .style("font-family", "AvenirNext-Regular")
         .style("fill", "grey")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
@@ -333,6 +340,7 @@ function highlightState_7(state) {
 
 
   $('#stateName').text(state);
+  $('#stateName').css('font-family', 'AvenirNext-Regular');
   //var total = totalNumber_7.find(t => t.state == state).numbers;
   //$('#stateTotal').text(total);
 
