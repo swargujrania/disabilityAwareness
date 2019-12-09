@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.min.js"></script>
+  <script src="d3-tip.js"></script>
+  <script src="./main.js"></script>
+  <title>InfoViz</title>
+</head>
+​
+<body>
+​<div id="main">
+    <div style="text-align:center;">
+    <svg width="945" height="800" style="border: 1px solid #777;">
+    </svg>
+</div>
+<div id="dropdown">
+    <div style="position: absolute; top: 50px;">
+        <div>
+            <label for="categorySelect">Select categories to view</label>
+        </div>
+        <select class="custom-select small" id="DisabledSelect" onchange="changeView_2()">
+          <option value="all">Everyone</option>
+          <option selected value="disabled">Disabled</option>
+          <option value="Hearing">Hearing</option>
+          <option value="Vision">Vision</option>
+          <option value="Cognitive">Cognitive</option>
+          <option value="Ambulatory">Ambulatory</option>
+          <option value="Self-care">Self-care</option>
+          <option value="Independent Living">Independent Living</option>
+          <option value="none">No disability</option>
+        </select>
+    </div>
+</div>
+<style>
+
+  .d3-tip {
+  line-height: 1;
+  font-weight: 600;
+  font-family: "Avenir Next";
+  font-size: 10px;
+  padding: 5px;
+  background: rgba(250,251,254, 1);
+  border: 1px solid #798D8F;
+  
+  color: #2794A1;
+  border-radius: 5px;
+}
+</style> 
+
+</body>
+​
+</html>
