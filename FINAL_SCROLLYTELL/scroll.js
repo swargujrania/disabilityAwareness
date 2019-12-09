@@ -53,11 +53,29 @@ let readyFunction = () => {
   ageByDisType.setClassToggle('#geoviz-row', 'fade-out');
 
   let ageByDisType2 = new ScrollMagic.Scene({
-      triggerElement: '#first-card1',
-      triggerHook: 1
+      triggerElement: '#age-last-card',
+      triggerHook: 0.5
     })
-    // .addIndicators()
+    .addIndicators()
     .addTo(controller);
+
+  ageByDisType2.on('start', () => {
+    selectedVal_2 = "all";
+    noneOpacity_2 = 0.8;
+    updateChart_2();
+  });
+
+
+  let ageByDisType3 = new ScrollMagic.Scene({
+      triggerElement: '#bar-chart-trigger',
+      triggerHook: 0
+    })
+    .addIndicators()
+    .addTo(controller);
+
+  ageByDisType3.on('start', () => {
+    changeView_2(true, 'none');
+  });
 
   // let bucketViz = new ScrollMagic.Scene({
   //     triggerElement: '#bucket-viz-one-row',

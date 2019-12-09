@@ -18,7 +18,11 @@ body {
   opacity: 1;
 }
 
-
+#main {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
 
 .d3-tip {
   line-height: 1;
@@ -28,6 +32,8 @@ body {
   padding: 5px;
   background: rgba(250, 251, 254, 1);
   border: 1px solid #798D8F;
+
+  position: absolute;
 
   color: #2794A1;
   border-radius: 5px;

@@ -1,7 +1,7 @@
 //**********  Viz 2: Matrix of age group vs disability type  **************
 
 var toolTip = d3.tip()
-    .attr("class", "d3-tip")
+    .attr("class", "tooltip")
     .offset([-12, 0])
     .html(function (d) {
         return "<h5>" + d['dis'] + "</h5>";
@@ -117,7 +117,7 @@ var plot_none_2 = [];
 
 
 
-var selectedVal_2 = "disabled";
+selectedVal_2 = "disabled";
 var option_2 = selectedVal_2;
 
 
@@ -226,13 +226,9 @@ d3.json('plot_none.json').then(plotData => {
 
 function updateChart_2() {
 
-
-
     d3.selectAll("svg > *").remove();
-    var svg = d3.select('svg');
+    var svg = d3.select('#age-svg');
     svg.call(toolTip);
-
-
 
     var lineG = svg.selectAll('.rect')
         .data(plot_2)
@@ -278,7 +274,15 @@ function updateChart_2() {
             console.log('hi');
             changeView_2(true, d.dis);
         })
-        .on('mouseover', toolTip.show)
+        .on('mouseover', d => {
+            var x = d3.event.x,
+                y = d3.event.y;
+
+            toolTip.show(d);
+
+            toolTip.style('top', y);
+            toolTip.style('left', x);
+        })
         .on('mouseout', toolTip.hide)
         .exit()
         .remove();
