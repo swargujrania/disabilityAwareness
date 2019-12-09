@@ -34,13 +34,15 @@ start = () => {
           .attr('y1', bucket.y)
           .attr('x2', bucket.x2)
           .attr('y2', bucket.y)
-          .style('stroke', 'black')
+          .style('stroke', '#798D8F')
           .style('stroke-width', 2);
         svg.append('text')
           .text(bucket.label)
           .attr('x', bucket.x)
           .attr('y', bucket.y + 30)
-          .style('text-anchor', 'middle');
+          .style('text-anchor', 'middle')
+          .style('stroke', '#798D8F')
+          .attr('font-family', 'Avenir Next');
 
         d3.json('./units.json').then(units => {
           // visual elements
@@ -96,8 +98,8 @@ start = () => {
 }
 
 function highlightState(state) {
-  $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 1)');
-  $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 0.4)');
+  $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', '#49929F');
+  $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', '#D5F0F0');
   $('#stateName').text(state);
   $('#stateDropdown').val(state);
 }
@@ -114,11 +116,11 @@ function getColor(status) {
   switch (status) {
     case 'With a Disability':
       return {
-        'fill': 'rgba(255,0,0,0.6)', 'stroke': 'none'
+        'fill': '#FFAC1D', 'stroke': 'none'
       };
     case 'No Disability':
       return {
-        'fill': 'rgba(255,0,0,0.1)', 'stroke': 'none'
+        'fill': '#FEF1D6', 'stroke': 'none'
       };
   }
 }
@@ -177,7 +179,7 @@ function drawPieCharts() {
                   svg.append("g")
                     .attr('class', 'pie')
                     .attr('transform', `translate(${ centerX }, ${ centerY })`)
-                    .attr("stroke", "rgba(242,189,182, 0.5)")
+                    .attr("stroke", "#FED48B")
                     .attr("opacity", 0)
                     .selectAll("path")
                     .data(arcs[i])
@@ -185,9 +187,9 @@ function drawPieCharts() {
                     .attr("fill", d => {
                       console.log(d.data);
                       if (d.data.key.endsWith('WithDis')) {
-                        return 'rgb(242,189,182)';
+                        return '#FFAC1D';
                       } else {
-                        return 'rgba(242,189,182, 0.2)';
+                        return '#FEF1D6';
                       }
                     })
                     .attr("d", arc)
@@ -198,8 +200,9 @@ function drawPieCharts() {
                     .attr('class', 'pieLabel')
                     .attr("opacity", 0)
                     .attr('transform', `translate(${ centerX }, ${ centerY })`)
-                    .attr("font-family", "sans-serif")
+                    .attr("font-family", "Avenir Next")
                     .attr("font-size", 12)
+                    .attr("fill",'#4A4A4A')
                     .attr("text-anchor", "middle")
                     .selectAll("text")
                     .data(arcs[i])
@@ -207,7 +210,7 @@ function drawPieCharts() {
                     .attr("transform", d => `translate(${ arcLabel().centroid(d) })`)
                     .call(text => text.append("tspan")
                       .attr("y", "-0.4em")
-                      .attr("font-weight", "bold")
+                      .attr("font-weight", "600")
                       .text(d => {
                         return d.data.key.endsWith('WithDis') ? 'With Disability' : 'Without Disability';
                       }))
