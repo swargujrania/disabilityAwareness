@@ -1,86 +1,90 @@
-var margin = { top: 100, left: 100, bottom: 20, right: 100 };
+var margin_6 = { top: 100, left: 100, bottom: 20, right: 100 };
 
-var a, b;
-const PEOPLE_UNIT = 50000;
+const PEOPLE_UNIT_6 = 50000;
 
-units_7 = [];
+units_6 = [];
 
-var hub_r_7;
-var hub_cx_7;
-var hub_cy_7;
+var hub_r_6;
+var hub_cx_6;
+var hub_cy_6;
 
-let dataset_7;
-let buckets_7 = [];
-var spokes_7;
-var tempLabel;
-var totalNumber_7 = [];
+let dataset_6;
+let buckets_6 = [];
+var spokes_6;
+var totalNumber_6 = [];
 
+empMainStart = () => {
 
-start = () => {
-
-
-  var svg = d3.select('#vis-container svg')
-  var svgWidth = $('#vis-container .vis svg').width();
-  var svgHeight = $('#vis-container .vis svg').height();
+  var svg = d3.select('#vis-container1 svg');
+  var svgWidth = 1000; //$('#vis-container1 .vis svg').width();
+  var svgHeight = 1000 ;//$('#vis-container1 .vis svg').height();
 
   //add drop down
-  setDropdown_7(svgWidth, svgHeight);
+  setDropdown(svgWidth, svgHeight);
 
-  var spokesData = [1, 2, 3, 4, 5, 6, 7, 8, 9];	// number of CoWs
-  var wheel = drawWheel_7(svgWidth, svgHeight, spokesData);
+  var spokesData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];	// number of industry types
+  var wheel = drawWheel(svgWidth, svgHeight, spokesData);
 
-  hub_r_7 = wheel.r;
-  hub_cx_7 = wheel.cx;
-  hub_cy_7 = wheel.cy;
+  hub_r_6 = wheel.r;
+  hub_cx_6 = wheel.cx;
+  hub_cy_6 = wheel.cy;
 
-  d3.csv('./classOfWorker2018.csv').then(data => {
+  d3.csv('./industry2018.csv').then(data => {
 
     // compute total number
-    //totalNumber_7 = calculateTotal_7(data);
+    //totalNumber_6 = calculateTotal(data);
 
     data = data.filter(d => d.disabilityType != "Total Civilian Noninstitutionalized Population");
-
     let nestedData = d3.nest()
-      .key(d => d.classOfWorker)
+      .key(d => d.industry)
       .entries(data);
 
-    nestedData.splice(0, 1);
-    // nestedData.pop();
+    //nestedData.splice(0, 1);
+    nestedData.pop();
 
-    dataset_7 = nestedData;
-    buckets_7 = drawBuckets_7(dataset_7, spokesData);
+    dataset_6 = nestedData;
 
-    d3.json('wheelCowUnits.json').then(units => {
-      units_7 = units;
-      drawUnits_7(svg, units_7);
+    buckets_6 = drawBuckets(dataset_6, spokesData);
+
+    d3.json('wheelEmploymentUnits.json').then(units => {
+      units_6 = units;
+      drawUnits(svg, units_6);
     })
 
-    var start_x = hub_cx_7 - 350;
-    var start_y = hub_cy_7;
-    var end_x = hub_cx_7 + 350;
-    var end_y = hub_cy_7;
+    labels1 = ["Public administration", "administration)", "and food services", " social assistance", "and waste management services",
+      "rental and leasing", "Information", "Transportation and ", "Retail trade", "Wholesale trade", "Manufacturing"
+      , "Construction", "Agriculture, forestry,"];
+    labels2 = ["", "(except public ", "recreation, and accommodation", "and health care and", "management, and administrative", "and real estate and", "", "warehousing, and utilities", "", "",
+      "", "", "fishing and hunting,"];
+    labels3 = ["", "Other services ", "Arts, entertainment, and  ", "Educational services, ", "Professional, scientific, and ", "Finance and insurance, ",
+      "", "", "", "", "", "", "and mining"];
+    var outerCircleRadius1 = 4.1 * hub_r_6;
+    var outerCircleRadius2 = 3.9 * hub_r_6;
+    var outerCircleRadius3 = 3.7 * hub_r_6;
+    var outerCircleRadius4 = 0.9 * hub_r_6;
 
-    labels1 = ["workers", "business workers", "", "", "Local government", "Private not-for-profit", "Self-employed in  ", "Employee of private", "Private for-profit"];
-    labels2 = ["Unpaid family", " not incorporated ", "workers", "workers", "workers", "wage and salary", "own incorporated", "company workers", "wage and salary"];
-    labels3 = ["", "Self-employed in own", "Federal government", "State government", "", "workers", "business workers", "", "workers"];
-    var outerCircleRadius1 = 4.1 * hub_r_7;
-    var outerCircleRadius2 = 3.9 * hub_r_7;
-    var outerCircleRadius3 = 3.7 * hub_r_7;
-    var outerCircleRadius4 = 0.9 * hub_r_7;
+    var start_x = hub_cx_6 - 350;
+    var start_y = hub_cy_6;
+    var end_x = hub_cx_6 + 350;
+    var end_y = hub_cy_6;
 
     //arc1
-    var arc1 = drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r_7, 0);
-    var arc2 = drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r_7, 1);
-    var arc3 = drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r_7, 2);
-    var arc4 = drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r_7, 3);
+    var arc1 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 0);
+    var arc2 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 1);
+    var arc3 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 2);
+    var arc4 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 3);
 
     setTimeout(() => {
-      var textArc1 = svg.selectAll(".industryLabels")
+
+      //text arcs
+      var textArc1 = svg.selectAll(".industryLabelsEmp")
         .data(labels1)
         .enter()
         .append("text")
-        .style("text-anchor", "middle")
+        .append("class", '.industryLabelsEmp')
         .style("font-family", "AvenirNext-Regular")
+        .style("font-size", "12px")
+        .style("text-anchor", "middle")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
           return "#s" + i;
@@ -88,12 +92,14 @@ start = () => {
         .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
         .text(function (d, i) { return d; });
 
-      var textArc2 = svg.selectAll(".industryLabels")
+      var textArc2 = svg.selectAll(".industryLabelsEmp")
         .data(labels2)
         .enter()
         .append("text")
-        .style("text-anchor", "middle")
+        .append("class", '.industryLabelsEmp')
         .style("font-family", "AvenirNext-Regular")
+        .style("font-size", "12px")
+        .style("text-anchor", "middle")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
           return "#t" + i;
@@ -101,11 +107,13 @@ start = () => {
         .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
         .text(function (d, i) { return d; });
 
-      var textArc3 = svg.selectAll(".industryLabels")
+      var textArc3 = svg.selectAll(".industryLabelsEmp")
         .data(labels3)
         .enter()
         .append("text")
+        .append("class", '.industryLabelsEmp')
         .style("text-anchor", "middle")
+        .style("font-size", "12px")
         .style("font-family", "AvenirNext-Regular")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
@@ -113,26 +121,25 @@ start = () => {
         })
         .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
         .text(function (d, i) { return d; });
+
     }, 2000);
 
 
-    //draw percentage
     setTimeout(() => {
 
-      pData = data;
-      var dataForPercentage = d3.nest().key(d => d.classOfWorker).entries(pData);
+      var pData = data;
+      var dataForPercentage = d3.nest().key(d => d.industry).entries(pData);
       dataForPercentage.splice(0, 1);
       var p = [];
 
       //generate labels
-      tempLabel = [];
-      for (var i = 0; i < buckets_7.length; i++) {
-        tempLabel[i] = buckets_7[i].label;
-        console.log(tempLabel[i]);
+      var tempLabelA = [];
+      for (var i = 0; i < buckets_6.length; i++) {
+        tempLabelA[i] = buckets_6[i].label;
       }
-      tempLabel.reverse();
+      tempLabelA.reverse();
 
-      tempLabel.forEach(t => {
+      tempLabelA.forEach(t => {
 
         var o = { 'bucket': t };
 
@@ -156,8 +163,8 @@ start = () => {
         .append("text")
         .style("text-anchor", "middle")
         .style("font-size", "10px")
-        .style("font-family", "AvenirNext-Regular")
         .style("fill", "grey")
+        .style("font-family", "AvenirNext-Regular")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
           return "#v" + i;
@@ -167,11 +174,10 @@ start = () => {
 
     }, 3000);
 
-
-  });
+  }); //d3.csv end braces
 }
 
-function drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r, id) {
+function drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r, id) {
 
   var outerCircleRadius = [];
   outerCircleRadius.push(4.1 * hub_r);
@@ -182,13 +188,13 @@ function drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r, id) {
   var idArray = ['s', 't', 'u', 'v']
 
   svg.selectAll(".arcs")
-    .data(buckets_7)
+    .data(buckets_6)
     .enter()
     .append("path")
     .attr("fill", "none")
     .attr("id", function (d, i) { return idArray[id] + i; })
     .attr("d", function (d, i) {
-      return describeArc_7(hub_cx_7, hub_cy_7, outerCircleRadius[id], d.theta1, d.theta2);
+      return describeArc(hub_cx_6, hub_cy_6, outerCircleRadius[id], d.theta1, d.theta2);
     })
     .style("stroke", "#AAAAAA")
     .attr("stroke-opacity", 0)
@@ -196,10 +202,31 @@ function drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r, id) {
 
 }
 
+function describeArc(x, y, radius, startAngle, endAngle) {
+  var start, end, largeArcFlag, sweepFlag, extraAngle;
+  extraAngle = 0;
+  largeArcFlag = 0;
 
-function drawUnits_7(svg, units_7) {
+  if (endAngle > Math.PI) {
+    largeArcFlag = 1;
+    extraAngle = Math.PI;
+    radius -= 10;
+  }
+  sweepFlag = largeArcFlag;
+  start = polarToCartesian(x, y, radius, endAngle + extraAngle);
+  end = polarToCartesian(x, y, radius, startAngle + extraAngle);
+  var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
+  var d = [
+    "M", start.x, start.y,
+    "A", radius, radius, 0, largeArcFlag, sweepFlag, end.x, end.y
+  ].join(" ");
+  return d;
+}
+
+
+function drawUnits(svg, units_6) {
   svg.selectAll('.unit')
-    .data(units_7)
+    .data(units_6)
     .enter()
     .append('polyline')
     .attr('class', d => {
@@ -209,8 +236,8 @@ function drawUnits_7(svg, units_7) {
     .attr('data-disStat', d => d.status)
     .attr('data-bracket', d => d.bracket)
     .attr("points", d => d.points_final)
-    .attr("stroke", d => { return getColor_7(d.status).stroke })
-    .attr("fill", d => { return getColor_7(d.status).fill });
+    .attr("stroke", d => { return getColor(d.status).stroke })
+    .attr("fill", d => { return getColor(d.status).fill });
 
   svg.selectAll('.unit')
     .transition()
@@ -222,42 +249,22 @@ function drawUnits_7(svg, units_7) {
 
   svg.selectAll('.unit')
     .on('click', d => {
-      resetColors_7();
-      highlightState_7(d.state);
+      resetColors();
+      highlightState(d.state);
     })
 }
 
+function calculateTotal(data) {
+  totalNumber_6 = [];
+  var hundredpercent = data.filter(d => d.percentage == 100 && d.disabilityType == "Total Civilian Noninstitutionalized Population");
+  hundredpercent.forEach(h => {
+    totalNumber_6.push({ 'state': h.state, 'numbers': h.numbers });
+  })
 
-function polarToCartesian_7(centerX, centerY, radius, angleInRadians) {
-  //var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
-  return {
-    x: centerX + (radius * Math.cos(angleInRadians)),
-    y: centerY + (radius * Math.sin(angleInRadians))
-  };
+  return totalNumber_6
 }
 
-function describeArc_7(x, y, radius, startAngle, endAngle) {
-  var start, end, largeArcFlag, sweepFlag, extraAngle;
-  extraAngle = 0;
-  largeArcFlag = 0;
-
-  if (endAngle > Math.PI) {
-    largeArcFlag = 1;
-    extraAngle = Math.PI;
-  }
-  sweepFlag = largeArcFlag;
-  start = polarToCartesian_7(x, y, radius, endAngle + extraAngle);
-  end = polarToCartesian_7(x, y, radius, startAngle + extraAngle);
-  var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
-  var d = [
-    "M", start.x, start.y,
-    "A", radius, radius, 0, largeArcFlag, sweepFlag, end.x, end.y
-  ].join(" ");
-  return d;
-}
-
-
-function drawBuckets_7(dataset, spokesData) {
+function drawBuckets(dataset, spokesData) {
 
   var prevTheta = 0;
   for (let i = 0; i < spokesData.length; i++) {
@@ -268,29 +275,25 @@ function drawBuckets_7(dataset, spokesData) {
     let theta1 = prevTheta;
     let theta2 = (i + 1) * 2 * Math.PI / spokesData.length;
     let label = dataset[i].key;
-    buckets_7[i] = new Bucket(x1, y1, x2, y2, theta1, theta2, label);
+    buckets_6[i] = new Bucket(x1, y1, x2, y2, theta1, theta2, label);
     prevTheta = theta2;
+    //buckets_6[i].showLabel(svg);
   }
 
-  return buckets_7;
+  return buckets_6;
 }
 
-// function calculateTotal_7(data) {
-//   totalNumber_7 = [];
-//   var hundredpercent = data.filter(d => d.percentage == 100 && d.disabilityType == "Total Civilian Noninstitutionalized Population");
-//   hundredpercent.forEach(h => {
-//     totalNumber_7.push({ 'state': h.state, 'numbers': h.numbers });
-//   });
-// }
-
-function drawWheel_7(svgWidth, svgHeight, spokesData) {
-  var wheel = d3.select('svg')
+function drawWheel(svgWidth, svgHeight, spokesData) {
+  var wheel = d3.select('#vis-container1 .vis svg')
     .append('g')
     .attr('class', 'wheel');
 
+
+
   wheel.append('text')
     .attr('id', 'stateName')
-    .attr('transform', `translate(${ svgWidth / 2 - 20 }, ${ svgHeight / 2 - 50 })`)
+    .attr('transform', `translate(${ svgWidth / 2 - 22 }, ${ svgHeight / 2 - 50 })`)
+    .attr('margin', 'auto')
     .text('');
 
   wheel.append('text')
@@ -300,7 +303,7 @@ function drawWheel_7(svgWidth, svgHeight, spokesData) {
 
   var hub_r = 100;
   var hub_cx = svgWidth / 2;
-  var hub_cy = svgHeight / 2 + margin.top / 2 - 100;
+  var hub_cy = svgHeight / 2 + margin_6.top / 2 - 100;
 
   var hub = wheel.append('circle')
     .attr('class', 'hub')
@@ -313,7 +316,7 @@ function drawWheel_7(svgWidth, svgHeight, spokesData) {
 
   var spoke_length = 250;
 
-  spokes_7 = wheel.selectAll('.spokes')
+  spokes_6 = wheel.selectAll('.spokes')
     .data(spokesData)
     .enter()
     .append("line")
@@ -334,33 +337,34 @@ function drawWheel_7(svgWidth, svgHeight, spokesData) {
   return { 'wheel': wheel, 'r': hub_r, 'cx': hub_cx, 'cy': hub_cy };// wheel;
 }
 
-function highlightState_7(state) {
+function highlightState(state) {
+
   $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', '#49929F');
   $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', '#D5F0F0');
 
 
   $('#stateName').text(state);
   $('#stateName').css('font-family', 'AvenirNext-Regular');
-  //var total = totalNumber_7.find(t => t.state == state).numbers;
-  //$('#stateTotal').text(total);
+  $('#stateName').css('text-align', 'center');
 
-  $('#stateDropdown').val(state);
+  // var total = totalNumber_6.find(t => t.state == state).numbers;
+  // $('#stateTotal').text(total);
+
+
+  $('#stateDropdown1').val(state);
 }
 
-function resetColors_7() {
+function resetColors() {
 
-  $('.dis_unit').attr('fill', getColor_7('With a Disability').fill);
-  $('.dis_unit').attr('stroke', getColor_7('With a Disability').stroke);
-  $('.reg_unit').attr('fill', getColor_7('No Disability').fill);
-  $('.reg_unit').attr('stroke', getColor_7('No Disability').stroke);
+  $('.dis_unit').attr('fill', getColor('With a Disability').fill);
+  $('.dis_unit').attr('stroke', getColor('With a Disability').stroke);
+  $('.reg_unit').attr('fill', getColor('No Disability').fill);
+  $('.reg_unit').attr('stroke', getColor('No Disability').stroke);
 }
 
-
-function setDropdown_7(width, height) {
-  var dropDown = d3.select('body').select('#stateDropdown')
+function setDropdown(width, height) {
+  var dropDown = d3.select('body').select('#stateDropdown1')
     .style('position', 'relative');
-  //.style('margin-left', width + 'px');
-  //.style('margin-bottom', height/2 + 'px');
 
   var stateList = ["Select a state", "Alaska", "Maine", "North Carolina", "Missouri", "Pennsylvania", "Michigan", "Nebraska", "Oregon", "Wyoming", "California", "Mississippi", "Connecticut", "Texas", "Idaho", "Maryland", "New Mexico", "Alabama", "Tennesee", "Vermont", "Nevada", "West Virginia", "Oklahoma", "Wisconsin", "Puerto Rico", "Kansas", "Virginia", "North Dakota", "New Jersey", "Ohio", "South Carolina", "Georgia", "Colorado", "Hawaii", "South Dakota", "Indiana", "Kentucky", "Louisiana", "Washington", "Illinois", "Iowa", "New Hampshire", "Rhode Island", "Arkansas", "Delaware", "Minnesota", "Montana", "Arizona", "Florida", "Massachusetts", "District of Columbia", "Utah", "New York"];
   dropDown.selectAll('option')
@@ -369,18 +373,18 @@ function setDropdown_7(width, height) {
     .append('option')
     .text(d => d)
     .attr('value', d => { return d == 'Select a state' ? '' : d });
-  $('#stateDropdown').on('change', function () {
+  $('#stateDropdown1').on('change', function () {
     var state = $(this).find(':selected').text();
     if (state != 'Select a state') {
-      resetColors_7();
-      highlightState_7(state);
+      resetColors();
+      highlightState(state);
     }
 
   })
 
 }
 
-function getColor_7(status) {
+function getColor(status) {
   switch (status) {
     case 'With a Disability': return { 'fill': '#FFAC1D', 'stroke': 'white' };
     case 'No Disability': return { 'fill': '#FFE5AE', 'stroke': 'white' };
@@ -407,10 +411,29 @@ class Unit {
     this.x = x;
     this.y = y;
     this.angle = angle;
+
     this.points_init = `${ x - 4 },${ y - 1000 } ${ x - 2 },${ y - 3.5 - 1000 } ${ x + 2 },${ y - 3.5 - 1000 } ${ x + 4 },${ y - 1000 } ${ x + 2 },${ y + 3.5 - 1000 } ${ x - 2 },${ y + 3.5 - 1000 } ${ x - 4 },${ y - 1000 }`;
     this.points_final = `${ x - 4 },${ y } ${ x - 2 },${ y - 3.5 } ${ x + 2 },${ y - 3.5 } ${ x + 4 },${ y } ${ x + 2 },${ y + 3.5 } ${ x - 2 },${ y + 3.5 } ${ x - 4 },${ y }`;
 
   }
+}
+
+function polarToCartesian(centerX, centerY, radius, angleInRadians) {
+  //var angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
+  return {
+    x: centerX + (radius * Math.cos(angleInRadians)),
+    y: centerY + (radius * Math.sin(angleInRadians))
+  };
+}
+
+function downloadObjectAsJson(exportObj, exportName) {
+  var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
+  var downloadAnchorNode = document.createElement('a');
+  downloadAnchorNode.setAttribute("href", dataStr);
+  downloadAnchorNode.setAttribute("download", exportName + ".json");
+  document.body.appendChild(downloadAnchorNode); // required for firefox
+  downloadAnchorNode.click();
+  downloadAnchorNode.remove();
 }
 
 

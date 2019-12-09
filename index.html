@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info Vis Project Matrix</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="./Wheel/wheel-employment/empMain.js"></script>
+    <script type="text/javascript" src="./Wheel/wheel-cow/cowMain.js"></script>
+
+</head>
+
+<body>
+
+    <body onload="start()">
+        <button id='wheel1' onclick='empMainStart()'> Wheel 1</button>
+        <div id="outer-container1">
+            <select id="stateDropdown1">
+            </select>
+            <div id="vis-container1">
+                <div class="vis">
+
+                    <svg width=1000 height=1000>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+        <button id='wheel2' onclick='cowMainStart()'> Wheel 2</button>
+        <div id="outer-container2">
+            <select id="stateDropdown2">
+            </select>
+            <div id="vis-container2">
+                <div class="vis">
+
+                    <svg width=1500 height=1500>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./main.js"></script>
+
+</html>
