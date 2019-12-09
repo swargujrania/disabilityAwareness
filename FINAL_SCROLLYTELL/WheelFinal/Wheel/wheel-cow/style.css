@@ -1,0 +1,48 @@
+.axis text {
+    fill: #000;
+}
+
+.axis path {
+    stroke: #ccc;
+}
+
+.spokes{
+	stroke: #ccc;
+	font-size: 15px;
+}
+
+body {
+    font-family: "Open Sans";
+    margin: 0;
+    background-color: #FBF9F3;
+}
+
+#outer-container {
+	width: 1400px;
+	height: 1000px;
+	margin-left: auto;
+    margin-right: auto;
+	border: #c6dbef 1px solid;
+	border-radius: 2px;
+}
+
+#vis-container {
+	height: calc(100%);
+	white-space: nowrap;
+	font-size: 0px;
+}
+
+
+#vis-container .vis {
+	vertical-align: top;
+	display: inline-block;
+	font-size: 15px;
+	width: calc(100%);
+	height: 100%;
+}
+
+#vis-container .vis svg {
+	width: 100%;
+	height: 100%;
+	background-color: #FBF9F3;
+}

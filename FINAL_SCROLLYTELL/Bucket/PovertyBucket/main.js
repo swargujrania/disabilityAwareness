@@ -167,7 +167,7 @@ function p_drawPieCharts(p_buckets, p_svg) {
         for (i = 0; i < p_arcs.length; i++) {
 
           var centerX = p_buckets[i].x;
-          var centerY = p_buckets[i].y + 120;
+          var centerY = p_buckets[i].y + 170;
 
           p_svg.append("g")
             .attr('class', 'pie')
@@ -191,18 +191,25 @@ function p_drawPieCharts(p_buckets, p_svg) {
           p_svg.append("g")
             .attr('class', 'pieLabel')
             .attr("opacity", 0)
-            .attr("font-family", "Avenir Next")
             .attr('transform', `translate(${ centerX }, ${ centerY })`)
-            .attr("font-size", 12)
+            .attr("font-family", "Avenir Next")
+            .attr("font-size", 13)
+            .attr("fill", '#798D8F')
             .attr("text-anchor", "middle")
-            .attr("fill", '#4A4A4A')
             .selectAll("text")
             .data(p_arcs[i])
             .join("text")
-            .attr("transform", d => `translate(${ arcLabel().centroid(d) })`)
+            .attr("transform", d => {
+              if (d.data.key.endsWith('WithDis')) {
+                return `translate(40,-80)`;
+              } else {
+                return `translate(10,+90)`;
+              }
+            })
+            //translate(0,0)`)//${ arcLabel().centroid(d) })`)
             .call(text => text.append("tspan")
               .attr("y", "-0.4em")
-              .attr("font-weight", "600")
+              .attr("font-weight", "500")
               .text(d => {
                 return d.data.key.endsWith('WithDis') ? 'With Disability' : 'Without Disability';
               }))
@@ -210,9 +217,7 @@ function p_drawPieCharts(p_buckets, p_svg) {
               .attr("x", 0)
               .attr("y", "0.7em")
               .attr("fill-opacity", 0.7)
-              .attr("fill", '#4A4A4A')
-              .text(d => d.data.value.toLocaleString()));
-
+              .text(d => Math.trunc(d.data.value).toLocaleString()));
 
           //animation
           p_svg.selectAll('.pie')

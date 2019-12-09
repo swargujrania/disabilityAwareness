@@ -12,9 +12,11 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="./main.js"></script>
   <script src="./sideview.js"></script>
-  <script src="./Bucket/EarningsBucket/main.js"></script>
-  <script src="./Bucket/PovertyBucket/main.js"></script>
+  <script src="./WheelFinal/Wheel/wheel-employment/empMain.js"></script>
+  <script src="./WheelFinal/Wheel/wheel-cow/cowMain.js"></script>
   <script src="./Bucket/EducationBucket/main.js"></script>
+  <script src="./Bucket/PovertyBucket/main.js"></script>
+  <script src="./Bucket/EarningsBucket/main.js"></script>
   <script src="./scroll.js"></script>
   <script src="./main2.js"></script>
   <script src="https://d3js.org/topojson.v2.min.js"></script>
@@ -285,8 +287,52 @@
       </div>
     </div>
   </div>
+  <div class="container" id="start-wheel">
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">
+          In almost all industries, 11-16% of the employees are people with disabilities.
 
+          People with disabilities form a smaller portion, about 9%, of the agriculture, forestry, fishing and mining
+          industry, which could be because of the physically intensive nature of the work involved.
+
+          However, the lowest number of disabled people actually work in the information industry, accounting for only
+          5%of the workforce.
+
+          Click to see the state-wise distribution. Current selection shows: <select id="stateDropdown1"></select>
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="vis-container1">
+    <div class="vis">
+      <svg></svg>
+    </div>
+  </div>
+
+  <div class="container" id="start-wheel2">
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">
+          The lowest representation of people with disabilities is in the government sector, with only around 2% in
+          state and federal governments. In fact, the highest representation is in the private sector, which only stands
+          at 5%.
+
+          Additionally, this data only represents those people who are employed and overall, less than 5% of them are
+          disabled. However, 13% of the population of the US are disabled.
+
+
+          Click to see the state-wise distribution.<select id="stateDropdown2"></select>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="vis-container2">
+    <div class="vis">
+      <svg></svg>
+    </div>
+  </div>
 </body>
-​
 
 </html>

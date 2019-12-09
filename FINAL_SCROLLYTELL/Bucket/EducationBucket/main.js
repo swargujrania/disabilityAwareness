@@ -164,7 +164,7 @@ function ed_drawPieCharts(ed_buckets, ed_svg) {
         for (i = 0; i < ed_arcs.length; i++) {
 
           var centerX = ed_buckets[i].x;
-          var centerY = ed_buckets[i].y + 125;
+          var centerY = ed_buckets[i].y + 175;
 
           ed_svg.append("g")
             .attr('class', 'pie')
@@ -191,16 +191,23 @@ function ed_drawPieCharts(ed_buckets, ed_svg) {
             .attr("opacity", 0)
             .attr('transform', `translate(${ centerX }, ${ centerY })`)
             .attr("font-family", "Avenir Next")
-            .attr("font-size", 12)
-            .attr("fill", '#4A4A4A')
+            .attr("font-size", 13)
+            .attr("fill", '#798D8F')
             .attr("text-anchor", "middle")
             .selectAll("text")
             .data(ed_arcs[i])
             .join("text")
-            .attr("transform", d => `translate(${ arcLabel().centroid(d) })`)
+            .attr("transform", d => {
+              if (d.data.key.endsWith('WithDis')) {
+                return `translate(40,-80)`;
+              } else {
+                return `translate(10,+90)`;
+              }
+            })
+            //translate(0,0)`)//${ arcLabel().centroid(d) })`)
             .call(text => text.append("tspan")
               .attr("y", "-0.4em")
-              .attr("font-weight", "600")
+              .attr("font-weight", "500")
               .text(d => {
                 return d.data.key.endsWith('WithDis') ? 'With Disability' : 'Without Disability';
               }))
@@ -208,8 +215,7 @@ function ed_drawPieCharts(ed_buckets, ed_svg) {
               .attr("x", 0)
               .attr("y", "0.7em")
               .attr("fill-opacity", 0.7)
-              .attr("fill", '#4A4A4A')
-              .text(d => d.data.value.toLocaleString()));
+              .text(d => Math.trunc(d.data.value).toLocaleString()));
 
 
           //animation

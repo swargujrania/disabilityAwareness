@@ -154,8 +154,28 @@ let readyFunction = () => {
       triggerElement: '#end-bucket',
       triggerHook: 1
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   endBucket.setClassToggle('#educationBucketSection', 'fade-out');
+
+  let startSun = new ScrollMagic.Scene({
+      triggerElement: '#start-wheel',
+      triggerHook: 0.5
+    })
+    .addIndicators()
+    .addTo(controller);
+
+  startSun.on('start', () => empMainStart());
+  let startSun2 = new ScrollMagic.Scene({
+      triggerElement: '#start-wheel2',
+      triggerHook: 0.5
+    })
+    .addIndicators()
+    .addTo(controller);
+
+  startSun2.on('start', () => {
+    console.log('in');
+    cowMainStart()
+  });
 }

@@ -327,6 +327,37 @@ function updateChart_2() {
             .style("color", "#607173")
             .call(g => g.selectAll(".tick text")
                 .attr("dy", -5));
+    } else {
+        //Legend
+        var legendLabels = ["Hearing", "Vision", "Cognitive", "Ambulatory", "Self-care", "Independent Living", "No Disability"];
+        var legendCircles = svg.selectAll('.legendCircle')
+            .data(legendLabels)
+            .enter()
+            .append('circle')
+            .attr("r", "7")
+            .attr("cx", 780)
+            .attr("cy", function (d, i) {
+                return 20 * i + 40;
+            })
+            .style("fill", function (d) {
+                if (d == "No Disability")
+                    return colorMapping_2["none"];
+                else
+                    return colorMapping_2[d];
+            });
+        var p = svg.selectAll('.legendTextt')
+            .data(legendLabels)
+            .enter()
+            .append("text")
+            .text(function (d, i) {
+                return d;
+            })
+            .attr('font-family', 'Avenir Next')
+            .style('stroke', '#607173')
+            .style('font-size', '12px')
+            .attr('transform', function (d, i) {
+                return 'translate(800,' + (20 * i + 45) + ')';
+            });
     }
 
 
