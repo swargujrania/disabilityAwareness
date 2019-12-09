@@ -19,7 +19,7 @@ var totalNumber_7 = [];
 cowMainStart = () => {
 
 
-  var svg = d3.select('#vis-container2 svg');
+  var svg = d3.select('#vis-container2').select('svg');
 
   var svgWidth = 1500;//$('#vis-container2 .vis svg').width();
   var svgHeight = 1500;//$('#vis-container2 .vis svg').height();
@@ -56,18 +56,19 @@ cowMainStart = () => {
       drawUnits_7(svg, units_7);
     })
 
-    var start_x = hub_cx_7 - 350;
-    var start_y = hub_cy_7;
-    var end_x = hub_cx_7 + 350;
-    var end_y = hub_cy_7;
+    // var start_x = hub_cx_7 - 350;
+    // var start_y = hub_cy_7;
+    // var end_x = hub_cx_7 + 350;
+    // var end_y = hub_cy_7;
 
-    labels1 = ["workers", "business workers", "", "", "Local government", "Private not-for-profit", "Self-employed in  ", "Employee of private", "Private for-profit"];
-    labels2 = ["Unpaid family", " not incorporated ", "workers", "workers", "workers", "wage and salary", "own incorporated", "company workers", "wage and salary"];
-    labels3 = ["", "Self-employed in own", "Federal government", "State government", "", "workers", "business workers", "", "workers"];
-    var outerCircleRadius1 = 4.1 * hub_r_7;
-    var outerCircleRadius2 = 3.9 * hub_r_7;
-    var outerCircleRadius3 = 3.7 * hub_r_7;
-    var outerCircleRadius4 = 0.9 * hub_r_7;
+    var labels1C = ["workers", "business workers", "", "", "Local government", "Private not-for-profit", "Self-employed in  ", "Employee of private", "Private for-profit"];
+    var labels2C = ["Unpaid family", " not incorporated ", "workers", "workers", "workers", "wage and salary", "own incorporated", "company workers", "wage and salary"];
+    var labels3C = ["", "Self-employed in own", "Federal government", "State government", "", "workers", "business workers", "", "workers"];
+
+    // var outerCircleRadius1 = 4.1 * hub_r_7;
+    // var outerCircleRadius2 = 3.9 * hub_r_7;
+    // var outerCircleRadius3 = 3.7 * hub_r_7;
+    // var outerCircleRadius4 = 0.9 * hub_r_7;
 
     //arc1
     var arc1 = drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r_7, 0);
@@ -77,40 +78,40 @@ cowMainStart = () => {
 
     setTimeout(() => {
       var textArcA = svg.selectAll(".industryLabelsCow")
-        .data(labels1)
+        .data(labels1C)
         .enter()
         .append("text")
         .style("text-anchor", "middle")
         .style("font-family", "AvenirNext-Regular")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
-          return "#s" + i;
+          return "#sc" + i;
         })
         .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
         .text(function (d, i) { return d; });
 
       var textArcB = svg.selectAll(".industryLabelsCow")
-        .data(labels2)
+        .data(labels2C)
         .enter()
         .append("text")
         .style("text-anchor", "middle")
         .style("font-family", "AvenirNext-Regular")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
-          return "#t" + i;
+          return "#tc" + i;
         })
         .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
         .text(function (d, i) { return d; });
 
       var textArcC = svg.selectAll(".industryLabelsCow")
-        .data(labels3)
+        .data(labels3C)
         .enter()
         .append("text")
         .style("text-anchor", "middle")
         .style("font-family", "AvenirNext-Regular")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
-          return "#u" + i;
+          return "#uc" + i;
         })
         .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
         .text(function (d, i) { return d; });
@@ -120,39 +121,38 @@ cowMainStart = () => {
     //draw percentage
     setTimeout(() => {
 
-      pData = data;
-      var dataForPercentage = d3.nest().key(d => d.classOfWorker).entries(pData);
-      dataForPercentage.splice(0, 1);
-      var p = [];
+      var pData2 = data;
+      var dataForPercentage2 = d3.nest().key(d => d.classOfWorker).entries(pData2);
+      dataForPercentage2.splice(0, 1);
+      var p2 = [];
 
       //generate labels
-      var tempLabel = [];
+      var tempLabel2 = [];
       for (var i = 0; i < buckets_7.length; i++) {
-        tempLabel[i] = buckets_7[i].label;
-        console.log(tempLabel[i]);
+        tempLabel2[i] = buckets_7[i].label;
       }
-      tempLabel.reverse();
+      tempLabel2.reverse();
 
-      tempLabel.forEach(t => {
+      tempLabel2.forEach(t => {
 
-        var o = { 'bucket': t };
+        var o2 = { 'bucket': t };
 
-        var total = $('.cowunit[data-bracket="' + t + '"]').length;
-        var wD = $('.dis_cowunit[data-bracket="' + t + '"]').length;
+        var total2 = $('.cowunit[data-bracket="' + t + '"]').length;
+        var wD2 = $('.dis_cowunit[data-bracket="' + t + '"]').length;
 
-        if (wD != 0) {
-          o['percentage'] = d3.format('.2f')(wD / total * 100) + '%';
+        if (wD2 != 0) {
+          o2['percentage'] = d3.format('.2f')(wD2 / total2 * 100) + '%';
         }
         else {
-          o['percentage'] = '< ' + d3.format('.2f')(1 / total * 100) + '%';
+          o2['percentage'] = '< ' + d3.format('.2f')(1 / total2 * 100) + '%';
         }
 
-        p.push(o);
+        p2.push(o2);
       })
 
 
       var textArc4 = svg.selectAll(".percentage")
-        .data(p)
+        .data(p2)
         .enter()
         .append("text")
         .style("text-anchor", "middle")
@@ -161,7 +161,7 @@ cowMainStart = () => {
         .style("fill", "grey")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
-          return "#v" + i;
+          return "#vc" + i;
         })
         .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
         .text(function (d, i) { return d.percentage; });
@@ -180,7 +180,7 @@ function drawArc_7(svg, buckets_7, hub_cx_7, hub_cy_7, hub_r, id) {
   outerCircleRadius.push(3.7 * hub_r);
   outerCircleRadius.push(0.9 * hub_r);
 
-  var idArray = ['s', 't', 'u', 'v']
+  var idArray = ['sc', 'tc', 'uc', 'vc']
 
   svg.selectAll(".arcs")
     .data(buckets_7)
@@ -286,14 +286,14 @@ function drawBuckets_7(dataset, spokesData) {
 // }
 
 function drawWheel_7(svgWidth, svgHeight, spokesData) {
-  var wheel = d3.select('#vis-container2 .vis svg')
+  var wheel = d3.select('#vis-container2').select('svg')
     .append('g')
     .attr('class', 'wheel');
-    
+
 
   wheel.append('text')
-    .attr('id', 'stateName')
-    .attr('transform', `translate(${ svgWidth / 2 - 20 }, ${ 1000 + svgHeight / 2 - 50 })`)
+    .attr('id', 'stateNameC')
+    .attr('transform', `translate(${ svgWidth / 2 - 20 }, ${ svgHeight / 2 - 50 })`)
     .text('');
 
   wheel.append('text')
@@ -342,8 +342,8 @@ function highlightState_7(state) {
   $('".reg_cowunit[data-state=\'' + state + '\']"').attr('fill', '#D5F0F0');
 
 
-  $('#stateName').text(state);
-  $('#stateName').css('font-family', 'AvenirNext-Regular');
+  $('#stateNameC').text(state);
+  $('#stateNameC').css('font-family', 'AvenirNext-Regular');
   //var total = totalNumber_7.find(t => t.state == state).numbers;
   //$('#stateTotal').text(total);
 

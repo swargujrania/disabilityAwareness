@@ -15,15 +15,15 @@ var totalNumber_6 = [];
 
 empMainStart = () => {
 
-  var svg = d3.select('#vis-container1 svg');
+  var svg = d3.select('#vis-container1').select('svg');
   var svgWidth = 1000; //$('#vis-container1 .vis svg').width();
-  var svgHeight = 1000 ;//$('#vis-container1 .vis svg').height();
+  var svgHeight = 1000;//$('#vis-container1 .vis svg').height();
 
   //add drop down
-  setDropdown(svgWidth, svgHeight);
+  empsetDropdown(svgWidth, svgHeight);
 
-  var spokesData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];	// number of industry types
-  var wheel = drawWheel(svgWidth, svgHeight, spokesData);
+  var spokesData_6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];	// number of industry types
+  var wheel = empdrawWheel(svgWidth, svgHeight, spokesData_6);
 
   hub_r_6 = wheel.r;
   hub_cx_6 = wheel.cx;
@@ -44,20 +44,14 @@ empMainStart = () => {
 
     dataset_6 = nestedData;
 
-    buckets_6 = drawBuckets(dataset_6, spokesData);
+    buckets_6 = empdrawBuckets(dataset_6, spokesData_6);
 
     d3.json('wheelEmploymentUnits.json').then(units => {
       units_6 = units;
-      drawUnits(svg, units_6);
+      empdrawUnits(svg, units_6);
     })
 
-    labels1 = ["Public administration", "administration)", "and food services", " social assistance", "and waste management services",
-      "rental and leasing", "Information", "Transportation and ", "Retail trade", "Wholesale trade", "Manufacturing"
-      , "Construction", "Agriculture, forestry,"];
-    labels2 = ["", "(except public ", "recreation, and accommodation", "and health care and", "management, and administrative", "and real estate and", "", "warehousing, and utilities", "", "",
-      "", "", "fishing and hunting,"];
-    labels3 = ["", "Other services ", "Arts, entertainment, and  ", "Educational services, ", "Professional, scientific, and ", "Finance and insurance, ",
-      "", "", "", "", "", "", "and mining"];
+
     var outerCircleRadius1 = 4.1 * hub_r_6;
     var outerCircleRadius2 = 3.9 * hub_r_6;
     var outerCircleRadius3 = 3.7 * hub_r_6;
@@ -69,19 +63,26 @@ empMainStart = () => {
     var end_y = hub_cy_6;
 
     //arc1
-    var arc1 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 0);
-    var arc2 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 1);
-    var arc3 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 2);
-    var arc4 = drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 3);
+    var arc1 = empdrawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 0);
+    var arc2 = empdrawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 1);
+    var arc3 = empdrawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 2);
+    var arc4 = empdrawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r_6, 3);
+
+    var labels1Emp = ["Public administration", "administration)", "and food services", " social assistance", "and waste management services",
+      "rental and leasing", "Information", "Transportation and ", "Retail trade", "Wholesale trade", "Manufacturing"
+      , "Construction", "Agriculture, forestry,"];
+    var labels2Emp = ["", "(except public ", "recreation, and accommodation", "and health care and", "management, and administrative", "and real estate and", "", "warehousing, and utilities", "", "",
+      "", "", "fishing and hunting,"];
+    var labels3Emp = ["", "Other services ", "Arts, entertainment, and  ", "Educational services, ", "Professional, scientific, and ", "Finance and insurance, ",
+      "", "", "", "", "", "", "and mining"];
 
     setTimeout(() => {
 
       //text arcs
-      var textArc1 = svg.selectAll(".industryLabelsEmp")
-        .data(labels1)
+      var textArc1 = svg.selectAll(".industryLabels")
+        .data(labels1Emp)
         .enter()
         .append("text")
-        .append("class", '.industryLabelsEmp')
         .style("font-family", "AvenirNext-Regular")
         .style("font-size", "12px")
         .style("text-anchor", "middle")
@@ -92,11 +93,10 @@ empMainStart = () => {
         .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
         .text(function (d, i) { return d; });
 
-      var textArc2 = svg.selectAll(".industryLabelsEmp")
-        .data(labels2)
+      var textArc2 = svg.selectAll(".industryLabels")
+        .data(labels2Emp)
         .enter()
         .append("text")
-        .append("class", '.industryLabelsEmp')
         .style("font-family", "AvenirNext-Regular")
         .style("font-size", "12px")
         .style("text-anchor", "middle")
@@ -107,11 +107,10 @@ empMainStart = () => {
         .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
         .text(function (d, i) { return d; });
 
-      var textArc3 = svg.selectAll(".industryLabelsEmp")
-        .data(labels3)
+      var textArc3 = svg.selectAll(".industryLabels")
+        .data(labels3Emp)
         .enter()
         .append("text")
-        .append("class", '.industryLabelsEmp')
         .style("text-anchor", "middle")
         .style("font-size", "12px")
         .style("font-family", "AvenirNext-Regular")
@@ -123,6 +122,7 @@ empMainStart = () => {
         .text(function (d, i) { return d; });
 
     }, 2000);
+
 
 
     setTimeout(() => {
@@ -177,7 +177,7 @@ empMainStart = () => {
   }); //d3.csv end braces
 }
 
-function drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r, id) {
+function empdrawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r, id) {
 
   var outerCircleRadius = [];
   outerCircleRadius.push(4.1 * hub_r);
@@ -194,7 +194,7 @@ function drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r, id) {
     .attr("fill", "none")
     .attr("id", function (d, i) { return idArray[id] + i; })
     .attr("d", function (d, i) {
-      return describeArc(hub_cx_6, hub_cy_6, outerCircleRadius[id], d.theta1, d.theta2);
+      return empdescribeArc(hub_cx_6, hub_cy_6, outerCircleRadius[id], d.theta1, d.theta2);
     })
     .style("stroke", "#AAAAAA")
     .attr("stroke-opacity", 0)
@@ -202,7 +202,7 @@ function drawArc(svg, buckets_6, hub_cx_6, hub_cy_6, hub_r, id) {
 
 }
 
-function describeArc(x, y, radius, startAngle, endAngle) {
+function empdescribeArc(x, y, radius, startAngle, endAngle) {
   var start, end, largeArcFlag, sweepFlag, extraAngle;
   extraAngle = 0;
   largeArcFlag = 0;
@@ -224,7 +224,7 @@ function describeArc(x, y, radius, startAngle, endAngle) {
 }
 
 
-function drawUnits(svg, units_6) {
+function empdrawUnits(svg, units_6) {
   svg.selectAll('.unit')
     .data(units_6)
     .enter()
@@ -249,12 +249,12 @@ function drawUnits(svg, units_6) {
 
   svg.selectAll('.unit')
     .on('click', d => {
-      resetColors();
-      highlightState(d.state);
+      empresetColors();
+      emphighlightState(d.state);
     })
 }
 
-function calculateTotal(data) {
+function empcalculateTotal(data) {
   totalNumber_6 = [];
   var hundredpercent = data.filter(d => d.percentage == 100 && d.disabilityType == "Total Civilian Noninstitutionalized Population");
   hundredpercent.forEach(h => {
@@ -264,7 +264,7 @@ function calculateTotal(data) {
   return totalNumber_6
 }
 
-function drawBuckets(dataset, spokesData) {
+function empdrawBuckets(dataset, spokesData) {
 
   var prevTheta = 0;
   for (let i = 0; i < spokesData.length; i++) {
@@ -283,15 +283,15 @@ function drawBuckets(dataset, spokesData) {
   return buckets_6;
 }
 
-function drawWheel(svgWidth, svgHeight, spokesData) {
-  var wheel = d3.select('#vis-container1 .vis svg')
+function empdrawWheel(svgWidth, svgHeight, spokesData) {
+  var wheel = d3.select('#vis-container1').select('svg')
     .append('g')
     .attr('class', 'wheel');
 
 
 
   wheel.append('text')
-    .attr('id', 'stateName')
+    .attr('id', 'stateNameE')
     .attr('transform', `translate(${ svgWidth / 2 - 22 }, ${ svgHeight / 2 - 50 })`)
     .attr('margin', 'auto')
     .text('');
@@ -337,15 +337,15 @@ function drawWheel(svgWidth, svgHeight, spokesData) {
   return { 'wheel': wheel, 'r': hub_r, 'cx': hub_cx, 'cy': hub_cy };// wheel;
 }
 
-function highlightState(state) {
+function emphighlightState(state) {
 
   $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', '#49929F');
   $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', '#D5F0F0');
 
 
-  $('#stateName').text(state);
-  $('#stateName').css('font-family', 'AvenirNext-Regular');
-  $('#stateName').css('text-align', 'center');
+  $('#stateNameE').text(state);
+  $('#stateNameE').css('font-family', 'AvenirNext-Regular');
+  $('#stateNameE').css('text-align', 'center');
 
   // var total = totalNumber_6.find(t => t.state == state).numbers;
   // $('#stateTotal').text(total);
@@ -354,7 +354,7 @@ function highlightState(state) {
   $('#stateDropdown1').val(state);
 }
 
-function resetColors() {
+function empresetColors() {
 
   $('.dis_unit').attr('fill', getColor('With a Disability').fill);
   $('.dis_unit').attr('stroke', getColor('With a Disability').stroke);
@@ -362,7 +362,7 @@ function resetColors() {
   $('.reg_unit').attr('stroke', getColor('No Disability').stroke);
 }
 
-function setDropdown(width, height) {
+function empsetDropdown(width, height) {
   var dropDown = d3.select('body').select('#stateDropdown1')
     .style('position', 'relative');
 
@@ -376,8 +376,8 @@ function setDropdown(width, height) {
   $('#stateDropdown1').on('change', function () {
     var state = $(this).find(':selected').text();
     if (state != 'Select a state') {
-      resetColors();
-      highlightState(state);
+      empresetColors();
+      emphighlightState(state);
     }
 
   })
