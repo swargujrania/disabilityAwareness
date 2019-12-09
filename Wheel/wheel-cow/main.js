@@ -50,93 +50,10 @@ start = () => {
     dataset_7 = nestedData;
     buckets_7 = drawBuckets_7(dataset_7, spokesData);
 
-    var n2 = d3.nest()
-      .key(d => d.classOfWorker)
-      .key(d => d.state)
-      .entries(data);
-    n2.splice(0, 1);
-
-    for (let k = 0; k < n2.length; k++) {
-      let tempUnits = []
-      let bracket = n2[k];
-
-      bracket.values.forEach(item => {
-        //with dis
-        var disCount = +item.values.find(i => i.disabilityType == 'With a Disability').numbers;
-
-        for (j = 0; j < Math.round(disCount / PEOPLE_UNIT); j++) {
-          var disUnit = {
-            'bracket': bracket.key,
-            'status': "With a Disability",
-            'state': item.key
-          }
-          tempUnits.push(disUnit)
-        }
-
-        //without dis
-        var woDisCount = +item.values.find(i => i.disabilityType == 'No Disability').numbers;
-        for (j = 0; j < Math.round(woDisCount / PEOPLE_UNIT); j++) {
-          var disUnit = {
-            'bracket': bracket.key,
-            'status': "No Disability",
-            'state': item.key
-          }
-          tempUnits.push(disUnit)
-        }
-
-      });
-
-      var totalWithDis = tempUnits.filter(u => u.status == 'With a Disability');
-      var totalNoDis = tempUnits.filter(u => u.status == 'No Disability');
-
-      let t = 7;
-      let radius = hub_r_7 + 3.5;
-      let PrevAngle = Math.asin(t / (2 * radius)) + buckets_7[k].theta1;
-      angle = PrevAngle;
-
-      // with dis
-      for (let i = 0; i < totalWithDis.length; i++) {
-
-        let x = hub_cx_7 + radius * Math.cos(angle);
-        let y = hub_cy_7 - radius * Math.sin(angle);
-        angle += 2 * Math.asin(t / (2 * radius));
-        if (angle > buckets_7[k].theta2) {
-          radius += t;
-          angle = Math.asin(t / (2 * radius)) + buckets_7[k].theta1;
-
-        }
-
-        let unit = new Unit(totalWithDis[i], x, y, angle);
-        units_7.push(unit);
-
-      }
-
-      // without dis
-      for (let i = 0; i < totalNoDis.length; i++) {
-
-        let x = hub_cx_7 + radius * Math.cos(angle);
-        let y = hub_cy_7 - radius * Math.sin(angle);
-        angle += 2 * Math.asin(t / (2 * radius));
-        if (angle > buckets_7[k].theta2) {
-          radius += t;
-          angle = Math.asin(t / (2 * radius)) + buckets_7[k].theta1;
-
-        }
-
-        let unit = new Unit(totalNoDis[i], x, y, angle);
-        units_7.push(unit);
-
-      }
-
-    }
-
-    drawUnits_7(svg, units_7);
-
-
-    // d3.json('wheelCowUnits.json').then(units => {
-    //   units_7 = units;
-    //   drawUnits_7(svg, units_7);
-    // })
+    d3.json('wheelCowUnits.json').then(units => {
+      units_7 = units;
+      drawUnits_7(svg, units_7);
+    })
 
     var start_x = hub_cx_7 - 350;
     var start_y = hub_cy_7;
@@ -194,50 +111,55 @@ start = () => {
       .text(function (d, i) { return d; });
 
     //draw percentage
-    pData = data;
-    var dataForPercentage = d3.nest().key(d => d.classOfWorker).entries(pData);
-    dataForPercentage.splice(0, 1);
-    var p = [];
+    setTimeout(() => {
 
-    //generate labels
-    tempLabel = [];
-    for (var i = 0; i < buckets_7.length; i++) {
-      tempLabel[i] = buckets_7[i].label;
-      console.log(tempLabel[i]);
-    }
-    tempLabel.reverse();
+      pData = data;
+      var dataForPercentage = d3.nest().key(d => d.classOfWorker).entries(pData);
+      dataForPercentage.splice(0, 1);
+      var p = [];
 
-    tempLabel.forEach(t => {
-
-      var o = { 'bucket': t };
-     
-      var total = $('.unit[data-bracket="'+t+'"]').length;
-      var wD = $('.dis_unit[data-bracket="'+t+'"]').length;
-      
-      if(wD != 0){
-        o['percentage'] = d3.format('.2f')(wD/total * 100) + '%';
+      //generate labels
+      tempLabel = [];
+      for (var i = 0; i < buckets_7.length; i++) {
+        tempLabel[i] = buckets_7[i].label;
+        console.log(tempLabel[i]);
       }
-      else{
-        o['percentage'] = '< '  + d3.format('.2f')(1/total * 100) + '%';
-      }
-      
-      p.push(o);
-    })
+      tempLabel.reverse();
 
+      tempLabel.forEach(t => {
 
-    var textArc4 = svg.selectAll(".percentage")
-      .data(p)
-      .enter()
-      .append("text")
-      .style("text-anchor", "middle")
-      .style("font-size", "10px")
-      .style("fill", "rgb(255,0,0, 0.7)")
-      .append("textPath")        //append a textPath to the text element
-      .attr("xlink:href", function (d, i) {
-        return "#v" + i;
+        var o = { 'bucket': t };
+
+        var total = $('.unit[data-bracket="' + t + '"]').length;
+        var wD = $('.dis_unit[data-bracket="' + t + '"]').length;
+
+        if (wD != 0) {
+          o['percentage'] = d3.format('.2f')(wD / total * 100) + '%';
+        }
+        else {
+          o['percentage'] = '< ' + d3.format('.2f')(1 / total * 100) + '%';
+        }
+
+        p.push(o);
       })
-      .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
-      .text(function (d, i) { return d.percentage; });
+
+
+      var textArc4 = svg.selectAll(".percentage")
+        .data(p)
+        .enter()
+        .append("text")
+        .style("text-anchor", "middle")
+        .style("font-size", "10px")
+        .style("fill", "rgb(255,0,0, 0.7)")
+        .append("textPath")        //append a textPath to the text element
+        .attr("xlink:href", function (d, i) {
+          return "#v" + i;
+        })
+        .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
+        .text(function (d, i) { return d.percentage; });
+
+    }, 3000);
+
 
   });
 }

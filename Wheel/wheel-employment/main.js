@@ -37,7 +37,7 @@ start = () => {
   d3.csv('./industry2018.csv').then(data => {
 
     // compute total number
-    totalNumber_6 = calculateTotal(data);
+    //totalNumber_6 = calculateTotal(data);
 
     data = data.filter(d => d.disabilityType != "Total Civilian Noninstitutionalized Population");
     let nestedData = d3.nest()
@@ -116,40 +116,54 @@ start = () => {
       .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
       .text(function (d, i) { return d; });
 
+    setTimeout(() => {
 
-    //draw percentage
-    var dataForPercentage = d3.nest().key(d => d.industry).key(d => d.disabilityType).rollup(d => d3.sum(d, v => v.numbers)).entries(data);
-    var p = [];
+      pData = data;
+      var dataForPercentage = d3.nest().key(d => d.industry).entries(pData);
+      dataForPercentage.splice(0, 1);
+      var p = [];
 
-    //generate labels
-    tempLabel = [];
-    for (var i = 0; i < buckets_6.length; i++) {
-      tempLabel[i] = buckets_6[i].label;
-      (tempLabel[i]);
-    }
-    tempLabel.reverse();
+      //generate labels
+      tempLabel = [];
+      for (var i = 0; i < buckets_6.length; i++) {
+        tempLabel[i] = buckets_6[i].label;
+        console.log(tempLabel[i]);
+      }
+      tempLabel.reverse();
 
-    tempLabel.forEach(t => {
-      var o = { 'bucket': t };
-      var iNeedThis = dataForPercentage.find(d => d.key == t);
-      var total = iNeedThis.values[0].value + iNeedThis.values[1].value;
-      o['percentage'] = (d3.format('.1f')(iNeedThis.values.find(x => x.key == 'With a Disability').value / total * 100)) + '%';
-      p.push(o);
-    })
+      tempLabel.forEach(t => {
 
-    var textArc4 = svg.selectAll(".percentage")
-      .data(p)
-      .enter()
-      .append("text")
-      .style("text-anchor", "middle")
-      .style("font-size", "10px")
-      .style("fill", "rgb(255,0,0, 0.7)")
-      .append("textPath")        //append a textPath to the text element
-      .attr("xlink:href", function (d, i) {
-        return "#v" + i;
+        var o = { 'bucket': t };
+
+        var total = $('.unit[data-bracket="' + t + '"]').length;
+        var wD = $('.dis_unit[data-bracket="' + t + '"]').length;
+
+        if (wD != 0) {
+          o['percentage'] = d3.format('.2f')(wD / total * 100) + '%';
+        }
+        else {
+          o['percentage'] = '< ' + d3.format('.2f')(1 / total * 100) + '%';
+        }
+
+        p.push(o);
       })
-      .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
-      .text(function (d, i) { return d.percentage; });
+
+
+      var textArc4 = svg.selectAll(".percentage")
+        .data(p)
+        .enter()
+        .append("text")
+        .style("text-anchor", "middle")
+        .style("font-size", "10px")
+        .style("fill", "rgb(255,0,0, 0.7)")
+        .append("textPath")        //append a textPath to the text element
+        .attr("xlink:href", function (d, i) {
+          return "#v" + i;
+        })
+        .attr("startOffset", function (d, i) { return "50%"; }) //place the text halfway on the arc
+        .text(function (d, i) { return d.percentage; });
+
+    }, 3000);
 
   }); //d3.csv end braces
 
@@ -211,6 +225,8 @@ function drawUnits(svg, units_6) {
       return d.status == "With a Disability" ? 'unit dis_unit' : 'unit reg_unit';
     })
     .attr('data-state', d => d.state)
+    .attr('data-disStat', d => d.status)
+    .attr('data-bracket', d => d.bracket)
     .attr("points", d => d.points_final)
     .attr("stroke", d => { return getColor(d.status).stroke })
     .attr("fill", d => { return getColor(d.status).fill });
