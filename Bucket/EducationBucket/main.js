@@ -1,44 +1,44 @@
 
 
-const WIDTH = 1400,
+const ED_WIDTH = 1400,
   HEIGHT = 1000;
 
-const BUCKET_WIDTH = 140;
+const ED_BUCKET_WIDTH = 140;
 
 const PEOPLE_UNIT = 50000;
 
-let units = [];
-let dataset;
-let buckets = [];
-let arcs = [];
+let ed_units = [];
+let ed_dataset;
+let ed_buckets = [];
+let ed_arcs = [];
 
 
-let done = false;
+let ed_done = false;
 
-start = () => {
-  if (done == false) {
+edStart = () => {
+  if (ed_done == false) {
 
-    svg = d3.select('body')
+    ed_svg = d3.select('body')
       .append('svg');
 
-    svg.attr('width', WIDTH)
+    ed_svg.attr('width', ED_WIDTH)
       .attr('height', HEIGHT);
     //.attr('transform', 'translate(100,200)');
 
     //add drop down
-    setDropdown();
+    ed_setDropdown();
 
     d3.json('./buckets.json').then(data => {
-      buckets = data;
+      ed_buckets = data;
       for (let bucket of data) {
-        svg.append('line')
+        ed_svg.append('line')
           .attr('x1', bucket.x1)
           .attr('y1', bucket.y)
           .attr('x2', bucket.x2)
           .attr('y2', bucket.y)
           .style('stroke', '#798D8F')
           .style('stroke-width', 2);
-        svg.append('text')
+        ed_svg.append('text')
           .text(bucket.label)
           .attr('x', bucket.x)
           .attr('y', bucket.y + 30)
@@ -47,10 +47,10 @@ start = () => {
           .attr('font-family', 'Avenir Next')
           .attr('font-size','13');
 
-        d3.json('./units.json').then(units => {
+        d3.json('./units.json').then(ed_units => {
           // visual elements
-          svg.selectAll('.unit')
-            .data(units)
+          ed_svg.selectAll('.unit')
+            .data(ed_units)
             .enter()
             .append('polyline')
             .attr('class', d => {
@@ -69,7 +69,7 @@ start = () => {
               return getColor(d.status).fill
             });
 
-          svg.selectAll('.dis_unit')
+          ed_svg.selectAll('.dis_unit')
             .transition()
             .ease(d3.easePolyIn.exponent(8))
             .duration(900)
@@ -80,7 +80,7 @@ start = () => {
             dataChange();
           }, 3000);
 
-          svg.selectAll('.unit')
+          ed_svg.selectAll('.unit')
             .on('click', d => {
               resetColors();
               highlightState(d.state);
@@ -88,10 +88,10 @@ start = () => {
 
           // make pie charts
           setTimeout(function () {
-            drawPieCharts(data, buckets, svg);
+            ed_drawPieCharts(data, ed_buckets, ed_svg);
           }, 3000);
 
-          done = true;
+          ed_done = true;
         });
 
       }
@@ -139,18 +139,18 @@ dataChange = () => {
     .attr("points", d => d.points_final);
 }
 
-function drawPieCharts() {
+function ed_drawPieCharts() {
 
 
   d3.json('./arcs0.json').then(arc => {
-    arcs.push(arc);
+    ed_arcs.push(arc);
     d3.json('./arcs1.json').then(arc => {
-      arcs.push(arc);
+      ed_arcs.push(arc);
       d3.json('./arcs2.json').then(arc => {
-        arcs.push(arc);
-        console.log(arcs);
+        ed_arcs.push(arc);
+        console.log(ed_arcs);
 
-        const radius = BUCKET_WIDTH / 2 * 0.8;
+        const radius = ED_BUCKET_WIDTH / 2 * 0.8;
 
         // making pie charts
         var pie = d3.pie()
@@ -163,20 +163,20 @@ function drawPieCharts() {
 
         var arc = d3.arc()
           .innerRadius(0)
-          .outerRadius(BUCKET_WIDTH / 2 - 1)
+          .outerRadius(ED_BUCKET_WIDTH / 2 - 1)
 
-        for (i = 0; i < arcs.length; i++) {
+        for (i = 0; i < ed_arcs.length; i++) {
 
-          var centerX = buckets[i].x;
-          var centerY = buckets[i].y + 125;
+          var centerX = ed_buckets[i].x;
+          var centerY = ed_buckets[i].y + 125;
 
-          svg.append("g")
+          ed_svg.append("g")
             .attr('class', 'pie')
             .attr('transform', `translate(${ centerX }, ${ centerY })`)
             .attr("stroke", "#FED48B")
             .attr("opacity", 0)
             .selectAll("path")
-            .data(arcs[i])
+            .data(ed_arcs[i])
             .join("path")
             .attr("fill", d => {
               console.log(d.data);
@@ -190,20 +190,21 @@ function drawPieCharts() {
             .append("title")
             .text(d => `${ d.data.key }: ${ d.data.value }`)
 
-          svg.append("g")
+          ed_svg.append("g")
             .attr('class', 'pieLabel')
             .attr("opacity", 0)
             .attr('transform', `translate(${ centerX }, ${ centerY })`)
             .attr("font-family", "Avenir Next")
             .attr("font-size", 12)
+            .attr("fill",'#4A4A4A')
             .attr("text-anchor", "middle")
             .selectAll("text")
-            .data(arcs[i])
+            .data(ed_arcs[i])
             .join("text")
             .attr("transform", d => `translate(${ arcLabel().centroid(d) })`)
             .call(text => text.append("tspan")
               .attr("y", "-0.4em")
-              .attr("font-weight", "bold")
+              .attr("font-weight", "600")
               .text(d => {
                 return d.data.key.endsWith('WithDis') ? 'With Disability' : 'Without Disability';
               }))
@@ -216,14 +217,14 @@ function drawPieCharts() {
 
 
           //animation
-          svg.selectAll('.pie')
+          ed_svg.selectAll('.pie')
             .transition()
             .ease(d3.easeLinear)
             .duration(1000)
             .delay(i * 1000)
             .attr('opacity', 1);
 
-          svg.selectAll('.pieLabel')
+          ed_svg.selectAll('.pieLabel')
             .transition()
             .ease(d3.easeLinear)
             .duration(1000)
@@ -236,10 +237,10 @@ function drawPieCharts() {
   });
 }
 
-function setDropdown() {
+function ed_setDropdown() {
   var dropDown = d3.select('body').select('#stateDropdown')
     .style('position', 'relative')
-    .style('margin-left', WIDTH + 'px');
+    .style('margin-left', ED_WIDTH + 'px');
 
   var stateList = ["Select a state", "Alaska", "Maine", "North Carolina", "Missouri", "Pennsylvania", "Michigan", "Nebraska", "Oregon", "Wyoming", "California", "Mississippi", "Connecticut", "Texas", "Idaho", "Maryland", "New Mexico", "Alabama", "Tennesee", "Vermont", "Nevada", "West Virginia", "Oklahoma", "Wisconsin", "Puerto Rico", "Kansas", "Virginia", "North Dakota", "New Jersey", "Ohio", "South Carolina", "Georgia", "Colorado", "Hawaii", "South Dakota", "Indiana", "Kentucky", "Louisiana", "Washington", "Illinois", "Iowa", "New Hampshire", "Rhode Island", "Arkansas", "Delaware", "Minnesota", "Montana", "Arizona", "Florida", "Massachusetts", "District of Columbia", "Utah", "New York"];
   dropDown.selectAll('option')
@@ -250,7 +251,7 @@ function setDropdown() {
     .attr('value', d => {
       return d == 'Select a state' ? '' : d
     });
-  $('#stateDropdown').on('change', function () {
+  $('#ed_stateDropdown').on('change', function () {
     var state = $(this).find(':selected').text();
     if (state != 'Select a state') {
       resetColors();
