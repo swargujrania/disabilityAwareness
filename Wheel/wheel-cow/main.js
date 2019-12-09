@@ -150,7 +150,7 @@ start = () => {
         .append("text")
         .style("text-anchor", "middle")
         .style("font-size", "10px")
-        .style("fill", "rgb(255,0,0, 0.7)")
+        .style("fill", "grey")
         .append("textPath")        //append a textPath to the text element
         .attr("xlink:href", function (d, i) {
           return "#v" + i;
@@ -328,8 +328,8 @@ function drawWheel_7(svgWidth, svgHeight, spokesData) {
 }
 
 function highlightState_7(state) {
-  $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 1)');
-  $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', 'rgba(0,134,173, 0.4)');
+  $('".dis_unit[data-state=\'' + state + '\']"').attr('fill', '#49929F');
+  $('".reg_unit[data-state=\'' + state + '\']"').attr('fill', '#D5F0F0');
 
 
   $('#stateName').text(state);
@@ -374,8 +374,8 @@ function setDropdown_7(width, height) {
 
 function getColor_7(status) {
   switch (status) {
-    case 'With a Disability': return { 'fill': 'rgba(255,0,0,0.6)', 'stroke': 'white' };
-    case 'No Disability': return { 'fill': 'rgba(255,0,0,0.1)', 'stroke': 'white' };
+    case 'With a Disability': return { 'fill': '#FFAC1D', 'stroke': 'white' };
+    case 'No Disability': return { 'fill': '#FFE5AE', 'stroke': 'white' };
   }
 }
 
