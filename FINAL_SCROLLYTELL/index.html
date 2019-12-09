@@ -12,6 +12,9 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="./main.js"></script>
   <script src="./sideview.js"></script>
+  <script src="./Bucket/EarningsBucket/main.js"></script>
+  <script src="./Bucket/PovertyBucket/main.js"></script>
+  <script src="./Bucket/EducationBucket/main.js"></script>
   <script src="./scroll.js"></script>
   <script src="./main2.js"></script>
   <script src="https://d3js.org/topojson.v2.min.js"></script>
@@ -175,11 +178,114 @@
     <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
     <br /><br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
     <br />
-    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
-
   </div>
+  <div class="container">
+    <div class="title-row">
+      <div class="col-lg-8">
+        <h1 class="title" id="eco-data-title">Visualizing Economic Data about People with Disability</h1>
+      </div>
+    </div>
+    <div class="content-card-row" id="bucket1">
+      <div class="content-card">
+        <p class="content">
+          Our understanding of the landscape of disability in the US would be incomplete without taking a glimpse into
+          the everyday life of people with disabilities.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="earningBucketSection">
+  </div>
+  <div class="container">
+    <div class="content-card-row" id="bucket2">
+      <div class="content-card">
+        <p class="content">
+          Does having a disability affect how much someone might earn? At first glance, there are no significant
+          differences in the number of disabled people in each income bracket.
+        </p>
+      </div>
+    </div>
+    <div class="content-card-row" id="bucket3">
+      <div class="content-card">
+        <p class="content">
+          While nearly 20% of the people in the lowest income bracket have disabilities, they only form 4.25% of the
+          highest income bracket.
+        </p>
+      </div>
+    </div>
+    <div class="content-card-row" id="bucket4">
+      <div class="content-card">
+        <p class="content">
+          Click through the hexagons to see state-wise details. Currently, you're seeing the data for <select
+            id="er_stateDropdown">
+          </select>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content-card-row" id="bucketP">
+      <div class="content-card">
+        <p class="content">
+          This trend is consistent when we look at poverty levels. 205 million people are over 150% of the poverty level
+          (they don’t even fit on the screen!). Only 12.5% of these are people with disabilities, while double that
+          number are under the poverty level.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="povertyBucketSection">
+  </div>
+  <div class="container">
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">
+          What might cause such a disparity? Click through the hexagons to see state-wise details. Currently, you're
+          seeing the data for <select id="p_stateDropdown">
+          </select>
+        </p>
+      </div>
+    </div>
+    <div class="content-card-row" id="bucketEdu">
+      <div class="content-card">
+        <p class="content">
+          What about education?
+          </select>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="educationBucketSection"></div>
+  <div class="container">
+    <div class="content-card-row">
+      <div class="content-card">
+        <p class="content">
+          Tracing this trend further back, we see that fewer people with disabilities have completed higher levels of
+          education. About one quarter of the people who have graduated high school, about 20% of those who’ve attended
+          some college, and less than 10% of the people with a bachelor’s degree or higher have disabilities.
+        </p>
+      </div>
+    </div>
+    <div class="content-card-row" id="bucketEdu">
+      <div class="content-card">
+        <p class="content">
+          Is this because of inaccessibility of intolerance?
+          Click through the hexagons to see state-wise details. Currently, you're seeing data for: <select
+            id="ed_stateDropdown">
+          </select>
+          </select>
+        </p>
+      </div>
+    </div>
+    <div class="content-card-row" id="end-bucket">
+      <div class="content-card">
+        <p class="content">
+          How does this translate to the type of jobs that people with disabilities hold?
+        </p>
+      </div>
+    </div>
+  </div>
+
 </body>
 ​
 

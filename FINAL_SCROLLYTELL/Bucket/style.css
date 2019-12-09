@@ -1,0 +1,66 @@
+body {
+  font-family: Baskerville;
+}
+
+.title {
+  font-family: AbrilFatface-Regular;
+  font-size: 40px;
+  color: #5F5F5F;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.title-row {
+  margin-top: 300px;
+  opacity: 1;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+
+  transition: ease 1s all;
+}
+
+.title-row.fade-out {
+  opacity: 0;
+}
+
+.content-card-row {
+  margin-top: 60px;
+  opacity: 0;
+  transition: all ease-out 0.7s;
+}
+
+.content-card-row.fade-in {
+  opacity: 1;
+}
+
+.content-card {
+  padding: 20px 20px 30px 20px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.content {
+  font-family: Baskerville;
+  font-size: 16px;
+  color: #272727;
+  letter-spacing: 0.4px;
+  line-height: 28px;
+}
+
+#first-card {
+  margin-top: 500px;
+}
+
+#bucket-viz-one-row {
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+}
+
+#first-after-bucket {
+  margin-top: 50px;
+}

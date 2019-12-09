@@ -56,7 +56,7 @@ let readyFunction = () => {
       triggerElement: '#age-last-card',
       triggerHook: 0.5
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   ageByDisType2.on('start', () => {
@@ -70,24 +70,92 @@ let readyFunction = () => {
       triggerElement: '#bar-chart-trigger',
       triggerHook: 0
     })
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
   ageByDisType3.on('start', () => {
     changeView_2(true, 'none');
   });
 
-  // let bucketViz = new ScrollMagic.Scene({
-  //     triggerElement: '#bucket-viz-one-row',
-  //     triggerHook: 0.2
-  //   })
-  //   //.addIndicators()
-  //   .addTo(controller)
+  let ageByDisType4 = new ScrollMagic.Scene({
+      triggerElement: '#eco-data-title',
+      triggerHook: 1
+    })
+    // .addIndicators()
+    .addTo(controller);
 
-  // bucketViz
-  //   .setClassToggle('.title-row', 'fade-out');
+  ageByDisType4.setClassToggle('#main', 'fade-out');
 
-  // bucketViz.on('start', () => {
-  //   start();
-  // });
+  let bucketView = new ScrollMagic.Scene({
+      triggerElement: '#earningBucketSection',
+      triggerHook: 0
+    })
+    // .addIndicators()
+    .addTo(controller);
+
+  bucketView.on('start', () => {
+    erStart();
+  });
+
+  let bucketView2 = new ScrollMagic.Scene({
+      triggerElement: '#bucket3',
+      triggerHook: 0.5
+    })
+    // .addIndicators()
+    .addTo(controller);
+
+  bucketView2.on('start', () => {
+    er_dataChange();
+    er_drawPieCharts(er_buckets, d3.select('#earningBucketSection'));
+  });
+
+
+  let bucketView3 = new ScrollMagic.Scene({
+      triggerElement: '#bucket4',
+      triggerHook: 0
+    })
+    // .addIndicators()
+    .addTo(controller);
+
+  bucketView3.setClassToggle('#earningBucketSection', 'fade-out');
+
+  let bucketViewP = new ScrollMagic.Scene({
+      triggerElement: '#bucketP',
+      triggerHook: 0.3
+    })
+    // .addIndicators()
+    .addTo(controller);
+
+  bucketViewP.on('start', () => {
+    pStart();
+  });
+
+  let bucketViewEdu = new ScrollMagic.Scene({
+      triggerElement: '#bucketEdu',
+      triggerHook: 0
+    })
+    // .addIndicators()
+    .addTo(controller);
+
+  bucketViewEdu.setClassToggle('#povertyBucketSection', 'fade-out');
+
+  let bucketViewEdu2 = new ScrollMagic.Scene({
+      triggerElement: '#bucketEdu',
+      triggerHook: 0
+    })
+    // .addIndicators()
+    .addTo(controller);
+
+  bucketViewEdu2.on('start', () => {
+    eduStart();
+  })
+
+  let endBucket = new ScrollMagic.Scene({
+      triggerElement: '#end-bucket',
+      triggerHook: 1
+    })
+    .addIndicators()
+    .addTo(controller);
+
+  endBucket.setClassToggle('#educationBucketSection', 'fade-out');
 }

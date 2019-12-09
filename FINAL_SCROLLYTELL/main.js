@@ -95,10 +95,12 @@ $(function () {
                 }
             }
 
-            var hexPolyline = g.selectAll('polyline')
+            var hexPolyline = g.selectAll('.hexUnitMap')
                 .data(hexUnitArray)
                 .enter()
                 .append('polyline')
+                .attr('class', 'hexUnitMap')
+                .attr('data-disStat', d => d.disabilityStatus)
                 .attr('fill', d => d.color)
                 .attr('stroke', 'white')
                 .attr('stroke-width', 1)
@@ -197,10 +199,10 @@ function highlightStateBoundaries(toBeHighlighted, d) {
 }
 
 function highlightState(toBeHighlighted, d, hexPolyline) {
-    var selectorString = '"polyline[data-state=\'' + d.state + '\']"';
+    var selectorString = '".hexUnitMap[data-state=\'' + d.state + '\']"';
     if (toBeHighlighted) {
-        var withDisString = '"polyline[data-state=\'' + d.state + '\'][fill=#FFAC1D]"';
-        var noDisString = '"polyline[data-state=\'' + d.state + '\'][fill=#FEF1D4]"';
+        var withDisString = '".hexUnitMap[data-state=\'' + d.state + '\'][fill=#FFAC1D]"';
+        var noDisString = '".hexUnitMap[data-state=\'' + d.state + '\'][fill=#FEF1D4]"';
 
         $(withDisString).attr('fill', '#49929F');
         $(withDisString).attr('stroke', 'white');
@@ -211,8 +213,8 @@ function highlightState(toBeHighlighted, d, hexPolyline) {
         //color disabled hexes
 
     } else {
-        var withDisString = '"polyline[data-state=\'' + d.state + '\'][fill=\'#49929F\']"';
-        var noDisString = '"polyline[data-state=\'' + d.state + '\'][fill=#D5F0F1]"';
+        var withDisString = '".hexUnitMap[data-state=\'' + d.state + '\'][fill=\'#49929F\']"';
+        var noDisString = '".hexUnitMap[data-state=\'' + d.state + '\'][fill=#D5F0F1]"';
 
         $(withDisString).attr('fill', '#FFAC1D');
         $(withDisString).attr('stroke', 'white');

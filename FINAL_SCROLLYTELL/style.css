@@ -10,6 +10,54 @@ body {
   z-index: 0;
 }
 
+#earningBucketSection {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  opacity: 1;
+  transition: 1s ease;
+
+  min-height: 1000px;
+}
+
+#povertyBucketSection {
+  z-index: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  opacity: 1;
+  transition: 1s ease;
+
+  min-height: 1000px;
+}
+
+#educationBucketSection {
+  z-index: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  opacity: 1;
+  transition: 1s ease;
+
+  min-height: 1000px;
+}
+
+#povertyBucketSection.fade-out {
+  opacity: 0;
+}
+
+#earningBucketSection.fade-out {
+  opacity: 0;
+}
+
+#educationBucketSection.fade-out {
+  opacity: 0;
+}
+
+#bucket3 {
+  margin-top: 150px;
+}
+
 .after-viz {
   margin-top: 1000px;
 }
@@ -19,9 +67,12 @@ body {
 }
 
 #main {
+  opacity: 1;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 0;
+  transition: 1s ease;
 }
 
 .d3-tip {
@@ -38,8 +89,6 @@ body {
   color: #2794A1;
   border-radius: 5px;
 }
-
-#main.stay {}
 
 #geoviz-row.fade-out {
   transition: 1s ease;
@@ -61,11 +110,6 @@ body {
 
 .node:hover {
   stroke-width: 2;
-}
-
-#main {
-  z-index: 0;
-  margin: 20px;
 }
 
 #viz2 {
@@ -125,6 +169,10 @@ div.tooltip {
 }
 
 .title-row.fade-out {
+  opacity: 0;
+}
+
+#main.fade-out {
   opacity: 0;
 }
 
